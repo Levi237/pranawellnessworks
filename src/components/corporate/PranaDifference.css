@@ -1,0 +1,112 @@
+
+.pranaDifference-container {
+    height: 50vw;
+}
+.pranaDifference-container img {
+    width: 50vw;
+    height: 50vw;
+}
+.pranaDifference-container section {
+    font-style: normal;
+}
+
+.pranaDifference-container > div {
+    width: 50vw;
+    height: 50vw;
+    background-color: var(--purple);
+}
+.pranaDifference-container > div:first-of-type {
+    float: right;
+    background-image: url(./meet-background-white.png);
+    text-align: left;
+    position: relative;  
+    display: flex;
+}
+.pranaDifference-container > div:last-of-type {
+    float: left;
+    position: relative;  
+}
+
+.pranaDifference-container > div > div {
+    width: 32vw;
+    height: 32vw;
+    margin: 5vw;
+    border: 1px solid #fff;
+    background: var(--purple);
+    padding: 4vw;
+    text-align: left;
+}
+.pranaDifference-container > div > div > section:first-of-type {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 4vw;
+    text-transform: capitalize;
+    line-height: 5vw;
+    letter-spacing: .33vw;
+    color: #fff;
+}
+.pranaDifference-container > div > div > section:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    letter-spacing: .33vw;
+    text-transform: uppercase;
+    color: var(--lightgreen);
+}
+.pranaDifference-container > div > div > section:nth-of-type(3) {
+    font-weight: 300;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    color: #fff;
+    margin: 2vw 0;
+}
+.pranaDifference-container > div > div > div > section {
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media screen and (max-width: 945px) {
+    .pranaDifference-container {
+        height: 200vw;
+    }
+    .pranaDifference-container img {
+        width: 100vw;
+        height: 100vw;
+    }
+    
+    .pranaDifference-container > div {
+        width: 100vw;
+        height: 100vw;
+    }
+    .pranaDifference-container > div:first-of-type, .pranaDifference-container > div:last-of-type {
+        float: none;
+    }
+
+    .pranaDifference-container > div > div {
+        width: 70%;
+        height: 70%;
+        margin: 10%;
+        padding: 5%;
+    }
+    .pranaDifference-container > div > div > section:first-of-type {
+        font-size: 7vw;
+        letter-spacing: .33vw ;
+      }
+    .pranaDifference-container > div > div > section:nth-of-type(2) {
+        font-size: 3.1vw;
+        line-height: 9vw;
+    }
+    .pranaDifference-container > div > div > section:nth-of-type(3) {
+        font-size: 3vw;
+        line-height: 3vw;
+        margin: 2vw 0;
+    }
+    .pranaDifference-container > div > div > div > section {
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+}

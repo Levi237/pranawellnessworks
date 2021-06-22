@@ -1,0 +1,12 @@
+export const ROOT = '/';
+export const HOME = '/home';
+export const INFO = '/about';
+export const WELL = '/personal_wellness_services';
+export const SERV = '/services';
+export const ADMN = '/admin';
+export const SOLO = '/services_individual';
+export const CORP = '/services_corporate';
+export const YOGA = '/yoga_therapy';
+export const PREG = '/pre-post_natal';
+export const COAC = '/speaking_coaching';
+export const MAIL = '/thank_you_for_reaching_out'
