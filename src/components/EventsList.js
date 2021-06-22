@@ -35,7 +35,7 @@ export default class EventsList extends Component {
 
         const showList = eventsList.map((event, k) => {
           return(
-            <div>
+            <EventWrapper>
               <section>x</section>
               <section key={k}>
               <a href={event.link} alt={event.title}>{event.title}</a>
@@ -46,7 +46,7 @@ export default class EventsList extends Component {
                   <span>→</span>
               </a>
               </section>
-            </div>
+            </EventWrapper>
           );
         });
         return(
@@ -54,6 +54,10 @@ export default class EventsList extends Component {
         );
     };
 };
+
+const EventWrapper = styled.div`
+
+`;
 
 const ListWrapper = styled.div`
   width: 100%;
