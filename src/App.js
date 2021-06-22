@@ -20,7 +20,7 @@ import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
 import PersonalMain         from './components/personal/PersonalMain';
-import ServicesMain         from './components/services/ServicesMain';
+import ServicesMain         from './components/services';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
 
