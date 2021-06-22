@@ -351,4 +351,5 @@ const ContactGrid = styled.div`
   grid-area: contact;
   background-color: var(--purple);
   position: relative;
+  z-index: 9;
 `;
