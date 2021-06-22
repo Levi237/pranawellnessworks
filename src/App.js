@@ -16,13 +16,13 @@ import HeaderComponent      from './components/HeaderComponent';
 import HeaderMessage        from './components/header/HeaderMessage'
 import PurpleContent        from './components/PurpleContent';
 
-import HomeMain             from './components/home/HomeMain';
-import AboutMain            from './components/about/AboutMain';
-import CorporateMain        from './components/corporate/CorporateMain';
-import PersonalMain         from './components/personal/PersonalMain';
+import HomeMain             from './components/home';
+import AboutMain            from './components/about';
+import CorporateMain        from './components/corporate';
+import PersonalMain         from './components/personal';
 import ServicesMain         from './components/services';
-import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
-import PrenatalMain         from './components/prenatal/PrenatalMain';
+import YogaTherapyMain      from './components/yogatherapy';
+import PrenatalMain         from './components/prenatal';
 
 import Coaching             from './components/coaching/Coaching';
 import Speaking             from './components/coaching/Speaking';
