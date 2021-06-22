@@ -29,25 +29,61 @@ export default class EventsList extends Component {
             note: "(starting July 7th)",
             link: "https://yogaontheharbor.eventbrite.com"
           }]
-    }
+    };
     render(){
         const { eventsList } = this.state;
 
-        const showEventsList = eventsList.map((event, k) => {
-            return(
-                <section key={k}>
-                <a href={event.link} alt={event.title}>{event.title}</a>
-                <p>{event.info}</p>
-                <p>{event.note}</p>
-                <a href={event.link} alt={event.title}>
-                    Sign Up&nbsp;
-                    <span>→</span>
-                </a>
-                </section>
-            )
-        })
+        const showList = eventsList.map((event, k) => {
+          return(
+            <div>
+              <section>x</section>
+              <section key={k}>
+              <a href={event.link} alt={event.title}>{event.title}</a>
+              <p>{event.info}</p>
+              <p>{event.note}</p>
+              <a href={event.link} alt={event.title}>
+                  Sign Up&nbsp;
+                  <span>→</span>
+              </a>
+              </section>
+            </div>
+          );
+        });
         return(
-            <>{showEventsList}</>
-        )
+            <ListWrapper>{showList}</ListWrapper>
+        );
+    };
+};
+
+const ListWrapper = styled.div`
+  width: 100%;
+  > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'left right';
+    &:nth-of-type(even) {
+      > section {
+        &:first-of-type {
+          grid-area: left;
+          background-color: pink;
+        }
+        &:last-of-type {
+          grid-area: right;
+          background-color: blue;
+        }
+      }
     }
-}
+    &:nth-of-type(odd) {
+      > section {
+        &:first-of-type {
+          grid-area: right;
+          background-color: green;
+        }
+        &:last-of-type {
+          grid-area: left;
+          background-color: yellow;
+        }
+      }
+    }
+  }
+`;
