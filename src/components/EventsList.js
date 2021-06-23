@@ -216,6 +216,18 @@ const ListWrapper = styled.div`
       grid-template-areas: 
         'img' 
         'text'!important;
+      a > span {
+        &:first-of-type {
+          &::after {
+            content: "<"!important;
+          }
+        }
+        &:last-of-type {
+          &::after {
+            content: ">"!important;
+          }
+        }
+      }
       > section {
         width: 100vw;
         height: 100vw;
