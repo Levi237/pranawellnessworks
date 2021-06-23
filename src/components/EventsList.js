@@ -56,7 +56,9 @@ export default class EventsList extends Component {
         const showList = eventsList.map((event, k) => {
           return(
             <EventWrapper>
-              <section><img src={event.img} alt={event.title}/></section>
+              <section style={{backgroundImage: `url(${event.img})`}}>
+                {/* <img src={event.img} alt={event.title}/> */}
+              </section>
               <section key={k}>
                 <div>
                   <a href={event.link} alt={event.title}>
@@ -112,6 +114,7 @@ const EventWrapper = styled.div`
     padding: 0;
     margin: 1vw 0 0;
   }
+
   p {
    font-size: 2.8vw;
    padding: 0;
@@ -139,16 +142,14 @@ const EventWrapper = styled.div`
       }
     }
   }
-
   > section {
     width: 50vw;
     height: 50vw;
-
     &:first-of-type {
       grid-area: img;
-      > img {
-        width: 100%;
-      }
+      background-size: 100%;
+      background-position: center;
+      transition: background-size 5s;
     }
     &:last-of-type {
       grid-area: text;
@@ -158,6 +159,15 @@ const EventWrapper = styled.div`
 
       > div {
         padding: 0 10%;
+      }
+    }
+  }
+  &:hover {
+    > section {
+      &:first-of-type {
+        grid-area: img;
+        background-size: 110%;
+        transition: background-size 25s;
       }
     }
   }
