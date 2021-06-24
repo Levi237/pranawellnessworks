@@ -57,7 +57,6 @@ export default class EventsList extends Component {
           return(
             <EventWrapper>
               <section style={{backgroundImage: `url(${event.img})`}}>
-                {/* <img src={event.img} alt={event.title}/> */}
               </section>
               <section key={k}>
                 <div>
@@ -80,7 +79,10 @@ export default class EventsList extends Component {
           );
         });
         return(
-            <ListWrapper>{showList}</ListWrapper>
+            <ListWrapper>
+              <h1>EVENTS SCHEDULE</h1>
+            {showList}
+            </ListWrapper>
         );
     };
 };
@@ -183,6 +185,11 @@ const EventWrapper = styled.div`
 
 const ListWrapper = styled.div`
   width: 100vw;
+
+  > h1 {
+    margin-bottom: 40px;
+  }
+  
   > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
