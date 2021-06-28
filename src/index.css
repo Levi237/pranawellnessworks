@@ -27,10 +27,6 @@ h1 {
   font-size: 3vw;
   color: var(--purple);
   padding: 2vw;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 
   text-align: center;
   text-transform: uppercase;
@@ -38,7 +34,12 @@ h1 {
   position: relative;
   z-index: 1;
 }
-
+h1, h2, h3, h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 button {
   box-sizing: border-box;
   padding: 20px 50px;
