@@ -8,7 +8,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "Guided movement for support, empowerment, and education.",
             price: "donation based",
-            when: "Every Monday @ 5p PT",
+            day: "Every Monday",
+            time: "5p PT",
             note: "(happening now)",
             img: "./events/prenatal.png",
             link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
@@ -17,7 +18,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "Build confidence, strengthen, and renew the body. ",
             price: "donation based",
-            when: "Every 1st & 3rd Tuesday @ 5p PT",
+            day: "Every 1st & 3rd Tuesday",
+            time: "5p PT",
             note: "(starting July 6th)",
             img: "./events/postpartum.png",
             link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
@@ -26,7 +28,8 @@ export default class EventsList extends Component {
             location: "in San Diego",
             info: "Join us in person, for a fun community flow!",
             price: "donation based",
-            when: "Every first Wednesday @ 6p PT",
+            day: "Every first Wednesday",
+            time: "6p PT",
             note: "(starting July 7th)",
             img: "./events/harbor.png",
             link: "https://yogaontheharbor.eventbrite.com"
@@ -35,7 +38,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "Join us from anywhere! All levels yoga flow.",
             price: "donation based",
-            when: "Every Thursday @ 5p PT",
+            day: "Every Thursday",
+            time: "5p PT",
             note: "(starting July 8th)",
             img: "./events/flow.png",
             link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
@@ -44,7 +48,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "with @thenalaverse",
             price: "donation based",
-            when: "Every Friday @ 10p PT",
+            day: "Every Friday",
+            time: "10p PT",
             note: "(happening now)",
             img: "./events/meditation.png",
             link: "https://thenalaverse.com/get-lifted"
@@ -59,7 +64,8 @@ export default class EventsList extends Component {
               <h1>
                 {event.title}
               </h1>
-              <h4>{event.when}</h4>
+              <h4>{event.day}</h4>
+              <h4>@ {event.time}</h4>
             </div>
           );
         });
@@ -79,7 +85,7 @@ export default class EventsList extends Component {
                     {event.info}
                     <small>{event.note}</small>
                   </p>
-                  <h4>{event.when}</h4>
+                  <h4>{event.day} @ {event.time}</h4>
                   <a href={event.link} alt={event.title} target="_blank">
                     <span></span>
                     &emsp;Sign Up&emsp;
@@ -101,6 +107,40 @@ export default class EventsList extends Component {
         );
     };
 };
+
+const ListWrapper = styled.div`
+  width: 100vw;
+
+  > h1 {
+    margin-bottom: 40px;
+  }
+`;
+
+const CalendarWrapper = styled.div`
+  display: grid;
+  grid-template-areas: 'mon tue wed thur fri sat sun';
+  > div {
+    &:first-of-type {
+      grid-area: mon;
+    }
+    &:nth-of-type(2) {
+      grid-area: tue;
+    }
+    &:nth-of-type(3) {
+      grid-area: wed;
+    }
+    &:nth-of-type(4) {
+      grid-area: thur;
+    }
+    &:nth-of-type(5) {
+      grid-area: fri;
+    }
+  }
+  h1 {
+    font-size: 2vw;
+    padding: 0 2vw;
+  }
+`;
 
 const EventWrapper = styled.div`
   display: grid;
@@ -241,17 +281,5 @@ const EventWrapper = styled.div`
       font-size: 6vw;
       margin: 5vw 0;
     }
-  }
-`;
-
-const CalendarWrapper = styled.div`
-
-`;
-
-const ListWrapper = styled.div`
-  width: 100vw;
-
-  > h1 {
-    margin-bottom: 40px;
   }
 `;
