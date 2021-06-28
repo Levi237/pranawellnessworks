@@ -8,7 +8,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "Guided movement for support, empowerment, and education.",
             price: "donation based",
-            day: "Every Monday",
+            day: "Monday",
+            when: "Every",
             time: "5p PT",
             note: "(happening now)",
             img: "./events/prenatal.png",
@@ -18,7 +19,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "Build confidence, strengthen, and renew the body. ",
             price: "donation based",
-            day: "Every 1st & 3rd Tuesday",
+            day: "Tuesday",
+            when: "1st & 3rd ",
             time: "5p PT",
             note: "(starting July 6th)",
             img: "./events/postpartum.png",
@@ -28,7 +30,8 @@ export default class EventsList extends Component {
             location: "in San Diego",
             info: "Join us in person, for a fun community flow!",
             price: "donation based",
-            day: "Every first Wednesday",
+            day: "Wednesday",
+            when: "1st",
             time: "6p PT",
             note: "(starting July 7th)",
             img: "./events/harbor.png",
@@ -38,7 +41,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "Join us from anywhere! All levels yoga flow.",
             price: "donation based",
-            day: "Every Thursday",
+            day: "Thursday",
+            when: "Every",
             time: "5p PT",
             note: "(starting July 8th)",
             img: "./events/flow.png",
@@ -48,7 +52,8 @@ export default class EventsList extends Component {
             location: "virtual",
             info: "with @thenalaverse",
             price: "donation based",
-            day: "Every Friday",
+            day: "Friday",
+            when: "Every",
             time: "10p PT",
             note: "(happening now)",
             img: "./events/meditation.png",
@@ -60,13 +65,14 @@ export default class EventsList extends Component {
 
         const showDates = eventsList.map((event, k) => {
           return(
-            <div key={k}>
-              <h1>
-                {event.title}
-              </h1>
-              <h4>{event.day}</h4>
-              <h4>@ {event.time}</h4>
-            </div>
+            <a href={event.link} key={k}>
+              <h1>{event.day}</h1>
+              <hr/>
+              <h2>{event.title}</h2>
+              <h4>[ {event.location} ]</h4>
+              <h3>{event.when} {event.day}</h3>
+              <h3>@ {event.time}</h3>
+            </a>
           );
         });
 
@@ -98,7 +104,7 @@ export default class EventsList extends Component {
         });
         return(
             <ListWrapper>
-              <h1>EVENTS SCHEDULE</h1>
+              <h1>MONTHLY SCHEDULE</h1>
               <CalendarWrapper>
                 {showDates}
               </CalendarWrapper>
@@ -117,9 +123,14 @@ const ListWrapper = styled.div`
 `;
 
 const CalendarWrapper = styled.div`
+  margin-bottom: 80px;
+
   display: grid;
-  grid-template-areas: 'mon tue wed thur fri sat sun';
-  > div {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 'mon tue wed thur fri';
+
+  > a {
+    text-decoration: none;
     &:first-of-type {
       grid-area: mon;
     }
@@ -137,8 +148,33 @@ const CalendarWrapper = styled.div`
     }
   }
   h1 {
-    font-size: 2vw;
-    padding: 0 2vw;
+    font-size: 2.66vw;
+    padding: .5vw 0 0;
+    color: var(--purple)!important;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  h2 {
+    font-family: var(--fancy-font);
+    font-size: 2.5vw;
+    letter-spacing: .05vw;
+    font-weight: 500;
+    padding: .5vw 2vw .25vw;
+    color: var(--grey)!important;
+  }
+  h3 {
+    font-size: 1.8vw;
+        font-weight: 500;
+    color: var(--grey)!important;
+  }
+  h4 {
+    font-weight: 100;
+    font-size: 1.67vw;
+    color: var(--lightgrey)!important;
+  }
+  hr {
+    width: 18vw;
+    border: 1px solid var(--green);
   }
 `;
 
