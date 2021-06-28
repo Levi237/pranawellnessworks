@@ -3,65 +3,65 @@ import styled from 'styled-components';
 
 export default class EventsList extends Component {
     state = {
-        eventsList: [{
-            title: "Prenatal Yoga",
-            location: "virtual",
-            info: "Guided movement for support, empowerment, and education.",
-            price: "donation based",
-            day: "Monday",
-            when: "Every",
-            time: "5p PT",
-            note: "(happening now)",
-            img: "./events/prenatal.png",
-            link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
-          },{
-            title: "Postpartum Yoga",
-            location: "virtual",
-            info: "Build confidence, strengthen, and renew the body. ",
-            price: "donation based",
-            day: "Tuesday",
-            when: "1st & 3rd ",
-            time: "5p PT",
-            note: "(starting July 6th)",
-            img: "./events/postpartum.png",
-            link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
-          },{
-            title: "Yoga on the Harbor",
-            location: "in San Diego",
-            info: "Join us in person, for a fun community flow!",
-            price: "donation based",
-            day: "Wednesday",
-            when: "1st",
-            time: "6p PT",
-            note: "(starting July 7th)",
-            img: "./events/harbor.png",
-            link: "https://yogaontheharbor.eventbrite.com"
-          },{
-            title: "Yoga Flow",
-            location: "virtual",
-            info: "Join us from anywhere! All levels yoga flow.",
-            price: "donation based",
-            day: "Thursday",
-            when: "Every",
-            time: "5p PT",
-            note: "(starting July 8th)",
-            img: "./events/flow.png",
-            link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
-          },{
-            title: "Meditation + Breathwork",
-            location: "virtual",
-            info: "with @thenalaverse",
-            price: "donation based",
-            day: "Friday",
-            when: "Every",
-            time: "10p PT",
-            note: "(happening now)",
-            img: "./events/meditation.png",
-            link: "https://thenalaverse.com/get-lifted"
-          }]
+        // eventsList: [{
+        //     title: "Prenatal Yoga",
+        //     location: "virtual",
+        //     info: "Guided movement for support, empowerment, and education.",
+        //     price: "donation based",
+        //     day: "Monday",
+        //     when: "Every",
+        //     time: "5p PT",
+        //     note: "(happening now)",
+        //     img: "./events/prenatal.png",
+        //     link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
+        //   },{
+        //     title: "Postpartum Yoga",
+        //     location: "virtual",
+        //     info: "Build confidence, strengthen, and renew the body. ",
+        //     price: "donation based",
+        //     day: "Tuesday",
+        //     when: "1st & 3rd ",
+        //     time: "5p PT",
+        //     note: "(starting July 6th)",
+        //     img: "./events/postpartum.png",
+        //     link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
+        //   },{
+        //     title: "Yoga on the Harbor",
+        //     location: "in San Diego",
+        //     info: "Join us in person, for a fun community flow!",
+        //     price: "donation based",
+        //     day: "Wednesday",
+        //     when: "1st",
+        //     time: "6p PT",
+        //     note: "(starting July 7th)",
+        //     img: "./events/harbor.png",
+        //     link: "https://yogaontheharbor.eventbrite.com"
+        //   },{
+        //     title: "Yoga Flow",
+        //     location: "virtual",
+        //     info: "Join us from anywhere! All levels yoga flow.",
+        //     price: "donation based",
+        //     day: "Thursday",
+        //     when: "Every",
+        //     time: "5p PT",
+        //     note: "(starting July 8th)",
+        //     img: "./events/flow.png",
+        //     link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
+        //   },{
+        //     title: "Meditation + Breathwork",
+        //     location: "virtual",
+        //     info: "with @thenalaverse",
+        //     price: "donation based",
+        //     day: "Friday",
+        //     when: "Every",
+        //     time: "10p PT",
+        //     note: "(happening now)",
+        //     img: "./events/meditation.png",
+        //     link: "https://thenalaverse.com/get-lifted"
+        //   }]
     };
     render(){
-        const { eventsList } = this.state;
+        const { eventsList } = this.props;
 
         const showDates = eventsList.map((event, k) => {
           return(

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import ServiceDisplay from './ServiceDisplay';
-import EventsList from '../EventsList';
+import EventsCalendar from '../events/EventsCalendar';
 
 import * as routes from '../../constants/routes';
 
@@ -58,7 +58,7 @@ export default class ServicesMain extends Component {
       };
 
     render(){
-        const { toggleEmailSignup } = this.props;
+        const { eventsList, toggleEmailSignup } = this.props;
 
         return(<>
             <Container>
@@ -68,8 +68,9 @@ export default class ServicesMain extends Component {
                     <NavLink to={routes.WELL}><button className="purple">Individual Solutions</button></NavLink>
                 </ButtonContainer>
             </Container>
-            <EventsList/>
-            <Header className="services-main-header">WELLNESS SERVICES</Header>
+            <h1>MONTHLY EVENTS</h1>
+            <EventsCalendar eventsList={eventsList}/>
+            <Header className="services-main-header">OUR SERVICES</Header>
             <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Bring Prana to You</button>
             <br/><br/><br/><br/>
                 <ServiceDisplay services={this.state.otherServices}/>

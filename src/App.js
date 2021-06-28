@@ -146,7 +146,63 @@ export default class App extends Component {
       value: "contactRequest",
       backgroundColor: "purple",
       button: "Bring Prana to Your Workplace",
-    }
+    },
+    eventsList: [{
+      title: "Prenatal Yoga",
+      location: "virtual",
+      info: "Guided movement for support, empowerment, and education.",
+      price: "donation based",
+      day: "Monday",
+      when: "Every",
+      time: "5p PT",
+      note: "(happening now)",
+      img: "./events/prenatal.png",
+      link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
+    },{
+      title: "Postpartum Yoga",
+      location: "virtual",
+      info: "Build confidence, strengthen, and renew the body. ",
+      price: "donation based",
+      day: "Tuesday",
+      when: "1st & 3rd ",
+      time: "5p PT",
+      note: "(starting July 6th)",
+      img: "./events/postpartum.png",
+      link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
+    },{
+      title: "Yoga on the Harbor",
+      location: "in San Diego",
+      info: "Join us in person, for a fun community flow!",
+      price: "donation based",
+      day: "Wednesday",
+      when: "1st",
+      time: "6p PT",
+      note: "(starting July 7th)",
+      img: "./events/harbor.png",
+      link: "https://yogaontheharbor.eventbrite.com"
+    },{
+      title: "Yoga Flow",
+      location: "virtual",
+      info: "Join us from anywhere! All levels yoga flow.",
+      price: "donation based",
+      day: "Thursday",
+      when: "Every",
+      time: "5p PT",
+      note: "(starting July 8th)",
+      img: "./events/flow.png",
+      link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
+    },{
+      title: "Meditation + Breathwork",
+      location: "virtual",
+      info: "with @thenalaverse",
+      price: "donation based",
+      day: "Friday",
+      when: "Every",
+      time: "10p PT",
+      note: "(happening now)",
+      img: "./events/meditation.png",
+      link: "https://thenalaverse.com/get-lifted"
+    }]
   };  
 
   toggleHamburger = () => {
@@ -164,7 +220,7 @@ export default class App extends Component {
   };
   
   render(){
-    const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyText } = this.state
+    const { user, emailContact, eventsList, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyText } = this.state
     return(
       <GridContainer className="grid-container">
 
@@ -246,7 +302,7 @@ export default class App extends Component {
                         <AboutMain /> 
                       </HeaderMessage> }/>      
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={wellnessServices} /> }/>           
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={wellnessServices} eventsList={eventsList}/> }/>           
             <Route path={routes.WELL} exact render={() => 
                       <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={personalWellness}>
                         <PersonalMain/>
