@@ -22,6 +22,15 @@ export default class EventsList extends Component {
             img: "./events/postpartum.png",
             link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
           },{
+            title: "Yoga on the Harbor",
+            location: "in San Diego",
+            info: "Join us in person, for a fun community flow!",
+            price: "donation based",
+            when: "Every first Wednesday @ 6p PT",
+            note: "(starting July 7th)",
+            img: "./events/harbor.png",
+            link: "https://yogaontheharbor.eventbrite.com"
+          },{
             title: "Yoga Flow",
             location: "virtual",
             info: "Join us from anywhere! All levels yoga flow.",
@@ -39,21 +48,23 @@ export default class EventsList extends Component {
             note: "(happening now)",
             img: "./events/meditation.png",
             link: "https://thenalaverse.com/get-lifted"
-          },{
-            title: "Yoga on the Harbor",
-            location: "in San Diego",
-            info: "Join us in person, for a fun community flow!",
-            price: "donation based",
-            when: "Every first Wednesday @ 6p PT",
-            note: "(starting July 7th)",
-            img: "./events/harbor.png",
-            link: "https://yogaontheharbor.eventbrite.com"
           }]
     };
     render(){
         const { eventsList } = this.state;
 
-        const showList = eventsList.map((event, k) => {
+        const showDates = eventsList.map((event, k) => {
+          return(
+            <div key={k}>
+              <h1>
+                {event.title}
+              </h1>
+              <h4>{event.when}</h4>
+            </div>
+          );
+        });
+
+        const showEvents = eventsList.map((event, k) => {
           return(
             <EventWrapper>
               <section style={{backgroundImage: `url(${event.img})`}}>
@@ -68,6 +79,7 @@ export default class EventsList extends Component {
                     {event.info}
                     <small>{event.note}</small>
                   </p>
+                  <h4>{event.when}</h4>
                   <a href={event.link} alt={event.title} target="_blank">
                     <span></span>
                     &emsp;Sign Up&emsp;
@@ -81,13 +93,39 @@ export default class EventsList extends Component {
         return(
             <ListWrapper>
               <h1>EVENTS SCHEDULE</h1>
-            {showList}
+              <CalendarWrapper>
+                {showDates}
+              </CalendarWrapper>
+            {showEvents}
             </ListWrapper>
         );
     };
 };
 
 const EventWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    &:nth-of-type(even) {
+      grid-template-areas: 'img text';
+      a > span:first-of-type {
+        &::after {
+          content: "<";
+        }
+      }
+    }
+    &:nth-of-type(odd) {
+      grid-template-areas: 'text img';
+      a > span:last-of-type {
+        &::after {
+          content: ">";
+        }
+      }
+    }
+  > section {
+    width: 50vw;
+    height: 50vw;
+  }
+
   a {
     text-decoration: none;
     &:hover {
@@ -136,7 +174,7 @@ const EventWrapper = styled.div`
     font-weight: 100;
     display: inline-block;
   }
-  
+
   > section {
     &:first-of-type {
       grid-area: img;
@@ -165,6 +203,34 @@ const EventWrapper = styled.div`
     }
   }
   @media screen and (max-width: 640px){
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      'img' 
+      'text'!important;      
+    > section {
+      width: 100vw;
+      height: 100vw;
+    }
+      
+    a {
+      &:last-of-type {
+        font-size: 6vw;
+      }
+    }
+    a > span {
+      &:first-of-type {
+        &::after {
+          content: "<"!important;
+        }
+      }
+      &:last-of-type {
+        &::after {
+          content: ">"!important;
+        }
+      }
+    }
+
     h1 {
       font-size: 7.5vw;
     }
@@ -175,12 +241,11 @@ const EventWrapper = styled.div`
       font-size: 6vw;
       margin: 5vw 0;
     }
-    a {
-      &:last-of-type {
-        font-size: 6vw;
-      }
-    }
   }
+`;
+
+const CalendarWrapper = styled.div`
+
 `;
 
 const ListWrapper = styled.div`
@@ -188,57 +253,5 @@ const ListWrapper = styled.div`
 
   > h1 {
     margin-bottom: 40px;
-  }
-  
-  > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    &:nth-of-type(even) {
-      grid-template-areas: 'img text';
-      a > span:first-of-type {
-        &::after {
-          content: "<";
-        }
-      }
-    }
-    &:nth-of-type(odd) {
-      grid-template-areas: 'text img';
-      a > span:last-of-type {
-        &::after {
-          content: ">";
-        }
-      }
-    }
-
-    > section {
-      width: 50vw;
-      height: 50vw;
-    }
-  }
-  @media screen and (max-width: 640px){
-    > div {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-        'img' 
-        'text'!important;
-      a > span {
-        &:first-of-type {
-          &::after {
-            content: "<"!important;
-          }
-        }
-        &:last-of-type {
-          &::after {
-            content: ">"!important;
-          }
-        }
-      }
-      > section {
-        width: 100vw;
-        height: 100vw;
-      }
-    }
   }
 `;
