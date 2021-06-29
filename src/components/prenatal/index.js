@@ -21,7 +21,7 @@ const PrenatalMain = () => {
         </Circle>
         <PostCircle>
           <section>
-            <img src="prenatal.png"/>
+            <img src="prenatal.png" alt="Prana Yoga breath work"/>
           </section>
           <section>
             <h2>

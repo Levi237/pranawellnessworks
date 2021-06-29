@@ -55,7 +55,7 @@ export default class TwoColumnFeature extends Component {
             <Container>
                 <LeftColumn>
                     <div>
-                    <img src="chakras.png"/>
+                    <img src="chakras.png" alt="Prana Yoga breath work"/>
                         <h1>
                             {leftInfo.title}
                         </h1>
@@ -69,7 +69,7 @@ export default class TwoColumnFeature extends Component {
                 </LeftColumn>
                 <RightColumn>
                     <div>                        
-                    <img src="guru.png"/>
+                    <img src="guru.png" alt="Prana Yoga breath work"/>
                         <h1>
                             {rightInfo.title}
                         </h1>

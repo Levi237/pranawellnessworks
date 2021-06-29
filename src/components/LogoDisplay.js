@@ -21,9 +21,9 @@ const CustomerDisplay = ({ logos, clients }) => {
             <Logo key={key}>
             {logo.link 
             ?   <a href={logo.link} target="_blank" rel="noopener noreferrer">
-                    <img className={(logos === clients) ? "" : "static-img"} src={`./customer-logo/${logo.name}`} alt={logo.name}/>
+                    <img className={(logos === clients) ? "" : "static-img"} src={`./customer-logo/${logo.name}`} alt="Prana Yoga breath work"/>
                 </a>
-            : <img className={(logos === clients) ? "" : "static-img"} src={`./customer-logo/${logo.name}`} alt={logo.name}/>
+            : <img className={(logos === clients) ? "" : "static-img"} src={`./customer-logo/${logo.name}`} alt="Prana Yoga breath work"/>
             }
             </Logo>
         );

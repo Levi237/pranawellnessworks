@@ -21,7 +21,7 @@ export default class Coaching extends Component {
         const list = coachingList.map((i, k) => {
             return (
                 <div key={k}>
-                    <img src="../checkmark/check-green.png"/>
+                    <img src="../checkmark/check-green.png" alt="Prana Yoga breath work"/>
                     <span>{i}</span>
                 </div>
             );
