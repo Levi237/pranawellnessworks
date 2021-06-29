@@ -93,9 +93,14 @@ const EventWrapper = styled.div`
   h4 {
     font-size: 2.33vw;
     font-weight: 100;
-    color: var(--grey);
     padding: 0;
     margin: 1vw 0 0;
+    &:first-of-type {
+      color: var(--lightgrey);
+    }
+    &:last-of-type {
+      color: var(--grey);
+    }
   }
 
   p {
@@ -107,6 +112,7 @@ const EventWrapper = styled.div`
       display: block;
       font-weight: 100;
       marign-top: 1vw;
+      color: var(--lightgrey);
     }
   }
 
@@ -192,7 +198,7 @@ const EventWrapper = styled.div`
   @media screen and (min-width: 1440px){
     max-width: 1440px;
     margin: 0 auto;
-    
+
     > section {
       width: 720px;
       height: 720px;
