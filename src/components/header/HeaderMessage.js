@@ -14,14 +14,18 @@ export default class HeaderMessage extends Component {
         {this.props.children}
       </> : <>
         <Container>
+        {textCopy.header &&
           <h1 className="header">
           {textCopy.header}
           </h1>
+          }
+          {textCopy.message &&
           <section className="message">
           {textCopy.message}
           </section>
-          <button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
-          <br/><br/><br/><br/>
+          }
+          { textCopy.button && <><button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button> 
+          <br/><br/><br/><br/></>}
           {this.props.children}
         </Container>
       </>}
