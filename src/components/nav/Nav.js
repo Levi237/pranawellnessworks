@@ -46,9 +46,10 @@ const NavContainer = styled.div`
     color: #FFF;
     
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 
     > div {
+        text-align: left;
         display: inline-block;
         width: auto;
         margin: 0 auto;
