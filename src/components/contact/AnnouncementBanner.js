@@ -6,7 +6,7 @@ const AnnouncementBanner = ({ toggleEmailSignup }) => {
         <Contact>
             <span>Experience Virtual Wellness Packages{"  "}</span><button className="purple" value="freebie" onClick={(e) => {toggleEmailSignup(e)}}>Free Meditation Offer</button>
             <a href="https://www.instagram.com/pranawellnessworks/" target="_blank" rel="noopener noreferrer" alt="instagram @pranawellnessworks">
-                <img src="../instagram-icon.png" alt="Prana Yoga breath work"/>
+                <img src="../instagram-icon.png" alt="pranayama yoga breath work"/>
             </a>
         </Contact>
     );

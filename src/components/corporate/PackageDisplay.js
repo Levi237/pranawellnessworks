@@ -10,7 +10,7 @@ const PackageDisplay =({pricePack})=> {
         })
         return(
             <div key={key} className="pack-container">
-                <img className="packBackgroundImage" src={`${pack.image}`} alt="Prana Yoga breath work"/>
+                <img className="packBackgroundImage" src={`${pack.image}`} alt="pranayama yoga breath work"/>
                 <div className="price-pack-box">
                     <section>{pack.title}</section>
                     <section>{pack.price}</section>

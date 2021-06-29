@@ -17,10 +17,10 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
         return (
             <tr key={k}>
                 <td><span>&emsp;</span>{detail.product}</td>
-                <td><img src={detail.included[0]} alt="Prana Yoga breath work"/></td>
-                <td><img src={detail.included[1]} alt="Prana Yoga breath work"/></td>
-                <td><img src={detail.included[2]} alt="Prana Yoga breath work"/></td>
-                <td><img src={detail.included[3]} alt="Prana Yoga breath work"/></td>
+                <td><img src={detail.included[0]} alt="pranayama yoga breath work"/></td>
+                <td><img src={detail.included[1]} alt="pranayama yoga breath work"/></td>
+                <td><img src={detail.included[2]} alt="pranayama yoga breath work"/></td>
+                <td><img src={detail.included[3]} alt="pranayama yoga breath work"/></td>
             </tr>
         )
     });

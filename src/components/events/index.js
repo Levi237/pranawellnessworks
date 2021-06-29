@@ -195,33 +195,34 @@ const EventWrapper = styled.div`
       margin: 5vw 0;
     }
   }
-  @media screen and (min-width: 1440px){
-    max-width: 1440px;
+  @media screen and (min-width: 1200px){
+    max-width: 1200px;
     margin: 0 auto;
 
     > section {
-      width: 720px;
-      height: 720px;
+      width: 600px;
+      height: 600px;
     }
 
     a {
       &:last-of-type {
-        font-size: 40px;
+        font-size: 36px;
       }
     }
 
     h1 {
-      font-size: 72px;
-      letter-spacing: 3px;
+      font-size: 52px;
+      letter-spacing: 2px;
     }
     h4 {
-      font-size: 36px;
-      margin: 14px 0 0;
+      font-size: 28px;
+      margin: 12px 0 0;
     }
 
     p {
-      font-size: 40px;
-      margin: 30px 0; 
+      font-size: 34px;
+      margin: 24px 0; 
+
       > small {
         marign-top: 14px;
       }

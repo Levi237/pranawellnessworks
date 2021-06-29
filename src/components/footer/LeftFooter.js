@@ -5,7 +5,7 @@ const LeftFooter = () => {
   return(
     <>
       <LogoBox className="logo-box">
-        <img src="../icon_white.png" alt="Prana Yoga breath work" />
+        <img src="../icon_white.png" alt="pranayama yoga breath work" />
         <Prana className="pranaText">PRANA</Prana>
         <Wellness className="wellnessText">wellness</Wellness>
       </LogoBox>

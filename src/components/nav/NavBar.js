@@ -9,7 +9,7 @@ const NavBar = ({ page, user, logout, toggleHamburger }) => {
       <LogoIcon>
         <Link to={routes.HOME}>
           <LogoBox>
-            <Logo src={page === "home" ? "icon_white.png" : "icon_fullcolor_light.png"} alt="Prana Yoga breath work" />
+            <Logo src={page === "home" ? "icon_white.png" : "icon_fullcolor_light.png"} alt="pranayama yoga breath work" />
           </LogoBox>
         </Link>
       </LogoIcon>

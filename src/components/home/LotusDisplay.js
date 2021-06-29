@@ -28,7 +28,7 @@ export default class LotusDisplay extends Component {
                     </div>
 
                     <section>
-                        <img src="../lotus_half_pink.png" alt="Prana Yoga breath work" />
+                        <img src="../lotus_half_pink.png" alt="pranayama yoga breath work" />
                         <div>Corporate Wellness</div>
                         <section>
                         Let us help you create an engaging and enjoyable wellness program to increase productivity, retention, and employee satisfaction. 
@@ -38,7 +38,7 @@ export default class LotusDisplay extends Component {
                     </section>
 
                     <section>
-                        <img src="../lotus_half_white.png" alt="Prana Yoga breath work" />
+                        <img src="../lotus_half_white.png" alt="pranayama yoga breath work" />
                         <div>Individual Wellness</div>
                         <section>
                         We guide you and educate you, and help you identify ways to incorporate wellness practices in all areas of your life.

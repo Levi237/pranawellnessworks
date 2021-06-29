@@ -49,7 +49,7 @@ export default class Reviews extends Component {
                 <button onClick={this.scrollLeft}>
                     <ArrowLeft className="left"></ArrowLeft>
                 </button>
-                <img className="left" src="quote.png" alt="Prana Yoga breath work"/>
+                <img className="left" src="quote.png" alt="pranayama yoga breath work"/>
                 <WindowContainerDesktop className='desktop' id='desktop'>
                     <ReviewContainer>
                         {ReviewList}
@@ -60,7 +60,7 @@ export default class Reviews extends Component {
                         {ReviewList}
                     </ReviewContainer>
                 </WindowContainerMobile>
-                <img className="right" src="quote.png" alt="Prana Yoga breath work"/>
+                <img className="right" src="quote.png" alt="pranayama yoga breath work"/>
                 <button onClick={this.scrollRight}>
                     <ArrowRight className="right"></ArrowRight>
                 </button>
