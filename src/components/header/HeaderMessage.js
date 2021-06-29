@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import PurpleContent from '../PurpleContent';
+import PurpleContent from '../banners/PurpleContent';
 
 export default class HeaderMessage extends Component {
   render(){

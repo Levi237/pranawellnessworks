@@ -5,13 +5,12 @@ import { NavLink }          from 'react-router-dom';
 import * as routes          from '../../constants/routes';
 
 import LotusDisplay         from './LotusDisplay';
-import FloralBoxComponent from '../FloralBoxComponent';
-// import HomeStephanie        from './HomeStephanie';
 
-import LogoDisplay          from '../LogoDisplay';
+import FloralBoxComponent   from '../banners/FloralBoxComponent';
+import LogoDisplay          from '../banners/LogoDisplay';
 import ServiceDisplay       from '../services/ServiceDisplay';
 
-import Reviews from '../Reviews';
+import Reviews              from '../banners/Reviews';
 
 export default class HomeMain extends Component {
     state = {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FloralBoxComponent   from '../FloralBoxComponent';
+import FloralBoxComponent   from '../banners/FloralBoxComponent';
 export default class WhyYogaTherapy extends Component {
     state = {
         info: { 

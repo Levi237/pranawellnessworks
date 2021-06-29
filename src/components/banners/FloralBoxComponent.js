@@ -19,7 +19,7 @@ export default class FloralBoxComponent extends Component {
             })
             return(
                 <Container style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
-                    <div style={{ gridArea: `${passedInfo.boxOne}`, backgroundImage: "url('../floral-background.png')" }}>
+                    <div style={{ gridArea: `${passedInfo.boxOne}`, backgroundImage: "url('../../floral-background.png')" }}>
                         <div id="floral-box" style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
                             <section>{passedInfo.title}</section>
                             <section style={{ color: `${passedInfo.subtitleColor}` }}>{passedInfo.subtitle}</section>

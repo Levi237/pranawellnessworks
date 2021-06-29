@@ -49,7 +49,7 @@ export default class Reviews extends Component {
                 <button onClick={this.scrollLeft}>
                     <ArrowLeft className="left"></ArrowLeft>
                 </button>
-                <img className="left" src="quote.png" alt="pranayama yoga breath work"/>
+                <img className="left" src="../quote.png" alt="pranayama yoga breath work"/>
                 <WindowContainerDesktop className='desktop' id='desktop'>
                     <ReviewContainer>
                         {ReviewList}

@@ -6,25 +6,26 @@ import * as routes          from './constants/routes';
 import Nav                  from './components/nav/Nav';
 import NavBar               from './components/nav/NavBar';
 
+import PurpleContent        from './components/banners/PurpleContent';
+
 import EmailSignup          from './components/contact/EmailSignup';
 import AnnouncementBanner   from './components/contact/AnnouncementBanner'; 
 import EmailConfirmation    from './components/contact/EmailConfirmation';
 
 import HomeHeader           from './components/home/HomeHeader';
-import HeaderComponent      from './components/HeaderComponent';
 
+import HeaderComponent      from './components/header/HeaderComponent';
 import HeaderMessage        from './components/header/HeaderMessage'
-import PurpleContent        from './components/PurpleContent';
+
 
 import HomeMain             from './components/home';
 import AboutMain            from './components/about';
-import EventsMain            from './components/events';
+import EventsMain           from './components/events';
 import CorporateMain        from './components/corporate';
 import PersonalMain         from './components/personal';
 import ServicesMain         from './components/services';
 import YogaTherapyMain      from './components/yogatherapy';
 import PrenatalMain         from './components/prenatal';
-
 import Coaching             from './components/coaching/Coaching';
 import Speaking             from './components/coaching/Speaking';
 
