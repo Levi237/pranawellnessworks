@@ -6,7 +6,7 @@ import * as routes          from '../../constants/routes';
 
 import LotusDisplay         from './LotusDisplay';
 
-import FloralBoxComponent   from '../banners/FloralBoxComponent';
+import FloralBox            from '../banners/FloralBoxComponent';
 import LogoDisplay          from '../banners/LogoDisplay';
 import ServiceDisplay       from '../services/ServiceDisplay';
 
@@ -126,7 +126,7 @@ export default class HomeMain extends Component {
                 <LogoDisplay logos={clients} clients={clients}/>  
                 <br/><br/>       
                 <LotusDisplay />
-                <FloralBoxComponent passedInfo={floralbox} /> 
+                <FloralBox passedInfo={floralbox} /> 
                 <LogoHeader>As featured In</LogoHeader>
                 <LogoDisplay logos={features}/>
                 <br/><br/><br/>
