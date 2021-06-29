@@ -191,6 +191,7 @@ const EventWrapper = styled.div`
   }
   @media screen and (min-width: 1440px){
     max-width: 1440px;
+    margin: 0 auto;
     
     > section {
       width: 720px;
@@ -199,24 +200,24 @@ const EventWrapper = styled.div`
 
     a {
       &:last-of-type {
-        font-size: 3vw;
+        font-size: 40px;
       }
     }
 
     h1 {
-      font-size: 4.2vw;
-      letter-spacing: .2vw;
+      font-size: 72px;
+      letter-spacing: 3px;
     }
     h4 {
-      font-size: 2.33vw;
-      margin: 1vw 0 0;
+      font-size: 36px;
+      margin: 14px 0 0;
     }
 
     p {
-      font-size: 2.8vw;
-      margin: 2vw 0; 
+      font-size: 40px;
+      margin: 30px 0; 
       > small {
-        marign-top: 1vw;
+        marign-top: 14px;
       }
     }
   }
