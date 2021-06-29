@@ -109,25 +109,25 @@ const CalendarWrapper = styled.div`
     hr {
     }
   }
-  @media screen and (min-width: 1440px){ 
-    max-width: 1440px;
+  @media screen and (min-width: 1200px){ 
+    max-width: 1200px;
     margin: 0 auto;
   
     h1 {
-      font-size: 36px;
+      font-size: 32px;
     }
     h2 {
-      font-size: 34px;
+      font-size: 30px;
       letter-spacing: 1px;
     }
     h3 {
-      font-size: 24px;
+      font-size: 22px;
     }
     h4 {
-      font-size: 28px;
+      font-size: 20px;
     }
     hr {
-      width: 20px;
+      width: 60px;
     }
   }
 `;
