@@ -10,8 +10,11 @@ const EventsCalendar = ({ eventsList }) => {
               <hr/>
               <h2>{event.title}</h2>
               <h4>[ {event.location} ]</h4>
-              <h3>{event.when} {event.day}</h3>
-              <h3>@ {event.time}</h3>
+              <h3>
+                {event.when} {event.day}
+                <br/><span>&nbsp;</span>
+                @ {event.time}
+              </h3>
             </a>
           );
         });
@@ -23,7 +26,7 @@ const EventsCalendar = ({ eventsList }) => {
     };
 
 const CalendarWrapper = styled.div`
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -51,7 +54,7 @@ const CalendarWrapper = styled.div`
     font-size: 2.66vw;
     padding: .5vw 0 0;
     color: var(--purple)!important;
-    margin-block-start: 0;
+    margin-block-start: 30px;
     margin-block-end: 0;
   }
   h2 {
@@ -64,8 +67,11 @@ const CalendarWrapper = styled.div`
   }
   h3 {
     font-size: 1.8vw;
-        font-weight: 500;
+    font-weight: 500;
     color: var(--grey)!important;
+    > span {
+      display: none;
+    }
   }
   h4 {
     font-weight: 100;
@@ -75,6 +81,54 @@ const CalendarWrapper = styled.div`
   hr {
     width: 18vw;
     border: 1px solid var(--green);
+  }
+  @media screen and (max-width: 640px){ 
+    margin-bottom: 40px; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 'mon' 'tue' 'wed' 'thur' 'fri';
+  
+    h1 {
+      font-size: 6vw;
+    }
+    h2 {
+      font-size: 5.5vw;
+    }
+    h3 {
+      font-size: 4.4vw;
+      > br {
+        display: none;
+      }
+      > span {
+        display: inline-block;
+      }
+    }
+    h4 {
+      font-size: 3.33vw;
+    }
+    hr {
+    }
+  }
+  @media screen and (min-width: 1440px){ 
+    max-width: 1440px;
+    margin: 0 auto;
+  
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 28px;
+    }
+    hr {
+      width: 20px;
+    }
   }
 `;
 
