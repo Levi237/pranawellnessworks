@@ -69,14 +69,15 @@ export default class ServicesMain extends Component {
                 </ButtonContainer>
             </Container>
 
+            <br/><br/>
+
             <h1>MONTHLY EVENTS</h1>
             <EventsCalendar eventsList={eventsList}/>
-
-            <Header className="services-main-header">OUR SERVICES</Header>
-            <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Bring Prana to You</button>
-
+            <br/><br/>
+            <NavLink to={routes.WELL}><button className="white">Take a Closer Look</button></NavLink>
             <br/><br/><br/><br/>
             
+            <Header className="services-main-header">OUR SERVICES</Header>
             <ServiceDisplay services={this.state.otherServices}/>
             <ButtonContainer>
                 <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Request Quote</button>
