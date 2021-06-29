@@ -74,7 +74,7 @@ export default class ServicesMain extends Component {
             <h1>MONTHLY EVENTS</h1>
             <EventsCalendar eventsList={eventsList}/>
             <br/><br/>
-            <NavLink to={routes.WELL}><button className="white">Take a Closer Look</button></NavLink>
+            <NavLink to={routes.EVNT}><button className="white">Take a Closer Look</button></NavLink>
             <br/><br/><br/><br/>
             
             <Header className="services-main-header">OUR SERVICES</Header>
