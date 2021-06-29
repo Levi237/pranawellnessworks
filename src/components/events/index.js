@@ -70,10 +70,6 @@ const EventWrapper = styled.div`
         }
       }
     }
-  > section {
-    width: 50vw;
-    height: 50vw;
-  }
 
   a {
     text-decoration: none;
@@ -125,6 +121,8 @@ const EventWrapper = styled.div`
   }
 
   > section {
+    width: 50vw;
+    height: 50vw;
     &:first-of-type {
       grid-area: img;
       background-size: 100%;
@@ -189,6 +187,37 @@ const EventWrapper = styled.div`
     p {
       font-size: 6vw;
       margin: 5vw 0;
+    }
+  }
+  @media screen and (min-width: 1440px){
+    max-width: 1440px;
+    
+    > section {
+      width: 720px;
+      height: 720px;
+    }
+
+    a {
+      &:last-of-type {
+        font-size: 3vw;
+      }
+    }
+
+    h1 {
+      font-size: 4.2vw;
+      letter-spacing: .2vw;
+    }
+    h4 {
+      font-size: 2.33vw;
+      margin: 1vw 0 0;
+    }
+
+    p {
+      font-size: 2.8vw;
+      margin: 2vw 0; 
+      > small {
+        marign-top: 1vw;
+      }
     }
   }
 `;
