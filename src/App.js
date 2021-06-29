@@ -144,22 +144,22 @@ export default class App extends Component {
       eventsInformation: {
         title: "NURTURE YOUR",
         subtitle: "Inner Yogi",
-        image: "coaching-header.jpg",
+        image: "events-header.jpg",
         header: "Monthly Schedule",
         message: false,
         value: "contactRequest",
         backgroundColor: "white",
         button: false
+      },
+      corporateBodyText: {
+        header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
+        message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
+        value: "contactRequest",
+        backgroundColor: "purple",
+        button: "Bring Prana to Your Workplace",
       }
     },
     //// PAGE BODY COPY
-    corporateBodyText: {
-      header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
-      message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
-      value: "contactRequest",
-      backgroundColor: "purple",
-      button: "Bring Prana to Your Workplace",
-    },
     eventsList: [{
       title: "Prenatal Yoga",
       location: "virtual",
