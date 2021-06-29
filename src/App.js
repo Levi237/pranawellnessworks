@@ -18,6 +18,7 @@ import PurpleContent        from './components/PurpleContent';
 
 import HomeMain             from './components/home';
 import AboutMain            from './components/about';
+import EventsMain            from './components/events';
 import CorporateMain        from './components/corporate';
 import PersonalMain         from './components/personal';
 import ServicesMain         from './components/services';
@@ -69,75 +70,86 @@ export default class App extends Component {
       content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
     }],
     //// PAGE HEADERS COPY
-    aboutPage: {
-      title: "THE TEAM BEHIND", 
-      subtitle: "Prana Wellness",
-      image: "about-header2.png",
-      header: "the power of prana",
-      message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
-      value: "contactRequest",
-      backgroundColor: "white",
-      button: "Schedule A Session"
-    },  
-    wellnessServices: {
-      title: "EXPLORE OUR WIDE-RANGING",
-      subtitle: "Wellness Services",
-      image: "service-header.png",
-      header: "",
-      message: "",
-      value: "",
-      backgroundColor: "purple",
-      button: ""
-    },
-    personalWellness: {
-      title: "REDISCOVER",
-      subtitle: "Personal Wellness",
-      image: "personal-header.jpg",
-      header: "the power of prana",
-      message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
-      value: "contactRequest",
-      backgroundColor: "purple",
-      button: "Schedule A Session",
-    },  
-    corporateWellness: {
-      title: "CONSIDER",
-      subtitle: "Corporate Wellness",
-      image: "corporate-header2.png",
-      header: "Want Prana in Your Workplace?",
-      message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
-      value: "referralRequest",
-      backgroundColor: "white",
-      button: "Refer to Employer",
-    },
-    yogaTherapy: {
-      title: "THE REASON FOR", 
-      subtitle: "Yoga Therapy", 
-      image: "yoga-header.jpg",
-      header: "WHAT IS YOGA THERAPY?",
-      message: "Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.",
-      value: "contactRequest",
-      backgroundColor: "white",
-      button: "BRING PRANA TO YOU"
-    },
-    maternalHealth: {
-      title: "YOGA FOR",
-      subtitle: "Maternal Health",
-      image: "prenatal-header2.jpg",
-      header: "Prenatal Yoga Experience",
-      message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
-      value: "contactRequest",
-      backgroundColor: "white",
-      button: "BRING PRANA TO YOU"
-    },
-    coachingSpeaking: {
-      title: "ENGAGE WITH",
-      subtitle: "Speaking & Coaching",
-      image: "coaching-header.jpg",
-      header: "SPEAKING TO INSPIRE",
-      message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
-      value: "contactRequest",
-      backgroundColor: "purple",
-      button: "BRING PRANA TO YOU"
+    textCopy: {
+      aboutPage: {
+        title: "THE TEAM BEHIND", 
+        subtitle: "Prana Wellness",
+        image: "about-header2.png",
+        header: "the power of prana",
+        message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+        value: "contactRequest",
+        backgroundColor: "white",
+        button: "Schedule A Session"
+      },  
+      wellnessServices: {
+        title: "EXPLORE OUR WIDE-RANGING",
+        subtitle: "Wellness Services",
+        image: "service-header.png",
+        header: "",
+        message: "",
+        value: "",
+        backgroundColor: "purple",
+        button: ""
+      },
+      personalWellness: {
+        title: "REDISCOVER",
+        subtitle: "Personal Wellness",
+        image: "personal-header.jpg",
+        header: "the power of prana",
+        message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+        value: "contactRequest",
+        backgroundColor: "purple",
+        button: "Schedule A Session",
+      },  
+      corporateWellness: {
+        title: "CONSIDER",
+        subtitle: "Corporate Wellness",
+        image: "corporate-header2.png",
+        header: "Want Prana in Your Workplace?",
+        message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
+        value: "referralRequest",
+        backgroundColor: "white",
+        button: "Refer to Employer",
+      },
+      yogaTherapy: {
+        title: "THE REASON FOR", 
+        subtitle: "Yoga Therapy", 
+        image: "yoga-header.jpg",
+        header: "WHAT IS YOGA THERAPY?",
+        message: "Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.",
+        value: "contactRequest",
+        backgroundColor: "white",
+        button: "BRING PRANA TO YOU"
+      },
+      maternalHealth: {
+        title: "YOGA FOR",
+        subtitle: "Maternal Health",
+        image: "prenatal-header2.jpg",
+        header: "Prenatal Yoga Experience",
+        message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
+        value: "contactRequest",
+        backgroundColor: "white",
+        button: "BRING PRANA TO YOU"
+      },
+      coachingSpeaking: {
+        title: "ENGAGE WITH",
+        subtitle: "Speaking & Coaching",
+        image: "coaching-header.jpg",
+        header: "SPEAKING TO INSPIRE",
+        message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
+        value: "contactRequest",
+        backgroundColor: "purple",
+      },
+      eventsInformation: {
+        title: "NURTURE YOUR",
+        subtitle: "Inner Yogi",
+        image: "coaching-header.jpg",
+        header: "Monthly Schedule",
+        message: false,
+        value: "contactRequest",
+        backgroundColor: "white",
+        button: false
+      }
     },
     //// PAGE BODY COPY
     corporateBodyText: {
@@ -220,7 +232,7 @@ export default class App extends Component {
   };
   
   render(){
-    const { user, emailContact, eventsList, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyText } = this.state
+    const { user, emailContact, eventsList, textCopy } = this.state
     return(
       <GridContainer className="grid-container">
 
@@ -273,19 +285,21 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={aboutPage}/> }/>
+                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.aboutPage}/> }/>
             <Route path={routes.SERV} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} textCopy={wellnessServices}/> }/> 
+                    <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> }/> 
             <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} textCopy={personalWellness}/> }/>
+                    <HeaderComponent purpleBox={(true)} textCopy={textCopy.personalWellness}/> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={corporateWellness}/> }/>   
+                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.corporateWellness}/> }/>   
             <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={yogaTherapy}/> }/> 
+                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.yogaTherapy}/> }/> 
             <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={maternalHealth}/> }/> 
+                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.maternalHealth}/> }/> 
+            <Route path={routes.EVNT} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.eventsInformation}/> }/> 
             <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={coachingSpeaking}/> }/> 
+                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.coachingSpeaking}/> }/> 
             <Route path={routes.MAIL} exact render={() => 
                       <></> }/>  
             <Route path={routes.ROOT} render={() => 
@@ -298,33 +312,37 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
             <Route path={routes.INFO} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={aboutPage}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.aboutPage}>
                         <AboutMain /> 
                       </HeaderMessage> }/>      
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={wellnessServices} eventsList={eventsList}/> }/>           
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} eventsList={eventsList}/> }/>           
             <Route path={routes.WELL} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={personalWellness}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.personalWellness}>
                         <PersonalMain/>
                       </HeaderMessage> }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={corporateWellness}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.corporateWellness}>
                         <CorporateMain>
-                          <PurpleContent textCopy={corporateBodyText} toggleEmailSignup={this.toggleEmailSignup}/>
+                          <PurpleContent textCopy={textCopy.corporateBodyText} toggleEmailSignup={this.toggleEmailSignup}/>
                         </CorporateMain>
                       </HeaderMessage> }/>  
             <Route path={routes.YOGA} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={yogaTherapy}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.yogaTherapy}>
                         <YogaTherapyMain/>
                       </HeaderMessage>}/>
             <Route path={routes.PREG} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={maternalHealth} >
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.maternalHealth} >
                         <PrenatalMain/>
                       </HeaderMessage> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={coachingSpeaking}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.coachingSpeaking}>
                         <Speaking/><Coaching/>
-                      </HeaderMessage> }/>      
+                      </HeaderMessage> }/>     
+            <Route path={routes.EVNT} exact render={() => 
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.eventsInformation}>
+                        <EventsMain eventsList={eventsList}/>
+                      </HeaderMessage> }/>   
             <Route path={routes.MAIL} exact render={() => 
                       <></> }/>                
             <Route path={routes.ROOT} render={() => 

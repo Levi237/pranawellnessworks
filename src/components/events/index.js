@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import EventsCalendar from './EventsCalendar';
-export default class EventsList extends Component {
+export default class EventsMain extends Component {
     render(){
         const { eventsList } = this.props;
 
@@ -34,8 +34,9 @@ export default class EventsList extends Component {
         });
         return(
             <ListWrapper>
-              <h1>MONTHLY SCHEDULE</h1>
               <EventsCalendar eventsList={eventsList}/>
+              <br/><br/><br/><br/>
+              <h1>FIND WHAT WORKS FOR YOU</h1>
               {showEvents}
             </ListWrapper>
         );
