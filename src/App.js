@@ -29,7 +29,7 @@ import PrenatalMain         from './components/prenatal';
 import Coaching             from './components/coaching/Coaching';
 import Speaking             from './components/coaching/Speaking';
 
-import Footer               from './components/footer/Footer';
+import Footer               from './components/footer';
 
 import './App.css';
 
