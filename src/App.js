@@ -20,6 +20,7 @@ import HeaderMessage        from './components/header/HeaderMessage'
 
 import HomeMain             from './components/home';
 import BlogMain             from './components/blog';
+import FAQMain             from './components/faq';
 import AboutMain            from './components/about';
 import EventsMain           from './components/events';
 import CorporateMain        from './components/corporate';
@@ -384,8 +385,11 @@ export default class App extends Component {
           <Switch>
             <Route path={routes.HOME} exact render={() => <HomeMain /> }/>
             <Route path={routes.BLOG} exact render={() => 
-                      <BlogMain blogs={blogs}/> 
+                <BlogMain blogs={blogs}/> 
                      }/>  
+            <Route path={routes.FAQS} exact render={() => 
+                <FAQMain/> 
+                    }/>  
             <Route path={routes.INFO} exact render={() => 
                       <HeaderMessage 
                         toggleEmailSignup={this.toggleEmailSignup} 
