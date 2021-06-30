@@ -110,7 +110,7 @@ const ContactSection = styled.section`
         > h3 {
             text-align: center;
             text-transform: uppercase;
-            color: var(--lightpurple);
+            color: var(--lightestpurple);
             font-size: 1.4vw;
             font-weight: 100;
         }
@@ -190,6 +190,10 @@ const QuickLinksSection = styled.section`
             a {
                 display: block;
                 text-decoration: none;
+                text-shadow: 0 0 15px rgb(0 0 0 / 25%);
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             > section {
                 display: inline-block;
