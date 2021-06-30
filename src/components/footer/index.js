@@ -267,11 +267,12 @@ const Prana = styled.section`
   text-transform: uppercase;
   font-weight: 100;
   color: #fff;
-  font-size: 3.4vw;
+  font-size: 4vw;
+  letter-spacing: .75vw;
   margin: -1vw auto;
   @media screen and (max-width: 945px) {
-    font-size: 5vw;
-    padding-left: .5vw;
+    font-size: 5.5vw;
+    letter-spacing: .8vw;
   }
 `;
 
@@ -281,10 +282,11 @@ const Wellness = styled.section`
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   text-transform: lowercase;
-  font-size: 3vw;
+  font-size: 2.8vw;
+  letter-spacing: .2vw;
   @media screen and (max-width: 945px) {
-    font-size: 3.5vw;
-    margin-top: -6px;
+    font-size: 3.33vw;
+    letter-spacing: .3vw;
   }
 `;
 
