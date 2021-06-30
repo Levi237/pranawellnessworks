@@ -86,7 +86,7 @@ button.white:hover {
   background-color: rgba(150, 91, 165, .5);
 }
 button.purple:hover {
-  background-color: var(--lightpurple);
+  background-color: var(--darkpurple);
 }
 
 @media screen and (max-width: 945px) {
