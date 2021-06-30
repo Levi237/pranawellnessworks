@@ -8,23 +8,17 @@ import LeviEikoBrand from '../../levieiko';
 
 export default class Footer extends Component {
 
-    scrollToTop = () => {
-        const top = document.getElementById('nav-bar');
-        top.scrollIntoView({behavior: 'smooth'});
-    }
-
     render(){
-        const { toggleEmailSignup } = this.props;
-
+        const { toggleEmailSignup, scrollToTop } = this.props;
         return (
             <FooterWrapper className="grid-footer">
                 <QuickLinksSection>
                     <h1>QUICK links</h1>
                     <div>
                         <section>
-                            <NavLink activeClassName="nav-active" to={routes.HOME} onClick={this.scrollToTop}>HOME</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.EVNT} onClick={this.scrollToTop}>SCHEDULE</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.INFO} onClick={this.scrollToTop}>ABOUT US</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.HOME} onClick={scrollToTop}>HOME</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.EVNT} onClick={scrollToTop}>SCHEDULE</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.INFO} onClick={scrollToTop}>ABOUT US</NavLink>
                             <button className="link-btn"
                                 name="contactForm" 
                                 value="contactRequest" 
@@ -34,13 +28,13 @@ export default class Footer extends Component {
                             </button>
                         </section>
                         <section>
-                            <NavLink activeClassName="nav-active" to={routes.SERV} onClick={this.scrollToTop}>WELLNESS SERVICES</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.SERV} onClick={scrollToTop}>WELLNESS SERVICES</NavLink>
                             <div>
-                                <NavLink activeClassName="nav-active" to={routes.WELL} onClick={this.scrollToTop}>PERSONAL WELLNESS</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.CORP} onClick={this.scrollToTop}>CORPORATE WELLNESS</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={this.scrollToTop}>YOGA THERAPY</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.PREG} onClick={this.scrollToTop}>MATERNAL HEALTH</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.COAC} onClick={this.scrollToTop}>SPEAKING & COACHING</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.WELL} onClick={scrollToTop}>PERSONAL WELLNESS</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.CORP} onClick={scrollToTop}>CORPORATE WELLNESS</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={scrollToTop}>YOGA THERAPY</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.PREG} onClick={scrollToTop}>MATERNAL HEALTH</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.COAC} onClick={scrollToTop}>SPEAKING & COACHING</NavLink>
                             </div>
                         </section>
                     </div>

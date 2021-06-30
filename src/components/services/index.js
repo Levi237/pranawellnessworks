@@ -58,14 +58,14 @@ export default class ServicesMain extends Component {
       };
 
     render(){
-        const { eventsList, toggleEmailSignup } = this.props;
+        const { eventsList, toggleEmailSignup, scrollToTop } = this.props;
 
         return(<>
             <Container>
                 <ServiceDisplay services={this.state.services}/>
                 <ButtonContainer className="optionBtn">
-                    <NavLink to={routes.CORP}><button className="purple">Corporate Solutions</button></NavLink>
-                    <NavLink to={routes.WELL}><button className="purple">Individual Solutions</button></NavLink>
+                    <NavLink to={routes.CORP} onClick={scrollToTop}><button className="purple">Corporate Solutions</button></NavLink>
+                    <NavLink to={routes.WELL} onClick={scrollToTop}><button className="purple">Individual Solutions</button></NavLink>
                 </ButtonContainer>
             </Container>
 
@@ -74,7 +74,7 @@ export default class ServicesMain extends Component {
             <h1>MONTHLY SCHEDULE</h1>
             <EventsCalendar eventsList={eventsList}/>
             <br/><br/>
-            <NavLink to={routes.EVNT}><button className="white">Take a Closer Look</button></NavLink>
+            <NavLink to={routes.EVNT} onClick={scrollToTop}><button className="white">Take a Closer Look</button></NavLink>
             <br/><br/><br/><br/>
             
             <Header className="services-main-header">OUR SERVICES</Header>
@@ -86,22 +86,26 @@ export default class ServicesMain extends Component {
     };
 };
 const Container = styled.div`
-    margin-bottom: 5vw;
-    margin-top: calc(25.86vw - 100vh + 196px);
     position: relative;
     z-index: 1;
+
+    margin-top: calc(25.86vw - 100vh + 196px);
+    margin-right: 2vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
     padding-top: 4vw;
     padding-bottom: 8vw;
+
     background: rgb(191, 158, 200);
+
     button {
-    margin-left: 2vw;
-    margin-right: 2vw;
     > section {
         color: #FFF;
         position: relative;
         z-index: 1;
       }
     }
+    
     @media screen and (max-width: 945px) {
         margin-top: calc(32.3vw - 100vh + 58px);
         padding-top: 5vw;

@@ -232,7 +232,10 @@ export default class App extends Component {
       emailContact: e.currentTarget.value
     });
   };
-  
+  scrollToTop = () => {
+    const top = document.getElementById('contact-bar');
+    top.scrollIntoView({behavior: 'smooth'});
+  }
   render(){
     const { user, emailContact, eventsList, textCopy } = this.state
     return(
@@ -247,12 +250,12 @@ export default class App extends Component {
             }/>
         </Switch>
 
-        <ContactGrid className="grid-contact">
+        <ContactGrid id="contact-bar" className="grid-contact">
           <AnnouncementBanner 
             toggleEmailSignup={this.toggleEmailSignup}/>
         </ContactGrid>
 
-        <NavGrid id="nav-bar" className="grid-nav">
+        <NavGrid className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <NavBar 
@@ -318,7 +321,7 @@ export default class App extends Component {
                         <AboutMain /> 
                       </HeaderMessage> }/>      
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} eventsList={eventsList}/> }/>           
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/> }/>           
             <Route path={routes.WELL} exact render={() => 
                       <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.personalWellness}>
                         <PersonalMain/>
@@ -352,7 +355,7 @@ export default class App extends Component {
           </Switch>          
         </MainGrid>
 
-        <Footer toggleEmailSignup={this.toggleEmailSignup}/>
+        <Footer toggleEmailSignup={this.toggleEmailSignup} scrollToTop={this.scrollToTop}/>
         
       </GridContainer>
     );
