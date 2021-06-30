@@ -9,20 +9,20 @@ const NavBar = ({ page, user, logout, toggleHamburger }) => {
       <LogoIcon>
         <Link to={routes.HOME}>
           <LogoBox>
-            <Logo src={page === "home" ? "icon_white.png" : "icon_fullcolor_light.png"} alt="pranayama yoga breath work" />
+            <Logo src={ page === "home" ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
           </LogoBox>
         </Link>
       </LogoIcon>
       <Hamburger 
         name="toggleHamburger" 
         onClick={(e) => toggleHamburger(e)}
-      >
+        >
       { page === "home" 
         ? <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></>
         : <><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></>
       }
       </Hamburger>
-      {user && <button onClick={logout} style={{color:'#689E3C', float: 'right', margin: '20px'}}>LOGOUT</button>}
+      { user && <button onClick={logout} style={{color:'#689E3C', float: 'right', margin: '20px'}}>LOGOUT</button> }
     </NavContainer>);
 };
 

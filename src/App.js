@@ -29,7 +29,7 @@ import PrenatalMain         from './components/prenatal';
 import Coaching             from './components/coaching/Coaching';
 import Speaking             from './components/coaching/Speaking';
 
-import Footer               from './components/footer'
+import Footer               from './components/footer/Footer';
 
 import './App.css';
 
@@ -251,7 +251,7 @@ export default class App extends Component {
             toggleEmailSignup={this.toggleEmailSignup}/>
         </ContactGrid>
 
-        <NavGrid className="grid-nav">
+        <NavGrid id="nav-bar" className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <NavBar 
@@ -351,7 +351,7 @@ export default class App extends Component {
           </Switch>          
         </MainGrid>
 
-        <Footer/>
+        <Footer toggleEmailSignup={this.toggleEmailSignup}/>
         
       </GridContainer>
     );
@@ -362,30 +362,28 @@ const GridContainer = styled.div`
   display: grid;
   width: 100vw;
   min-height: 100%;
-  grid-template-rows: 46px 150px calc(100vh - 196px) auto 220px;
+  grid-template-rows: 46px 150px calc(100vh - 196px) auto 36vw;
   grid-template-columns: 200px calc(100vw - 400px) 200px;
   background-color: #fff;
   grid-gap: 0;
   margin: 0;
-grid-template-areas:
-  ' contact contact contact '
-  ' nav nav nav '
-  ' header header header '
-  ' main main main '
-  ' footer-left footer-mid footer-right ';
+  grid-template-areas:
+    ' contact contact contact '
+    ' nav nav nav '
+    ' header header header '
+    ' main main main '
+    ' footer footer footer ';
   grid-gap: 0;
 
 @media screen and (max-width: 945px) {
-    grid-template-rows: 40px 80px 90vh auto 40vw 20vw 40vw;
-    grid-template-columns: 100vw;
+  grid-template-rows: 40px 80px 90vh auto auto;
+  grid-template-columns: 100vw;
   grid-template-areas:
     ' contact '
     ' nav '
     ' header '
     ' main '
-    ' footer-left '
-    ' footer-mid '
-    ' footer-right ';
+    ' footer';
   }
 `;
 

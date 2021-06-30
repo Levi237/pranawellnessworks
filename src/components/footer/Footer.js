@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -6,72 +6,109 @@ import * as routes from '../../constants/routes';
 
 import LeviEikoBrand from '../../levieiko';
 
-const Footer = ({  }) => {
-    return (
-        <FooterWrapper className="grid-footer">
-            <QuickLinksSection>
-                <h1>QUICK links</h1>
-                <div>
-                    <section>
-                    <NavLink activeClassName="nav-active" to={routes.HOME}>HOME</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.EVNT}>SCHEDULE</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.INFO}>ABOUT US</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.INFO}>CONTACT US</NavLink>
-                    </section>
-                    <section>
-                        <NavLink activeClassName="nav-active" to={routes.SERV}>WELLNESS SERVICES</NavLink>
-                        <div>
-                            <NavLink activeClassName="nav-active" to={routes.WELL}>PERSONAL WELLNESS</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.CORP}>CORPORATE WELLNESS</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.YOGA}>YOGA THERAPY</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.PREG}>MATERNAL HEALTH</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.COAC}>SPEAKING & COACHING</NavLink>
-                        </div>
-                    </section>
-                </div>
-                <div>
-                    <LeviEikoBrand/>
-                </div>
-            </QuickLinksSection>
-            <LogoSection>
-                <div>
-                    <img src="../icon_white.png" alt="pranayama yoga breath work" />
-                    <Prana className="pranaText">PRANA</Prana>
-                    <Wellness className="wellnessText">wellness</Wellness>
-                </div>
-            </LogoSection>
-            <ContactSection>
-                <h1>HAVE QUESTIONs?</h1>
-                <div>
-                    <h3>Stephanie@pranawellnessworks.com</h3> 
-                    <button className="purple">SEND US A MESSAGE</button>
-                </div>
-                <div>
-                    <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer">
-                        <img src="../travel_slay_white.png" alt="Travel Slay"/>
-                    </a>
-                    <section>explore fitness and travel</section>
-                </div>
-            </ContactSection>
-        </FooterWrapper>
-    )
+export default class Footer extends Component {
+
+    scrollToTop = () => {
+        const top = document.getElementById('nav-bar');
+        top.scrollIntoView({behavior: 'smooth'});
+    }
+
+    render(){
+        const { toggleEmailSignup } = this.props;
+
+        return (
+            <FooterWrapper className="grid-footer">
+                <QuickLinksSection>
+                    <h1>QUICK links</h1>
+                    <div>
+                        <section>
+                            <NavLink activeClassName="nav-active" to={routes.HOME} onClick={this.scrollToTop}>HOME</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.EVNT} onClick={this.scrollToTop}>SCHEDULE</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.INFO} onClick={this.scrollToTop}>ABOUT US</NavLink>
+                            <button className="link-btn"
+                                name="contactForm" 
+                                value="contactRequest" 
+                                onClick={(e) => {toggleEmailSignup(e)}}
+                                >
+                                CONTACT US
+                            </button>
+                        </section>
+                        <section>
+                            <NavLink activeClassName="nav-active" to={routes.SERV} onClick={this.scrollToTop}>WELLNESS SERVICES</NavLink>
+                            <div>
+                                <NavLink activeClassName="nav-active" to={routes.WELL} onClick={this.scrollToTop}>PERSONAL WELLNESS</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.CORP} onClick={this.scrollToTop}>CORPORATE WELLNESS</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={this.scrollToTop}>YOGA THERAPY</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.PREG} onClick={this.scrollToTop}>MATERNAL HEALTH</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.COAC} onClick={this.scrollToTop}>SPEAKING & COACHING</NavLink>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <LeviEikoBrand/>
+                    </div>
+                </QuickLinksSection>
+                <LogoSection>
+                    <div>
+                        <img src="../icon_white.png" alt="pranayama yoga breath work" />
+                        <Prana className="pranaText">PRANA</Prana>
+                        <Wellness className="wellnessText">wellness</Wellness>
+                    </div>
+                </LogoSection>
+                <ContactSection>
+                    <h1>HAVE QUESTIONs?</h1>
+                    <div>
+                        <h3>Stephanie@pranawellnessworks.com</h3> 
+                        <button 
+                            className="purple"            
+                            name="contactForm" 
+                            value="contactRequest" 
+                            onClick={(e) => {toggleEmailSignup(e)}
+                            }>
+                            SEND US A MESSAGE
+                        </button>
+                    </div>
+                    <div>
+                        <LeviEikoBrand/>
+                    </div>
+                    <div>
+                        <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer">
+                            <img src="../travel_slay_white.png" alt="Travel Slay"/>
+                        </a>
+                        <section>explore fitness and travel</section>
+                    </div>
+                </ContactSection>
+            </FooterWrapper>
+        )
+    }
 }
+
 
 const ContactSection = styled.section`
     position: relative;
+    grid-area: contact;
     > div {
         text-align: center;
-        
+        &:nth-of-type(2) {
+            visibility: hidden;
+            position absolute;
+            bottom: 5vw;
+            left: 5vw;
+        }
         &:last-of-type {
             position: absolute;
             bottom: 2.5vw;
             right: 2.5vw;
+            width: 15vw;
+            text-align: center;
             > section {
                 color: #fff;
+                font-size: 1vw;
             }
             > a {
                 > img {
                     width: 100%;
+                    margin-bottom: -2vw;
                 }
             }
         }
@@ -81,26 +118,79 @@ const ContactSection = styled.section`
             text-transform: uppercase;
             color: var(--lightpurple);
             font-size: 1.4vw;
+            font-weight: 100;
         }
 
         > button {
             margin-top: 2vw;
         }
     }
+    @media screen and (max-width: 945px) {
+        > div {
+            &:first-of-type {
+                padding-bottom: 40vw;
+            }
+            &:nth-of-type(2) {
+                visibility: visible;
+            }
+            &:last-of-type {
+                position: absolute;
+                bottom: 5vw;
+                right: 5vw;
+                width: 35vw;
+                text-align: center;
+                > section {
+                    color: #fff;
+                    font-size: 2.5vw;
+                }
+                > a {
+                    > img {
+                        width: 100%;
+                        margin-bottom: -2vw;
+                    }
+                }
+            }
+    
+            > h3 {
+                font-size: 4vw;
+                margin-bottom: 5vw;
+            }
+    
+            > button {
+                margin-top: 2vw;
+            }
+        }
+    }
 `;
 
 const LogoSection = styled.section`
+    grid-area: logo;
     > div {
         text-align: center;
 
         > img {
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto -2vw;
+        }
+    }
+    @media screen and (max-width: 945px) {
+        > div {
+            > img {
+                width: 40%;
+                margin: 0 auto -2vw;
+            }
         }
     }
 `;
 const QuickLinksSection = styled.section`
+    grid-area: links;
     position: relative;
+    .link-btn {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
     > div {
         &:first-of-type {      
             a {
@@ -110,7 +200,8 @@ const QuickLinksSection = styled.section`
             > section {
                 display: inline-block;
                 vertical-align: top;
-    
+                
+                button, 
                 > a {
                     color: #fff;
                     font-size: 1.6vw;
@@ -139,14 +230,53 @@ const QuickLinksSection = styled.section`
             left: 2.5vw;
         }
     }
+    @media screen and (max-width: 945px) {
+
+        > div {
+            &:first-of-type {      
+                a {
+                    display: block;
+                    text-decoration: none;
+                }
+                > section {
+                    display: inline-block;
+                    vertical-align: top;
+                    
+                    button, 
+                    > a {
+                        font-size: 6vw;
+                        padding-left: 5vw;
+                        margin-bottom: 2.5vw;
+                        letter-spacing: .05vw;
+                    }
+                    &:first-of-type {                    
+                    }
+                    &:last-of-type {                    
+                        > div {
+                            padding-left: 10vw;
+                            font-size: 5.25vw;
+                            > a {
+                                margin-bottom: 2vw;
+                                letter-spacing: .025vw;
+                            }
+                        }
+                    }
+                }
+            }
+            &:last-of-type {
+                visibility: hidden;
+            }
+        }
+    }
 `;
 const Prana = styled.section`
   text-transform: uppercase;
   font-weight: 100;
   color: #fff;
+  font-size: 3.4vw;
+  margin: -1vw auto;
   @media screen and (max-width: 945px) {
     font-size: 5vw;
-    margin-top: -2vw;
     padding-left: .5vw;
   }
 `;
@@ -157,6 +287,7 @@ const Wellness = styled.section`
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   text-transform: lowercase;
+  font-size: 3vw;
   @media screen and (max-width: 945px) {
     font-size: 3.5vw;
     margin-top: -6px;
@@ -186,14 +317,18 @@ const FooterWrapper = styled.div`
             margin-bottom: 1.5vw;
         }
         padding: 2.5vw;
-        &:first-of-type {
-
-        }
-        &:nth-of-type(2) {
-
-        }
-        &:nth-of-type(3) {
+    }
+    @media screen and (max-width: 945px) {
+        grid-template-areas: 'logo' 'links' 'contact';
+        grid-template-columns: 100vw; 
+        grid-template-rows: auto auto auto;
+        > section {
+            > h1 {
+                font-size: 8vw;
+                letter-spacing: .3vw;
+                margin-bottom: 5vw;
+            }
+            padding: 5vw;
         }
     }
 `;
-export default Footer;
