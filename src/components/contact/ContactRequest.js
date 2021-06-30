@@ -59,6 +59,7 @@ export default class ContactRequest extends Component {
                     name="mc-embedded-subscribe-form" 
                     className="validate" 
                     target="_blank" 
+                    rel="noopener noreferrer"
                     novalidate 
                 >
                 <label htmlFor='MERGE1'>

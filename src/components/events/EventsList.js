@@ -19,7 +19,7 @@ const EventsList = ({ eventsList }) => {
               <small>{event.note}</small>
             </p>
             <h4>{event.day} @ {event.time}</h4>
-            <a href={event.link} alt={event.title} target="_blank">
+            <a href={event.link} alt={event.title} target="_blank" rel="noopener noreferrer">
               <span></span>
               &emsp;Sign Up&emsp;
               <span></span>
