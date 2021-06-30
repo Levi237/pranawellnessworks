@@ -15,6 +15,7 @@ export default class BlogMain extends Component {
 };
 
 const BlogWrapper = styled.div`
+    position: relative;
     margin-top: calc(-90vh + 74vw);
     @media screen and (max-width: 945px){
         margin-top: calc(-90vh + 82vw);
