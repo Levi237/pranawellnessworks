@@ -86,11 +86,11 @@ export default class App extends Component {
         title: "EXPLORE OUR WIDE-RANGING",
         subtitle: "Wellness Services",
         image: "service-header.png",
-        header: "",
-        message: "",
-        value: "",
+        header: false,
+        message: false,
+        value: false,
         backgroundColor: "purple",
-        button: ""
+        button: false
       },
       personalWellness: {
         title: "REDISCOVER",
