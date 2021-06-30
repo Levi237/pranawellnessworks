@@ -8,12 +8,15 @@ export default class BlogMain extends Component {
     render(){
         return(
             <BlogWrapper>
-                <br/><br/><br/>
-                <br/><br/><br/>
+                Hello World
             </BlogWrapper>
         );
     };
 };
 
 const BlogWrapper = styled.div`
+    margin-top: calc(-90vh + 74vw);
+    @media screen and (max-width: 945px){
+        margin-top: calc(-90vh + 82vw);
+    }
 `;
