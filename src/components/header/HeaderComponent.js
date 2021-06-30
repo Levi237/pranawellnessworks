@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
  const HeaderComponent = ({textCopy}) => {
     return(<>
-        <Container style={{ backgroundImage: `url(${textCopy.image})` }}>
+        <Container style={{ backgroundImage: `url(./header/${textCopy.image})` }}>
             <div>
                 <div>
                     <section>{textCopy.title}</section>
