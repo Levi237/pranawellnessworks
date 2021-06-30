@@ -13,12 +13,13 @@ import AnnouncementBanner   from './components/contact/AnnouncementBanner';
 import EmailConfirmation    from './components/contact/EmailConfirmation';
 
 import HomeHeader           from './components/home/HomeHeader';
-
+import FeatureBlogHeader    from './components/blog/FeatureBlogHeader';
 import HeaderComponent      from './components/header/HeaderComponent';
 import HeaderMessage        from './components/header/HeaderMessage'
 
 
 import HomeMain             from './components/home';
+import BlogMain             from './components/blog';
 import AboutMain            from './components/about';
 import EventsMain           from './components/events';
 import CorporateMain        from './components/corporate';
@@ -81,17 +82,7 @@ export default class App extends Component {
         value: "contactRequest",
         backgroundColor: "white",
         button: "Schedule A Session"
-      },  
-      blogPage: {
-        title: "BLOG PAGE", 
-        subtitle: "Blog Page",
-        image: "blog-header.png",
-        header: "Blog Header Here",
-        message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
-        value: "contactRequest",
-        backgroundColor: "white",
-        button: false
-      },
+      }, 
       wellnessServices: {
         title: "EXPLORE OUR WIDE-RANGING",
         subtitle: "Wellness Services",
@@ -226,6 +217,35 @@ export default class App extends Component {
       note: "(happening now)",
       img: "./events/meditation.png",
       link: "https://thenalaverse.com/get-lifted"
+    }],
+    //// BLOG HARDCOPY
+    blogs: [{
+      category: "health",
+      keyWords: [],
+      title: "Tell everybody here about your passion for Prana Wellness",
+      subtitle: "This is where you can add subtext",
+      authorId: "",
+      publishDate: "Weds, June 30th 2021",
+      heroImage: "invigorating_yoga.png",
+      text: "",
+      images: []
+    }],
+
+    authors: [{
+        id: "",
+        firstName: "Stephanie",
+        lastName: "Singleton",
+        jobTitle: "Founder, Prana Wellness",
+        headshotImage: "authors/stephanie-headshot.png",
+        description: "Determined to learn from the source, I traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. India challenged me both mentally and physically, and the knowledge that I gained was far beyond yoga poses. It gave me a new perspective on wellness.",
+        socialMedia: {
+            facebook: "",
+            instagram: "pranawellnessworks",
+            linkedin: "",
+            tiktok: "",
+            twitter: "",
+            youtube: "",
+        }
     }]
   };  
 
@@ -247,7 +267,7 @@ export default class App extends Component {
     top.scrollIntoView({behavior: 'smooth'});
   }
   render(){
-    const { user, emailContact, eventsList, textCopy } = this.state
+    const { user, emailContact, eventsList, textCopy, blogs, authors } = this.state
     return(
       <GridContainer className="grid-container">
 
@@ -274,7 +294,13 @@ export default class App extends Component {
                         page={"home"} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>          
+                        /> }/>    
+            <Route path={routes.BLOG} render={() => 
+                      <NavBar 
+                        page={"home"} 
+                        toggleHamburger={this.toggleHamburger}
+                        toggleEmailSignup={this.toggleEmailSignup}
+                        /> }/>        
             <Route path={routes.MAIL} exact render={() => 
                       <></> }/>  
             <Route path={routes.ROOT} exact render={() => 
@@ -282,7 +308,7 @@ export default class App extends Component {
                         page={"home"} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>    
+                        /> }/>          
             <Route path={routes.ROOT} render={() => 
                       <NavBar 
                         page={"global"} 
@@ -301,9 +327,9 @@ export default class App extends Component {
                       toggleEmailSignup={this.toggleEmailSignup}
                       /> }/>
             <Route path={routes.BLOG} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.blogPage}
+                    <FeatureBlogHeader 
+                      blog={blogs[0]}
+                      author={authors[0]}
                       /> }/>
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent 
@@ -357,6 +383,9 @@ export default class App extends Component {
         <MainGrid className="grid-main">
           <Switch>
             <Route path={routes.HOME} exact render={() => <HomeMain /> }/>
+            <Route path={routes.BLOG} exact render={() => 
+                      <BlogMain blogs={blogs}/> 
+                     }/>  
             <Route path={routes.INFO} exact render={() => 
                       <HeaderMessage 
                         toggleEmailSignup={this.toggleEmailSignup} 

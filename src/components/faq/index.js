@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-export default class Blog extends Component {
+export default class FAQMain extends Component {
     render(){
         return(
-            <BlogWrapper>
-            </BlogWrapper>
+            <FAQWrapper>
+            </FAQWrapper>
         );
     };
 };
 
-const BlogWrapper = styled.div`
+const FAQWrapper = styled.div`
 `;
