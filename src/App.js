@@ -82,6 +82,16 @@ export default class App extends Component {
         backgroundColor: "white",
         button: "Schedule A Session"
       },  
+      blogPage: {
+        title: "BLOG PAGE", 
+        subtitle: "Blog Page",
+        image: "blog-header.png",
+        header: "Blog Header Here",
+        message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+        value: "contactRequest",
+        backgroundColor: "white",
+        button: false
+      },
       wellnessServices: {
         title: "EXPLORE OUR WIDE-RANGING",
         subtitle: "Wellness Services",
@@ -289,6 +299,11 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader 
                       toggleEmailSignup={this.toggleEmailSignup}
+                      /> }/>
+            <Route path={routes.BLOG} exact render={() => 
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.blogPage}
                       /> }/>
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent 

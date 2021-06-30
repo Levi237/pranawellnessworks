@@ -1,5 +1,6 @@
 export const ROOT = '/';
 export const HOME = '/home';
+export const BLOG = '/blog';
 export const INFO = '/about';
 export const WELL = '/personal_wellness_services';
 export const SERV = '/services';
