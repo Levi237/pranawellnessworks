@@ -11,7 +11,7 @@ const FeatureBlogHeader = ({blog, author}) => {
           <h1>
             {blog.title}
           </h1>
-          <h4>By {author.firstName} {author.lastName} | {blog.publishDate}</h4>
+          <h4>{blog.publishDate} | By {author.firstName} {author.lastName}</h4>
         </section>
       </FeatureBlogContainer>)
     ;
