@@ -27,7 +27,6 @@ const Contact = styled.div`
         padding: 6px 12px!important;
         margin-top: 8px;
         position: relative;
-        z-index: 90;
 
         &:hover {
             background-color: rgba(255,255,255,.5);
@@ -37,7 +36,7 @@ const Contact = styled.div`
         height: 30px;
         width: 30px;
         position: absolute;
-        z-index: 10;
+        z-index: 99999999;
         right: 8px;
         top: 8px;
     }

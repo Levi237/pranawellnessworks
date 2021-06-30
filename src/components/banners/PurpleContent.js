@@ -7,12 +7,21 @@ export default class PurpleContent extends Component {
         return(<>
             <Title>{textCopy.header}</Title>
             <section>
-                <Content>
-                    {textCopy.message}  
-                </Content>
-                <ButtonContaner>
-                    <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
-                </ButtonContaner>
+                { textCopy.button 
+                    ?
+                    <>
+                    <Content className="text-left">
+                        {textCopy.message}  
+                    </Content>
+                    <ButtonContaner>
+                        <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
+                    </ButtonContaner>
+                    </>
+                    :
+                    <Content className="text-center">
+                        {textCopy.message}  
+                    </Content>
+                }
             </section>
         </>);
     };
@@ -29,14 +38,18 @@ const Title = styled.h1 `
 const Content = styled.div`
     display: inline-block;
     vertical-align: top;
-    width: 50vw;
     font-size: 1.5vw;
-    margin-left: 10vw;
-    margin-right: 2.5vw;
-    float: left;
+    width: 50vw;
     color: #fff;
-    text-align: left;
-
+    .text-left {
+        float: left;
+        text-align: left;
+        margin: 0 2.5vw 0 10vw;
+    }
+    .text-center {
+        text-align: center;
+        margin: 0 auto!important;
+    }
     @media screen and (max-width: 945px){
         display: block;
         width: 80vw;

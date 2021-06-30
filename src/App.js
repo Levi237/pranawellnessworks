@@ -140,6 +140,7 @@ export default class App extends Component {
         message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
         value: "contactRequest",
         backgroundColor: "purple",
+        button: false
       },
       eventsInformation: {
         title: "NURTURE YOUR",
@@ -424,5 +425,5 @@ const ContactGrid = styled.div`
   grid-area: contact;
   background-color: var(--purple);
   position: relative;
-  z-index: 9;
+  z-index: 999;
 `;
