@@ -75,7 +75,7 @@ export default class App extends Component {
       aboutPage: {
         title: "THE TEAM BEHIND", 
         subtitle: "Prana Wellness",
-        image: "about-header2.png",
+        image: "about-header.png",
         header: "the power of prana",
         message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
         value: "contactRequest",
@@ -105,7 +105,7 @@ export default class App extends Component {
       corporateWellness: {
         title: "CONSIDER",
         subtitle: "Corporate Wellness",
-        image: "corporate-header2.png",
+        image: "corporate-header.png",
         header: "Want Prana in Your Workplace?",
         message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
         value: "referralRequest",
@@ -125,7 +125,7 @@ export default class App extends Component {
       maternalHealth: {
         title: "YOGA FOR",
         subtitle: "Maternal Health",
-        image: "prenatal-header2.jpg",
+        image: "prenatal-header.jpg",
         header: "Prenatal Yoga Experience",
         message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
         value: "contactRequest",
