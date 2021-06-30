@@ -43,7 +43,7 @@ const NavContainer = styled.div`
     height: 100%;
     overflow: hidden;
     
-    background-color: #744A9E;
+    background-color: var(--darkpurple);
     color: #FFF;
     
     font-size: 20px;

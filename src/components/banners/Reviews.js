@@ -132,7 +132,7 @@ const LocalWrapper = styled.div`
     }
 `;
 const Arrow = styled.i`
-    border: solid #744A9E;
+    border: solid var(--darkpurple);
     border-width: 0 1px 1px 0;
     display: inline-block;
     padding: 1.5vw;

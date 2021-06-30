@@ -118,7 +118,7 @@ const CardBack = styled.div`
     margin-bottom: 2.5vw;
     position: relative;
     z-index: -1;
-    color: #744A9E;
+    color: var(--darkpurple);
     height: 20vw;
     width: 20vw;
     overflow: hidden;

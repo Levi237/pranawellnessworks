@@ -134,7 +134,7 @@ const TeamWrapper = styled.div`
     position: relative;
     z-index: -1;
 
-    color: #744A9E;
+    color: var(--darkpurple);
     background-color: transparent;
 
     font-size: 1.25vw;

@@ -130,7 +130,7 @@ const LotusContainer = styled.div`
         line-height: 3.2vw;
         margin-top: 40vw;
         margin-bottom: 2.2vw;
-        color: #744A9E;
+        color: var(--darkpurple);
     }
     > section {
         font-size: 1.75vw !important;

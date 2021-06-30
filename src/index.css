@@ -3,9 +3,10 @@
 :root {
   --lightgreen: #A0CD4D;
   --green: #689E3C;
+  --darkpurple: #744A9E;
   --purple: #965BA5;
   --lightpurple: #b997c3;
-  --lightestpurple: rgb(232, 220, 235);
+  --lightestpurple: #e8dceb;
   --grey: #555;
   --lightgrey: #888;
   --fancy-font: 'Merriweather',sans-serif;
@@ -85,7 +86,7 @@ button.white:hover {
   background-color: rgba(150, 91, 165, .5);
 }
 button.purple:hover {
-  background-color: rgba(150, 91, 165, .5);
+  background-color: var(--lightpurple);
 }
 
 @media screen and (max-width: 945px) {
