@@ -242,17 +242,19 @@ export default class App extends Component {
       <GridContainer className="grid-container">
 
         <Nav toggleHamburger={this.toggleHamburger}/>
-        <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
+        <EmailSignup 
+          contactType={emailContact} 
+          toggleEmailSignup={this.toggleEmailSignup}
+          />
 
         <Switch>
-          <Route path={routes.MAIL} exact render={() => 
-            <EmailConfirmation/>
-            }/>
+          <Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/>
         </Switch>
 
         <ContactGrid id="contact-bar" className="grid-contact">
           <AnnouncementBanner 
-            toggleEmailSignup={this.toggleEmailSignup}/>
+            toggleEmailSignup={this.toggleEmailSignup
+            }/>
         </ContactGrid>
 
         <NavGrid className="grid-nav">
@@ -262,8 +264,7 @@ export default class App extends Component {
                         page={"home"} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
-                        /> 
-            }/>          
+                        /> }/>          
             <Route path={routes.MAIL} exact render={() => 
                       <></> }/>  
             <Route path={routes.ROOT} exact render={() => 
@@ -271,8 +272,7 @@ export default class App extends Component {
                         page={"home"} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
-                        /> 
-            }/>    
+                        /> }/>    
             <Route path={routes.ROOT} render={() => 
                       <NavBar 
                         page={"global"} 
@@ -280,82 +280,145 @@ export default class App extends Component {
                         logout={this.logout} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
-                        /> 
-            }/>    
+                        /> }/>    
           </Switch>
         </NavGrid>
 
         <GridHeader className="grid-header">
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
-                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
+                    <HomeHeader 
+                      toggleEmailSignup={this.toggleEmailSignup}
+                      /> }/>
             <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.aboutPage}/> }/>
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.aboutPage}
+                      /> }/>
             <Route path={routes.SERV} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> }/> 
+                    <HeaderComponent 
+                      purpleBox={(true)} 
+                      textCopy={textCopy.wellnessServices}
+                      /> }/> 
             <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} textCopy={textCopy.personalWellness}/> }/>
+                    <HeaderComponent 
+                      purpleBox={(true)} 
+                      textCopy={textCopy.personalWellness}
+                      /> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.corporateWellness}/> }/>   
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.corporateWellness}
+                      /> }/>   
             <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.yogaTherapy}/> }/> 
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.yogaTherapy}
+                      /> }/> 
             <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.maternalHealth}/> }/> 
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.maternalHealth}
+                      /> }/> 
             <Route path={routes.EVNT} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.eventsInformation}/> }/> 
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.eventsInformation}
+                      /> }/> 
             <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} textCopy={textCopy.coachingSpeaking}/> }/> 
+                    <HeaderComponent 
+                      purpleBox={(false)} 
+                      textCopy={textCopy.coachingSpeaking}
+                      /> }/> 
             <Route path={routes.MAIL} exact render={() => 
                       <></> }/>  
             <Route path={routes.ROOT} render={() => 
-                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
+                    <HomeHeader 
+                      toggleEmailSignup={this.toggleEmailSignup}
+                    /> }/>                    
           </Switch>
         </GridHeader>
 
         <MainGrid className="grid-main">
           <Switch>
-            <Route path={routes.HOME} exact render={() => 
-                      <HomeMain /> }/>
+            <Route path={routes.HOME} exact render={() => <HomeMain /> }/>
             <Route path={routes.INFO} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.aboutPage}>
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.aboutPage}
+                        >
                         <AboutMain /> 
-                      </HeaderMessage> }/>      
+                      </HeaderMessage>
+                     }/>      
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/> }/>           
+                      <ServicesMain 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.wellnessServices} 
+                        scrollToTop={this.scrollToTop} 
+                        eventsList={eventsList}
+                        /> }/>           
             <Route path={routes.WELL} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.personalWellness}>
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.personalWellness}
+                        >
                         <PersonalMain/>
-                      </HeaderMessage> }/>       
+                      </HeaderMessage> 
+                    }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.corporateWellness}>
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.corporateWellness}>
                         <CorporateMain>
-                          <PurpleContent textCopy={textCopy.corporateBodyText} toggleEmailSignup={this.toggleEmailSignup}/>
+                          <PurpleContent 
+                            textCopy={textCopy.corporateBodyText} 
+                            toggleEmailSignup={this.toggleEmailSignup}
+                            />
                         </CorporateMain>
-                      </HeaderMessage> }/>  
+                      </HeaderMessage> 
+                    }/>  
             <Route path={routes.YOGA} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.yogaTherapy}>
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.yogaTherapy}
+                        >
                         <YogaTherapyMain/>
-                      </HeaderMessage>}/>
+                      </HeaderMessage>
+                    }/>
             <Route path={routes.PREG} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.maternalHealth} >
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.maternalHealth} 
+                        >
                         <PrenatalMain/>
                       </HeaderMessage> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.coachingSpeaking}>
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.coachingSpeaking}
+                        >
                         <Speaking/><Coaching/>
-                      </HeaderMessage> }/>     
+                      </HeaderMessage> 
+                    }/>     
             <Route path={routes.EVNT} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.eventsInformation}>
-                        <EventsMain eventsList={eventsList}/>
-                      </HeaderMessage> }/>   
-            <Route path={routes.MAIL} exact render={() => 
-                      <></> }/>                
-            <Route path={routes.ROOT} render={() => 
-                      <HomeMain /> }/>
+                      <HeaderMessage 
+                        toggleEmailSignup={this.toggleEmailSignup} 
+                        textCopy={textCopy.eventsInformation}
+                        >
+                        <EventsMain 
+                          eventsList={eventsList}
+                          />
+                      </HeaderMessage> 
+                    }/>   
+            <Route path={routes.MAIL} exact render={() => <></> }/>                
+            <Route path={routes.ROOT} render={() => <HomeMain /> }/>
           </Switch>          
         </MainGrid>
 
-        <Footer toggleEmailSignup={this.toggleEmailSignup} scrollToTop={this.scrollToTop}/>
+        <Footer 
+          toggleEmailSignup={this.toggleEmailSignup} 
+          scrollToTop={this.scrollToTop}
+          />
         
       </GridContainer>
     );
