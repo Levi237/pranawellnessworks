@@ -90,9 +90,9 @@ const Container = styled.div`
     z-index: 1;
 
     margin-top: calc(25.86vw - 100vh + 196px);
-    margin-right: 2vw;
+    // margin-right: 2vw;
     margin-bottom: 5vw;
-    margin-left: 2vw;
+    // margin-left: 2vw;
     padding-top: 4vw;
     padding-bottom: 8vw;
 
