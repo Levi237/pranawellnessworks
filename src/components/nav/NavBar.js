@@ -27,9 +27,7 @@ const NavBar = ({ page, user, logout, toggleHamburger }) => {
 };
 
 const NavContainer = styled.div`
-  width: 90vw%;
- 
- `;
+`;
 
 const LogoIcon = styled.div`
   float: left;
