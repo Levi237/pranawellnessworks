@@ -79,7 +79,7 @@ export default class App extends Component {
         subtitle: "Prana Wellness",
         image: "about-header.png",
         header: "the power of prana",
-        message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+        message: "Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.",
         value: "contactRequest",
         backgroundColor: "white",
         button: "Schedule A Session"
@@ -99,7 +99,7 @@ export default class App extends Component {
         subtitle: "Personal Wellness",
         image: "personal-header.jpg",
         header: "the power of prana",
-        message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+        message: "Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.",
         value: "contactRequest",
         backgroundColor: "purple",
         button: "Schedule A Session",
