@@ -4,40 +4,34 @@ import styled from 'styled-components';
 export default class FAQMain extends Component {
     state = {
         faq: [{
-            topic: "Health",
+            topic: `Practice`,
             info: [{
-                question: "question one",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                question: `What does prana mean?`,
+                answer: `Prana is Sanskrit for breath, considered as a life-giving force.`
                 },{
-                question: "question two",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                question: `What is pranayama?`,
+                answer: `Pranayama is a yoga based practice focusing on breath through certain techniques and exercises.`
                 },{
-                question: "question three",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                question: `Call me silly, but what does "Yoga" mean?`,
+                answer: `Yoga, Sanskrit for "yoking" or "union", is a group of physical, mental, and spiritual practices or disciplines that originated in ancient India.`
             }]
         },{
-            topic: "Career",
+            topic: `Health`,
             info: [{
-                question: "question one",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },{
-                question: "question two",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },{
-                question: "question three",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                question: `How does prana yoga help me?`,
+                answer: `The goal of pranayama is to strengthen the connection between your body and mind. According to research, pranayama can promote relaxation and mindfulness. It's also proven to support multiple aspects of physical health, including lung function, blood pressure, and brain function.`
             }]
         },{
-            topic: "Spiritual",
+            topic: `Career`,
             info: [{
-                question: "question one",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },{
-                question: "question two",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },{
-                question: "question three",
-                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                question: `How can prana yoga improve my career`,
+                answer: `prana yoga teaches you better focus and stress management, and strengthens your body to give you more energy and stamina`
+            }]
+        },{
+            topic: `Spiritual`,
+            info: [{
+                question: `I thought this was just to make me physically healthier`,
+                answer: `The practice of yoga is a full-life experience allowing you to connect with your deeper self`
             }]
         }]
     }
@@ -77,6 +71,7 @@ margin-top: calc(194px + -90vh);
             > h1 {
                 text-align: left;
                 padding: 5vw 0 0;
+                color: var(--green)!important;
             }
             > button {
                 border: none;
@@ -86,9 +81,11 @@ margin-top: calc(194px + -90vh);
         > section {
             > h2 {
                 padding: 40px 0 20px;
+                color: var(--darkpurple);
+                font-family: var(--fancy-font);
             }
             p {
-
+                color: var(--grey);
             }
         }
     }
