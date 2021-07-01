@@ -24,13 +24,13 @@ export default class FAQMain extends Component {
         },{
             topic: `Career`,
             info: [{
-                question: `How can prana yoga improve my career`,
+                question: `How can prana yoga improve my career?`,
                 answer: `prana yoga teaches you better focus and stress management, and strengthens your body to give you more energy and stamina`
             }]
         },{
             topic: `Spiritual`,
             info: [{
-                question: `I thought this was just to make me physically healthier`,
+                question: `I thought this was just to make me physically healthier?`,
                 answer: `The practice of yoga is a full-life experience allowing you to connect with your deeper self`
             }]
         }]
