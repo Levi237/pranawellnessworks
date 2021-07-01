@@ -301,7 +301,14 @@ export default class App extends Component {
                         page={"home"} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>        
+                        /> }/>   
+            <Route path={routes.FAQS} exact render={() => 
+                      <NavBar 
+                        page={"global"} 
+                        toggleHamburger={this.toggleHamburger}
+                        toggleEmailSignup={this.toggleEmailSignup}
+                        /> 
+                        }/>       
             <Route path={routes.MAIL} exact render={() => 
                       <></> }/>  
             <Route path={routes.ROOT} exact render={() => 
@@ -332,6 +339,8 @@ export default class App extends Component {
                       blog={blogs[0]}
                       author={authors[0]}
                       /> }/>
+            <Route path={routes.FAQS} exact render={() => 
+                    <h1>Frequently Asked Questions</h1> }/>
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent 
                       purpleBox={(false)} 

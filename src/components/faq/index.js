@@ -55,7 +55,7 @@ export default class FAQMain extends Component {
             })
             return(
                 <div key={k}>
-                    <h1>{topic.topic}</h1>
+                    <div><h1>{topic.topic}</h1></div>
                     {showQA}
                 </div>
             )
@@ -69,12 +69,19 @@ export default class FAQMain extends Component {
 };
 
 const FAQWrapper = styled.div`
+margin-top: calc(194px + -90vh);
     > div {
         text-align: left;
-        padding: 5vw 10vw;
-        > h1 {
-            text-align: left;
-            padding: 5vw 0 0;
+        padding: 0 10vw 2.5vw;
+        > div {
+            > h1 {
+                text-align: left;
+                padding: 5vw 0 0;
+            }
+            > button {
+                border: none;
+                background-color: transparent;
+            }
         }
         > section {
             > h2 {
