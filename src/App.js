@@ -320,8 +320,6 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                       <NavBar 
                         page={"global"} 
-                        user={user} 
-                        logout={this.logout} 
                         toggleHamburger={this.toggleHamburger}
                         toggleEmailSignup={this.toggleEmailSignup}
                         /> }/>    
