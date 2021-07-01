@@ -163,7 +163,7 @@ const LogoSection = styled.section`
         text-align: center;
 
         > img {
-            width: 100%;
+            width: 90%;
             margin: 0 auto -2vw;
         }
     }
@@ -309,7 +309,7 @@ const FooterWrapper = styled.div`
         > h1 {
             color: var(--lightgreen);
             text-align: left;
-            border-bottom: 1px solid var(--green);
+            // border-bottom: 1px solid var(--green);
             padding: 0;
             font-size: 2.6vw;
             letter-spacing: .1vw;
