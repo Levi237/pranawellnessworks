@@ -18,28 +18,34 @@ const FeatureBlogHeader = ({blog, author}) => {
 };
 
 const FeatureBlogContainer = styled.div`
-  margin-top: -120px;
-  position: absolute;
+  padding-top: 40px;
   width: 100vw;
   text-align: center;
+
   > div {
     width: 86vw;
     height: 54vw;
     margin: 0 auto;
     background-size: cover;
   }
+
   > section {
     margin: 20px auto;
+
     > small {
       font-size: 1.6vw;
       text-transform: uppercase;
       color: var(--green);
     }
+
     > h1 {
       width: 86vw;
       padding: 0;
       margin: 10px auto;
+      font-family: var(--fancy-font);
+      text-transform: none;
     }
+    
     > h4 {
       color: var(--lightgrey);
     }
