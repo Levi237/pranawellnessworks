@@ -144,9 +144,9 @@ const ReviewsHeader = styled.h1`
 `;
 
 const LogoHeader = styled.h1`
-background-color: rgba(150,91,165,0.2);
+background-color: var(--lightestpurple);
 margin-bottom: 0;
-padding 80px 2vw 2vw;
+padding 40px 2vw 2vw;
 @media and (max-width: 945px){
     position: relative;
 }
