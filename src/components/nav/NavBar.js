@@ -3,7 +3,7 @@ import styled      from 'styled-components';
 import { Link }    from 'react-router-dom';
 import * as routes from '../../constants/routes'
 
-const NavBar = ({ page, user, logout, toggleHamburger }) => {
+const NavBar = ({ page, toggleHamburger }) => {
   return(
     <NavContainer>
       <LogoIcon>
@@ -17,41 +17,35 @@ const NavBar = ({ page, user, logout, toggleHamburger }) => {
         name="toggleHamburger" 
         onClick={(e) => toggleHamburger(e)}
         >
-      { page === "home" 
-        ? <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></>
-        : <><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></>
-      }
+      { page === "home" && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
+      { page === "global" &&<><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></> }
       </Hamburger>
-      { user && <button onClick={logout} style={{color:'#689E3C', float: 'right', margin: '20px'}}>LOGOUT</button> }
     </NavContainer>);
 };
 
 const NavContainer = styled.div`
+  position: absolute;
+  top: 40px;
+  height: 100px;
+  width: 100vw;
+  background-color: blue;
 `;
 
 const LogoIcon = styled.div`
-  float: left;
-  margin-left: 10vw;
-  margin-top: 30px;
-  @media screen and (max-width: 945px) {
-    margin-left: 0;
-    margin-top: 12px;
 
+  @media screen and (max-width: 945px) {
   }
 `;
 const LogoBox = styled.div`
-  width: 150px;
+
   @media screen and (max-width: 945px) {
-    width: 20vw;
-    height: auto;
-    text-align: center;
+
   }
 `;
 const Logo = styled.img`
-  width: 100%;
+
   @media screen and (max-width: 945px) {
-    width: 80px;
-    margin-top: -10px;
+
   }
 `;
 

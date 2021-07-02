@@ -89,10 +89,7 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
 
-    margin-top: calc(25.86vw - 100vh + 196px);
-    // margin-right: 2vw;
     margin-bottom: 5vw;
-    // margin-left: 2vw;
     padding-top: 4vw;
     padding-bottom: 8vw;
 
@@ -107,7 +104,6 @@ const Container = styled.div`
     }
     
     @media screen and (max-width: 945px) {
-        margin-top: calc(32.3vw - 100vh + 58px);
         padding-top: 5vw;
         font-size: 8vw;
     }

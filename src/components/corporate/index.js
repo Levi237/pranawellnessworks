@@ -74,12 +74,12 @@ const BenefitsDisplay = styled.img`
   width: 100%;
 `;
 const PurpleContainer = styled.div`
-  margin: -150px 0 0;
   height: 20vw;
   padding: 16vw 0 0;
   background-color: rgba(150,91,165,.6);
+  
   @media screen and (max-width: 945px){
-      margin: -40vw 0 0;
+
       height: 68vw;
       padding: 42vw 0 4vw;
   }

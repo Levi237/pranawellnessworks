@@ -63,7 +63,7 @@ export default class FAQMain extends Component {
 };
 
 const FAQWrapper = styled.div`
-margin-top: calc(194px + -90vh);
+
     > div {
         text-align: left;
         padding: 0 10vw 2.5vw;
