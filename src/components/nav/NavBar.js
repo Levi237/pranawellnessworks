@@ -7,8 +7,12 @@ const NavBar = ({ page, toggleHamburger }) => {
   return(
     <NavContainer>
       <div>
-        <Link to={routes.HOME}>
-            <Logo src={ page === "home" ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
+        <Link to={routes.ROOT}>
+            <Logo src={ page === "white" ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
+            <section>
+              <h1>Prana</h1>
+              <h2>wellness</h2>
+            </section>
         </Link>
       </div>
       <div>
@@ -19,7 +23,7 @@ const NavBar = ({ page, toggleHamburger }) => {
           name="toggleHamburger" 
           onClick={(e) => toggleHamburger(e)}
           >
-        { page === "home" && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
+        { page === "white" && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
         { page === "global" &&<><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></> }
         </Hamburger>
       </div>
@@ -35,19 +39,40 @@ const NavContainer = styled.div`
   > div {
     display: inline-block;
     &:first-of-type {
-      width: 100px;
+      width: 225px;
       margin-left: 10vw;
 
       > a {
         width: 100px;
-
         > img {
-          width: 100%;
+          display: inline-block;
+          width: 100px;
+        }
+
+        > section {
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 20px;
+
+          > h1 {
+            color: #fff;
+            text-align: left;
+            padding: 0;
+            font-weight: 100;
+            font-size: 34px;
+          }
+          > h2 {
+            text-align: left;
+            color: #fff;
+            font-family: var(--fancy-font);
+            margin-top: -10px;
+            font-weight: 100;
+          }
         }
       }
     }
     &:nth-of-type(2) {
-      width: calc(80vw - 135px);
+      width: calc(80vw - 260px);
     }
     &:last-of-type {
       width: 35px;

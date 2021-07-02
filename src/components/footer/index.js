@@ -16,7 +16,7 @@ export default class Footer extends Component {
                     <h1>QUICK links</h1>
                     <div>
                         <section>
-                            <NavLink activeClassName="nav-active" to={routes.HOME} onClick={scrollToTop}>HOME</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={scrollToTop}>HOME</NavLink>
                             <NavLink activeClassName="nav-active" to={routes.EVNT} onClick={scrollToTop}>SCHEDULE</NavLink>
                             <NavLink activeClassName="nav-active" to={routes.INFO} onClick={scrollToTop}>ABOUT US</NavLink>
                             <button className="link-btn"
