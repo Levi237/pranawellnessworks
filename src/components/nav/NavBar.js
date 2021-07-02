@@ -8,10 +8,12 @@ const NavBar = ({ page, toggleHamburger }) => {
     <NavContainer>
       <div>
         <Link to={routes.ROOT}>
-            <Logo src={ page === "white" ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
+            <Logo src={ (page === "white" || page === "home") ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
             <section>
-              <h1>Prana</h1>
-              <h2>wellness</h2>
+              { page !== "home" && <>
+                <h1>Prana</h1>
+                <h2>wellness</h2>
+              </>}
             </section>
         </Link>
       </div>
@@ -23,7 +25,7 @@ const NavBar = ({ page, toggleHamburger }) => {
           name="toggleHamburger" 
           onClick={(e) => toggleHamburger(e)}
           >
-        { page === "white" && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
+        { (page === "white" || page === "home") && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
         { page === "global" &&<><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></> }
         </Hamburger>
       </div>
@@ -35,12 +37,13 @@ const NavContainer = styled.div`
   top: 40px;
   height: 100px;
   width: 100vw;
-
+  z-index: 8;
   > div {
     display: inline-block;
     &:first-of-type {
       width: 225px;
       margin-left: 10vw;
+      text-align: left;
 
       > a {
         width: 100px;
@@ -50,6 +53,7 @@ const NavContainer = styled.div`
         }
 
         > section {
+          width: 225px;
           display: inline-block;
           vertical-align: top;
           margin-top: 20px;
