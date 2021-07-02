@@ -76,7 +76,8 @@ const BenefitsDisplay = styled.img`
 const PurpleContainer = styled.div`
   height: 20vw;
   padding: 16vw 0 0;
-  background-color: rgba(150,91,165,.6);
+  margin-top: -14vw;
+  background-color: var(--lightpurple);
   
   @media screen and (max-width: 945px){
 
