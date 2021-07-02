@@ -107,8 +107,8 @@ export default class HomeMain extends Component {
     };
 
     render(){
-        const { points, clients, features, floralbox} = this.state
-
+        const { points, clients, features, floralbox} = this.state;
+        const { scrollToTop } = this.props;
         return(
             <HomeContainer>
                 <Quote>
@@ -125,7 +125,7 @@ export default class HomeMain extends Component {
                 <h1>Our Clients</h1>
                 <LogoDisplay logos={clients} clients={clients}/>  
                 <br/><br/>       
-                <LotusDisplay />
+                <LotusDisplay scrollToTop={scrollToTop}/>
                 <FloralBox passedInfo={floralbox} /> 
                 <LogoHeader>As featured In</LogoHeader>
                 <LogoDisplay logos={features}/>

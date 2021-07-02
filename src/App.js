@@ -274,7 +274,7 @@ export default class App extends Component {
       <ParentWrapper>
         {/******* scrollToTop id *******/}
         <ScrollToBar id="scroll-to-bar"></ScrollToBar>
-        
+
         {/******* POP UPS *******/}
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
@@ -286,7 +286,7 @@ export default class App extends Component {
           <Route path={routes.ROOT} exact render={() => <>
             <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
-            <HomeMain /> 
+            <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
           <Route path={routes.BLOG} exact render={() => <>
             <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
