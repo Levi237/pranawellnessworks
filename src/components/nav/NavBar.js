@@ -6,20 +6,23 @@ import * as routes from '../../constants/routes'
 const NavBar = ({ page, toggleHamburger }) => {
   return(
     <NavContainer>
-      <LogoIcon>
+      <div>
         <Link to={routes.HOME}>
-          <LogoBox>
             <Logo src={ page === "home" ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
-          </LogoBox>
         </Link>
-      </LogoIcon>
-      <Hamburger 
-        name="toggleHamburger" 
-        onClick={(e) => toggleHamburger(e)}
-        >
-      { page === "home" && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
-      { page === "global" &&<><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></> }
-      </Hamburger>
+      </div>
+      <div>
+
+      </div>
+      <div>
+        <Hamburger 
+          name="toggleHamburger" 
+          onClick={(e) => toggleHamburger(e)}
+          >
+        { page === "home" && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
+        { page === "global" &&<><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></> }
+        </Hamburger>
+      </div>
     </NavContainer>);
 };
 
@@ -28,20 +31,33 @@ const NavContainer = styled.div`
   top: 40px;
   height: 100px;
   width: 100vw;
-  background-color: blue;
-`;
 
-const LogoIcon = styled.div`
+  > div {
+    display: inline-block;
+    &:first-of-type {
+      width: 100px;
+      margin-left: 10vw;
 
-  @media screen and (max-width: 945px) {
+      > a {
+        width: 100px;
+
+        > img {
+          width: 100%;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      width: calc(80vw - 135px);
+    }
+    &:last-of-type {
+      width: 35px;
+      margin-right: 10vw;
+      margin-top: 32px;
+      vertical-align: top;
+    }
   }
 `;
-const LogoBox = styled.div`
 
-  @media screen and (max-width: 945px) {
-
-  }
-`;
 const Logo = styled.img`
 
   @media screen and (max-width: 945px) {
@@ -50,8 +66,6 @@ const Logo = styled.img`
 `;
 
 const Hamburger = styled.div`
-  float: right;
-  margin: 90px 10vw 0 0;
   section {
     margin: 6px 0;
     width: 35px;
@@ -63,8 +77,6 @@ const Hamburger = styled.div`
     cursor: pointer;
   }
   @media screen and (max-width: 945px) {
-
-    margin: 25px 5vw 0 0;
 
   }
 `;
