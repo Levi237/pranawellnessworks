@@ -111,7 +111,7 @@ const ContactSection = styled.section`
             text-align: center;
             text-transform: uppercase;
             color: var(--lightestpurple);
-            font-size: 1.4vw;
+            font-size: 1.6vw;
             font-weight: 100;
         }
 
@@ -159,12 +159,13 @@ const ContactSection = styled.section`
 
 const LogoSection = styled.section`
     grid-area: logo;
+    padding: 5vw 0!important;
     > div {
         text-align: center;
 
         > img {
             width: 90%;
-            margin: 0 auto -2vw;
+            margin: 0 auto -3vw;
         }
     }
     @media screen and (max-width: 945px) {
@@ -203,7 +204,7 @@ const QuickLinksSection = styled.section`
                 button, 
                 > a {
                     color: #fff;
-                    font-size: 1.6vw;
+                    font-size: 1.8vw;
                     padding-left: 2vw;
                     margin-bottom: 1vw;
                     letter-spacing: .05vw;
@@ -269,12 +270,18 @@ const QuickLinksSection = styled.section`
     }
 `;
 const Prana = styled.section`
-  text-transform: uppercase;
-  font-weight: 100;
-  color: #fff;
-  font-size: 4vw;
-  letter-spacing: .75vw;
-  margin: -1vw auto;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    font-size: 3.5vw;
+    -webkit-letter-spacing: .75vw;
+    -moz-letter-spacing: .75vw;
+    -ms-letter-spacing: .75vw;
+    -webkit-letter-spacing: .5vw;
+    -moz-letter-spacing: .5vw;
+    -ms-letter-spacing: .5vw;
+    letter-spacing: 0.5vw;
+    margin: 0 auto -1.25vw;
   @media screen and (max-width: 945px) {
     font-size: 5.5vw;
     letter-spacing: .8vw;
@@ -287,7 +294,7 @@ const Wellness = styled.section`
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   text-transform: lowercase;
-  font-size: 2.8vw;
+  font-size: 2.5vw;
   letter-spacing: .2vw;
   @media screen and (max-width: 945px) {
     font-size: 3.33vw;
@@ -303,7 +310,7 @@ const FooterWrapper = styled.div`
 
     display: grid;
     grid-template-areas: 'links logo contact';
-    grid-template-columns: 5fr 3fr 5fr; 
+    grid-template-columns: 5fr 2fr 5fr; 
 
     > section {
         > h1 {
