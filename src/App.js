@@ -270,281 +270,107 @@ export default class App extends Component {
   render(){
     const { user, emailContact, eventsList, textCopy, blogs, authors } = this.state
     return(
-      <GridContainer className="grid-container">
-
+<ParentWrapper>
         <Nav toggleHamburger={this.toggleHamburger}/>
-        <EmailSignup 
-          contactType={emailContact} 
-          toggleEmailSignup={this.toggleEmailSignup}
-          />
-
+        <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
         <Switch>
           <Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/>
         </Switch>
 
-        <ContactGrid id="contact-bar" className="grid-contact">
-          <AnnouncementBanner 
-            toggleEmailSignup={this.toggleEmailSignup
-            }/>
-        </ContactGrid>
+        <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
 
-        <NavGrid className="grid-nav">
-          <Switch>
-            <Route path={routes.HOME} exact render={() => 
-                      <NavBar 
-                        page={"home"} 
-                        toggleHamburger={this.toggleHamburger}
-                        toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>    
-            <Route path={routes.BLOG} render={() => 
-                      <NavBar 
-                        page={"home"} 
-                        toggleHamburger={this.toggleHamburger}
-                        toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>   
-            <Route path={routes.FAQS} exact render={() => 
-                      <NavBar 
-                        page={"global"} 
-                        toggleHamburger={this.toggleHamburger}
-                        toggleEmailSignup={this.toggleEmailSignup}
-                        /> 
-                        }/>       
-            <Route path={routes.MAIL} exact render={() => 
-                      <></> }/>  
-            <Route path={routes.ROOT} exact render={() => 
-                      <NavBar 
-                        page={"home"} 
-                        toggleHamburger={this.toggleHamburger}
-                        toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>          
-            <Route path={routes.ROOT} render={() => 
-                      <NavBar 
-                        page={"global"} 
-                        toggleHamburger={this.toggleHamburger}
-                        toggleEmailSignup={this.toggleEmailSignup}
-                        /> }/>    
-          </Switch>
-        </NavGrid>
+        <Switch>
+          <Route path={routes.HOME} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
+            <HomeMain /> 
+          </> }/>
+          <Route path={routes.BLOG} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <FeatureBlogHeader blog={blogs[0]}author={authors[0]}/>
+            <BlogMain blogs={blogs}/> 
+          </> }/>  
+          <Route path={routes.FAQS} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <h1>Frequently Asked Questions</h1>
+            <FAQMain/> 
+          </> }/>  
+          <Route path={routes.INFO} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(false)} textCopy={textCopy.aboutPage}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.aboutPage}>
+              <AboutMain />
+            </HeaderMessage>
+          </> }/>      
+          <Route path={routes.SERV} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> 
+            <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/>
+          </> }/>           
+          <Route path={routes.WELL} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(true)} textCopy={textCopy.personalWellness}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.personalWellness}>
+              <PersonalMain/>
+            </HeaderMessage> 
+          </> }/>       
+          <Route path={routes.CORP} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(false)} textCopy={textCopy.corporateWellness}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.corporateWellness}>
+              <CorporateMain>
+                <PurpleContent textCopy={textCopy.corporateBodyText} toggleEmailSignup={this.toggleEmailSignup}/>
+              </CorporateMain>
+            </HeaderMessage> 
+          </> }/>  
+          <Route path={routes.YOGA} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(false)} textCopy={textCopy.yogaTherapy}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.yogaTherapy}>
+              <YogaTherapyMain/>
+            </HeaderMessage>
+          </> }/>
+          <Route path={routes.PREG} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(false)} textCopy={textCopy.maternalHealth}/> 
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.maternalHealth} >
+              <PrenatalMain/>
+            </HeaderMessage> 
+          </> }/>
+          <Route path={routes.COAC} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(false)} textCopy={textCopy.coachingSpeaking}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.coachingSpeaking}>
+              <Speaking/>
+              <Coaching/>
+            </HeaderMessage> 
+          </> }/>     
+          <Route path={routes.EVNT} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(false)} textCopy={textCopy.eventsInformation}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.eventsInformation}>
+              <EventsMain eventsList={eventsList}/>
+            </HeaderMessage> 
+          </> }/>   
+          <Route path={routes.MAIL} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/></> }/>                
+            <Route path={routes.ROOT} render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger}toggleEmailSignup={this.toggleEmailSignup}/>
+              <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
+            <HomeMain /> 
+          </> }/>
+        </Switch>          
 
-        <GridHeader className="grid-header">
-          <Switch>         
-            <Route path={routes.HOME} exact render={() => 
-                    <HomeHeader 
-                      toggleEmailSignup={this.toggleEmailSignup}
-                      /> }/>
-            <Route path={routes.BLOG} exact render={() => 
-                    <FeatureBlogHeader 
-                      blog={blogs[0]}
-                      author={authors[0]}
-                      /> }/>
-            <Route path={routes.FAQS} exact render={() => 
-                    <h1>Frequently Asked Questions</h1> }/>
-            <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.aboutPage}
-                      /> }/>
-            <Route path={routes.SERV} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(true)} 
-                      textCopy={textCopy.wellnessServices}
-                      /> }/> 
-            <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(true)} 
-                      textCopy={textCopy.personalWellness}
-                      /> }/>
-            <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.corporateWellness}
-                      /> }/>   
-            <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.yogaTherapy}
-                      /> }/> 
-            <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.maternalHealth}
-                      /> }/> 
-            <Route path={routes.EVNT} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.eventsInformation}
-                      /> }/> 
-            <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent 
-                      purpleBox={(false)} 
-                      textCopy={textCopy.coachingSpeaking}
-                      /> }/> 
-            <Route path={routes.MAIL} exact render={() => 
-                      <></> }/>  
-            <Route path={routes.ROOT} render={() => 
-                    <HomeHeader 
-                      toggleEmailSignup={this.toggleEmailSignup}
-                    /> }/>                    
-          </Switch>
-        </GridHeader>
-
-        <MainGrid className="grid-main">
-          <Switch>
-            <Route path={routes.HOME} exact render={() => <HomeMain /> }/>
-            <Route path={routes.BLOG} exact render={() => 
-                <BlogMain blogs={blogs}/> 
-                     }/>  
-            <Route path={routes.FAQS} exact render={() => 
-                <FAQMain/> 
-                    }/>  
-            <Route path={routes.INFO} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.aboutPage}
-                        >
-                        <AboutMain /> 
-                      </HeaderMessage>
-                     }/>      
-            <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.wellnessServices} 
-                        scrollToTop={this.scrollToTop} 
-                        eventsList={eventsList}
-                        /> }/>           
-            <Route path={routes.WELL} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.personalWellness}
-                        >
-                        <PersonalMain/>
-                      </HeaderMessage> 
-                    }/>       
-            <Route path={routes.CORP} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.corporateWellness}>
-                        <CorporateMain>
-                          <PurpleContent 
-                            textCopy={textCopy.corporateBodyText} 
-                            toggleEmailSignup={this.toggleEmailSignup}
-                            />
-                        </CorporateMain>
-                      </HeaderMessage> 
-                    }/>  
-            <Route path={routes.YOGA} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.yogaTherapy}
-                        >
-                        <YogaTherapyMain/>
-                      </HeaderMessage>
-                    }/>
-            <Route path={routes.PREG} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.maternalHealth} 
-                        >
-                        <PrenatalMain/>
-                      </HeaderMessage> }/>
-            <Route path={routes.COAC} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.coachingSpeaking}
-                        >
-                        <Speaking/><Coaching/>
-                      </HeaderMessage> 
-                    }/>     
-            <Route path={routes.EVNT} exact render={() => 
-                      <HeaderMessage 
-                        toggleEmailSignup={this.toggleEmailSignup} 
-                        textCopy={textCopy.eventsInformation}
-                        >
-                        <EventsMain 
-                          eventsList={eventsList}
-                          />
-                      </HeaderMessage> 
-                    }/>   
-            <Route path={routes.MAIL} exact render={() => <></> }/>                
-            <Route path={routes.ROOT} render={() => <HomeMain /> }/>
-          </Switch>          
-        </MainGrid>
-
-        <Footer 
-          toggleEmailSignup={this.toggleEmailSignup} 
-          scrollToTop={this.scrollToTop}
-          />
+        <Footer toggleEmailSignup={this.toggleEmailSignup} scrollToTop={this.scrollToTop}/>
         
-      </GridContainer>
+      </ParentWrapper>
     );
   };
 };
 
-const GridContainer = styled.div`
-  display: grid;
-  width: 100vw;
-  min-height: 100%;
-  grid-template-rows: 46px 150px calc(100vh - 196px) auto 36vw;
-  grid-template-columns: 200px calc(100vw - 400px) 200px;
-  background-color: #fff;
-  grid-gap: 0;
-  margin: 0;
-  grid-template-areas:
-    ' contact contact contact '
-    ' nav nav nav '
-    ' header header header '
-    ' main main main '
-    ' footer footer footer ';
-  grid-gap: 0;
-
+const ParentWrapper = styled.div`
+  text-align: center;
 @media screen and (max-width: 945px) {
-  grid-template-rows: 40px 80px 90vh auto auto;
-  grid-template-columns: 100vw;
-  grid-template-areas:
-    ' contact '
-    ' nav '
-    ' header '
-    ' main '
-    ' footer';
+  
   }
-`;
-
-const GridHeader = styled.div`
-  grid-area: header;
-  text-align: center;
-  @media screen and (max-width: 945px) {
-      margin-bottom: 0;
-      margin-top: 0;
-      text-align: center;
-      height: 44vw;
-      overflow: hidden;
-    }
-`;
-
-const NavGrid = styled.div`
-  grid-area: nav;
-  background-color: transparent;
-  position: absolute;
-  z-index: 10;
-  color: #FFF;
-  width: 100vw;
-  margin-top: 20px;
-    @media screen and (max-width: 945px) {
-      margin-left: 5vw;
-      width: 90vw;
-      margin-top: 40px;
-    }
-`;
-const MainGrid = styled.div`
-  grid-area: main;
-  background-color: #FFF;
-  padding-bottom: 60px;
-  text-align: center;
-`;
-
-const ContactGrid = styled.div`
-  grid-area: contact;
-  background-color: var(--purple);
-  position: relative;
-  z-index: 999;
 `;
