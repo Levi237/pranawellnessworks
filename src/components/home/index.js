@@ -183,12 +183,12 @@ const Quote = styled.div`
     text-align: center;
     display: flex;
     @media (max-width: 945px){
-        position: absolute;
-        width: 100vw;
-        bottom: 0;;
-        font-size: 2.25vw;
-        height: 20vw;
-        margin: 0 auto;
+        width: 80vw;
+        bottom: 0;
+        padding: 0 10vw;
+        font-size: 4.8vw;
+        height: 40vw;
+        margin: -10vh auto 0;
     }
 `;
 

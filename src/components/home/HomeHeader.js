@@ -56,9 +56,6 @@ const WelcomeContainer = styled.div`
   z-index: 1;
   background-image: linear-gradient(180deg, #000, transparent, transparent 80%);
   overflow: hidden;
-  @media screen and (max-width: 945px) {
-      padding-top: 20vw;
-    }
 
   > section {
     &:first-of-type {
@@ -69,12 +66,7 @@ const WelcomeContainer = styled.div`
     
       text-transform: uppercase;
       color: var(--lightgreen);
-    
 
-      @media screen and (max-width: 945px) {
-        font-size: 5vw;
-
-      }
     }
     &:nth-of-type(2) {
       margin-top: -2vw;
@@ -82,24 +74,17 @@ const WelcomeContainer = styled.div`
       font-weight: 100;
       letter-spacing: 2.5vw;
       text-transform: uppercase;
-      
-      @media screen and (max-width: 945px) {
-        font-size: 14vw;
-        letter-spacing: 5vw;
-      }
+    
     }
     &:nth-of-type(3) {
       font-family: 'Merriweather',sans-serif;
       font-size: 7vw;
       margin-top: -4vw;
     
-      @media screen and (max-width: 945px) {
-        font-size: 10vw;
-      }
     }
     &:nth-of-type(4) {
       position: absolute;
-      bottom: calc(5vh + 40px + 7.33vw);
+      bottom: calc(5vh + 7.33vw + 42px);
       width: 100vw;
       margin: 0 auto;
 
@@ -114,34 +99,24 @@ const WelcomeContainer = styled.div`
     }
     @media screen and (max-width: 945px) {
       &:first-of-type {
-        font-size: 4vw;
-
-      }
-      &:nth-of-type(2) {
-        font-size: 11vw;
-      }
-      &:nth-of-type(3) {
-        font-size: 9vw;
-      }
-      &:nth-of-type(4){
-        font-size: 4vw;
-
-      }
-    }
-    @media screen and (max-width: 600px) {
-      &:first-of-type {
         font-size: 5vw;
 
       }
       &:nth-of-type(2) {
         font-size: 14vw;
+        letter-spacing: 3vw;
       }
       &:nth-of-type(3) {
         font-size: 10vw;
       }
       &:nth-of-type(4){
         font-size: 5vw;
-
+        bottom: calc(16vh + 1.33vw + 42px);
+      }
+      &:nth-of-type(5) {
+        position: absolute;
+        bottom: calc(5vh + 1.33vw + 42px);
+        width: 100vw;
       }
     }
   }
@@ -149,7 +124,7 @@ const WelcomeContainer = styled.div`
 
 const ButtonWrapper = styled.section`
 position: absolute;
-bottom: calc(2vh + 7.33vw + 40px);
+bottom: calc(2vh + 7.33vw + 42px);
 margin: 0 auto;
 text-align: center;
 width: 100vw;
@@ -161,6 +136,7 @@ width: 100vw;
 const ButtonCTA = styled.button`
   font-size: 1.33vw;
   margin: 0 auto;
+  padding: 20px 0;
   color: #FFF;
   background-color: var(--lightgreen) !important;
   border-color: #669F35;
@@ -172,7 +148,7 @@ const ButtonCTA = styled.button`
   }
 
   @media screen and (max-width: 945px) {
-    font-size: 4vw!important;
+    font-size: 4.5vw!important;
     padding: 1vh auto;
     bottom: off;
   }

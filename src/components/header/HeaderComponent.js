@@ -20,6 +20,9 @@ import styled from 'styled-components';
 const HeaderPadding = styled.section`
   width: 100vw;
   height: 140px;
+  @media screen and (max-width: 945px) {
+    height: 120px;
+  }
 `;
 const PurpleBox = styled.div`
     position: relative;
@@ -35,6 +38,7 @@ const Container = styled.div`
     width: 80vw;
     height: 27vw;
     margin: 0 10vw;
+    overflow: hidden;
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,9 +79,8 @@ const Container = styled.div`
     @media screen and (max-width: 945px) {
         width: 100vw;
         margin: 0;
-        height: 30vw;
+        height: 40vw;
         padding-top: 0;
-        overflow: hidden;
         
         text-align: center;
 
