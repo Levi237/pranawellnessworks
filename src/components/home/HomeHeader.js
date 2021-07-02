@@ -51,7 +51,7 @@ const WelcomeContainer = styled.div`
   color: #FFF;
   text-align: center;
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   z-index: 1;
   background-image: linear-gradient(180deg, #000, transparent, transparent 80%);
@@ -62,26 +62,25 @@ const WelcomeContainer = styled.div`
 
   > section {
     &:first-of-type {
-      font-size: 2.5vw;
+      margin-top: 120px;
+      font-size: 2.8vw;
       font-weight: bold;
       letter-spacing: .5vw;
     
       text-transform: uppercase;
       color: var(--lightgreen);
     
-      margin-top: 60px;
-      margin-bottom: calc(7vh - 2.5vw - 60px);
+
       @media screen and (max-width: 945px) {
         font-size: 5vw;
-        margin-top: calc(40px + 10vw);
+
       }
     }
     &:nth-of-type(2) {
+      margin-top: -2vw;
       font-size: 10vw;
       font-weight: 100;
       letter-spacing: 2.5vw;
-      margin-top: 20px;
-    
       text-transform: uppercase;
       
       @media screen and (max-width: 945px) {
@@ -91,26 +90,32 @@ const WelcomeContainer = styled.div`
     }
     &:nth-of-type(3) {
       font-family: 'Merriweather',sans-serif;
-      font-size: 5vw;
+      font-size: 7vw;
+      margin-top: -4vw;
     
-      margin-top: calc(2vh - 5vw);
       @media screen and (max-width: 945px) {
         font-size: 10vw;
       }
     }
     &:nth-of-type(4) {
-      font-weight: 100;
-      font-size: 2vw;
       position: absolute;
-      bottom: calc(3vh + 12.33vw + 40px);
-      text-shadow: 4px 4px 10px #000;
+      bottom: calc(5vh + 40px + 7.33vw);
+      width: 100vw;
       margin: 0 auto;
+
+      font-weight: 100;
+      font-size: 2.4vw;
+      text-shadow: 4px 4px 10px #000;
+    }
+    &:nth-of-type(5) {
+      position: absolute;
+      bottom: calc(3vh + 6vw);
       width: 100vw;
     }
     @media screen and (max-width: 945px) {
       &:first-of-type {
         font-size: 4vw;
-        margin-top: calc(40px + 10vw);
+
       }
       &:nth-of-type(2) {
         font-size: 11vw;
@@ -120,13 +125,13 @@ const WelcomeContainer = styled.div`
       }
       &:nth-of-type(4){
         font-size: 4vw;
-        top: 72vw;
+
       }
     }
     @media screen and (max-width: 600px) {
       &:first-of-type {
         font-size: 5vw;
-        margin-top: calc(40px + 10vw);
+
       }
       &:nth-of-type(2) {
         font-size: 14vw;
@@ -136,7 +141,7 @@ const WelcomeContainer = styled.div`
       }
       &:nth-of-type(4){
         font-size: 5vw;
-        bottom: 20vh;
+
       }
     }
   }
