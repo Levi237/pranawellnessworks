@@ -93,7 +93,7 @@ const Container = styled.div`
     padding-top: 4vw;
     padding-bottom: 8vw;
 
-    background: rgb(191, 158, 200);
+    background: var(--lightpurple);
 
     button {
     > section {

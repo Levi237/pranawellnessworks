@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
  const HeaderComponent = ({textCopy}) => {
     return(<>
+        <HeaderPadding></HeaderPadding>
         <Container style={{ backgroundImage: `url(./header/${textCopy.image})` }}>
             <div>
                 <div>
@@ -16,13 +17,16 @@ import styled from 'styled-components';
         </>}
     </>);
 };
-
+const HeaderPadding = styled.section`
+  width: 100vw;
+  height: 140px;
+`;
 const PurpleBox = styled.div`
     position: relative;
     z-index: 0;
     margin-top: -15vw;
-    height: 30vw;
-    background-color: #bf9ec8;
+    height: 15vw;
+    background-color: var(--lightpurple);
 `;
 const Container = styled.div`
     position: relative;

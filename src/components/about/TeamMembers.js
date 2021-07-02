@@ -190,7 +190,7 @@ const TeamWrapper = styled.div`
 }
 .member-front-data.pop-hover:hover {
     border: 1px solid #669F35!important;
-    color: rgb(191, 158, 200);
+    color: var(--lightpurple);
     background-color: transparent;
     transition: all .3s ease-in-out;
     transition-delay: .2s;

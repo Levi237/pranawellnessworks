@@ -7,6 +7,7 @@ export default class HeaderMessage extends Component {
   render(){
     const {toggleEmailSignup, textCopy} = this.props
     return(<>
+
       { (textCopy.backgroundColor === "purple")? <>
         <PurpleContainer className="wellness-main-content">
             <PurpleContent textCopy={textCopy} toggleEmailSignup={toggleEmailSignup}/>
@@ -32,12 +33,13 @@ export default class HeaderMessage extends Component {
     </>);
   }
 };
+
 const PurpleContainer = styled.div`
   margin-bottom: 5vw;
   position: relative;
   z-index: 1;
   padding-bottom: 8vw;
-  background: rgb(191, 158, 200);
+  background: var(--lightpurple);
     @media screen and (max-width: 945px) {
       padding-top: 5vw;
     }
