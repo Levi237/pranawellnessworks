@@ -78,6 +78,11 @@ const Container = styled.div`
             padding: 2%;
         }
     }
+    @media screen and (max-width: 640px) {
+        form {
+            width: 100vw;
+        }
+    }
 `;
 
 const CloseBtn = styled.button`
