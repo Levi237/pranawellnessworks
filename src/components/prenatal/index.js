@@ -115,6 +115,7 @@ const PostCircle = styled.div`
     display: inline-block;
     width: 50vw;
     height: 40vw;
+    padding: 5vw 0;
     vertical-align: top;
   }
   h2 {

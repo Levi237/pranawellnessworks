@@ -33,7 +33,7 @@ const HomeHeader = ({toggleEmailSignup}) => {
         <ButtonWrapper>
           <ButtonCTA 
             name="contactForm" 
-            className="ctaBtn mobile-fill"
+            className="ctaBtn"
             value="contactRequest" 
             onClick={(e) => {toggleEmailSignup(e)}}
           >
@@ -134,9 +134,10 @@ width: 100vw;
 }
 `;
 const ButtonCTA = styled.button`
-  font-size: 1.33vw;
+  font-size: 18px;
   margin: 0 auto;
   padding: 20px 0;
+  width: 300px;
   color: #FFF;
   background-color: var(--lightgreen) !important;
   border-color: #669F35;
@@ -148,9 +149,6 @@ const ButtonCTA = styled.button`
   }
 
   @media screen and (max-width: 945px) {
-    font-size: 4.5vw!important;
-    padding: 1vh auto;
-    bottom: off;
   }
 `;
 
