@@ -113,10 +113,10 @@ const Header = styled.h1`
 `;
 
 const ButtonContainer = styled.div`
-    margin-top: 5vw;
+    margin: 5vw auto;
 
     @media screen and (max-width: 945px) {
-        margin-top: 15vw;
+        margin: 15vw auto;
 
         button {
             margin: 2.5vw;
