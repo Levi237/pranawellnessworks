@@ -56,14 +56,18 @@ export default class FAQMain extends Component {
         })
         return(
             <FAQWrapper>
+                <HeaderPadding></HeaderPadding>
+                <h1>Frequently Asked Questions</h1>
                 {showFAQ}
             </FAQWrapper>
         );
     };
 };
+const HeaderPadding = styled.section`
+    height: 100px;
+`;
 
 const FAQWrapper = styled.div`
-
     > div {
         text-align: left;
         padding: 0 10vw 2.5vw;
