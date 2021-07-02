@@ -277,24 +277,27 @@ export default class App extends Component {
           <Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/>
         </Switch>
 
-        <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
+        
 
         <Switch>
-          <Route path={routes.HOME} exact render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+          <Route path={routes.MAIL} exact render={() => <></> }/>     
+          <Route path={routes.ROOT} exact render={() => <>
+            <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain /> 
           </> }/>
           <Route path={routes.BLOG} exact render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <FeatureBlogHeader blog={blogs[0]}author={authors[0]}/>
             <BlogMain blogs={blogs}/> 
           </> }/>  
           <Route path={routes.FAQS} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <FAQMain/> 
           </> }/>  
           <Route path={routes.INFO} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.aboutPage}/>
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.aboutPage}>
@@ -302,11 +305,13 @@ export default class App extends Component {
             </HeaderMessage>
           </> }/>      
           <Route path={routes.SERV} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> 
             <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/>
           </> }/>           
           <Route path={routes.WELL} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.personalWellness}/>
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.personalWellness}>
@@ -314,6 +319,7 @@ export default class App extends Component {
             </HeaderMessage> 
           </> }/>       
           <Route path={routes.CORP} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.corporateWellness}/>
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.corporateWellness}>
@@ -323,6 +329,7 @@ export default class App extends Component {
             </HeaderMessage> 
           </> }/>  
           <Route path={routes.YOGA} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.yogaTherapy}/>
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.yogaTherapy}>
@@ -330,6 +337,7 @@ export default class App extends Component {
             </HeaderMessage>
           </> }/>
           <Route path={routes.PREG} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.maternalHealth}/> 
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.maternalHealth} >
@@ -337,6 +345,7 @@ export default class App extends Component {
             </HeaderMessage> 
           </> }/>
           <Route path={routes.COAC} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.coachingSpeaking}/>
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.coachingSpeaking}>
@@ -345,15 +354,15 @@ export default class App extends Component {
             </HeaderMessage> 
           </> }/>     
           <Route path={routes.EVNT} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.eventsInformation}/>
             <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.eventsInformation}>
               <EventsMain eventsList={eventsList}/>
             </HeaderMessage> 
           </> }/>   
-          <Route path={routes.MAIL} exact render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/></> }/>                
-            <Route path={routes.ROOT} render={() => <>
+           
+          <Route path={routes.ROOT} render={() => <>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
               <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain /> 
