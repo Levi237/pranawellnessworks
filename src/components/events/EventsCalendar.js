@@ -5,7 +5,7 @@ const EventsCalendar = ({ eventsList }) => {
 
         const showDates = eventsList.map((event, k) => {
           return(
-            <a href={event.link} key={k}>
+            <a key={k} href={event.link} target="_blank" rel="noopener noreferrer">
               <h1>{event.day}</h1>
               <hr/>
               <h2>{event.title}</h2>

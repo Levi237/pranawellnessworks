@@ -109,7 +109,7 @@ const LotusContainer = styled.div`
         }
     }
     &:last-of-type {
-        background-color: rgba(150, 91, 165, 0.6);
+        background-color: rgba(150, 91, 165, 0.5);
         text-align: left;
         padding: 0 4vw 0 2.5vw;
         > img {

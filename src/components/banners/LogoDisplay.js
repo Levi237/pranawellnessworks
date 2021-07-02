@@ -37,12 +37,12 @@ const CustomerDisplay = ({ logos, clients }) => {
 };
 
 const ScrollMenu = styled.div`
-    background-color: rgba(150, 91, 165, 0.2);;
+    background-color: var(--lightestpurple);;
     overflow: auto;
     white-space: nowrap;
     transition: all .3s ease-in-out;
     &:hover {
-        background-color: rgba(150, 91, 165, 0.3);
+        background-color: var(--lightpurple);
         transition: all 5s ease-in-out;
     }
     &#scroll-id img {
