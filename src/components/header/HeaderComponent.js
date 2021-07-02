@@ -26,29 +26,35 @@ const PurpleBox = styled.div`
 `;
 const Container = styled.div`
     position: relative;
-    color: #fff;
+    z-index: 11;
+
     width: 80vw;
     height: 27vw;
     margin: 0 10vw;
-    z-index: 11;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    color: #fff;
+
     > div {
         z-index: 12;
         width: 80vw;
         height: 100%;
+
         text-align: center;
-        // background-color: rgba(0,0,0,.3);
+
         > div {
             section {
                 &:first-of-type {
-                    text-align: center;
-                    letter-spacing: .4vw;
-                    color: #fff !important;
+                    padding-top: 8vw;
+
                     font-size: 3.5vw;
                     font-weight: light;
-                    padding-top: 8vw;
+                    letter-spacing: .4vw;
+                    text-align: center;
+                    color: #fff !important;
                 }
                 &:last-of-type {
                     font-family: 'Merriweather', sans-serif;
@@ -66,16 +72,21 @@ const Container = styled.div`
         width: 100vw;
         margin: 0;
         height: 30vw;
-        text-align: center;
-        overflow: hidden;
         padding-top: 0;
-        > div > div {
-            width: 100vw;
-            section:first-of-type {
-                font-size: 5vw;
-            }
-            section:last-of-type {
-                font-size: 9vw;
+        overflow: hidden;
+        
+        text-align: center;
+
+        > div {
+            > div {
+                width: 100vw;
+
+                section:first-of-type {
+                    font-size: 5vw;
+                }
+                section:last-of-type {
+                    font-size: 9vw;
+                }
             }
         }
     }
