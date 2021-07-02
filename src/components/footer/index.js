@@ -187,6 +187,7 @@ const QuickLinksSection = styled.section`
     }
     > div {
         &:first-of-type {      
+            text-align: left;
             a {
                 display: block;
                 text-decoration: none;
@@ -203,7 +204,7 @@ const QuickLinksSection = styled.section`
                 > a {
                     color: #fff;
                     font-size: 1.6vw;
-                    padding-left: 1vw;
+                    padding-left: 2vw;
                     margin-bottom: 1vw;
                     letter-spacing: .05vw;
                 }
@@ -211,7 +212,7 @@ const QuickLinksSection = styled.section`
                 }
                 &:last-of-type {                    
                     > div {
-                        padding-left: 2vw;
+                        padding-left: 4vw;
                         font-size: 1.25vw;
                         > a {
                             color: var(--lightpurple)!important;
@@ -298,7 +299,6 @@ const FooterWrapper = styled.div`
     background-color: var(--purple);
     grid-area: footer;
     width: 100%;
-    height: 100%;
     min-height: 400px;
 
     display: grid;
