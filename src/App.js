@@ -142,7 +142,7 @@ export default class App extends Component {
         message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
         value: "contactRequest",
         backgroundColor: "purple",
-        button: false
+        button: "SCHEDULE YOUR CONSULTATION"
       },
       eventsInformation: {
         title: "NURTURE YOUR",
@@ -282,7 +282,7 @@ export default class App extends Component {
         <Switch>
           <Route path={routes.MAIL} exact render={() => <></> }/>     
           <Route path={routes.ROOT} exact render={() => <>
-            <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain /> 
           </> }/>
