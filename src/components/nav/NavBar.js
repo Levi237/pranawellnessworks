@@ -11,8 +11,9 @@ const NavBar = ({ page, toggleHamburger }) => {
             <Logo src={ (page === "white" || page === "home") ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
             <section>
               { page !== "home" && <>
-                <h1>Prana</h1>
-                <h2>wellness</h2>
+                <h1 style={page === "white" ? {color: "white"} : {color: "var(--purple)"}}>Prana</h1>
+                <br/>
+                <h2 style={page === "white" ? {color: "white"} : {color: "var(--lightgreen)"}}>wellness</h2>
               </>}
             </section>
         </Link>
@@ -53,24 +54,22 @@ const NavContainer = styled.div`
         }
 
         > section {
-          width: 225px;
           display: inline-block;
           vertical-align: top;
           margin-top: 20px;
-
-          > h1 {
-            color: #fff;
-            text-align: left;
-            padding: 0;
-            font-weight: 100;
-            font-size: 34px;
-          }
+          > h1,
           > h2 {
             text-align: left;
-            color: #fff;
+            font-weight: 100;
+            display: inline-block;
+            padding: 0;
+          }
+          > h1 {
+            font-size: 32px;
+          }
+          > h2 {
             font-family: var(--fancy-font);
             margin-top: -10px;
-            font-weight: 100;
           }
         }
       }
@@ -83,6 +82,41 @@ const NavContainer = styled.div`
       margin-right: 10vw;
       margin-top: 32px;
       vertical-align: top;
+    }
+  }
+  @media screen and (max-width: 945px) {
+    > div {
+    
+      &:first-of-type {
+        width: 205px;
+        margin-left: 10vw;
+        > a {
+
+          > img {
+            width: 80px;
+          }
+  
+          > section {
+            margin-top: 20px;
+  
+            > h1 {
+              font-size: 24px;
+            }
+            > h2 {
+              font-size: 18px;
+              margin-top: -8px;
+            }
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        width: calc(80vw - 240px);
+      }
+      &:last-of-type {
+        width: 35px;
+        margin-right: 10vw;
+        margin-top: 20px;
+      }
     }
   }
 `;
