@@ -377,7 +377,6 @@ export default class App extends Component {
 
 const ParentWrapper = styled.div`
   text-align: center;
-@media screen and (max-width: 945px) {
-  
+  @media screen and (max-width: 945px) {
   }
 `;
