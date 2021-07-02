@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const HomeHeader = ({toggleEmailSignup}) => {
   
   return(
@@ -51,17 +50,14 @@ const HomeHeader = ({toggleEmailSignup}) => {
 const WelcomeContainer = styled.div`
   color: #FFF;
   text-align: center;
-  position: absolute;
-  top: 46px;
+  position: relative;
   height: 100%;
   width: 100vw;
   z-index: 1;
-  background-image: linear-gradient(180deg, black, transparent, transparent 80%);
+  background-image: linear-gradient(180deg, #000, transparent, transparent 80%);
   overflow: hidden;
   @media screen and (max-width: 945px) {
-      margin-top: -20vw;
       padding-top: 20vw;
-      top: 0;
     }
 
   > section {
