@@ -50,6 +50,36 @@ const FeatureBlogContainer = styled.div`
       color: var(--lightgrey);
     }
   }
+    @media screen and (max-width: 945px) {
+      padding-top: 0px;
+      width: 100vw;
+      > div {
+        width: 100vw;
+        height: 100vw;
+      }
+    
+      > section {
+        margin: 20px auto;
+    
+        > small {
+          font-size: 4.6vw;
+          text-transform: uppercase;
+          color: var(--green);
+        }
+    
+        > h1 {
+          width: 86vw;
+          padding: 0;
+          margin: 10px auto;
+          font-family: var(--fancy-font);
+          text-transform: none;
+        }
+        
+        > h4 {
+          color: var(--lightgrey);
+        }
+    }
+
 `;
 
 export default FeatureBlogHeader;

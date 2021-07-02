@@ -59,7 +59,7 @@ const WelcomeContainer = styled.div`
 
   > section {
     &:first-of-type {
-      margin-top: 120px;
+      margin-top: 70px;
       font-size: 2.8vw;
       font-weight: bold;
       letter-spacing: .5vw;

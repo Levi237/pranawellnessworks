@@ -268,17 +268,16 @@ export default class App extends Component {
     top.scrollIntoView({behavior: 'smooth'});
   }
   render(){
-    const { user, emailContact, eventsList, textCopy, blogs, authors } = this.state
+    const { emailContact, eventsList, textCopy, blogs, authors } = this.state
     return(
-<ParentWrapper>
+
+      <ParentWrapper>
+        {/******* POP UPS *******/}
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
-        <Switch>
-          <Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/>
-        </Switch>
+        <Switch><Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/></Switch>
 
-        
-
+        {/******* BODY SWITCHBOARD *******/}
         <Switch>
           <Route path={routes.MAIL} exact render={() => <></> }/>     
           <Route path={routes.ROOT} exact render={() => <>

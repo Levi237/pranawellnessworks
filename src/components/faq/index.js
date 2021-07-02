@@ -64,13 +64,14 @@ export default class FAQMain extends Component {
     };
 };
 const HeaderPadding = styled.section`
-    height: 100px;
+    height: 120px;
 `;
 
 const FAQWrapper = styled.div`
     > div {
         text-align: left;
         padding: 0 10vw 2.5vw;
+        
         > div {
             > h1 {
                 text-align: left;

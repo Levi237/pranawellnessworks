@@ -26,6 +26,10 @@ const Container = styled.div`
     overflow: scroll;
     z-index: 99999;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     p {
         text-align: center;
         background-color: white;
@@ -33,11 +37,10 @@ const Container = styled.div`
     
     form {
         text-align: center;
-        max-width: 700px;
-        min-height: 80vh;
-        margin: 20px auto 0;
-        background-color: white;
-        padding: 20px 0;
+        width: 80vw;
+        background-color: #fff;
+        padding: 80px 0;
+        box-shadow: 0 0 150px rgba(0,0,0,.2);
     }
     form input {
         height: 36px;
