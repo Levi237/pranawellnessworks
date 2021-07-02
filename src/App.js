@@ -264,7 +264,7 @@ export default class App extends Component {
     });
   };
   scrollToTop = () => {
-    const top = document.getElementById('contact-bar');
+    const top = document.getElementById('scroll-to-bar');
     top.scrollIntoView({behavior: 'smooth'});
   }
   render(){
@@ -272,6 +272,9 @@ export default class App extends Component {
     return(
 
       <ParentWrapper>
+        {/******* scrollToTop id *******/}
+        <ScrollToBar id="scroll-to-bar"></ScrollToBar>
+        
         {/******* POP UPS *******/}
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
@@ -375,6 +378,10 @@ export default class App extends Component {
   };
 };
 
+const ScrollToBar = styled.section`
+  width: 100vw;
+  height: 0;
+`;
 const ParentWrapper = styled.div`
   text-align: center;
   @media screen and (max-width: 945px) {
