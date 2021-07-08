@@ -214,7 +214,7 @@ export default class App extends Component {
       price: "donation based",
       day: "Friday",
       when: "Every",
-      time: "10p PT",
+      time: "10:30a PT",
       note: "(happening now)",
       img: "./events/meditation.png",
       link: "https://thenalaverse.com/get-lifted"
