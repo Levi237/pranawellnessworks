@@ -7,7 +7,7 @@ const EventsCalendar = ({ eventsList }) => {
           return(
             <a key={k} href={event.link} target="_blank" rel="noopener noreferrer">
               <h1>{event.day}</h1>
-              <hr/>
+              <div className="hr"></div>
               <h2>{event.title}</h2>
               <h4>[ {event.location} ]</h4>
               <h3>
@@ -78,10 +78,14 @@ const CalendarWrapper = styled.div`
     font-size: 1.67vw;
     color: var(--lightgrey)!important;
   }
-  hr {
-    width: 18vw;
-    border: 1px solid var(--green);
+  .hr {
+    display: inline-block;
+    width: 12vw;
+    height: 1px;
+    margin: 10px 0 5px;
+    background-image: linear-gradient(90deg, transparent, var(--green), transparent);
   }
+
   @media screen and (max-width: 640px){ 
     margin-bottom: 40px; 
     grid-template-columns: 1fr;
@@ -106,7 +110,9 @@ const CalendarWrapper = styled.div`
     h4 {
       font-size: 3.33vw;
     }
-    hr {
+    .hr {
+      width: 30vw;
+      margin: 5px 0;
     }
   }
   @media screen and (min-width: 1200px){ 
@@ -126,8 +132,8 @@ const CalendarWrapper = styled.div`
     h4 {
       font-size: 20px;
     }
-    hr {
-      width: 60px;
+    .hr {
+      width: 150px;
     }
   }
 `;
