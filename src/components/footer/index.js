@@ -26,6 +26,7 @@ export default class Footer extends Component {
                                 >
                                 CONTACT US
                             </button>
+                            <NavLink activeClassName="nav-active" to={routes.FAQS} onClick={scrollToTop}>FAQ</NavLink>
                         </section>
                         <section>
                             <NavLink activeClassName="nav-active" to={routes.SERV} onClick={scrollToTop}>WELLNESS SERVICES</NavLink>

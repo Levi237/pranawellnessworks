@@ -28,6 +28,7 @@ export default class Nav extends Component {
                         <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.COAC} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
                     </section>
+                    <NavLink activeClassName="nav-active" to={routes.FAQS} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
                 </div>
             </NavContainer>
         );
