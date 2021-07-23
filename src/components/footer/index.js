@@ -17,7 +17,7 @@ export default class Footer extends Component {
                     <div>
                         <section>
                             <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={scrollToTop}>HOME</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.EVNT} onClick={scrollToTop}>SCHEDULE</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={scrollToTop}>SCHEDULE</NavLink>
                             <NavLink activeClassName="nav-active" to={routes.INFO} onClick={scrollToTop}>ABOUT US</NavLink>
                             <button className="link-btn"
                                 name="contactForm" 
@@ -26,7 +26,7 @@ export default class Footer extends Component {
                                 >
                                 CONTACT US
                             </button>
-                            <NavLink activeClassName="nav-active" to={routes.FAQS} onClick={scrollToTop}>FAQ</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={scrollToTop}>FAQ</NavLink>
                         </section>
                         <section>
                             <NavLink activeClassName="nav-active" to={routes.SERV} onClick={scrollToTop}>WELLNESS SERVICES</NavLink>
@@ -35,7 +35,7 @@ export default class Footer extends Component {
                                 <NavLink activeClassName="nav-active" to={routes.CORP} onClick={scrollToTop}>CORPORATE WELLNESS</NavLink>
                                 <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={scrollToTop}>YOGA THERAPY</NavLink>
                                 <NavLink activeClassName="nav-active" to={routes.PREG} onClick={scrollToTop}>MATERNAL HEALTH</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.COAC} onClick={scrollToTop}>SPEAKING & COACHING</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.COACH} onClick={scrollToTop}>SPEAKING & COACHING</NavLink>
                             </div>
                         </section>
                     </div>

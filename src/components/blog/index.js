@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-export default class BlogMain extends Component {
+export default class BlogMainIndex extends Component {
     state = {
 
     }
     render(){
         return(
-            <BlogWrapper>
-                Hello World
-            </BlogWrapper>
+            <BlogIndexWrapper>
+                {/* Hello World */}
+            </BlogIndexWrapper>
         );
     };
 };
 
-const BlogWrapper = styled.div`
+const BlogIndexWrapper = styled.div`
     position: relative;
 
     @media screen and (max-width: 945px){
