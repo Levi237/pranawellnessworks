@@ -20,6 +20,7 @@ import HeaderMessage        from './components/header/HeaderMessage'
 
 import HomeMain             from './components/home';
 import BlogMainIndex        from './components/blog';
+import ShowBlog             from './components/blog/ShowBlog';
 import FAQMain              from './components/faq';
 import AboutMain            from './components/about';
 import EventsMain           from './components/events';
@@ -307,7 +308,8 @@ export default class App extends Component {
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
           <Route path={routes.BLOG} exact render={() => <>
-            </> }/>  
+            <ShowBlog/>
+          </> }/>  
           <Route path={routes.BLOGS} exact render={() => <>
             <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <FeatureBlogHeader blog={blogs[0]}author={authors[0]}/>
