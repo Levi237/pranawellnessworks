@@ -5,7 +5,7 @@ const FeatureBlogHeader = ({blog, author}) => {
   
   return(
       <FeatureBlogContainer>
-        <div style={{backgroundImage: `url(./service_image/${blog.heroImage})`}}></div>
+        <div style={{backgroundImage: `url(./blogs/${blog.heroImage})`}}></div>
         <section>
           <small>{blog.category}</small>
           <h1>
