@@ -284,6 +284,7 @@ export default class App extends Component {
         <Switch>
           <Route path={routes.MAIL} exact render={() => <></> }/>     
           <Route path={routes.ROOT} exact render={() => <>
+            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain scrollToTop={this.scrollToTop} /> 
