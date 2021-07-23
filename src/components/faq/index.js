@@ -42,7 +42,7 @@ export default class FAQMain extends Component {
                 question: `Do you offer both business coaching, and 1:1 coaching?`,
                 answer: `Yes, both! Happy to customize the coaching you need to elevate your life in the business and wellness world. For entrepreneurs and companies.`,
                 },{
-                question: `When can a start prenatal yoga?`,
+                question: `When can I start prenatal yoga?`,
                 answer: `Anytime! Honor your body, and do what feels right. Our classes are designed with every level and physical ability in mind. There are always modifications to suit your body, no matter what stage you’re in. Prenatal yoga is a wonderful form of self-care to practice throughout your pregnancy. It helps to foster education, build a support system, and strengthen you mentally, physically, and spiritually.`,
                 },{
                 question: `When can I start postpartum yoga?`,
