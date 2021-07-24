@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { bgCyan } from 'ansi-colors';
 
 const ShowBlog = ({blog, author}) => {
 
@@ -10,10 +9,22 @@ const ShowBlog = ({blog, author}) => {
                 {bc.content[0].text}
             </h2>)
         }
+        if(bc.type === "h3"){
+            return (<h3 key={k}>
+                {bc.content[0].text}
+            </h3>)
+        }
+        if(bc.type === "h4"){
+            return (<h4 key={k}>
+                {bc.content[0].text}
+            </h4>)
+        }
         if(bc.type === "p"){
             const list = bc.content.map(text => {
                 if(text.type === "a"){
                     return <a href={text.link}>{text.text}</a>
+                } else if( text.type === "i" ) { 
+                    return <i>{text.text}</i>
                 } else if( text.type === "b" ) { 
                     return <b>{text.text}</b>
                 } else {
@@ -29,6 +40,8 @@ const ShowBlog = ({blog, author}) => {
                 const listItem = item.list.map(i => {
                     if(i.type === "a"){
                         return <a href={i.link} target="_blank">{i.text}</a>
+                    } else if(i.type === "i"){
+                        return <i>{i.text}</i>
                     } else if(i.type === "b"){
                         return <b>{i.text}</b>
                     } else {
@@ -49,7 +62,7 @@ const ShowBlog = ({blog, author}) => {
             <small>{blog.category}</small>
             <h1>{blog.title}</h1>
             <h4>by {author.firstName} {author.lastName} <b>|</b> {blog.publishDate}</h4>
-            <img src={`blogs/${blog.heroImage}`}/>
+            <img src={`/blogs/${blog.heroImage}`}/>
             <h2>{blog.subtitle}</h2>
             <div>{renderBlog}</div>
         </article>

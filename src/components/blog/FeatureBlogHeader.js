@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const FeatureBlogHeader = ({blog, author}) => {
+const FeatureBlogHeader = ({blog, author, selectBlog}) => {
   
   return(
       <FeatureBlogContainer>
-        <div style={{backgroundImage: `url(./blogs/${blog.heroImage})`}}></div>
+        <Link to={`/blogs/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+          <div style={{backgroundImage: `url(./blogs/${blog.heroImage})`}}></div>
+        </Link>
         <section>
           <small>{blog.category}</small>
           <h1>
@@ -22,7 +25,7 @@ const FeatureBlogContainer = styled.div`
   width: 100vw;
   text-align: center;
 
-  > div {
+  > a > div {
     width: 86vw;
     height: 54vw;
     margin: 0 auto;

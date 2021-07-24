@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route }    from 'react-router-dom';
+import { Switch, Redirect, Route }    from 'react-router-dom';
 import styled               from 'styled-components';
 
 import * as routes          from './constants/routes';
@@ -287,7 +287,7 @@ export default class App extends Component {
           text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you’re awake. Notice what happens…...`}]
       }],
     }],
-
+    showBlog: {},
     authors: [{
         id: `000`,
         firstName: "Stephanie",
@@ -305,6 +305,13 @@ export default class App extends Component {
         }
     }]
   };  
+
+
+  selectBlog = (e, blog) => {
+     this.setState({
+      showBlog: blog
+    });
+  };
 
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
@@ -324,7 +331,7 @@ export default class App extends Component {
     top.scrollIntoView({behavior: 'smooth'});
   }
   render(){
-    const { emailContact, eventsList, textCopy, blogs, authors } = this.state
+    const { emailContact, eventsList, textCopy, blogs, authors, showBlog } = this.state
     return(
 
       <ParentWrapper>
@@ -345,14 +352,17 @@ export default class App extends Component {
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
-          <Route path={routes.BLOG} exact render={() => <>
-            <ShowBlog blog={blogs[0]} author={authors[0]}/>
-          </> }/>  
-          <Route path={routes.BLOGS} render={() => <>
+          <Route path={routes.BLOGS} exact render={() => <>
             <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-            <FeatureBlogHeader blog={blogs[0]} author={authors[0]}/>
-            <BlogMainIndex blogs={blogs}/> 
+            <FeatureBlogHeader selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/>
+            <BlogMainIndex selectBlog={this.selectBlog}  blogs={blogs}/> 
           </> }/>  
+          { (showBlog.id) 
+            ? <Route path={`/blogs/${showBlog.id}`} render={() => <>
+                <ShowBlog blog={showBlog} author={authors[0]}/> 
+              </> }/>  
+            : <Redirect to={routes.BLOGS}/> 
+          }  
           <Route path={routes.FAQ} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
