@@ -357,12 +357,15 @@ export default class App extends Component {
             <FeatureBlogHeader selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/>
             <BlogMainIndex selectBlog={this.selectBlog}  blogs={blogs}/> 
           </> }/>  
+          <Route path={`/blogs/${showBlog.id}`} exact render={() => <>
           { (showBlog.id) 
-            ? <Route path={`/blogs/${showBlog.id}`} render={() => <>
+            ? <>
+                <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
                 <ShowBlog blog={showBlog} author={authors[0]}/> 
-              </> }/>  
+              </>
             : <Redirect to={routes.BLOGS}/> 
           }  
+          </> }/>  
           <Route path={routes.FAQ} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
