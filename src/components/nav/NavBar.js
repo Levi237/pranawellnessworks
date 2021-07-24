@@ -6,7 +6,7 @@ import * as routes from '../../constants/routes'
 const NavBar = ({ page, toggleHamburger }) => {
   
   return(
-    <NavContainer style={(page ==="home") ? {marginTop: "-40px"} : {marginTop: "0"}}>
+    <NavContainer style={(page === "home") ? {marginTop: "-40px"} : {marginTop: "0"}}>
       <div>
         <Link to={routes.ROOT}>
             <Logo src={ (page === "white" || page === "home") ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
