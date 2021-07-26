@@ -229,7 +229,7 @@ export default class App extends Component {
       subtitle: `Here are 5 Ways to Create a Powerful Morning:`,
       authorId: `000`,
       publishDate: `Monday, July 26 2021`,
-      heroImage: `morning-routine-blog-banner.png`,
+      heroImage: `morning-routine-blog-banner.jpg`,
       copy: [{
         type: `p`,
         content: [{text: `Mornings are the most essential part of your day! I’m willing to argue that point. Mornings set the tone and energy for the rest of your day. If you have a mindful morning, you are essentially curating peace and positivity for your day ahead. Routines help us to stay focused and achieve our goals, so focusing on what you do in the morning, will increase productivity every day.`}]
@@ -353,14 +353,14 @@ export default class App extends Component {
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
           <Route path={routes.BLOGS} exact render={() => <>
-            <NavBar page={"white"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <FeatureBlogHeader selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/>
             <BlogMainIndex selectBlog={this.selectBlog}  blogs={blogs}/> 
           </> }/>  
           <Route path={`/blogs/${showBlog.id}`} exact render={() => <>
           { (showBlog.id) 
             ? <>
-                <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+                <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
                 <ShowBlog blog={showBlog} author={authors[0]}/> 
               </>
             : <Redirect to={routes.BLOGS}/> 
@@ -438,7 +438,7 @@ export default class App extends Component {
           </> }/>   
            
           <Route path={routes.ROOT} render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
               <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain /> 
           </> }/>
