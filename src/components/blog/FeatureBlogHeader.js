@@ -11,9 +11,11 @@ const FeatureBlogHeader = ({blog, author, selectBlog}) => {
         </Link>
         <section>
           <small>{blog.category}</small>
-          <h1>
-            {blog.title}
-          </h1>
+          <Link to={`/blogs/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+            <h1>
+              {blog.title}
+            </h1>
+          </Link>
           <h4>{blog.publishDate} | By {author.firstName} {author.lastName}</h4>
         </section>
       </FeatureBlogContainer>)
@@ -24,7 +26,9 @@ const FeatureBlogContainer = styled.div`
   padding-top: 40px;
   width: 100vw;
   text-align: center;
-
+  a {
+    text-decoration: none;
+  }
   > a > div {
     width: 86vw;
     height: 54vw;
@@ -42,12 +46,14 @@ const FeatureBlogContainer = styled.div`
       color: var(--green);
     }
 
-    > h1 {
-      width: 86vw;
-      padding: 0;
-      margin: 10px auto;
-      font-family: var(--fancy-font);
-      text-transform: none;
+    > a > {
+      h1 {
+        width: 86vw;
+        padding: 0;
+        margin: 10px auto;
+        font-family: var(--fancy-font);
+        text-transform: none;
+      }
     }
     
     > h4 {
