@@ -20,7 +20,7 @@ const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog}) => {
           </Link>
           <p>
             {blog.subtext}
-            &emsp;
+            &nbsp;
             <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
               Read more...
             </Link>
