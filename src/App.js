@@ -370,18 +370,18 @@ export default class App extends Component {
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
-          <Route path={routes.BLOGS} exact render={() => <>
+          <Route path={routes.BLOG} exact render={() => <>
             <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <FeatureBlogHeader scrollToTop={this.scrollToTop} selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/>
             <BlogMainIndex selectBlog={this.selectBlog}  blogs={blogs}/> 
           </> }/>  
-          <Route path={`/blogs/${showBlog.id}/${showBlog.endpoint}`} exact render={() => <>
+          <Route path={`/blog/${showBlog.id}/${showBlog.endpoint}`} exact render={() => <>
           { (showBlog.id) 
             ? <>
                 <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
                 <ShowBlog blog={showBlog} author={authors[0]}/> 
               </>
-            : <Redirect to={routes.BLOGS}/> 
+            : <Redirect to={routes.BLOG}/> 
           }  
           </> }/>  
           <Route path={routes.FAQ} exact render={() => <>

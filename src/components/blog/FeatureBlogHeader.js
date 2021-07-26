@@ -8,12 +8,12 @@ const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog}) => {
   
   return(
       <FeatureBlogContainer>
-        <Link to={`/blogs/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
-          <div style={{backgroundImage: `url(./blogs/${blog.heroImage})`}}></div>
+        <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+          <div style={{backgroundImage: `url(./blog/${blog.heroImage})`}}></div>
         </Link>
         <section>
           <small>{blog.category}</small>
-          <Link to={`/blogs/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+          <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
             <h1>
               {blog.title}
             </h1>
@@ -21,7 +21,7 @@ const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog}) => {
           <p>
             {blog.subtext}
             &emsp;
-            <Link to={`/blogs/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+            <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
               Read more...
             </Link>
           </p>

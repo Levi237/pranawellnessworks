@@ -7,7 +7,6 @@ export const YOGA = '/yoga_therapy';
 export const PREG = '/pre-post_natal';
 export const MAIL = '/thank_you_for_reaching_out';
 export const BLOG = '/blog';
-export const BLOGS = '/blogs';
 export const ABOUT = '/about';
 export const COACH = '/speaking_coaching';
 export const EVENT = '/events_calendar';

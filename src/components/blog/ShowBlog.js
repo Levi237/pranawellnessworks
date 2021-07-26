@@ -62,7 +62,7 @@ const ShowBlog = ({blog, author}) => {
             <small>{blog.category}</small>
             <h1>{blog.title}</h1>
             <h4>by {author.firstName} {author.lastName} <b>|</b> {blog.publishDate}</h4>
-            <img src={`/blogs/${blog.heroImage}`}/>
+            <img src={`/blog/${blog.heroImage}`}/>
             <div>{renderBlog}</div>
         </article>
         </BlogWrapper>
