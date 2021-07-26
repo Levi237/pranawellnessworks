@@ -122,3 +122,17 @@ button.purple:hover {
     display: inline-block!important;
   }
 }
+.mobile-block {
+  display: none!important;
+}
+.desktop-block {
+  display: block!important;
+}
+@media screen and (max-width: 945px) {
+  .desktop-block {
+    display: none!important;
+  }
+  .mobile-block {
+    display: block!important;
+  }
+}
