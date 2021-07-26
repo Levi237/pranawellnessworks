@@ -1,6 +1,5 @@
 export const FAQ = '/FAQ';
 export const ROOT = '/';
-export const INFO = '/about';
 export const WELL = '/personal_wellness_services';
 export const SERV = '/services';
 export const CORP = '/services_corporate';
@@ -9,5 +8,6 @@ export const PREG = '/pre-post_natal';
 export const MAIL = '/thank_you_for_reaching_out';
 export const BLOG = '/blog';
 export const BLOGS = '/blogs';
+export const ABOUT = '/about';
 export const COACH = '/speaking_coaching';
 export const EVENT = '/events_calendar';

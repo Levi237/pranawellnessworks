@@ -371,7 +371,7 @@ export default class App extends Component {
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <FAQMain/> 
           </> }/>  
-          <Route path={routes.INFO} exact render={() => <>
+          <Route path={routes.ABOUT} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.aboutPage}/>
