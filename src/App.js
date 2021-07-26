@@ -276,14 +276,20 @@ export default class App extends Component {
             type: `b`,
             text: `Journal.`,
            },{
-             text: ` The “monkey mind” is always busy! We are human, so we cannot stop the mind from running, unfortunately. This is a myth. But we can prevent the mind from controlling us, and learn to make sense of it all. By writing out your thoughts, ideas, worries, lists, and goals on paper, you allow them to be released from your brain. Dedicate some time in the morning to incorporate some self-study, or svadhyaya. Observe your thoughts and feelings, and put them on paper. One simple journaling practice that involves very little direction is “brain dumping.” This means you simply write down any and everything that comes to mind. It can be lists, ideas, frustrations, diary entries, food journals, or simply an account of your feelings at the moment. Name them. Whatever is allowing your monkey mind to race, put it on the paper. No journal prompts, no deep questions, just you.`,
-        }],
+             text: ` The “monkey mind” is always busy! We are human, so we cannot stop the mind from running, unfortunately. This is a myth. But we can prevent the mind from controlling us, and learn to make sense of it all. By writing out your thoughts, ideas, worries, lists, and goals on paper, you allow them to be released from your brain.`,
+          },{
+            type: `img`,
+            src: `journaling-banner.jpg`,
+            class: `wide`,
+           },{
+             text: `Dedicate some time in the morning to incorporate some self-study, or svadhyaya. Observe your thoughts and feelings, and put them on paper. One simple journaling practice that involves very little direction is “brain dumping.” This means you simply write down any and everything that comes to mind. It can be lists, ideas, frustrations, diary entries, food journals, or simply an account of your feelings at the moment. Name them. Whatever is allowing your monkey mind to race, put it on the paper. No journal prompts, no deep questions, just you.`,
+            }],
         },{
           item: [{
             type: `b`,
             text: `Move.`,
           },{
-            text: `Movement is one of the best ways to ensure a healthy aging process. Our body is full of synovial fluids and muscle fascia that need motion and lubrication, always. The more you move, the less your muscle fascia will “stick.” When our bodies become accustomed to staying still, they lose essential tissues and cells, and overall mobility decreases. Take time to loosen the joints in the morning, stretch out your shoulders, hamstrings, and spine.` 
+            text: ` Movement is one of the best ways to ensure a healthy aging process. Our body is full of synovial fluids and muscle fascia that need motion and lubrication, always. The more you move, the less your muscle fascia will “stick.” When our bodies become accustomed to staying still, they lose essential tissues and cells, and overall mobility decreases. Take time to loosen the joints in the morning, stretch out your shoulders, hamstrings, and spine.` 
           },{
             type: `a`,
             link: `https://www.patreon.com/posts/39545337`,
@@ -292,13 +298,19 @@ export default class App extends Component {
           text: `are a great way to get the body tuned up each morning. Take a mindful walk! Something is better than nothing, and walking helps to increase awareness and energy, and is very meditative.`}],
         }]
       },{
+      //   type: `img`,
+      //   content: [{
+      //     class: `wide`,
+      //     src: `journaling-banner.jpg`
+      // }]
+      },{
         type: `p`,
         content: [{
           type: `b`,
           text: `The Challenge:`,
         },{
           text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you’re awake. Notice what happens…...`}]
-      }],
+      }]
     }],
     showBlog: {},
     authors: [{
