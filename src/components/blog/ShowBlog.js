@@ -4,64 +4,71 @@ import styled from 'styled-components';
 const ShowBlog = ({blog, author}) => {
 
     const renderBlog = blog.copy.map((bc, k) => {
-        if(bc.type === "h2"){
-            return (<h2 key={k}>
-                {bc.content[0].text}
-            </h2>)
-        }
-        if(bc.type === "h3"){
-            return (<h3 key={k}>
-                {bc.content[0].text}
-            </h3>)
-        }
-        if(bc.type === "h4"){
-            return (<h4 key={k}>
-                {bc.content[0].text}
-            </h4>)
-        }
-        if(bc.type === "img"){
-            return (
-                    <img className={`blog-image ${bc.content[0].class}`} src={`/blog/${bc.content[0].src}`}/>
-            ) 
-        }
-        if(bc.type === "p"){
-            const list = bc.content.map(text => {
-                if(text.type === "a"){
-                    return <a href={text.link}>{text.text}</a>
-                } else if( text.type === "i" ) { 
-                    return <i>{text.text}</i>
-                } else if( text.type === "b" ) { 
-                    return <b>{text.text}</b>
+        // if(bc.tag === "h2"){
+        //     return (<h2 key={k}>
+        //         {bc.content[0].text}
+        //     </h2>)
+        // }
+        // if(bc.tag === "h3"){
+        //     return (<h3 key={k}>
+        //         {bc.content[0].text}
+        //     </h3>)
+        // }
+        if(bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
+            const textMap = bc.content.map(txt => {
+                if(txt.tag === "a"){
+                    return <a href={txt.link}>{txt.text}</a>
+                } else if( txt.tag === "i" ) { 
+                    return <i>{txt.text}</i>
+                } else if( txt.tag === "b" ) { 
+                    return <b>{txt.text}</b>
                 } else {
-                    return <span>{text.text}</span>
+                    return <span>{txt.text}</span>
                 }
             })
-            return (<p key={k}>
-                {list}
-            </p>)
+            if (bc.tag === "h2"){ return <h2 key={k}>{textMap}</h2> }
+            if (bc.tag === "h3"){ return <h3 key={k}>{textMap}</h3> }
+            if (bc.tag === "h4"){ return <h4 key={k}>{textMap}</h4> }
+            if (bc.tag === "p"){ return <p key={k}>{textMap}</p> }
         }
-        if(bc.type === "ol"){
-            const listOL = bc.list.map((l) => {
+        if(bc.tag === "img"){
+            return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}`}/>
+        }
+        // if(bc.tag === "p"){
+        //     const textMap = bc.content.map(txt => {
+        //         if(txt.tag === "a"){
+        //             return <a href={txt.link}>{txt.text}</a>
+        //         } else if( txt.tag === "i" ) { 
+        //             return <i>{txt.text}</i>
+        //         } else if( txt.tag === "b" ) { 
+        //             return <b>{txt.text}</b>
+        //         } else {
+        //             return <span>{txt.text}</span>
+        //         }
+        //     })
+        //     return (<p key={k}>
+        //         {textMap}
+        //     </p>)
+        // }
+        if(bc.tag === "ol" || bc.tag === "ul"){
+            const listMap = bc.list.map((l) => {
                 const listItem = l.item.map(i => {
-                    if(i.type === "a"){
+                    if(i.tag === "a"){
                         return <a href={i.link} target="_blank">{i.text}</a>
-                    } else if(i.type === "i"){
+                    } else if(i.tag === "i"){
                         return <i>{i.text}</i>
-                    } else if(i.type === "b"){
+                    } else if(i.tag === "b"){
                         return <b>{i.text}</b>
-                    } else if(i.type === "img"){
-                        return (<>
-                                <img className={`blog-image ${i.class}`} src={`/blog/${i.src}`}/>
-                        </>)   
+                    } else if(i.tag === "img"){
+                        return <img className={`blog-image ${i.class}`} src={`/blog/${i.src}`}/>  
                     } else {
                         return <span>{i.text}</span>
                     }
                 })
                 return <li key={k}>{listItem}</li>
             })
-            return (<ol>
-                {listOL}
-            </ol>)
+            if (bc.tag === "ol" ){ return <ol>{listMap}</ol> } 
+            if (bc.tag === "ul" ){ return <ul>{listMap}</ul> } 
         }
     });
 
