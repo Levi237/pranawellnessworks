@@ -341,6 +341,7 @@ export default class App extends Component {
      this.setState({
       showBlog: blog
     });
+    this.scrollToTop();
   };
 
   toggleHamburger = () => {
