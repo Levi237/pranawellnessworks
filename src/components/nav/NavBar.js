@@ -6,30 +6,33 @@ import * as routes from '../../constants/routes'
 const NavBar = ({ page, toggleHamburger }) => {
   
   return(
-    <NavContainer style={(page === "home") ? {marginTop: "-40px"} : {marginTop: "0"}}>
+    <NavContainer className={page}>
       <div>
+        { page !== "blog" &&
         <Link to={routes.ROOT}>
-            <Logo src={ (page === "white" || page === "home") ? "icon_white.png" : "icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
+            <Logo className="nav-logo" src={ (page === "white" || page === "home" || page === "blogs") ? "/icon_white.png" : "/icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
             <section>
-              { page !== "home" && <>
-                <h1 style={page === "white" ? {color: "white"} : {color: "var(--purple)"}}>Prana</h1>
+              { ( page !== "blogs" && page !== "blog" && page !== "home" ) && <>
+                <h1>Prana</h1>
                 <br/>
-                <h2 style={page === "white" ? {color: "white"} : {color: "var(--lightgreen)"}}>wellness</h2>
+                <h2>wellness</h2>
               </>}
             </section>
         </Link>
+        }
       </div>
+      
       <div>
 
       </div>
       <div>
         <Hamburger 
+        className="hamburger"
           name="toggleHamburger" 
           onClick={(e) => toggleHamburger(e)}
           >
-        { (page === "white" || page === "home") && <><HomePatties></HomePatties><HomePatties></HomePatties><HomePatties></HomePatties></> }
-        { page === "global" &&<><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></> }
-        </Hamburger>
+          <section></section><section></section><section></section>
+               </Hamburger>
       </div>
     </NavContainer>);
 };
@@ -40,6 +43,115 @@ const NavContainer = styled.div`
   height: 100px;
   width: 100vw;
   z-index: 8;
+  &:is(.blog) {
+    top: 0px;
+  }
+  &:is(.home) {
+    @media screen and (max-width: 945px) {
+      top: 30px;
+    }
+  }
+  &:is(.blog, .blogs) {
+    @media screen and (max-width: 945px) {
+      top: -10px;
+    }
+  }
+  &:is(.global, .blog) {
+    .nav-logo {
+      h1 {
+        color: var(--purple);
+      }
+      h2 {
+        color: var(--lightgreen);
+      }
+    }
+    .hamburger > section {
+      background-color: var(--purple);
+    }
+  }
+  &:-webkit-any(.home, .white, .blogs) {
+    .nav-logo {
+      h1 {
+        color: #fff;
+      }
+      h2 {
+        color: #fff;
+      }
+    }
+    .hamburger > section {
+      background-color: #fff;
+    }
+  } 
+  &:is(.home, .white, .blogs) {
+    .nav-logo {
+      h1 {
+        color: #fff;
+      }
+      h2 {
+        color: #fff;
+      }
+    }
+    .hamburger > section {
+      background-color: #fff;
+    }
+  }
+
+  &:is(.home) {
+    // margin-top: 0px;
+    // .nav-logo {
+    //   h1 {
+    //     color: #fff;
+    //   }
+    //   h2 {
+    //     color: #fff;
+    //   }
+    // }
+    // .hamburger > section {
+    //   background-color: #fff;
+    // }
+  }
+  &:is(.white) {
+    // margin-top: 0px;
+    // .nav-logo {
+    //   h1 {
+    //     color: #fff;
+    //   }
+    //   h2 {
+    //     color: #fff;
+    //   }
+    // }
+    // .hamburger > section {
+    //   background-color: #fff;
+    // }
+  }
+  &:is(.blog) {
+    // margin-top: -40px;
+    // .nav-logo {
+    //   h1 {
+    //     color: var(--purple);
+    //   }
+    //   h2 {
+    //     color: var(--lightgreen);
+    //   }
+    // }
+    .hamburger > section {
+      background-color: var(--purple);
+    }
+  }
+  &:is(.blogs) {
+    // .nav-logo {
+    //   h1 {
+    //     color: #fff;
+    //   }
+    //   h2 {
+    //     color: #fff;
+    //   }
+    // }
+    // margin-top: -40px;
+    // .hamburger > section {
+    //   background-color: #fff;
+    // }
+  }
   > div {
     display: inline-block;
     &:first-of-type {
@@ -90,7 +202,7 @@ const NavContainer = styled.div`
     
       &:first-of-type {
         width: 205px;
-        margin-left: 10vw;
+        margin-left: 5vw;
         > a {
 
           > img {
@@ -111,11 +223,11 @@ const NavContainer = styled.div`
         }
       }
       &:nth-of-type(2) {
-        width: calc(80vw - 240px);
+        width: calc(90vw - 240px);
       }
       &:last-of-type {
         width: 35px;
-        margin-right: 10vw;
+        margin-right: 5vw;
         margin-top: 20px;
       }
     }
