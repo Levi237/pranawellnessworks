@@ -69,7 +69,7 @@ export default class Footer extends Component {
                     </div>
                     <div>
                         <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer">
-                            <img src="../travel_slay_white.png" alt="Travel Slay"/>
+                            <img src="/travel_slay_white.png" alt="Travel Slay"/>
                         </a>
                         <section>explore fitness and travel</section>
                     </div>
