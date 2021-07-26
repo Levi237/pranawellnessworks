@@ -8,6 +8,7 @@ export default class BlogMainIndex extends Component {
     render(){
         return(
             <BlogIndexWrapper>
+                <br/><br/><br/>
                 {/* Hello World */}
             </BlogIndexWrapper>
         );
