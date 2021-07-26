@@ -19,6 +19,11 @@ const ShowBlog = ({blog, author}) => {
                 {bc.content[0].text}
             </h4>)
         }
+        if(bc.type === "img"){
+            return (
+                    <img className={`blog-image ${bc.content[0].class}`} src={`/blog/${bc.content[0].src}`}/>
+            ) 
+        }
         if(bc.type === "p"){
             const list = bc.content.map(text => {
                 if(text.type === "a"){
@@ -44,8 +49,12 @@ const ShowBlog = ({blog, author}) => {
                         return <i>{i.text}</i>
                     } else if(i.type === "b"){
                         return <b>{i.text}</b>
+                    } else if(i.type === "img"){
+                        return (<>
+                                <img className={`blog-image ${i.class}`} src={`/blog/${i.src}`}/>
+                        </>)   
                     } else {
-                    return <span>{i.text}</span>
+                        return <span>{i.text}</span>
                     }
                 })
                 return <li key={k}>{listItem}</li>
@@ -72,6 +81,10 @@ const ShowBlog = ({blog, author}) => {
 const BlogWrapper = styled.div`
 padding: 20px 0 120px;
     position: relative;
+    .blog-image.wide {
+        width: 100%;
+        margin: 10px auto;
+    }
     > article {
         line-height: 150%;
         width: 80vw;
@@ -123,6 +136,8 @@ padding: 20px 0 120px;
     ol {
         width: 80%;
         margin: 0 auto;
+        padding-inline-start: 40px;
+        padding-inline-end: 40px;
     }
     li {
         padding: 10px 0;
@@ -148,7 +163,10 @@ padding: 20px 0 120px;
                 padding: 0 20px;
             }
         }
-        
+        ol {
+            padding-inline-start: 5vw;
+            padding-inline-end: 5vw;
+        }
     }
 `;
 export default ShowBlog;
