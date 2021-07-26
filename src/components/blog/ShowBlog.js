@@ -36,8 +36,8 @@ const ShowBlog = ({blog, author}) => {
             </p>)
         }
         if(bc.type === "ol"){
-            const list = bc.content.map((item) => {
-                const listItem = item.list.map(i => {
+            const listOL = bc.list.map((l) => {
+                const listItem = l.item.map(i => {
                     if(i.type === "a"){
                         return <a href={i.link} target="_blank">{i.text}</a>
                     } else if(i.type === "i"){
@@ -51,7 +51,7 @@ const ShowBlog = ({blog, author}) => {
                 return <li key={k}>{listItem}</li>
             })
             return (<ol>
-                {list}
+                {listOL}
             </ol>)
         }
     });
@@ -63,7 +63,6 @@ const ShowBlog = ({blog, author}) => {
             <h1>{blog.title}</h1>
             <h4>by {author.firstName} {author.lastName} <b>|</b> {blog.publishDate}</h4>
             <img src={`/blogs/${blog.heroImage}`}/>
-            <h2>{blog.subtitle}</h2>
             <div>{renderBlog}</div>
         </article>
         </BlogWrapper>
@@ -139,6 +138,9 @@ padding: 20px 0 120px;
             > h1 {
                 font-size: 28px;
                 text-align: center;
+            }
+            > h2 {
+                font-size: 22px;
             }
             
             > div {

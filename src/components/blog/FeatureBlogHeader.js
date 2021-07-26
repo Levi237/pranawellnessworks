@@ -1,22 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React        from 'react';
+import styled       from 'styled-components';
 
-const FeatureBlogHeader = ({blog, author, selectBlog}) => {
+import { Link }     from 'react-router-dom';
+import * as routes  from '../../constants/routes';
+
+const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog}) => {
   
   return(
       <FeatureBlogContainer>
-        <Link to={`/blogs/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+        <Link to={`/blogs/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
           <div style={{backgroundImage: `url(./blogs/${blog.heroImage})`}}></div>
         </Link>
         <section>
           <small>{blog.category}</small>
-          <Link to={`/blogs/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+          <Link to={`/blogs/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
             <h1>
               {blog.title}
             </h1>
           </Link>
-          <h4>{blog.publishDate} | By {author.firstName} {author.lastName}</h4>
+          <p>
+            {blog.subtext}
+            &emsp;
+            <Link to={`/blogs/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+              Read more...
+            </Link>
+          </p>
+          <h4>{blog.publishDate}<span className="desktop-inline">&nbsp;|&nbsp;</span><br className="mobile-inline"/>By <Link to={routes.ABOUT} onClick={scrollToTop}>{author.firstName} {author.lastName}</Link></h4>
         </section>
       </FeatureBlogContainer>)
     ;
@@ -57,7 +66,19 @@ const FeatureBlogContainer = styled.div`
     }
     
     > h4 {
+      margin-top: 6px;
       color: var(--lightgrey);
+      font-weight: 100;
+      > a {
+        color: var(--lightgrey);
+      }
+    }
+    > p {
+      margin: 0 auto;
+      width: 86vw;
+      > a {
+        color: var(--lightgrey);
+      }
     }
   }
     @media screen and (max-width: 945px) {
@@ -93,6 +114,7 @@ const FeatureBlogContainer = styled.div`
         > h4 {
           color: var(--lightgrey);
         }
+
     }
 
 `;
