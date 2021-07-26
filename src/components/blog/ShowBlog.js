@@ -106,7 +106,12 @@ padding: 20px 0 120px;
             font-weight: 800;
         }
     }
-    
+    a {
+        color: var(--green);
+        &:hover {
+            color: var(--lightgreen);
+        }
+    }
     h2 {
         font-size: 24px;
         padding: 10px 0;
