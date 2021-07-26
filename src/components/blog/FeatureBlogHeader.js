@@ -29,6 +29,7 @@ const FeatureBlogContainer = styled.div`
     width: 86vw;
     height: 54vw;
     margin: 0 auto;
+    background-position: center;
     background-size: cover;
   }
 
@@ -56,6 +57,11 @@ const FeatureBlogContainer = styled.div`
     @media screen and (max-width: 945px) {
       padding-top: 0px;
       width: 100vw;
+      > a > div {
+        width: 100vw;
+        height: 100vw;
+      }
+
       > div {
         width: 100vw;
         height: 100vw;
