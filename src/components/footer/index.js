@@ -46,7 +46,7 @@ export default class Footer extends Component {
                 </QuickLinksSection>
                 <LogoSection>
                     <div>
-                        <img src="../icon_white.png" alt="pranayama yoga breath work" />
+                        <img src="/icon_white.png" alt="pranayama yoga breath work" />
                         <Prana className="pranaText">PRANA</Prana>
                         <Wellness className="wellnessText">wellness</Wellness>
                     </div>
