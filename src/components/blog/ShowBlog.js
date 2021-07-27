@@ -9,6 +9,10 @@ const ShowBlog = ({blog, author}) => {
             const textMap = bc.content.map(txt => {
                 if (txt.tag === "a"){
                     return <a href={txt.link}>{txt.text}</a>
+                } else if ( txt.tag === "u" ) { 
+                    return <u>{txt.text}</u>
+                } else if ( txt.tag === "small" ) { 
+                    return <small>{txt.text}</small>
                 } else if ( txt.tag === "i" ) { 
                     return <i>{txt.text}</i>
                 } else if ( txt.tag === "b" ) { 
@@ -36,6 +40,10 @@ const ShowBlog = ({blog, author}) => {
                         return <i>{i.text}</i>
                     } else if (i.tag === "b"){
                         return <b>{i.text}</b>
+                    } else if (i.tag === "u"){
+                        return <u>{i.text}</u>
+                    } else if (i.tag === "small"){
+                        return <small>{i.text}</small>
                     } else if (i.tag === "img"){
                         return <img className={`blog-image ${i.class}`} src={`/blog/${i.src}`}/>  
                     } else {
@@ -96,7 +104,7 @@ const BlogWrapper = styled.div`
             font-size: 15px;
             color: var(--lightgrey);
         }
-        
+
         > small {
             font-size: 14px;
             text-transform: uppercase;
