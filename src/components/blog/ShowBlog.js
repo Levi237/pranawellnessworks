@@ -4,16 +4,7 @@ import styled from 'styled-components';
 const ShowBlog = ({blog, author}) => {
 
     const renderBlog = blog.copy.map((bc, k) => {
-        // if(bc.tag === "h2"){
-        //     return (<h2 key={k}>
-        //         {bc.content[0].text}
-        //     </h2>)
-        // }
-        // if(bc.tag === "h3"){
-        //     return (<h3 key={k}>
-        //         {bc.content[0].text}
-        //     </h3>)
-        // }
+
         if(bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
             const textMap = bc.content.map(txt => {
                 if(txt.tag === "a"){
@@ -31,25 +22,11 @@ const ShowBlog = ({blog, author}) => {
             if (bc.tag === "h4"){ return <h4 key={k}>{textMap}</h4> }
             if (bc.tag === "p"){ return <p key={k}>{textMap}</p> }
         }
+        
         if(bc.tag === "img"){
             return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}`}/>
         }
-        // if(bc.tag === "p"){
-        //     const textMap = bc.content.map(txt => {
-        //         if(txt.tag === "a"){
-        //             return <a href={txt.link}>{txt.text}</a>
-        //         } else if( txt.tag === "i" ) { 
-        //             return <i>{txt.text}</i>
-        //         } else if( txt.tag === "b" ) { 
-        //             return <b>{txt.text}</b>
-        //         } else {
-        //             return <span>{txt.text}</span>
-        //         }
-        //     })
-        //     return (<p key={k}>
-        //         {textMap}
-        //     </p>)
-        // }
+
         if(bc.tag === "ol" || bc.tag === "ul"){
             const listMap = bc.list.map((l) => {
                 const listItem = l.item.map(i => {
