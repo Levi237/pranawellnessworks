@@ -395,7 +395,6 @@ export default class App extends Component {
           <Route path={`/blog/${showBlog.id}/${showBlog.endpoint}`} exact render={() => <>
                 <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
                 <ShowBlog blog={showBlog} author={authors[0]}/> 
-          }  
           </> }/>  
           <Route path={routes.FAQ} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
