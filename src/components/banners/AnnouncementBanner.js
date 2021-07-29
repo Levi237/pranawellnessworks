@@ -39,6 +39,7 @@ const AnnouncementWrapper = styled.div`
         height: 30px;
         width: 30px;
         position: absolute;
+        z-index: 99;
         right: 8px;
         top: 5px;
     }
