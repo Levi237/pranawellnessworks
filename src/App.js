@@ -172,7 +172,7 @@ export default class App extends Component {
       day: "Monday",
       when: "Every",
       time: "5p PT",
-      note: "(happening now)",
+      // note: "(happening now)",
       img: "./events/prenatal.png",
       link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
     },{
@@ -183,7 +183,7 @@ export default class App extends Component {
       day: "Tuesday",
       when: "1st & 3rd ",
       time: "5p PT",
-      note: "(starting July 6th)",
+      // note: "(starting July 6th)",
       img: "./events/postpartum.png",
       link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
     },{
@@ -194,7 +194,7 @@ export default class App extends Component {
       day: "Wednesday",
       when: "1st",
       time: "6p PT",
-      note: "(starting July 7th)",
+      // note: "(starting July 7th)",
       img: "./events/harbor.png",
       link: "https://yogaontheharbor.eventbrite.com"
     },{
@@ -205,20 +205,20 @@ export default class App extends Component {
       day: "Thursday",
       when: "Every",
       time: "5p PT",
-      note: "(starting July 8th)",
+      // note: "(starting July 8th)",
       img: "./events/flow.png",
       link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
     },{
-      title: "Meditation + Breathwork",
+      title: "Wellness Workshop",
       location: "virtual",
-      info: "with @thenalaverse",
+      info: "45 minutes",
       price: "donation based",
       day: "Friday",
-      when: "Every",
+      when: "Last",
       time: "10:30a PT",
-      note: "(happening now)",
+      // note: "(happening now)",
       img: "./events/meditation.png",
-      link: "https://thenalaverse.com/get-lifted"
+      link: "https://thenalaverse.com/stephanie-singleton"
     }],
     //// BLOG HARDCOPY
     // SCHEMA STRUCTURE
@@ -228,6 +228,86 @@ export default class App extends Component {
     // type: p
     // content [{text, type: span, b, a, link, src}]
     blogs: [{
+    //   id: `00-09082021`,
+    //   endpoint: `Breathing_for_Your_Body`,
+    //   title: `Breathing for Your Body`,
+    //   category: `Breath`,
+    //   publishDate: `Monday, August 9th, 2021`,
+    //   heroImage: `breath-banner.jpg`,
+    //   subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
+    //   copy: [{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity? Just BREATHE! Your breath is so much more to your body than just air. Learn how to take each breath for your body, and make it work for you. `,
+    //     }]
+    //   },{
+    //     tag: `section`,
+    //     list: [{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `In and out through the nose. `,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Most people breathe with their mouth wide open. It’s instinctive. Breathing through your mouth excites the sympathetic nervous system, the fight or flight system. If your body is constantly in this state, it cannot rest and replenish. Immunity decreases, heart rate increases, and it becomes more difficult for your body to find balance. `,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Use Your Gut`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Another common breath habit is contracting on the inhale and expanding on the exhale. This is backwards! Breathing from the belly up allows for full diaphragmatic expansion. It also allows you to build more awareness in your body, as the breath moves through it. `,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Try this. Place one hand over your belly. Inhale and expand the belly as much as possible, into your palm. Exhale, contract the naval to spine. Repeat. Inhale, expand the belly. Exhale, naval to spine. `,
+    //       }]
+    //     },{
+    //       tag: `img`,
+    //       content: [{
+    //         class: `wide`,
+    //         src: `breath-asana-banner.jpg`,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Give More.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `As humans, we tend to take more than we give to the Universe. If we can learn to practice giving more than we take, we can come closer to alignment. Try to lengthen your Apana, or exhale. Begin with 1:2, then 2:4, 3:6, and 4:8 (inhale:exhale). As you release the exhale, release anything that no longer serves you mentally or physically. `,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Breath to Movement.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Yoga means union. In the physical practice of asana, or movement, we aim to unite the breath with each movement. Inhale arms lift, exhale fold. Inhale, lengthen. Exhale, go inwards. Build consciousness in the way your body moves with your breath. `,
+    //       }]
+    //     }]
+    //   },{
+    //     tag: `p`,
+    //     content: [{
+    //       tag: `b`,
+    //       text: `The Challenge:` 
+    //     },{
+    //       text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to build mindfulness and awareness in the body.`,
+    //     }]
+    //   }]
+    // },{
       id: `00-26072021`,
       endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
       category: `meditation`,
