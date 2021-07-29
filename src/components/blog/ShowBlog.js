@@ -30,7 +30,41 @@ const ShowBlog = ({blog, author}) => {
         if (bc.tag === "img"){
             return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}`}/>
         }
+        if (bc.tag === "i"){
+            return <i>{bc.content[0].text}</i>
+        }
+        if (bc.tag === "b"){
+            return <b>{bc.content[0].text}</b>
+        }
 
+        if (bc.tag === "section"){
+            const listMap = bc.list.map((li) => {
+                const textMap = li.content.map(txt => {
+                    if (txt.tag === "a"){
+                        return <a href={txt.link}>{txt.text}</a>
+                    } else if ( txt.tag === "u" ) { 
+                        return <u>{txt.text}</u>
+                    } else if ( txt.tag === "small" ) { 
+                        return <small>{txt.text}</small>
+                    } else if ( txt.tag === "i" ) { 
+                        return <i>{txt.text}</i>
+                    } else if ( txt.tag === "b" ) { 
+                        return <b>{txt.text}</b>
+                    } else if ( li.tag === "img" ) { 
+                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`}/>
+                    } else {
+                        return <span>{txt.text}</span>
+                    }
+                })
+                if (li.tag === "h2"){ return <h2 key={k}>{textMap}</h2> }
+                if (li.tag === "h3"){ return <h3 key={k}>{textMap}</h3> }
+                if (li.tag === "h4"){ return <h4 key={k}>{textMap}</h4> }
+                if (li.tag === "p"){ return <p key={k}>{textMap}</p> }
+                if (li.tag === "img"){ return <span key={k}>{textMap}</span> }
+            })
+            return <section>{listMap}</section>
+        }
+        
         if (bc.tag === "ol" || bc.tag === "ul"){
             const listMap = bc.list.map((l) => {
                 const listItem = l.item.map(i => {
@@ -76,7 +110,6 @@ const BlogWrapper = styled.div`
 
     .blog-image.wide {
         width: 100%;
-        margin: 10px auto;
     }
 
     > article {
@@ -87,52 +120,72 @@ const BlogWrapper = styled.div`
         color: var(--grey);
         font-weight: 100;
 
+        h1 {
+            padding: 10px 0;
+        }
+        h2, h3 {
+            padding: 30px 0 10px;
+        }
+
+        img {
+            margin: 10px auto;
+        }
         > img:first-of-type {
             width: 100%;
             padding: 20px 0 40px;
         }
 
-        > h1 {
-            font-family: var(--fancy-font);
-            text-transform: none;
-            text-align: left;
-            padding: 5px 0 0;
-            line-height: 100%;
-        }
 
-        > h4 {
-            font-size: 15px;
-            color: var(--lightgrey);
-        }
-
-        > small {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: var(--green);
-        }
-        b {
-            color: var(--purple)!important;
-            font-weight: 800;
-        }
     }
+
     a {
         color: var(--green);
         &:hover {
             color: var(--lightgreen);
         }
     }
+
+    h1 {
+        font-family: var(--fancy-font);
+        text-transform: none;
+        text-align: left;
+        padding: 5px 0 0;
+        line-height: 100%;
+    }
     h2 {
         font-size: 24px;
-        padding: 10px 0;
         color: var(--purple);
     }
+    h3 {
+        font-size: 16px;
+        color: var(--purple);
+    }
+    h4 {
+        font-size: 15px;
+        color: var(--lightgrey);
+    }
     p {
+        font-size: 16px;
         padding: 10px 0; 
     }
+    small {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--green);
+    }
+    b {
+        color: var(--purple)!important;
+        font-weight: 800;
+    }
+
+    section,
     ul,
     ol {
         width: 80%;
         margin: 0 auto;
+    }
+    ul,
+    ol {
         padding-inline-start: 40px;
         padding-inline-end: 40px;
     }
@@ -143,22 +196,24 @@ const BlogWrapper = styled.div`
         > article {
             width: 100vw;
             text-align: center;
+
             > img:first-of-type {
                 width: 100%;
                 padding: 20px 0 20px;
             }
-            > h1 {
-                font-size: 28px;
-                text-align: center;
-            }
-            > h2 {
-                font-size: 22px;
-            }
-            
+    
             > div {
                 text-align: left;
                 padding: 0 20px;
             }
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 22px;
         }
         ol {
             padding-inline-start: 5vw;
