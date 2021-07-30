@@ -156,7 +156,7 @@ const BlogWrapper = styled.div`
         }
         > img:first-of-type {
             width: 100%;
-            padding: 20px 0 40px;
+            padding: 10px 0;
         }
 
 
