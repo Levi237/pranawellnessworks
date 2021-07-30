@@ -54,8 +54,6 @@ const FeatureBlogContainer = styled.div`
 
     > small {
       font-size: 1.6vw;
-      text-transform: uppercase;
-      color: var(--green);
     }
 
     > a > {
@@ -63,15 +61,13 @@ const FeatureBlogContainer = styled.div`
         width: 86vw;
         padding: 0;
         margin: 10px auto;
-        font-family: var(--fancy-font);
-        text-transform: none;
+  
       }
     }
     
     > h4 {
       margin-top: 6px;
-      color: var(--lightgrey);
-      font-weight: 100;
+
       > a {
         color: var(--lightgrey);
       }
