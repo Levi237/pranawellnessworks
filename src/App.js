@@ -225,7 +225,7 @@ export default class App extends Component {
     blogs: [{
       id: `00-26072021`,
       endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
-      category: `meditation`,
+      category: `Meditation & Mindfulness`,
       keyWords: [`meditation`, `health`],
       title: `5 Ways to Create a Powerful Morning`,
       subtext: `Achieve your goals, increase focus and productivity. Every day!`,
@@ -319,14 +319,20 @@ export default class App extends Component {
       id: `00-09082021`,
       endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
-      category: `Breath`,
+      category: `Meditation & Mindfulness`,
       publishDate: `Monday, August 9th, 2021`,
       heroImage: `breath-banner.jpg`,
       subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
       copy: [{
         tag: `p`,
         content: [{
-          text: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity? Just BREATHE! Your breath is so much more to your body than just air. Learn how to take each breath for your body, and make it work for you. `,
+          text: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity? Just `
+        },{
+          tag: `a`,
+          link: `https://www.patreon.com/posts/39816022`,
+          text: `BREATHE!`
+         },{
+           text: ` Your breath is so much more to your body than just air. Learn how to take each breath for your body, and make it work for you. `,
         }]
       },{
         tag: `section`,
@@ -392,7 +398,13 @@ export default class App extends Component {
           tag: `b`,
           text: `The Challenge:` 
         },{
-          text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to build mindfulness and awareness in the body.`,
+          text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to `
+        },{
+          tag: `a`,
+          link: `https://www.udemy.com/course/21-day-meditation-experience/?referralCode=3A2E4017476123B8D6A4`,
+          text: `build mindfulness and awareness`
+        },{
+          text: ` in the body.`,
         }]
       }]
    
