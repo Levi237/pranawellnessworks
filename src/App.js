@@ -477,13 +477,16 @@ export default class App extends Component {
           </> }/>
           <Route path={routes.BLOG} exact render={() => <>
             <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-            {/* <FeatureBlogHeader scrollToTop={this.scrollToTop} selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/> */}
             <BlogMainIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
           </> }/>  
           <Route path={`/blog/:id/:endpoint`} exact render={() => <>
-                <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-                <ShowBlog blogs={blogs} blog={showBlog} author={authors[0]}/> 
-          </> }/>  
+            <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <ShowBlog blogs={blogs} blog={showBlog} author={authors[0]}/> 
+          </> }/>
+          <Route path={routes.BLOG} render={() => <>
+            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <BlogMainIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
+          </> }/> 
           <Route path={routes.FAQ} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
