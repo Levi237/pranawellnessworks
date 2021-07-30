@@ -1,19 +1,22 @@
-import React        from 'react';
+import React, { useState, useEffect }        from 'react';
 import styled       from 'styled-components';
 
 import { Link }     from 'react-router-dom';
 import * as routes  from '../../constants/routes';
 
-const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog}) => {
-  
+const FeatureBlogHeader = ({blogs, blog, author, scrollToTop, selectBlog, match }) => {
+  useEffect(() => {
+    const list = blogs;
+    console.log(match)
+  })
   return(
       <FeatureBlogContainer>
-        <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+        <Link to={`/blog/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
           <div style={{backgroundImage: `url(./blog/${blog.heroImage})`}}></div>
         </Link>
         <section>
           <small>{blog.category}</small>
-          <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+          <Link to={`/blog/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
             <h1>
               {blog.title}
             </h1>
@@ -21,7 +24,7 @@ const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog}) => {
           <p>
             {blog.subtext}
             &nbsp;
-            <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+            <Link to={`/blog/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
               Read more...
             </Link>
           </p>
