@@ -6,13 +6,14 @@ const ShowBlog = ({blogs, author}) => {
     const { id } = useParams();
     let blog = ''
     blogs.filter(bl => {
+        console.log(id)
         if(bl.id == id) {
             blog = bl
         }
     })
 
 
-    const renderBlog = blog.copy.map((bc, k) => {
+    const renderBlog = blog.copy.map((bc, key) => {
 
         if (bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
             const textMap = bc.content.map(txt => {
@@ -30,10 +31,10 @@ const ShowBlog = ({blogs, author}) => {
                     return <span>{txt.text}</span>
                 }
             })
-            if (bc.tag === "h2"){ return <h2 key={k}>{textMap}</h2> }
-            if (bc.tag === "h3"){ return <h3 key={k}>{textMap}</h3> }
-            if (bc.tag === "h4"){ return <h4 key={k}>{textMap}</h4> }
-            if (bc.tag === "p"){ return <p key={k}>{textMap}</p> }
+            if (bc.tag === "h2"){ return <h2 key={key}>{textMap}</h2> }
+            if (bc.tag === "h3"){ return <h3 key={key}>{textMap}</h3> }
+            if (bc.tag === "h4"){ return <h4 key={key}>{textMap}</h4> }
+            if (bc.tag === "p"){ return <p key={key}>{textMap}</p> }
         }
 
         if (bc.tag === "img"){
@@ -47,7 +48,7 @@ const ShowBlog = ({blogs, author}) => {
         }
 
         if (bc.tag === "section"){
-            const listMap = bc.list.map((li) => {
+            const listMap = bc.list.map((li, ki) => {
                 const textMap = li.content.map(txt => {
                     if (txt.tag === "a"){
                         return <a href={txt.link}>{txt.text}</a>
@@ -65,18 +66,18 @@ const ShowBlog = ({blogs, author}) => {
                         return <span>{txt.text}</span>
                     }
                 })
-                if (li.tag === "h2"){ return <h2 key={k}>{textMap}</h2> }
-                if (li.tag === "h3"){ return <h3 key={k}>{textMap}</h3> }
-                if (li.tag === "h4"){ return <h4 key={k}>{textMap}</h4> }
-                if (li.tag === "p"){ return <p key={k}>{textMap}</p> }
-                if (li.tag === "img"){ return <span key={k}>{textMap}</span> }
+                if (li.tag === "h2"){ return <h2 key={ki}>{textMap}</h2> }
+                if (li.tag === "h3"){ return <h3 key={ki}>{textMap}</h3> }
+                if (li.tag === "h4"){ return <h4 key={ki}>{textMap}</h4> }
+                if (li.tag === "p"){ return <p key={ki}>{textMap}</p> }
+                if (li.tag === "img"){ return <span key={ki}>{textMap}</span> }
             })
-            return <section>{listMap}</section>
+            return <section key={key}>{listMap}</section>
         }
         
         if (bc.tag === "ol" || bc.tag === "ul"){
-            const listMap = bc.list.map((l) => {
-                const listItem = l.item.map(i => {
+            const listMap = bc.list.map((li, ki) => {
+                const listItem = li.item.map(i => {
                     if (i.tag === "a"){
                         return <a href={i.link} target="_blank">{i.text}</a>
                     } else if (i.tag === "i"){
@@ -93,10 +94,10 @@ const ShowBlog = ({blogs, author}) => {
                         return <span>{i.text}</span>
                     }
                 })
-                return <li key={k}>{listItem}</li>
+                return <li key={ki}>{listItem}</li>
             })
-            if (bc.tag === "ol" ){ return <ol>{listMap}</ol> } 
-            if (bc.tag === "ul" ){ return <ul>{listMap}</ul> } 
+            if (bc.tag === "ol" ){ return <ol key={key}>{listMap}</ol> } 
+            if (bc.tag === "ul" ){ return <ul key={key}>{listMap}</ul> } 
         }
     });
 
