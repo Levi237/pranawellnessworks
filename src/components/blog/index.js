@@ -15,7 +15,6 @@ export default class BlogMainIndex extends Component {
             <BlogIndexWrapper>
                 <FeaturedBlogHeader scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
                 <br/><br/><br/>
-                { (blogs.lengh > 1) &&
                 <TwoBlogRows>
                     <div>
                         <Link to={`/blog/${blogs[1].id}/${blogs[1].endpoint}`}  onClick={(e) => selectBlog(e, blogs[1])}>
@@ -23,7 +22,7 @@ export default class BlogMainIndex extends Component {
                             <small>{blogs[1].category}</small>
                                 <h1>{blogs[1].title}</h1>
                                 <p>{blogs[1].subtext}</p>
-                                <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;</span><br className="mobile-inline"/>By {author.firstName} {author.lastName}</h4>
+                                <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
                             </section>
                             <section style={{backgroundImage: `url(./blog/${blogs[1].heroImage})`}}>
                             </section>
@@ -42,7 +41,6 @@ export default class BlogMainIndex extends Component {
                         </Link>
                     </div> */}
                 </TwoBlogRows>
-                }
             </BlogIndexWrapper>
         );
     };
@@ -95,6 +93,61 @@ a {
         }
     }
 }
+    @media screen and (max-width: 640px) {
+        a {
+            h1 { 
+                font-size: 4.25vw;
+                text-align: left;
+                line-height: 120%;
+                padding: 0;
+                margin-top: 2vw;
+            }
+            h4 {
+                font-size: 3vw;
+                line-height: 2vw;
+                margin-top: 1vw;
+                line-height: 120%;
+            }
+            p {
+                margin-top: 2vw;
+                font-size: 3.6vw;
+                line-height: 120%;
+                // display: none;
+            }
+            small { 
+                font-size: 2.5vw;
+                line-height: 120%;
+            }
+        }
+        > div {
+            width: 100vw;
+            margin: 0 auto 5vw;
+            > a {
+                > section {
+                    text-align: left;
+                    width: 50vw;
+                    height: 65vw;
+                    display: inline-block;
+                    vertical-align: top; 
+
+                    &:first-of-type {
+                        margin-right: 0;
+                        border-top: 1px solid rgba(0,0,0,0);
+                        > * {
+                            padding: 0 5vw;
+                        }
+                    }
+                    &:last-of-type {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-top: 1px solid rgba(0,0,0,0);
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
 `;
 
 const BlogIndexWrapper = styled.div`
