@@ -221,13 +221,101 @@ export default class App extends Component {
       link: "https://thenalaverse.com/stephanie-singleton"
     }],
     //// BLOG HARDCOPY
-    // SCHEMA STRUCTURE
 
-
-    // paragraphs
-    // type: p
-    // content [{text, type: span, b, a, link, src}]
     blogs: [{
+      id: `00-26072021`,
+      endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
+      category: `meditation`,
+      keyWords: [`meditation`, `health`],
+      title: `5 Ways to Create a Powerful Morning`,
+      subtext: `Achieve your goals, increase focus and productivity. Every day!`,
+      authorId: `000`,
+      publishDate: `Monday, July 26 2021`,
+      heroImage: `morning-routine-blog-banner.jpg`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Mornings are the most essential part of your day! They set the tone and energy for the rest of the day. If you have a mindful morning, you are essentially curating peace and positivity for your day ahead. Routines help us to stay focused and achieve our goals, so focusing on what you do at the beginning of your day will increase productivity, every day.`}]
+      },{
+        tag: `h2`,
+        content: [{
+          text: `Here are 5 Ways to Create a Powerful Morning:`
+        }]
+      },{
+        tag: `ol`,
+        list: [{
+          item: [{
+            tag: `b`,
+            text: `Drink Your Water!`,
+          },{
+            text: ` Keep a bottle of room temperature water by your bed, and as soon as you wake up, drink it! Your brain and heart, the most vital, life-giving organs, are about 73% water. You must keep them fed. In India, water is used in many “Kriya,” or cleansing practices, to remove toxins from the body. Water in the morning increases your energy levels and boosts red blood cell count. Red blood cells carry oxygen to the brain. H`
+          },{
+            tag: `sub`,
+            text:`2`,
+          },{
+            text: `0 boosts your metabolism, so that your energy from food converts properly. It cleanses, and also contributes to your glowing skin! Water first thing in the morning will awaken and rehydrate the body.`,
+        }],
+        },{
+          item: [{
+            tag: `b`,
+            text: `Breathe.`
+          },{
+            text: ` Pranayama, or breathwork is essential for regulating the nervous system. When you start your morning with breath, you are creating a blank slate for your day. You are priming the body to operate out of a parasympathetic state, which is calm. Breathing in and out through your nose slows the heart rate and eases anxiety. A great energizing breath for your morning practice is “Kapalabhati.” Kapala means mind, and Bhati means glow. Who doesn’t want a mind glow up!? Start this breath by placing one hand on your belly. Inhale through the nose and expand the belly out. As you exhale, pretend like you are blowing out a candle with your nose. Naval contracts toward the spine. Blow out only through the nose. You can speed up this breath as it suits your body, to build energy and heat to start your day.`,
+        }],
+        },{
+          item: [{
+            tag: `a`,
+            link: `https://www.etsy.com/shop/pranawellnessstudio/`,
+            text: `#GetMeditated`,
+          },{
+            tag: `b`,
+            text: ` Meditation.`
+          },{
+            text: ` opens up new realms of creativity in the brain. It physiologically creates new space in the brain. According to a Harvard study, meditation increases cortical thickness, which governs learning, thinking and memory. It decreases brain cell volume in the amygdala, which is behind anxiety, fear, and stress. Meditation deals with “past trauma.” This can be small traumas from a phone call 5 minutes ago, or bigger issues that have affected us in the past. It allows you to go into each day with a fresh outlook. Set an intention for the same. Mine is `
+          },{
+            tag: `a`,
+            link: `https://www.etsy.com/shop/pranawellnessstudio/`,
+            text: `“I am free. I am calm. I am at peace.”`
+          }],
+        },{
+          item: [{
+            tag: `b`,
+            text: `Journal.`,
+           },{
+             text: ` The “monkey mind” is always busy! We are human, so we cannot stop the mind from running, unfortunately. This is a myth. But we can prevent the mind from controlling us, and learn to make sense of it all. By writing out your thoughts, ideas, worries, lists, and goals on paper, you allow them to be released from your brain.`,
+          },{
+            tag: `img`,
+            src: `journaling-banner.jpg`,
+            class: `wide`,
+           },{
+             text: `Dedicate some time in the morning to incorporate some self-study, or svadhyaya. Observe your thoughts and feelings, and put them on paper. One simple journaling practice that involves very little direction is “brain dumping.” This means you simply write down any and everything that comes to mind. It can be lists, ideas, frustrations, diary entries, food journals, or simply an account of your feelings at the moment. Name them. Whatever is allowing your monkey mind to race, put it on the paper. No journal prompts, no deep questions, just you.`,
+            }],
+        },{
+          item: [{
+            tag: `b`,
+            text: `Move.`,
+          },{
+            text: ` Movement is one of the best ways to ensure a healthy aging process. Our body is full of synovial fluids and muscle fascia that need motion and lubrication, always. The more you move, the less your muscle fascia will “stick.” When our bodies become accustomed to staying still, they lose essential tissues and cells, and overall mobility decreases. Take time to loosen the joints in the morning, stretch out your shoulders, hamstrings, and spine.` 
+          },{
+            tag: `a`,
+            link: `https://www.patreon.com/posts/39545337`,
+            text: `Sun Salutations and CARs`
+           },{
+          text: `are a great way to get the body tuned up each morning. Take a mindful walk! Something is better than nothing, and walking helps to increase awareness and energy, and is very meditative.`}],
+        }]
+      },{
+        // tag: `img`,
+        // class: `wide`,
+        // src: `journaling-banner.jpg`
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge:`,
+        },{
+          text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you’re awake. Notice what happens…...`}]
+      }]
+    },{
       id: `00-09082021`,
       endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
@@ -307,94 +395,7 @@ export default class App extends Component {
           text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to build mindfulness and awareness in the body.`,
         }]
       }]
-    },{
-      id: `00-26072021`,
-      endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
-      category: `meditation`,
-      keyWords: [`meditation`, `health`],
-      title: `5 Ways to Create a Powerful Morning`,
-      subtext: `Achieve your goals, increase focus and productivity. Every day!`,
-      authorId: `000`,
-      publishDate: `Monday, July 26 2021`,
-      heroImage: `morning-routine-blog-banner.jpg`,
-      copy: [{
-        tag: `p`,
-        content: [{
-          text: `Mornings are the most essential part of your day! They set the tone and energy for the rest of the day. If you have a mindful morning, you are essentially curating peace and positivity for your day ahead. Routines help us to stay focused and achieve our goals, so focusing on what you do at the beginning of your day will increase productivity, every day.`}]
-      },{
-        tag: `h2`,
-        content: [{
-          text: `Here are 5 Ways to Create a Powerful Morning:`
-        }]
-      },{
-        tag: `ol`,
-        list: [{
-          item: [{
-            tag: `b`,
-            text: `Drink Your Water!`,
-          },{
-            text: ` Keep a bottle of room temperature water by your bed, and as soon as you wake up, drink it! Your brain and heart, the most vital, life-giving organs, are about 73% water. You must keep them fed. In India, water is used in many “Kriya,” or cleansing practices, to remove toxins from the body. Water in the morning increases your energy levels and boosts red blood cell count. Red blood cells carry oxygen to the brain. H20 boosts your metabolism, so that your energy from food converts properly. It cleanses, and also contributes to your glowing skin! Water first thing in the morning will awaken and rehydrate the body.`,
-        }],
-        },{
-          item: [{
-            tag: `b`,
-            text: `Breathe.`
-          },{
-            text: ` Pranayama, or breathwork is essential for regulating the nervous system. When you start your morning with breath, you are creating a blank slate for your day. You are priming the body to operate out of a parasympathetic state, which is calm. Breathing in and out through your nose slows the heart rate and eases anxiety. A great energizing breath for your morning practice is “Kapalabhati.” Kapala means mind, and Bhati means glow. Who doesn’t want a mind glow up!? Start this breath by placing one hand on your belly. Inhale through the nose and expand the belly out. As you exhale, pretend like you are blowing out a candle with your nose. Naval contracts toward the spine. Blow out only through the nose. You can speed up this breath as it suits your body, to build energy and heat to start your day.`,
-        }],
-        },{
-          item: [{
-            tag: `a`,
-            link: `https://www.etsy.com/shop/pranawellnessstudio/`,
-            text: `#GetMeditated`,
-          },{
-            tag: `b`,
-            text: ` Meditation.`
-          },{
-            text: ` opens up new realms of creativity in the brain. It physiologically creates new space in the brain. According to a Harvard study, meditation increases cortical thickness, which governs learning, thinking and memory. It decreases brain cell volume in the amygdala, which is behind anxiety, fear, and stress. Meditation deals with “past trauma.” This can be small traumas from a phone call 5 minutes ago, or bigger issues that have affected us in the past. It allows you to go into each day with a fresh outlook. Set an intention for the same. Mine is `
-          },{
-            tag: `a`,
-            link: `https://www.etsy.com/shop/pranawellnessstudio/`,
-            text: `“I am free. I am calm. I am at peace.”`
-          }],
-        },{
-          item: [{
-            tag: `b`,
-            text: `Journal.`,
-           },{
-             text: ` The “monkey mind” is always busy! We are human, so we cannot stop the mind from running, unfortunately. This is a myth. But we can prevent the mind from controlling us, and learn to make sense of it all. By writing out your thoughts, ideas, worries, lists, and goals on paper, you allow them to be released from your brain.`,
-          },{
-            tag: `img`,
-            src: `journaling-banner.jpg`,
-            class: `wide`,
-           },{
-             text: `Dedicate some time in the morning to incorporate some self-study, or svadhyaya. Observe your thoughts and feelings, and put them on paper. One simple journaling practice that involves very little direction is “brain dumping.” This means you simply write down any and everything that comes to mind. It can be lists, ideas, frustrations, diary entries, food journals, or simply an account of your feelings at the moment. Name them. Whatever is allowing your monkey mind to race, put it on the paper. No journal prompts, no deep questions, just you.`,
-            }],
-        },{
-          item: [{
-            tag: `b`,
-            text: `Move.`,
-          },{
-            text: ` Movement is one of the best ways to ensure a healthy aging process. Our body is full of synovial fluids and muscle fascia that need motion and lubrication, always. The more you move, the less your muscle fascia will “stick.” When our bodies become accustomed to staying still, they lose essential tissues and cells, and overall mobility decreases. Take time to loosen the joints in the morning, stretch out your shoulders, hamstrings, and spine.` 
-          },{
-            tag: `a`,
-            link: `https://www.patreon.com/posts/39545337`,
-            text: `Sun Salutations and CARs`
-           },{
-          text: `are a great way to get the body tuned up each morning. Take a mindful walk! Something is better than nothing, and walking helps to increase awareness and energy, and is very meditative.`}],
-        }]
-      },{
-        // tag: `img`,
-        // class: `wide`,
-        // src: `journaling-banner.jpg`
-      },{
-        tag: `p`,
-        content: [{
-          tag: `b`,
-          text: `The Challenge:`,
-        },{
-          text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you’re awake. Notice what happens…...`}]
-      }]
+   
     }],
     showBlog: {},
     authors: [{
@@ -472,7 +473,7 @@ export default class App extends Component {
             <FeatureBlogHeader scrollToTop={this.scrollToTop} selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/>
             <BlogMainIndex selectBlog={this.selectBlog}  blogs={blogs}/> 
           </> }/>  
-          <Route path={`/blog/:id`} exact render={() => <>
+          <Route path={`/blog/:id/:endpoint`} exact render={() => <>
                 <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
                 <ShowBlog blogs={blogs} blog={showBlog} author={authors[0]}/> 
           </> }/>  
