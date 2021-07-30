@@ -12,7 +12,7 @@ const FeatureBlogHeader = ({blogs, blog, author, scrollToTop, selectBlog, match 
   return(
       <FeatureBlogContainer>
         <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
-          <div style={{backgroundImage: `url(./blog/${blog.heroImage})`}}></div>
+          <div style={{backgroundImage: `url(/blog/${blog.heroImage})`}}></div>
         </Link>
         <section>
           <small>{blog.category}</small>
