@@ -11,12 +11,12 @@ const FeatureBlogHeader = ({blogs, blog, author, scrollToTop, selectBlog, match 
   })
   return(
       <FeatureBlogContainer>
-        <Link to={`/blog/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+        <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
           <div style={{backgroundImage: `url(./blog/${blog.heroImage})`}}></div>
         </Link>
         <section>
           <small>{blog.category}</small>
-          <Link to={`/blog/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+          <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
             <h1>
               {blog.title}
             </h1>
@@ -24,7 +24,7 @@ const FeatureBlogHeader = ({blogs, blog, author, scrollToTop, selectBlog, match 
           <p>
             {blog.subtext}
             &nbsp;
-            <Link to={`/blog/${blog.id}`}  onClick={(e) => selectBlog(e, blog)}>
+            <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
               Read more...
             </Link>
           </p>

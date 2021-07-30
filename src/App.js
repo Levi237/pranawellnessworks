@@ -228,86 +228,86 @@ export default class App extends Component {
     // type: p
     // content [{text, type: span, b, a, link, src}]
     blogs: [{
-    //   id: `00-09082021`,
-    //   endpoint: `Breathing_for_Your_Body`,
-    //   title: `Breathing for Your Body`,
-    //   category: `Breath`,
-    //   publishDate: `Monday, August 9th, 2021`,
-    //   heroImage: `breath-banner.jpg`,
-    //   subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
-    //   copy: [{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity? Just BREATHE! Your breath is so much more to your body than just air. Learn how to take each breath for your body, and make it work for you. `,
-    //     }]
-    //   },{
-    //     tag: `section`,
-    //     list: [{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `In and out through the nose. `,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Most people breathe with their mouth wide open. It’s instinctive. Breathing through your mouth excites the sympathetic nervous system, the fight or flight system. If your body is constantly in this state, it cannot rest and replenish. Immunity decreases, heart rate increases, and it becomes more difficult for your body to find balance. `,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Use Your Gut`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Another common breath habit is contracting on the inhale and expanding on the exhale. This is backwards! Breathing from the belly up allows for full diaphragmatic expansion. It also allows you to build more awareness in your body, as the breath moves through it. `,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Try this. Place one hand over your belly. Inhale and expand the belly as much as possible, into your palm. Exhale, contract the naval to spine. Repeat. Inhale, expand the belly. Exhale, naval to spine. `,
-    //       }]
-    //     },{
-    //       tag: `img`,
-    //       content: [{
-    //         class: `wide`,
-    //         src: `breath-asana-banner.jpg`,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Give More.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `As humans, we tend to take more than we give to the Universe. If we can learn to practice giving more than we take, we can come closer to alignment. Try to lengthen your Apana, or exhale. Begin with 1:2, then 2:4, 3:6, and 4:8 (inhale:exhale). As you release the exhale, release anything that no longer serves you mentally or physically. `,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Breath to Movement.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Yoga means union. In the physical practice of asana, or movement, we aim to unite the breath with each movement. Inhale arms lift, exhale fold. Inhale, lengthen. Exhale, go inwards. Build consciousness in the way your body moves with your breath. `,
-    //       }]
-    //     }]
-    //   },{
-    //     tag: `p`,
-    //     content: [{
-    //       tag: `b`,
-    //       text: `The Challenge:` 
-    //     },{
-    //       text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to build mindfulness and awareness in the body.`,
-    //     }]
-    //   }]
-    // },{
+      id: `00-09082021`,
+      endpoint: `Breathing_for_Your_Body`,
+      title: `Breathing for Your Body`,
+      category: `Breath`,
+      publishDate: `Monday, August 9th, 2021`,
+      heroImage: `breath-banner.jpg`,
+      subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity? Just BREATHE! Your breath is so much more to your body than just air. Learn how to take each breath for your body, and make it work for you. `,
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `In and out through the nose. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Most people breathe with their mouth wide open. It’s instinctive. Breathing through your mouth excites the sympathetic nervous system, the fight or flight system. If your body is constantly in this state, it cannot rest and replenish. Immunity decreases, heart rate increases, and it becomes more difficult for your body to find balance. `,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Use Your Gut`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Another common breath habit is contracting on the inhale and expanding on the exhale. This is backwards! Breathing from the belly up allows for full diaphragmatic expansion. It also allows you to build more awareness in your body, as the breath moves through it. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Try this. Place one hand over your belly. Inhale and expand the belly as much as possible, into your palm. Exhale, contract the naval to spine. Repeat. Inhale, expand the belly. Exhale, naval to spine. `,
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `breath-asana-banner.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Give More.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `As humans, we tend to take more than we give to the Universe. If we can learn to practice giving more than we take, we can come closer to alignment. Try to lengthen your Apana, or exhale. Begin with 1:2, then 2:4, 3:6, and 4:8 (inhale:exhale). As you release the exhale, release anything that no longer serves you mentally or physically. `,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Breath to Movement.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Yoga means union. In the physical practice of asana, or movement, we aim to unite the breath with each movement. Inhale arms lift, exhale fold. Inhale, lengthen. Exhale, go inwards. Build consciousness in the way your body moves with your breath. `,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge:` 
+        },{
+          text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to build mindfulness and awareness in the body.`,
+        }]
+      }]
+    },{
       id: `00-26072021`,
       endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
       category: `meditation`,
@@ -472,9 +472,9 @@ export default class App extends Component {
             <FeatureBlogHeader scrollToTop={this.scrollToTop} selectBlog={this.selectBlog} blog={blogs[0]} author={authors[0]}/>
             <BlogMainIndex selectBlog={this.selectBlog}  blogs={blogs}/> 
           </> }/>  
-          <Route path={`/blog/${showBlog.id}/${showBlog.endpoint}`} exact render={() => <>
+          <Route path={`/blog/:id`} exact render={() => <>
                 <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-                <ShowBlog blog={showBlog} author={authors[0]}/> 
+                <ShowBlog blogs={blogs} blog={showBlog} author={authors[0]}/> 
           </> }/>  
           <Route path={routes.FAQ} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
