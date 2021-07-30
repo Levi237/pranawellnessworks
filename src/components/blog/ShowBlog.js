@@ -1,7 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
 
-const ShowBlog = ({blog, author}) => {
+const ShowBlog = ({blogs, author}) => {
+    const { id } = useParams();
+    let blog = ''
+    blogs.filter(bl => {
+        if(bl.id == id) {
+            blog = bl
+        }
+    })
+
 
     const renderBlog = blog.copy.map((bc, k) => {
 
@@ -92,7 +101,9 @@ const ShowBlog = ({blog, author}) => {
     });
 
     return(
-        <BlogWrapper id={blog.id}>
+        <BlogWrapper 
+            id={blog.id}
+            >
             <article>
                 <small>{blog.category}</small>
                 <h1>{blog.title}</h1>
