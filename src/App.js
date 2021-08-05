@@ -172,7 +172,6 @@ export default class App extends Component {
       day: "Monday",
       when: "Every",
       time: "5p PT",
-      // note: "(happening now)",
       img: "./events/prenatal.png",
       link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
     },{
@@ -183,7 +182,6 @@ export default class App extends Component {
       day: "Tuesday",
       when: "1st & 3rd ",
       time: "5p PT",
-      // note: "(starting July 6th)",
       img: "./events/postpartum.png",
       link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
     },{
@@ -194,7 +192,6 @@ export default class App extends Component {
       day: "Wednesday",
       when: "1st",
       time: "6p PT",
-      // note: "(starting July 7th)",
       img: "./events/harbor.png",
       link: "https://yogaontheharbor.eventbrite.com"
     },{
@@ -205,7 +202,6 @@ export default class App extends Component {
       day: "Thursday",
       when: "Every",
       time: "5p PT",
-      // note: "(starting July 8th)",
       img: "./events/flow.png",
       link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
     },{
@@ -216,18 +212,91 @@ export default class App extends Component {
       day: "Friday",
       when: "Last",
       time: "10:30a PT",
-      // note: "(happening now)",
       img: "./events/meditation.png",
       link: "https://thenalaverse.com/stephanie-singleton"
     }],
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `00-23082021`,
+      endpoint: `How_to_Sleep_Better`,
+      title: `How to Sleep Better`,
+      category: `Mindfulness & Meditation`,
+      heroImage: `better-sleep-banner.png`,
+      publishDate: `Monday, August 23rd 2021`,
+      subtext: `Want better sleep? Mindful nights lead to productive mornings.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `What if I told you what you do each night, can shape your day? Do you have a hard time getting to sleep at night, or staying asleep? Do you always wake up tired? Feel like your mind just won’t turn off once you get into bed? I feel you! Been there, done that. Your sleep can be great, your night routine can be healthy, and conducive to a productive day. Try these 4 things.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            text: `Eat Earlier.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Stop eating 2-3 hours before bedtime. After each meal, your digestive system is in ON mode. It has to break down and process your food. If you are eating, and then jumping into bed shortly after, you are keeping your body ON! It’s still trying to work, while you are trying to rest. Give it some time to fully digest your last meal, so you don’t go to sleep feeling heavy and bloated. Your body will thank you.`
+          }] 
+        },{
+          tag: `h2`,
+          content: [{
+            text: `No alcohol before bed (yes, this means red wine too)`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Trust me, this one is super hard for me. I am a diehard red wine fan, and I’m sure I’m not alone in the idea that it just magically puts you to sleep. It doesn’t! Red wine, and other alcohol may seem like physical depressants at first swig, but they actually keep the body and mind active at night. It disrupts your REM sleep, which is the most important, productive, deep sleep of your night. So, by all means do happy hour at your will. Just not right before bed!`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            text: `Ditch the screens!`
+          }]
+        },{
+          tag: `p`,
+          content: [{ 
+            text: `At least one hour prior to your bedtime, put your phone on Do Not Disturb, close the laptop, and grab a juicy book, instead of turning on the TV. Filling your brain with triggering news stories, or gossip from other people’s lives right before you close your eyes, is basically asking to be kept awake. The blue light in our screens sends signals to the eyes that say “stay awake, be energized, focus on me!” We don’t want that. Blue light can also suppress the secretion of melatonin in the body, and throw off your circadian rhythm. Melatonin is a hormone produced by the pineal gland, in response to darkness. It’s the sleepy button! Let it do its job.` 
+          }]
+        },{
+          tag: `h2`,
+          content: [{ 
+            text: `Out of your mind, and onto paper.`
+          }]
+        },{
+          tag: `p`,
+          content: [{ 
+            text: `We all feel like our minds run a mile a minute, right? Especially at night. After a long day, it can feel like you’re going to bed with all of your thoughts right there next to you. Decompress! Write a schedule for the next day, write down your goals, a gratitude list, a WINS  of the day list, a to do list, or even just a brain dump of all the things running through your head. Each of these writing exercises will allow you to clear all of the thoughts in your head, out! It’s like erasing your chalkboard full of notes, so that you can start each new day with a clean slate.`
+          }]
+        }]
+      },{
+        tag: `img`,
+        class: `wide`,
+        src: `better-sleep_2.png`,
+      },{
+        tag: `p`,
+        content: [{
+          text: `Small habits lead to big change. Imagine if you made all 4 of these suggestions a part of your nightly routine. You will see better sleep, better focus the next day, and your body will feel more rested and replenished!`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge:` 
+        },{ 
+          text: ` Set an alarm on your phone each night, when it’s time to power down the screens, stop eating and drinking, and let all of your thoughts out on paper. Let the alarm serve as a reminder to STOP and power down.`
+        }]
+      }]
+    },{
       id: `00-09082021`,
       endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
       category: `Meditation & Mindfulness`,
-      publishDate: `Monday, August 9th, 2021`,
+      publishDate: `Monday, August 9th 2021`,
       heroImage: `breath-banner.jpg`,
       subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
       copy: [{
