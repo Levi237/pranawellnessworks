@@ -89,25 +89,27 @@ const ShowBlog = ({blogs, author}) => {
         
         if (bc.tag === "ol" || bc.tag === "ul"){
             const listMap = bc.list.map((li, ki) => {
-                const listItem = li.item.map(i => {
-                    if (i.tag === "a"){
-                        return <a href={i.link} target="_blank">{i.text}</a>
-                    } else if ( i.tag === "sup" ) { 
-                        return <sup>{i.text}</sup>    
-                    } else if ( i.tag === "sub" ) { 
-                        return <sub>{i.text}</sub>                   
-                    } else if ( i.tag === "small" ) { 
-                        return <small>{i.text}</small>
-                    } else if (i.tag === "i"){
-                        return <i>{i.text}</i>
-                    } else if (i.tag === "b"){
-                        return <b>{i.text}</b>
-                    } else if (i.tag === "u"){
-                        return <u>{i.text}</u>
-                    } else if (i.tag === "img"){
-                        return <img className={`blog-image ${i.class}`} src={`/blog/${i.src}`}/>  
+                const listItem = li.item.map(txt => {
+                    if (txt.tag === "a"){
+                        return <a href={txt.link} target="_blank">{txt.text}</a>
+                    } else if ( txt.tag === "sup" ) { 
+                        return <sup>{txt.text}</sup>    
+                    } else if ( txt.tag === "sub" ) { 
+                        return <sub>{txt.text}</sub>                   
+                    } else if ( txt.tag === "small" ) { 
+                        return <small>{txt.text}</small>
+                    } else if (txt.tag === "i"){
+                        return <i>{txt.text}</i>
+                    } else if (txt.tag === "b"){
+                        return <b>{txt.text}</b>
+                    } else if (txt.tag === "u"){
+                        return <u>{txt.text}</u>
+                    } else if ( txt.tag === "br" ) { 
+                        return <br/>
+                    } else if (txt.tag === "img"){
+                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`}/>  
                     } else {
-                        return <span>{i.text}</span>
+                        return <span>{txt.text}</span>
                     }
                 })
                 return <li key={ki}>{listItem}</li>
