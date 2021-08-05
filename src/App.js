@@ -277,11 +277,13 @@ export default class App extends Component {
           content: [{ 
             text: `We all feel like our minds run a mile a minute, right? Especially at night. After a long day, it can feel like you’re going to bed with all of your thoughts right there next to you. Decompress! Write a schedule for the next day, write down your goals, a gratitude list, a WINS  of the day list, a to do list, or even just a brain dump of all the things running through your head. Each of these writing exercises will allow you to clear all of the thoughts in your head, out! It’s like erasing your chalkboard full of notes, so that you can start each new day with a clean slate.`
           }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `better-sleep_2.png`,
+          }]
         }]
-      },{
-        tag: `img`,
-        class: `wide`,
-        src: `better-sleep_2.png`,
       },{
         tag: `p`,
         content: [{
