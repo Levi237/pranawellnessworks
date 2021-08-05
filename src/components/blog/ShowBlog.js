@@ -31,6 +31,8 @@ const ShowBlog = ({blogs, author}) => {
                     return <b>{txt.text}</b>
                 } else if ( txt.tag === "u" ) { 
                     return <u>{txt.text}</u>
+                } else if ( txt.tag === "br" ) { 
+                    return <br/>
                 } else {
                     return <span>{txt.text}</span>
                 }
@@ -68,6 +70,8 @@ const ShowBlog = ({blogs, author}) => {
                         return <i>{txt.text}</i>
                     } else if ( txt.tag === "b" ) { 
                         return <b>{txt.text}</b>
+                    } else if ( txt.tag === "br" ) { 
+                        return <br/>
                     } else if ( li.tag === "img" ) { 
                         return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`}/>
                     } else {

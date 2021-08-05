@@ -245,7 +245,12 @@ export default class App extends Component {
         },{
           tag: `h2`,
           content: [{
-            text: `No alcohol before bed (yes, this means red wine too)`
+            text: `No alcohol before bed `
+          },{
+            tag: `br`
+          },{
+            tag: `small`,
+            text: `(yes, this means red wine too)`
           }]
         },{
           tag: `p`,
