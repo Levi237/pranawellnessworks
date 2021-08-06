@@ -124,7 +124,7 @@ const ShowBlog = ({blogs, author}) => {
             id={blog.id}
             >
             <article>
-                <small>{blog.category}</small>
+                <small class="category uppercase">{blog.category}</small>
                 <h1>{blog.title}</h1>
                 <h4>By {author.firstName} {author.lastName} <span>|</span> {blog.publishDate}</h4>
                 <img src={`/blog/${blog.heroImage}`}/>
@@ -137,7 +137,8 @@ const ShowBlog = ({blogs, author}) => {
 const BlogWrapper = styled.div`
     padding: 20px 0 120px;
     position: relative;
-
+    .uppercase { text-transform: uppercase }
+    .category { font-size: 14px }
     .blog-image.wide {
         width: 100%;
     }
@@ -164,8 +165,6 @@ const BlogWrapper = styled.div`
             width: 100%;
             padding: 10px 0;
         }
-
-
     }
 
     a {
@@ -200,8 +199,7 @@ const BlogWrapper = styled.div`
         padding: 10px 0; 
     }
     small {
-        font-size: 14px;
-        text-transform: uppercase;
+        font-weight: 500;
         color: var(--green);
     }
     b {
