@@ -24,7 +24,7 @@ export default class BlogMainIndex extends Component {
                                 <p>{blogs[1].subtext}</p>
                                 <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
                             </section>
-                            <section style={{backgroundImage: `url(./blog/${blogs[1].heroImage})`}}>
+                            <section style={{backgroundImage: `url(/blog/${blogs[1].heroImage})`}}>
                             </section>
                         </Link>
                     </div>
