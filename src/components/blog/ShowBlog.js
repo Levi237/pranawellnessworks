@@ -3,15 +3,14 @@ import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 
 const ShowBlog = ({blogs, author}) => {
+
     const { id } = useParams();
     let blog = ''
     blogs.filter(bl => {
-        console.log(id)
         if(bl.id == id) {
             blog = bl
         }
     })
-
 
     const renderBlog = blog.copy.map((bc, key) => {
 
