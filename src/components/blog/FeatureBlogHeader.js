@@ -5,10 +5,7 @@ import { Link }     from 'react-router-dom';
 import * as routes  from '../../constants/routes';
 
 const FeatureBlogHeader = ({blogs, blog, author, scrollToTop, selectBlog, match }) => {
-  useEffect(() => {
-    const list = blogs;
-    console.log(match)
-  })
+
   return(
       <FeatureBlogContainer>
         <Link to={`/blog/${blog.id}/${blog.endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
