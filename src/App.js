@@ -218,164 +218,164 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
-      id: `03-06092021`,
-      endpoint: `4_Ways_to_Elevate_Your_Mindset`,
-      category: `Mindfulness & Meditation`,
-      title: `4 Ways to Elevate Your Mindset`,
-      publishDate: `Monday, September 6th, 2021`,
-      heroImage: `06092021_1.png`,
-      subtext: `The law of attraction is real! Invite in what you want and need.`,
-      copy: [{
-        tag: `h2`,
-        content: [{
-          text: `What you resist persists.`
-        },{
-          tag: `br`,
-        },{
-          tag: `small`,
-          text: `This is true, good or bad.`,
-        }]
-      },{
-        tag: `p`,
-        content: [{
-          text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
-        }]
-      },{
-        tag: `section`,
-        list: [{
-          tag: `h2`,
-          content: [{
-            text: `Turn the negative into affirmative.`,
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
-          }]
-        },{
-          tag: `h2`,
-          content: [{
-            text: `Speak it into existence.`,
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
-          }]
-        },{
-          tag: `h2`,
-          content: [{
-            text: `Start from abundance, not lack.`,
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text: `This is a tough one. I had to learn this lesson myself. `
-          },{
-            tag: `a`,
-            link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
-            text: `Mindset`
-           },{
-             text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
-          }]
-        },{
-          tag: `img`,
-          content: [{
-            src: `06092021_2.png`,
-            class: `wide`,
-          }]
-        }]
-      },{
-        tag: `p`,
-        content: [{
-          tag: `b`,
-          text: `The Challenge:` 
-        },{ 
-          text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
-        }]
-    }]    
-  },{
-      id: `02-23082021`,
-      endpoint: `How_to_Sleep_Better`,
-      title: `How to Sleep Better`,
-      category: `Mindfulness & Meditation`,
-      heroImage: `23082021_1.png`,
-      publishDate: `Monday, August 23rd 2021`,
-      subtext: `Want better sleep? Mindful nights lead to productive mornings.`,
-      copy: [{
-        tag: `p`,
-        content: [{
-          text: `What if I told you what you do each night, can shape your day? Do you have a hard time getting to sleep at night, or staying asleep? Do you always wake up tired? Feel like your mind just won’t turn off once you get into bed? I feel you! Been there, done that. Your sleep can be great, your night routine can be healthy, and conducive to a productive day. Try these 4 things.`
-        }]
-      },{
-        tag: `section`,
-        list: [{
-          tag: `h2`,
-          content: [{
-            text: `Eat Earlier.`
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text: `Stop eating 2-3 hours before bedtime. After each meal, your digestive system is in ON mode. It has to break down and process your food. If you are eating, and then jumping into bed shortly after, you are keeping your body ON! It’s still trying to work, while you are trying to rest. Give it some time to fully digest your last meal, so you don’t go to sleep feeling heavy and bloated. Your body will thank you.`
-          }] 
-        },{
-          tag: `h2`,
-          content: [{
-            text: `No alcohol before bed `
-          },{
-            tag: `br`
-          },{
-            tag: `small`,
-            text: `(yes, this means red wine too)`
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text: `Trust me, this one is super hard for me. I am a diehard red wine fan, and I’m sure I’m not alone in the idea that it just magically puts you to sleep. It doesn’t! Red wine, and other alcohol may seem like physical depressants at first swig, but they actually keep the body and mind active at night. It disrupts your REM sleep, which is the most important, productive, deep sleep of your night. So, by all means do happy hour at your will. Just not right before bed!`
-          }]
-        },{
-          tag: `h2`,
-          content: [{
-            text: `Ditch the screens!`
-          }]
-        },{
-          tag: `p`,
-          content: [{ 
-            text: `At least one hour prior to your bedtime, put your phone on Do Not Disturb, close the laptop, and grab a juicy book, instead of turning on the TV. Filling your brain with triggering news stories, or gossip from other people’s lives right before you close your eyes, is basically asking to be kept awake. The blue light in our screens sends signals to the eyes that say “stay awake, be energized, focus on me!” We don’t want that. Blue light can also suppress the secretion of melatonin in the body, and throw off your circadian rhythm. Melatonin is a hormone produced by the pineal gland, in response to darkness. It’s the sleepy button! Let it do its job.` 
-          }]
-        },{
-          tag: `h2`,
-          content: [{ 
-            text: `Out of your mind, and onto paper.`
-          }]
-        },{
-          tag: `p`,
-          content: [{ 
-            text: `We all feel like our minds run a mile a minute, right? Especially at night. After a long day, it can feel like you’re going to bed with all of your thoughts right there next to you. Decompress! Write a schedule for the next day, write down your goals, a gratitude list, a WINS  of the day list, a to do list, or even just a brain dump of all the things running through your head. Each of these writing exercises will allow you to clear all of the thoughts in your head, out! It’s like erasing your chalkboard full of notes, so that you can start each new day with a clean slate.`
-          }]
-        },{
-          tag: `img`,
-          content: [{
-            class: `wide`,
-            src: `23082021_2.png`,
-          }]
-        }]
-      },{
-        tag: `p`,
-        content: [{
-          text: `Small habits lead to big change. Imagine if you made all 4 of these suggestions a part of your nightly routine. You will see better sleep, better focus the next day, and your body will feel more rested and replenished!`
-        }]
-      },{
-        tag: `p`,
-        content: [{
-          tag: `b`,
-          text: `The Challenge:` 
-        },{ 
-          text: ` Set an alarm on your phone each night, when it’s time to power down the screens, stop eating and drinking, and let all of your thoughts out on paper. Let the alarm serve as a reminder to STOP and power down.`
-        }]
-      }]
-    },{
+  //     id: `03-06092021`,
+  //     endpoint: `4_Ways_to_Elevate_Your_Mindset`,
+  //     category: `Mindfulness & Meditation`,
+  //     title: `4 Ways to Elevate Your Mindset`,
+  //     publishDate: `Monday, September 6th, 2021`,
+  //     heroImage: `06092021_1.png`,
+  //     subtext: `The law of attraction is real! Invite in what you want and need.`,
+  //     copy: [{
+  //       tag: `h2`,
+  //       content: [{
+  //         text: `What you resist persists.`
+  //       },{
+  //         tag: `br`,
+  //       },{
+  //         tag: `small`,
+  //         text: `This is true, good or bad.`,
+  //       }]
+  //     },{
+  //       tag: `p`,
+  //       content: [{
+  //         text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
+  //       }]
+  //     },{
+  //       tag: `section`,
+  //       list: [{
+  //         tag: `h2`,
+  //         content: [{
+  //           text: `Turn the negative into affirmative.`,
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{
+  //           text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
+  //         }]
+  //       },{
+  //         tag: `h2`,
+  //         content: [{
+  //           text: `Speak it into existence.`,
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{
+  //           text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
+  //         }]
+  //       },{
+  //         tag: `h2`,
+  //         content: [{
+  //           text: `Start from abundance, not lack.`,
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{
+  //           text: `This is a tough one. I had to learn this lesson myself. `
+  //         },{
+  //           tag: `a`,
+  //           link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+  //           text: `Mindset`
+  //          },{
+  //            text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
+  //         }]
+  //       },{
+  //         tag: `img`,
+  //         content: [{
+  //           src: `06092021_2.png`,
+  //           class: `wide`,
+  //         }]
+  //       }]
+  //     },{
+  //       tag: `p`,
+  //       content: [{
+  //         tag: `b`,
+  //         text: `The Challenge:` 
+  //       },{ 
+  //         text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
+  //       }]
+  //   }]    
+  // },{
+  //     id: `02-23082021`,
+  //     endpoint: `How_to_Sleep_Better`,
+  //     title: `How to Sleep Better`,
+  //     category: `Mindfulness & Meditation`,
+  //     heroImage: `23082021_1.png`,
+  //     publishDate: `Monday, August 23rd 2021`,
+  //     subtext: `Want better sleep? Mindful nights lead to productive mornings.`,
+  //     copy: [{
+  //       tag: `p`,
+  //       content: [{
+  //         text: `What if I told you what you do each night, can shape your day? Do you have a hard time getting to sleep at night, or staying asleep? Do you always wake up tired? Feel like your mind just won’t turn off once you get into bed? I feel you! Been there, done that. Your sleep can be great, your night routine can be healthy, and conducive to a productive day. Try these 4 things.`
+  //       }]
+  //     },{
+  //       tag: `section`,
+  //       list: [{
+  //         tag: `h2`,
+  //         content: [{
+  //           text: `Eat Earlier.`
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{
+  //           text: `Stop eating 2-3 hours before bedtime. After each meal, your digestive system is in ON mode. It has to break down and process your food. If you are eating, and then jumping into bed shortly after, you are keeping your body ON! It’s still trying to work, while you are trying to rest. Give it some time to fully digest your last meal, so you don’t go to sleep feeling heavy and bloated. Your body will thank you.`
+  //         }] 
+  //       },{
+  //         tag: `h2`,
+  //         content: [{
+  //           text: `No alcohol before bed `
+  //         },{
+  //           tag: `br`
+  //         },{
+  //           tag: `small`,
+  //           text: `(yes, this means red wine too)`
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{
+  //           text: `Trust me, this one is super hard for me. I am a diehard red wine fan, and I’m sure I’m not alone in the idea that it just magically puts you to sleep. It doesn’t! Red wine, and other alcohol may seem like physical depressants at first swig, but they actually keep the body and mind active at night. It disrupts your REM sleep, which is the most important, productive, deep sleep of your night. So, by all means do happy hour at your will. Just not right before bed!`
+  //         }]
+  //       },{
+  //         tag: `h2`,
+  //         content: [{
+  //           text: `Ditch the screens!`
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{ 
+  //           text: `At least one hour prior to your bedtime, put your phone on Do Not Disturb, close the laptop, and grab a juicy book, instead of turning on the TV. Filling your brain with triggering news stories, or gossip from other people’s lives right before you close your eyes, is basically asking to be kept awake. The blue light in our screens sends signals to the eyes that say “stay awake, be energized, focus on me!” We don’t want that. Blue light can also suppress the secretion of melatonin in the body, and throw off your circadian rhythm. Melatonin is a hormone produced by the pineal gland, in response to darkness. It’s the sleepy button! Let it do its job.` 
+  //         }]
+  //       },{
+  //         tag: `h2`,
+  //         content: [{ 
+  //           text: `Out of your mind, and onto paper.`
+  //         }]
+  //       },{
+  //         tag: `p`,
+  //         content: [{ 
+  //           text: `We all feel like our minds run a mile a minute, right? Especially at night. After a long day, it can feel like you’re going to bed with all of your thoughts right there next to you. Decompress! Write a schedule for the next day, write down your goals, a gratitude list, a WINS  of the day list, a to do list, or even just a brain dump of all the things running through your head. Each of these writing exercises will allow you to clear all of the thoughts in your head, out! It’s like erasing your chalkboard full of notes, so that you can start each new day with a clean slate.`
+  //         }]
+  //       },{
+  //         tag: `img`,
+  //         content: [{
+  //           class: `wide`,
+  //           src: `23082021_2.png`,
+  //         }]
+  //       }]
+  //     },{
+  //       tag: `p`,
+  //       content: [{
+  //         text: `Small habits lead to big change. Imagine if you made all 4 of these suggestions a part of your nightly routine. You will see better sleep, better focus the next day, and your body will feel more rested and replenished!`
+  //       }]
+  //     },{
+  //       tag: `p`,
+  //       content: [{
+  //         tag: `b`,
+  //         text: `The Challenge:` 
+  //       },{ 
+  //         text: ` Set an alarm on your phone each night, when it’s time to power down the screens, stop eating and drinking, and let all of your thoughts out on paper. Let the alarm serve as a reminder to STOP and power down.`
+  //       }]
+  //     }]
+  //   },{
       id: `01-09082021`,
       endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
