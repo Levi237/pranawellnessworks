@@ -172,7 +172,7 @@ export default class App extends Component {
       day: "Monday",
       when: "Every",
       time: "5p PT",
-      img: "./events/prenatal.png",
+      img: "/events/prenatal.png",
       link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
     },{
       title: "Postpartum Yoga",
@@ -182,7 +182,7 @@ export default class App extends Component {
       day: "Tuesday",
       when: "1st & 3rd ",
       time: "5p PT",
-      img: "./events/postpartum.png",
+      img: "/events/postpartum.png",
       link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
     },{
       title: "Yoga on the Harbor",
@@ -192,7 +192,7 @@ export default class App extends Component {
       day: "Wednesday",
       when: "1st",
       time: "6p PT",
-      img: "./events/harbor.png",
+      img: "/events/harbor.png",
       link: "https://yogaontheharbor.eventbrite.com"
     },{
       title: "Yoga Flow",
@@ -202,7 +202,7 @@ export default class App extends Component {
       day: "Thursday",
       when: "Every",
       time: "5p PT",
-      img: "./events/flow.png",
+      img: "/events/flow.png",
       link: "https://mailchi.mp/f44d1c9f43d6/yogflowthursdays"
     },{
       title: "Wellness Workshop",
@@ -212,7 +212,7 @@ export default class App extends Component {
       day: "Friday",
       when: "Last",
       time: "10:30a PT",
-      img: "./events/meditation.png",
+      img: "/events/meditation.png",
       link: "https://thenalaverse.com/stephanie-singleton"
     }],
     //// BLOG HARDCOPY
