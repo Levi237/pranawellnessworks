@@ -16,18 +16,30 @@ export default class BlogMainIndex extends Component {
                 <FeaturedBlogHeader scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
                 <br/><br/><br/>
                 <TwoBlogRows>
-                    <div>
-                        <Link to={`/blog/${blogs[1].id}/${blogs[1].endpoint}`}  onClick={(e) => selectBlog(e, blogs[1])}>
+                    {/* <div>
+                        <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
                             <section>
-                            <small>{blogs[1].category}</small>
-                                <h1>{blogs[1].title}</h1>
-                                <p>{blogs[1].subtext}</p>
-                                <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
+                            <small>{blogs[3].category}</small>
+                                <h1>{blogs[3].title}</h1>
+                                <p>{blogs[3].subtext}</p>
+                                <h4>{blogs[3].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;</span><br className="mobile-inline"/>By {author.firstName} {author.lastName}</h4>
                             </section>
-                            <section style={{backgroundImage: `url(/blog/${blogs[1].heroImage})`}}>
+                            <section style={{backgroundImage: `url(./blog/${blogs[3].heroImage})`}}>
                             </section>
                         </Link>
-                    </div>
+                    </div> */}
+                    {/* <div>
+                        <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
+                            <section>
+                            <small>{blogs[3].category}</small>
+                                <h1>{blogs[3].title}</h1>
+                                <p>{blogs[3].subtext}</p>
+                                <h4>{blogs[3].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;</span><br className="mobile-inline"/>By {author.firstName} {author.lastName}</h4>
+                            </section>
+                            <section style={{backgroundImage: `url(./blog/${blogs[3].heroImage})`}}>
+                            </section>
+                        </Link>
+                    </div> */}
                     {/* <div>
                         <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
                             <section>
@@ -40,6 +52,20 @@ export default class BlogMainIndex extends Component {
                             </section>
                         </Link>
                     </div> */}
+
+                    <div>
+                        <Link to={`/blog/${blogs[1].id}/${blogs[1].endpoint}`}  onClick={(e) => selectBlog(e, blogs[1])}>
+                            <section>
+                            <small>{blogs[1].category}</small>
+                                <h1>{blogs[1].title}</h1>
+                                <p>{blogs[1].subtext}</p>
+                                <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
+                            </section>
+                            <section style={{backgroundImage: `url(/blog/${blogs[1].heroImage})`}}>
+                            </section>
+                        </Link>
+                    </div>
+
                 </TwoBlogRows>
             </BlogIndexWrapper>
         );
