@@ -123,7 +123,7 @@ const ShowBlog = ({blogs, author}) => {
             id={blog.id}
             >
             <article>
-                <small class="category uppercase">{blog.category}</small>
+                <small className="category uppercase">{blog.category}</small>
                 <h1>{blog.title}</h1>
                 <h4>By {author.firstName} {author.lastName} <span>|</span> {blog.publishDate}</h4>
                 <img src={`/blog/${blog.heroImage}`}/>
