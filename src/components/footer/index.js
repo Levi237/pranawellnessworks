@@ -151,10 +151,14 @@ const ContactSection = styled.section`
                 font-size: 4vw;
                 margin-bottom: 5vw;
             }
-    
             > button {
                 margin-top: 2vw;
             }
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        > div > h3 {
+            font-size: 20px;
         }
     }
 `;
@@ -270,6 +274,37 @@ const QuickLinksSection = styled.section`
             }
         }
     }
+    @media screen and (min-width: 1200px) {
+        > div {
+            &:first-of-type {      
+                > section {
+                    button, 
+                    > a {
+                        font-size: 20px;
+                        padding-left: 15px;
+                        margin-bottom: 5px;
+                        letter-spacing: 1px;
+                    }
+                    &:first-of-type {                    
+                    }
+                    &:last-of-type {                    
+                        > div {
+                            padding-left: 30px;
+                            font-size: 16px;
+                            > a {
+                                margin-bottom: 5px;
+                                letter-spacing: .5px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:last-of-type {
+                bottom: 2.5vw;
+                left: 2.5vw;
+            }
+        }
+      }
 `;
 const Prana = styled.section`
     text-transform: uppercase;
@@ -287,6 +322,10 @@ const Prana = styled.section`
   @media screen and (max-width: 945px) {
     font-size: 5.5vw;
     letter-spacing: .8vw;
+  }
+  @media screen and (min-width: 1200px) {
+    // font-size: 5.5vw;
+    // letter-spacing: .8vw;
   }
 `;
 
@@ -318,7 +357,6 @@ const FooterWrapper = styled.div`
         > h1 {
             color: var(--lightgreen);
             text-align: left;
-            // border-bottom: 1px solid var(--green);
             padding: 0;
             font-size: 2.6vw;
             letter-spacing: .1vw;
@@ -338,6 +376,13 @@ const FooterWrapper = styled.div`
                 margin-bottom: 5vw;
             }
             padding: 5vw;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        > section {
+            > h1 {
+                font-size: 32px;
+            }
         }
     }
 `;
