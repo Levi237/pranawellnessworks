@@ -218,83 +218,83 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
-  //     id: `03-06092021`,
-  //     endpoint: `4_Ways_to_Elevate_Your_Mindset`,
-  //     category: `Mindfulness & Meditation`,
-  //     title: `4 Ways to Elevate Your Mindset`,
-  //     publishDate: `Monday, September 6th, 2021`,
-  //     heroImage: `06092021_1.png`,
-  //     subtext: `The law of attraction is real! Invite in what you want and need.`,
-  //     copy: [{
-  //       tag: `h2`,
-  //       content: [{
-  //         text: `What you resist persists.`
-  //       },{
-  //         tag: `br`,
-  //       },{
-  //         tag: `small`,
-  //         text: `This is true, good or bad.`,
-  //       }]
-  //     },{
-  //       tag: `p`,
-  //       content: [{
-  //         text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
-  //       }]
-  //     },{
-  //       tag: `section`,
-  //       list: [{
-  //         tag: `h2`,
-  //         content: [{
-  //           text: `Turn the negative into affirmative.`,
-  //         }]
-  //       },{
-  //         tag: `p`,
-  //         content: [{
-  //           text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
-  //         }]
-  //       },{
-  //         tag: `h2`,
-  //         content: [{
-  //           text: `Speak it into existence.`,
-  //         }]
-  //       },{
-  //         tag: `p`,
-  //         content: [{
-  //           text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
-  //         }]
-  //       },{
-  //         tag: `h2`,
-  //         content: [{
-  //           text: `Start from abundance, not lack.`,
-  //         }]
-  //       },{
-  //         tag: `p`,
-  //         content: [{
-  //           text: `This is a tough one. I had to learn this lesson myself. `
-  //         },{
-  //           tag: `a`,
-  //           link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
-  //           text: `Mindset`
-  //          },{
-  //            text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
-  //         }]
-  //       },{
-  //         tag: `img`,
-  //         content: [{
-  //           src: `06092021_2.png`,
-  //           class: `wide`,
-  //         }]
-  //       }]
-  //     },{
-  //       tag: `p`,
-  //       content: [{
-  //         tag: `b`,
-  //         text: `The Challenge:` 
-  //       },{ 
-  //         text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
-  //       }]
-  //   }]    
-  // },{
+      id: `03-06092021`,
+      endpoint: `4_Ways_to_Elevate_Your_Mindset`,
+      category: `Mindfulness & Meditation`,
+      title: `4 Ways to Elevate Your Mindset`,
+      publishDate: `Monday, September 6th, 2021`,
+      heroImage: `06092021_1.png`,
+      subtext: `The law of attraction is real! Invite in what you want and need.`,
+      copy: [{
+        tag: `h2`,
+        content: [{
+          text: `What you resist persists.`
+        },{
+          tag: `br`,
+        },{
+          tag: `small`,
+          text: `This is true, good or bad.`,
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            text: `Turn the negative into affirmative.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            text: `Speak it into existence.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            text: `Start from abundance, not lack.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `This is a tough one. I had to learn this lesson myself. `
+          },{
+            tag: `a`,
+            link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+            text: `Mindset`
+           },{
+             text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            src: `06092021_2.png`,
+            class: `wide`,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge:` 
+        },{ 
+          text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
+        }]
+    }]    
+  },{
       id: `02-23082021`,
       endpoint: `How_to_Sleep_Better`,
       title: `How to Sleep Better`,

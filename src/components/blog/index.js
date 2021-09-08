@@ -41,7 +41,7 @@ export default class BlogMainIndex extends Component {
                             </section>
                         </Link>
                     </div>
-                    {/* <div>
+                    <div>
                         <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
                             <section>
                             <small>{blogs[3].category}</small>
@@ -52,7 +52,7 @@ export default class BlogMainIndex extends Component {
                             <section style={{backgroundImage: `url(./blog/${blogs[3].heroImage})`}}>
                             </section>
                         </Link>
-                    </div> */}
+                    </div>
                     {/* <div>
                         <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
                             <section>
