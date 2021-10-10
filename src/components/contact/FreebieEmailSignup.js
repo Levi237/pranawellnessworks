@@ -18,6 +18,7 @@ const { emailValue, fNameValue, lNameValue } = this.state
             name="mc-embedded-subscribe-form" 
             className="validate" 
             target="_blank" 
+            rel="noopener noreferrer" 
             novalidate 
         >
             <p>

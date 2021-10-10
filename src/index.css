@@ -3,7 +3,13 @@
 :root {
   --lightgreen: #A0CD4D;
   --green: #689E3C;
+  --darkpurple: #744A9E;
   --purple: #965BA5;
+  --lightpurple: #b997c3;
+  --lightestpurple: #e8dceb;
+  --grey: #555;
+  --lightgrey: #888;
+  --fancy-font: 'Merriweather',sans-serif;
 }
 
 body {
@@ -25,10 +31,6 @@ h1 {
   font-size: 3vw;
   color: var(--purple);
   padding: 2vw;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 
   text-align: center;
   text-transform: uppercase;
@@ -36,7 +38,16 @@ h1 {
   position: relative;
   z-index: 1;
 }
-
+h1, h2, h3, h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 button {
   box-sizing: border-box;
   padding: 20px 50px;
@@ -62,6 +73,9 @@ button {
   background-color: #FFF;
   color: var(--purple);
 }
+button:hover {
+  cursor: pointer;
+}
 button.white {
   border: 1px solid var(--purple);
   background-color: #FFF;
@@ -76,7 +90,7 @@ button.white:hover {
   background-color: rgba(150, 91, 165, .5);
 }
 button.purple:hover {
-  background-color: rgba(150, 91, 165, .5);
+  background-color: var(--darkpurple);
 }
 
 @media screen and (max-width: 945px) {
@@ -106,5 +120,19 @@ button.purple:hover {
   }
   .mobile-inline {
     display: inline-block!important;
+  }
+}
+.mobile-block {
+  display: none!important;
+}
+.desktop-block {
+  display: block!important;
+}
+@media screen and (max-width: 945px) {
+  .desktop-block {
+    display: none!important;
+  }
+  .mobile-block {
+    display: block!important;
   }
 }

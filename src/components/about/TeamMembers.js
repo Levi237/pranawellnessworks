@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import './TeamMembers.css'
+import styled from 'styled-components';
 
 export default class TeamMembers extends Component {
     state = {
@@ -90,11 +89,225 @@ export default class TeamMembers extends Component {
             );
         });
 
-        return(<>
-            <div className="team-member-container">
+        return(
+            <TeamWrapper className="team-member-container">
             <h1>Meet the Team</h1>
                 {memberInfo}
-            </div>
-        </>);
+            </TeamWrapper>
+        );
     };
 };
+
+const TeamWrapper = styled.div`
+.team-member-container {
+    margin-top: 80px;
+    position: relative;
+}
+.team-box {
+    position: relative;
+    height: 36.67vw;
+    width: 30vw;
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    margin: 10px 1.33vw;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+.member-picture {
+    max-height: 36.67vw;
+    max-width: 30vw;
+    height: 36.67vw;
+    width: 30vw;
+    background-size: cover;
+}
+.member-back {
+    height: 33vw;
+    min-height: 33vw;
+    width: 25vw;
+    overflow: auto;
+
+    margin-top: -33vw;
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+
+    position: relative;
+    z-index: -1;
+
+    color: var(--darkpurple);
+    background-color: transparent;
+
+    font-size: 1.25vw;
+
+    transition: .3s ease;
+}
+
+.member-box {
+    height: 36.67vw;
+    max-width: 30vw;
+    position: initial;
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    background-size: cover;
+}
+.member-box img {
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    float: left;
+    border-radius: 0;
+    border: 0px solid #965ba5;
+}
+.member-box.member-hover:hover, .member-box.member-hover:active {
+    max-width: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    background: transparent;
+    background-size: cover;
+}
+.member-box.member-hover:hover img, .member-box.member-hover:active img{
+    max-width: 6vw;
+    max-height: 6vw;
+    margin: -3vw -1vw;
+    border-radius: 100%;
+    border: 4px solid #965ba5;
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    float: left;
+}
+.member-front-data.member-hover:hover {
+    color: transparent;
+    transition: all .3s ease-in-out;
+    transition-delay: .2s;
+    background-color: transparent;
+}
+.member-front-data.member-hover:hover > section {
+    color: transparent;
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    background-color: transparent;
+    font-size: 0;
+}
+.member-front-data.pop-hover:hover {
+    border: 1px solid #669F35!important;
+    color: var(--lightpurple);
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    transition-delay: .2s;
+}
+.member-front > img {
+    height: 36.67vw;
+    width: 30vw;
+    position: relative;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.member-front-data {
+    width: 28vw;
+    height: 34.67vw;
+    color: #FFF;
+    border: 0px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    transition: all .3s ease-in-out;
+    transition-delay: .1s;
+}
+
+.member-front-data.member-hover > section {
+    transition: all .5s ease-in-out;
+    transition-delay: .5s;
+    max-width: 30vw;
+}
+.member-front-data > section:first-of-type {
+    font-family: 'Merriweather', sans-serif;
+    font-style: italic;
+    font-size: 3vw;
+    width: 30vw;
+    background-color: rgba(0,0,0,.6);
+    margin-top: 2vw;
+    position: absolute;
+    top: 1vw;
+}
+
+.member-front-data > section:last-of-type {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.33vw;
+    letter-spacing: .1vw;
+    margin-top: 0vw;
+    text-align: left;
+    background-color: rgba(0,0,0,.6);
+    width: 28vw;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 945px) {
+    .team-member-container {
+        margin-top: 20vw;
+        position: relative;
+        width: 100vw;
+        }
+    .team-box {
+        height: 110vw;
+        width: 90vw;
+        margin: 10px 5vw !important;
+    }
+
+    .member-box, .member-front > img {
+        height: 110vw;
+        max-width: 90vw;
+        margin: 15vw 0;
+    }
+    .member-front-data {
+        width: 90vw;
+        height: 110vw;
+    }
+    .member-back {
+        height: 100vw;
+        width: 85vw;
+        margin-top: -111vw;
+        font-size: 3.8vw;
+    }
+
+    .member-front-data.member-hover > section:first-of-type {
+        font-size: 10vw;
+        margin-top: 5vw;
+        padding: 2vw;
+        width: 86vw;
+    }
+    .member-front-data.member-hover > section:last-of-type {
+        font-size: 3.33vw;
+        width: 100%;
+        max-width: 84vw;
+        padding: 3vw;
+        bottom: 5vw;
+    }
+    .member-front-data.member-hover > section {
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        max-width: 90vw;
+    }
+    .member-box.member-hover img {
+        border: 0px solid #965ba5;
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        height: 110vw;
+        max-width: 90vw;
+        width: 90vw;
+        max-height: 110vw;
+    }
+    .member-box.member-hover:hover img, .member-box.member-hover:active img {
+        max-width: 24vw;
+        max-height: 24vw;
+        margin: -12vw -4vw;
+        border-radius: 100%;
+        border: 4px solid #965ba5;
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        float: left;
+    }
+} 
+`;

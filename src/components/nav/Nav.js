@@ -17,14 +17,19 @@ export default class Nav extends Component {
                         x
                     </CloseBtn>
                     <br /><br /><br />
-                    <NavLink activeClassName="nav-active" to={routes.HOME} onClick={() => {toggleHamburger()}}>HOME</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.INFO} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleHamburger()}}>HOME</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>PERSONAL WELLNESS</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={() => {toggleHamburger()}}>YOGA THERAPY</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.COAC} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
+                    <section>
+                        <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={() => {toggleHamburger()}}>EVENTS CALENDAR</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>PERSONAL WELLNESS</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={() => {toggleHamburger()}}>YOGA THERAPY</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.COACH} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
+                    </section>
+                    <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
                 </div>
             </NavContainer>
         );
@@ -32,18 +37,30 @@ export default class Nav extends Component {
 };
 
 const NavContainer = styled.div`
-    text-align: center;
-    font-size: 20px;
+    position: fixed;
     right: 0;
     z-index: 111;
+
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #744A9E;
+    
+    background-color: var(--darkpurple);
     color: #FFF;
+    
+    font-size: 20px;
+    text-align: center;
 
-    position: fixed;
-
+    > div {
+        text-align: left;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        > section {
+            font-size: 80%;
+            margin-left: 20px;
+        }
+    }
     a {
         text-decoration: none;
         display: block;

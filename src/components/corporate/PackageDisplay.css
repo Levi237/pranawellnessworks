@@ -36,7 +36,7 @@
 .price-pack-box section {
     padding-right: 2vw;
     padding-left: 2vw;
-    color: #744A9E;
+    color: var(--darkpurple);
     font-size: 1.1vw;
     text-align: left;
 }
@@ -69,7 +69,7 @@
 }
 .price-pack-box section:last-of-type {
     margin: 30px auto 20px auto;
-    color: #744A9E;
+    color: var(--darkpurple);
     position: absolute;
     bottom: 10px;
     width: 100%;

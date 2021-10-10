@@ -59,6 +59,7 @@ export default class ContactRequest extends Component {
                     name="mc-embedded-subscribe-form" 
                     className="validate" 
                     target="_blank" 
+                    rel="noopener noreferrer"
                     novalidate 
                 >
                 <label htmlFor='MERGE1'>
@@ -195,5 +196,14 @@ const Form = styled.form`
             padding: 5px 15px;
             margin: 5px;
         }
-    }}
+    }
+    @media screen and (max-width: 480px) {
+        > div {
+            > button {
+                width: 132px;
+                font-size: 14px;
+            }
+        }
+    }
+
 `;

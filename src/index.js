@@ -11,6 +11,9 @@ import 'firebase/firestore';
 
 import 'firebase/firebase-storage'
 
+import dotenv from 'dotenv';
+dotenv.config()
+
   firebase.initializeApp({
     apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
     authDomain: "prana-wellness.firebaseapp.com",

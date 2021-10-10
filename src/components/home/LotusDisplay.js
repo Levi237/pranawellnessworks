@@ -18,6 +18,7 @@ export default class LotusDisplay extends Component {
 
     };
     render(){
+        const { scrollToTop } = this.props;
 
             return(<>
                 <LotusContainer className="lotus-box" style={lotusStyleOverride}>
@@ -28,23 +29,23 @@ export default class LotusDisplay extends Component {
                     </div>
 
                     <section>
-                        <img src="../lotus_half_pink.png" alt="lotus_half_pink" />
+                        <img src="../lotus/lotus_half-pink.png" alt="pranayama yoga breath work" />
                         <div>Corporate Wellness</div>
                         <section>
-                        Let us help you create an engaging and enjoyable wellness program to increase productivity, retention, and employee satisfaction. 
+                            Let us help you create an engaging and enjoyable wellness program to increase productivity, retention, and employee satisfaction. 
                         </section>
-                        <NavLink to={routes.CORP}><button className="white lotus-desktop-button">explore workplace plans</button></NavLink>
-                        <NavLink to={routes.CORP}><button className="white lotus-mobile-button">explore plans</button></NavLink>
+                        <NavLink to={routes.CORP} onClick={scrollToTop}><button className="white lotus-desktop-button">explore workplace plans</button></NavLink>
+                        <NavLink to={routes.CORP} onClick={scrollToTop}><button className="white lotus-mobile-button">explore plans</button></NavLink>
                     </section>
 
                     <section>
-                        <img src="../lotus_half_white.png" alt="lotus_half_white" />
+                        <img src="../lotus/lotus_half-white.png" alt="pranayama yoga breath work" />
                         <div>Individual Wellness</div>
                         <section>
-                        We guide you and educate you, and help you identify ways to incorporate wellness practices in all areas of your life.
+                            We guide you and educate you, and help you identify ways to incorporate wellness practices in all areas of your life.
                         </section>
-                        <NavLink to={routes.WELL}><button className="purple lotus-desktop-button">explore individual plans</button></NavLink>
-                        <NavLink to={routes.WELL}><button className="purple lotus-mobile-button">explore plans</button></NavLink>
+                        <NavLink to={routes.WELL} onClick={scrollToTop}><button className="purple lotus-desktop-button">explore individual plans</button></NavLink>
+                        <NavLink to={routes.WELL} onClick={scrollToTop}><button className="purple lotus-mobile-button">explore plans</button></NavLink>
                     </section>
 
                 </LotusContainer>
@@ -109,7 +110,7 @@ const LotusContainer = styled.div`
         }
     }
     &:last-of-type {
-        background-color: rgba(150, 91, 165, 0.6);
+        background-color: rgba(150, 91, 165, 0.5);
         text-align: left;
         padding: 0 4vw 0 2.5vw;
         > img {
@@ -130,7 +131,7 @@ const LotusContainer = styled.div`
         line-height: 3.2vw;
         margin-top: 40vw;
         margin-bottom: 2.2vw;
-        color: #744A9E;
+        color: var(--darkpurple);
     }
     > section {
         font-size: 1.75vw !important;

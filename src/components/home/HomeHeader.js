@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const HomeHeader = ({toggleEmailSignup}) => {
   
   return(
@@ -32,14 +31,16 @@ const HomeHeader = ({toggleEmailSignup}) => {
         <section>wellness</section>
         <section>Wellness designed to work for you.</section>
         <ButtonWrapper>
+          <a href="https://calendly.com/stephaniepranawellness/30min?back=1&month=2021-09" target="_blank" rel="noreferrer">
           <ButtonCTA 
             name="contactForm" 
-            className="ctaBtn mobile-fill"
+            className="ctaBtn"
             value="contactRequest" 
-            onClick={(e) => {toggleEmailSignup(e)}}
+            // onClick={(e) => {toggleEmailSignup(e)}}
           >
-            Bring Prana to You
+            Book a Call
           </ButtonCTA>
+          </a>
         </ButtonWrapper>
       </WelcomeContainer>
       
@@ -51,96 +52,73 @@ const HomeHeader = ({toggleEmailSignup}) => {
 const WelcomeContainer = styled.div`
   color: #FFF;
   text-align: center;
-  position: absolute;
-  top: 46px;
-  height: 100%;
+  position: relative;
+  height: 100vh;
   width: 100vw;
   z-index: 1;
-  background-image: linear-gradient(180deg, black, transparent, transparent 80%);
+  background-image: linear-gradient(180deg, #000, transparent, transparent 80%);
   overflow: hidden;
-  @media screen and (max-width: 945px) {
-      margin-top: -20vw;
-      padding-top: 20vw;
-      top: 0;
-    }
 
   > section {
     &:first-of-type {
-      font-size: 2.5vw;
+      margin-top: 70px;
+      font-size: 2.8vw;
       font-weight: bold;
       letter-spacing: .5vw;
     
       text-transform: uppercase;
       color: var(--lightgreen);
-    
-      margin-top: 60px;
-      margin-bottom: calc(7vh - 2.5vw - 60px);
-      @media screen and (max-width: 945px) {
-        font-size: 5vw;
-        margin-top: calc(40px + 10vw);
-      }
+
     }
     &:nth-of-type(2) {
+      margin-top: -2vw;
       font-size: 10vw;
       font-weight: 100;
       letter-spacing: 2.5vw;
-      margin-top: 20px;
-    
       text-transform: uppercase;
-      
-      @media screen and (max-width: 945px) {
-        font-size: 14vw;
-        letter-spacing: 5vw;
-      }
+    
     }
     &:nth-of-type(3) {
       font-family: 'Merriweather',sans-serif;
-      font-size: 5vw;
+      font-size: 7vw;
+      margin-top: -4vw;
     
-      margin-top: calc(2vh - 5vw);
-      @media screen and (max-width: 945px) {
-        font-size: 10vw;
-      }
     }
     &:nth-of-type(4) {
-      font-weight: 100;
-      font-size: 2vw;
       position: absolute;
-      bottom: calc(3vh + 12.33vw + 40px);
-      text-shadow: 4px 4px 10px #000;
+      bottom: calc(5vh + 7.33vw + 42px);
+      width: 100vw;
       margin: 0 auto;
+
+      font-weight: 100;
+      font-size: 2.4vw;
+      text-shadow: 4px 4px 10px #000;
+    }
+    &:nth-of-type(5) {
+      position: absolute;
+      bottom: calc(3vh + 6vw);
       width: 100vw;
     }
     @media screen and (max-width: 945px) {
       &:first-of-type {
-        font-size: 4vw;
-        margin-top: calc(40px + 10vw);
-      }
-      &:nth-of-type(2) {
-        font-size: 11vw;
-      }
-      &:nth-of-type(3) {
-        font-size: 9vw;
-      }
-      &:nth-of-type(4){
-        font-size: 4vw;
-        top: 72vw;
-      }
-    }
-    @media screen and (max-width: 600px) {
-      &:first-of-type {
         font-size: 5vw;
-        margin-top: calc(40px + 10vw);
+
       }
       &:nth-of-type(2) {
         font-size: 14vw;
+        letter-spacing: 3vw;
       }
       &:nth-of-type(3) {
         font-size: 10vw;
       }
       &:nth-of-type(4){
         font-size: 5vw;
-        bottom: 20vh;
+        bottom: calc(16vh + 1.33vw + 42px);
+      }
+      &:nth-of-type(5) {
+        position: absolute;
+        bottom: calc(5vh + 1.33vw + 42px);
+        width: 100vw;
       }
     }
   }
@@ -148,7 +126,7 @@ const WelcomeContainer = styled.div`
 
 const ButtonWrapper = styled.section`
 position: absolute;
-bottom: calc(2vh + 7.33vw + 40px);
+bottom: calc(2vh + 7.33vw + 42px);
 margin: 0 auto;
 text-align: center;
 width: 100vw;
@@ -158,8 +136,10 @@ width: 100vw;
 }
 `;
 const ButtonCTA = styled.button`
-  font-size: 1.33vw;
+  font-size: 18px;
   margin: 0 auto;
+  padding: 20px 0;
+  width: 300px;
   color: #FFF;
   background-color: var(--lightgreen) !important;
   border-color: #669F35;
@@ -171,9 +151,6 @@ const ButtonCTA = styled.button`
   }
 
   @media screen and (max-width: 945px) {
-    font-size: 4vw!important;
-    padding: 1vh auto;
-    bottom: off;
   }
 `;
 
