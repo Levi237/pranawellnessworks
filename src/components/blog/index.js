@@ -53,7 +53,7 @@ export default class BlogMainIndex extends Component {
                             </section>
                         </Link>
                     </div>
-                    {/* <div>
+                    <div>
                         <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
                             <section>
                             <small>{blogs[4].category}</small>
@@ -64,7 +64,7 @@ export default class BlogMainIndex extends Component {
                             <section style={{backgroundImage: `url(./blog/${blogs[4].heroImage})`}}>
                             </section>
                         </Link>
-                    </div> */}
+                    </div>
                 </TwoBlogRows>
             </BlogIndexWrapper>
         );

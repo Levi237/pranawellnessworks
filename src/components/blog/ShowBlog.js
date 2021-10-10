@@ -91,6 +91,8 @@ const ShowBlog = ({blogs, author}) => {
                 const listItem = li.item.map(txt => {
                     if (txt.tag === "a"){
                         return <a href={txt.link} target="_blank">{txt.text}</a>
+                    } else if ( txt.tag === "h2" ) { 
+                        return <h2>{txt.text}</h2>   
                     } else if ( txt.tag === "sup" ) { 
                         return <sup>{txt.text}</sup>    
                     } else if ( txt.tag === "sub" ) { 
