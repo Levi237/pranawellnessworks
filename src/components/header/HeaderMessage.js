@@ -25,7 +25,9 @@ export default class HeaderMessage extends Component {
           {textCopy.message}
           </section>
           }
-          {textCopy.button && <><button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button> 
+          {(textCopy.button &&textCopy.link) && <><a href={textCopy.link} target="_blank" rel="noreferrer"><button value={textCopy.value}>{textCopy.button}</button></a>
+          <br/><br/><br/><br/></>}
+          {(textCopy.button &&!textCopy.link) && <><button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button> 
           <br/><br/><br/><br/></>}
           {this.props.children}
         </Container>

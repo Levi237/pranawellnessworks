@@ -123,7 +123,8 @@ export default class App extends Component {
         message: "Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.",
         value: "contactRequest",
         backgroundColor: "white",
-        button: "BRING PRANA TO YOU"
+        button: "Schedule Free Consult",
+        link: "https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09"
       },
       maternalHealth: {
         title: "YOGA FOR",
@@ -133,7 +134,8 @@ export default class App extends Component {
         message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
         value: "contactRequest",
         backgroundColor: "white",
-        button: "BRING PRANA TO YOU"
+        button: "Join a Class",
+        link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
       },
       coachingSpeaking: {
         title: "ENGAGE WITH",
@@ -160,7 +162,8 @@ export default class App extends Component {
         message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
         value: "contactRequest",
         backgroundColor: "purple",
-        button: "Bring Prana to Your Workplace",
+        button: "Schedule a Call",
+        link: "https://calendly.com/stephaniepranawellness/30min?back=1&month=2021-09"
       }
     },
     //// PAGE BODY COPY
@@ -218,6 +221,241 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `05-04102021`,
+      endpoint: `Yoga_for_Better_Sex`,
+      category: `Yoga`,
+      title: `Yoga for Better Sex`,
+      publishDate: `Monday, October 4th, 2021`,
+      heroImage: `04102021_1.jpg`,
+      subtext: `Better sex is just one touch away! Let the tools of yoga elevate your sex life, through mindful breath and intimacy.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Sex is not all about “the hot spots.” It’s about intimacy, trust, and communication. Whether practicing yoga solo to increase your sexual energy, or `,
+        },{
+          tag: `a`,
+          link: `https://sensualbreath.eventbrite.com/`,
+          text: `with a partner`
+        },{
+          text: ` to add some extra spark, the tools of yoga can give you better sex! Here are some practices to explore.`
+        }]
+      },{
+        tag: `ul`,
+        list: [{
+          item: [{
+            tag: `h2`,
+            text: `The Locks.`,
+          },{
+            text: `Your Mula Bandha, or root lock is the space between your anus and belly button. When the energy in your Mula Bandha is activated, it runs up your spine and sends renewed energy throughout your body. When mastered, engaging your Mula Bandha through your breath can increase blood flow to your reproductive parts. Similarly, Uddiyana Bandha, or abdominal lift, occurs when you use your breath to pull energy upwards in the body. This brings a heightened state of awareness. `
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Asana.`
+          },{
+            text: `Postures such as the following are helpful in increasing sexual awareness and desire.`
+          },{
+            tag: `br`
+          },{
+            tag: `i`,
+            text: `Cat cow-`
+           },{
+             text: ` involves titling of the pelvis and activating energy of the spine.`
+          },{
+            tag: `br`
+          },{
+            tag: `i`,
+            text: `Bridge pose-`
+           },{
+             text: ` lifting pelvis and opening the energy of the root chakra. `
+            },{
+              tag: `br`
+          },{
+            tag: `i`,
+            text: `Happy baby-`
+           },{
+             text: ` opens the groin area, stimulates and puts you in the mindset of play.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Kundalini Yoga.`
+          },{
+            text: `A practice that awakens your “shakti” or your primal energy at the base of your spine. Kundalini is an energy that lies dormant until it is activated. The practice is typically comprised of chanting, energizing breathwork, and repetitive postures that challenge the body and awaken energy channels.`
+          },{
+            tag: `br`
+          },{
+            tag: `br`
+          },{
+            tag: `img`,
+            src: `04102021_2.jpg`,
+            class: `wide`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Acro Yoga.`
+          },{
+            text: `Trust is a must in `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/p/CSellJOoaBT/`,
+            text: `Acro`
+          },{
+            text: `. Trust yourself and your own body’s abilities first, and attune your root chakra. Then build trust `
+          },{
+            tag: `a`,
+            link: `https://sensualbreath.eventbrite.com/`,
+            text: `with your partner`
+          },{
+            text: `, through communication. Acro yoga is a partner practice that relies on one person as the base, and the other as the “flyer” to become weightless and free through connection between the bodies.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Breathwork.`
+          },{
+            text: `Breathing is sexy! Use “breath of fire” (kapalabhati) to ignite your fire within. Build this energy within yourself first, then with a partner. Connecting with your partner’s breath is an intimate practice! You will quite literally feel each other’s energy, and as a result desire to be closer.`
+          }]
+        }]
+    },{
+      tag: `p`,
+      content: [{
+        tag: `b`,
+        text: `The Challenge: ` 
+      },{ 
+        text: `Try cat cow, happy baby, and bridge pose at home on your own. Pay attention to the breath, and the areas that feel more open afterwards.`
+        // }]
+      }]   
+    }]    
+  },{
+      id: `04-20092021`,
+      endpoint: `10_Ways_to_Be_Mindful`,
+      category: `Mindfulness & Meditation`,
+      title: `10 Ways to Be Mindful`,
+      publishDate: `Monday, September 20th, 2021`,
+      heroImage: `20092021_1.jpg`,
+      subtext: `Maintaining peace in the midst of chaos is a skill we all need to develop.`,
+      copy: [{
+        tag: `ol`,
+        list: [{
+          item: [{
+            tag: `h2`,
+            text: `Always breathe.`,
+          },{
+            text: ` The best thing you can do for your mind and body is take a deep breath. Breathing in and out through your nose sends a signal of calm to your nervous system and activates its parasympathetic receptors. This allows the body to rest and replenish.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Check your energy.`
+          },{
+            text: ` How are you showing up to your next meeting, phone call, or outing with friends or family? Do you need a quick mental reset before interacting? If so, this starts within. Do a quick `
+          },{
+            tag: `a`,
+            link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+            text: `self-study`
+          },{
+            text: ` or check-in to ask yourself how and what you’re feeling.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Food for thought.`
+          },{
+            text: ` Food fuels your mind and body. If you eat like crap, chances are you will feel like it too, and your brain will reflect that same garbage. Eat for YOU. Making smart food choices not only creates physical ease, but clears your mind of brain fog.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Are you socially aware?`
+          },{
+            text: ` How does social media make you feel? Do you feel jealous, triggered, or frustrated by some things on your feed? It’s time for a change! Mute or unfollow accounts that don’t make you feel good. Follow more `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/pranawellnessworks/`,
+            text: `accounts`
+          },{
+            text: ` that give you the warm n fuzzies. Stop. Scrolling. All. Day! Social is great, but endless scrolling is not.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `News Cycle.`
+          },{
+            text: ` As a former CNN producer, believe me, I know news. But the truth is, these days so much of what we consume is toxic to our mind. The television “tells-you-a-vision” which can stifle your own ability to co-create with the universe. Consuming the same cycles of news can have a daunting effect on your mental health. News, in moderation.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Habits are contagious.`
+          },{
+            text: ` It takes 21 days to form a habit, good or bad. The things we choose to do or not do on a daily basis affects our ability to stay healthy mentally and physically. When ditching a bad habit, make sure you replace it with something positive and helpful first.Create small, `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/00-26072021/5_Ways_to_Create_a_Powerful_Morning`,
+            text: `healthy habits`
+          },{
+            text: ` that lead to beg change.`
+        }]
+      },{
+        item: [{
+          tag: `h2`,
+          text: `Be kind.`
+        },{
+          text: ` Treat others how you want to be treated. Simple. The world is a reflection of you. If you spread kindness, the Universe will reward you. Be the change you wish to see in the world.`
+        }]
+      },{
+        item: [{
+          tag: `h2`,
+          text: `Self-care is the best care.`
+        },{
+          text: ` Schedule it! Make it a priority. Do something different to allow yourself some luxury each month. In order to expand your mindfulness, you must come from a space of overflow in your own mind, body, and spirit.`
+        }]
+      },{
+        item: [{
+          tag: `h2`,
+          text: `Rest up!`
+        },{
+          text: ` Let’s let go of this mind set that you must fill every minute, of every day, with “productivity.” Let it go! This mindset in itself is not productive. Honor your body. Allow time for intentional rest so you can be renewed and prepared to face the day ahead and crush your goals. `
+        }]
+      },{
+        item: [{
+          tag: `h2`,
+          text: `Boundaries. Boundaries. Boundaries.`
+        },{
+          text: ` The word NO is a complete sentence. Remember that. You can learn to give either an enthusiastic yes, or an empowered no. There is no in between. Decide what you need from yourself and from others. Define your “hard stops.” Be clear and vocalize these boundaries.`
+        },{
+          tag: `br`,
+        },{
+          tag: `br`,
+        },{
+          tag: `img`,
+          src: `20092021_2.jpg`,
+          class: `wide`,
+        }]
+      }]
+    },{
+      tag: `p`,
+      content: [{
+        text: `These `,
+      },{
+        tag: `a`,
+        link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+        text: `mindfulness tips`,
+      },{
+        text: ` will substantially change your preparedness when you meet challenges. You will be ready! Remember, prevention is better than the cure.`
+      }]
+    },{
+      tag: `p`,
+      content: [{
+        tag: `b`,
+        text: `The Challenge:` 
+      },{ 
+        text: `  Read through these again. Reflect on each one, and journal about how you are currently feeling about each one. How can you do better?`
+      }]
+    }]    
+  },{
       id: `03-06092021`,
       endpoint: `4_Ways_to_Elevate_Your_Mindset`,
       category: `Mindfulness & Meditation`,

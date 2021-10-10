@@ -17,7 +17,7 @@ const ShowBlog = ({blogs, author}) => {
         if (bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
             const textMap = bc.content.map(txt => {
                 if (txt.tag === "a"){
-                    return <a href={txt.link}>{txt.text}</a>
+                    return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
                 } else if ( txt.tag === "sup" ) { 
                     return <sup>{txt.text}</sup>    
                 } else if ( txt.tag === "sub" ) { 
@@ -43,7 +43,7 @@ const ShowBlog = ({blogs, author}) => {
         }
 
         if (bc.tag === "img"){
-            return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}`}/>
+            return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}` }alt={bc.src}/>
         }
         if (bc.tag === "i"){
             return <i>{bc.content[0].text}</i>
@@ -56,7 +56,7 @@ const ShowBlog = ({blogs, author}) => {
             const listMap = bc.list.map((li, ki) => {
                 const textMap = li.content.map(txt => {
                     if (txt.tag === "a"){
-                        return <a href={txt.link}>{txt.text}</a>
+                        return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
                     } else if ( txt.tag === "sup" ) { 
                         return <sup>{txt.text}</sup>    
                     } else if ( txt.tag === "sub" ) { 
@@ -72,7 +72,7 @@ const ShowBlog = ({blogs, author}) => {
                     } else if ( txt.tag === "br" ) { 
                         return <br/>
                     } else if ( li.tag === "img" ) { 
-                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`}/>
+                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>
                     } else {
                         return <span>{txt.text}</span>
                     }
@@ -90,7 +90,7 @@ const ShowBlog = ({blogs, author}) => {
             const listMap = bc.list.map((li, ki) => {
                 const listItem = li.item.map(txt => {
                     if (txt.tag === "a"){
-                        return <a href={txt.link} target="_blank">{txt.text}</a>
+                        return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
                     } else if ( txt.tag === "h2" ) { 
                         return <h2>{txt.text}</h2>   
                     } else if ( txt.tag === "sup" ) { 
@@ -108,7 +108,7 @@ const ShowBlog = ({blogs, author}) => {
                     } else if ( txt.tag === "br" ) { 
                         return <br/>
                     } else if (txt.tag === "img"){
-                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`}/>  
+                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>  
                     } else {
                         return <span>{txt.text}</span>
                     }
@@ -128,7 +128,7 @@ const ShowBlog = ({blogs, author}) => {
                 <small className="category uppercase">{blog.category}</small>
                 <h1>{blog.title}</h1>
                 <h4>By {author.firstName} {author.lastName} <span>|</span> {blog.publishDate}</h4>
-                <img src={`/blog/${blog.heroImage}`}/>
+                <img src={`/blog/${blog.heroImage}`} alt={blog.title}/>
                 <div>{renderBlog}</div>
             </article>
         </BlogWrapper>

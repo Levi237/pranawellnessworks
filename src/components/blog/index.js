@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import FeaturedBlogHeader from './FeatureBlogHeader';
+import FourBlogBlocks from './FourBlogBlocks';
 
 export default class BlogMainIndex extends Component {
     state = {
@@ -29,7 +30,7 @@ export default class BlogMainIndex extends Component {
                             </section>
                         </Link>
                     </div>
-                    <div>
+                    {/* <div>
                         <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
                             <section>
                             <small>{blogs[2].category}</small>
@@ -64,8 +65,10 @@ export default class BlogMainIndex extends Component {
                             <section style={{backgroundImage: `url(./blog/${blogs[4].heroImage})`}}>
                             </section>
                         </Link>
-                    </div>
+                    </div> */}
                 </TwoBlogRows>
+                <FourBlogBlocks  blogs={blogs} selectBlog={selectBlog} author={author}/>
+                <br/><br/><br/><br/>
             </BlogIndexWrapper>
         );
     };
@@ -177,7 +180,9 @@ a {
 
 const BlogIndexWrapper = styled.div`
     position: relative;
-
+    a:hover {
+        cursor: pointer;
+    }
     h1 { 
         font-family: var(--fancy-font);     
         text-transform: none; 

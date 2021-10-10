@@ -31,14 +31,16 @@ const HomeHeader = ({toggleEmailSignup}) => {
         <section>wellness</section>
         <section>Wellness designed to work for you.</section>
         <ButtonWrapper>
+          <a href="https://calendly.com/stephaniepranawellness/30min?back=1&month=2021-09" target="_blank" rel="noreferrer">
           <ButtonCTA 
             name="contactForm" 
             className="ctaBtn"
             value="contactRequest" 
-            onClick={(e) => {toggleEmailSignup(e)}}
+            // onClick={(e) => {toggleEmailSignup(e)}}
           >
-            Bring Prana to You
+            Book a Call
           </ButtonCTA>
+          </a>
         </ButtonWrapper>
       </WelcomeContainer>
       

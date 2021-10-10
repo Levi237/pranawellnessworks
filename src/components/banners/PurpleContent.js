@@ -13,9 +13,16 @@ export default class PurpleContent extends Component {
                     <Content className="text-left">
                         {textCopy.message}  
                     </Content>
+                    { textCopy.link
+                        ?
+                    <ButtonContaner>
+                        <a href={textCopy.link} target="_blank" rel="noreferrer"><button className="purple mobile-fill" value={textCopy.value}>{textCopy.button}</button></a>
+                    </ButtonContaner>
+                    :
                     <ButtonContaner>
                         <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
                     </ButtonContaner>
+                    }
                     </>
                     :
                     <Content className="text-center">
