@@ -243,7 +243,19 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `Your body does a lot of work for you every day. It keeps the blood pumping through your veins and sustains all of the stress you impose on it. Show your body a little love. As soon as you get out of bed, stretch! Before you go to bed, stretch! Simple movements and elongation of the muscles will do wonders for your body to relieve stress and tension. Knots in your body, chronic pain, and mental fatigue can all be relieved by consistent stretching. Try a simple inhale and lift your arms up, exhale forward fold, hands toward the floor. `,
+            text: `Your body does a lot of work for you every day. It keeps the blood pumping through your veins and sustains all of the stress you impose on it. Show your body a little love. As soon as you get out of bed,`
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/p/CSMy0X-lprj/`,
+            text: ` stretch!`
+          },{
+            text: ` Before you go to bed, `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/p/CSMy0X-lprj/`,
+            text: ` stretch!`
+          },{
+            text: ` Simple movements and elongation of the muscles will do wonders for your body to relieve stress and tension. Knots in your body, chronic pain, and mental fatigue can all be relieved by consistent stretching. Try a simple inhale and lift your arms up, exhale forward fold, hands toward the floor. `,
           }]
         },{
           tag: `h2`,
@@ -254,7 +266,13 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `This is why stretching is so important. BODY FUZZ. Have you ever watched a cat or dog wake up from a nap? The first thing they do is lengthen their body and stretch out. We should take notes! When we sleep at night our muscles accumulate a “fuzz” between them. It binds them together and results in the feeling of stiffness or tension in the muscles. By moving the body, we are melting away this accumulated fuzz in the body, and allowing our muscle fascia to breathe and renew each day. `,
+            text: `This is why stretching is so important. `
+          },{
+            tag: `a`,
+            link: `https://www.youtube.com/watch?v=_FtSP-tkSug`,
+            text: `BODY FUZZ.`
+          },{
+            text: ` Have you ever watched a cat or dog wake up from a nap? The first thing they do is lengthen their body and stretch out. We should take notes! When we sleep at night our muscles accumulate a “fuzz” between them. It binds them together and results in the feeling of stiffness or tension in the muscles. By moving the body, we are melting away this accumulated fuzz in the body, and allowing our muscle fascia to breathe and renew each day. `,
           }]
         },{
           tag: `img`,
@@ -271,7 +289,13 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my Yoga Therapy clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,
+            text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my `
+          },{
+            tag: `a`,
+            link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
+            text: `Yoga Therapy`
+          },{
+            text: ` clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,
           }]
         },{
           tag: `h2`,
@@ -282,7 +306,13 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `Heart disease is the leading cause of death in the United States, for most ethnic groups. Your heart keeps you alive, quite literally. When you move, your heart is essentially speaking to your body. Oxygen goes to the brain. Your breathing is optimized. The nervous system sends the proper signals to the rest of your body. One extra hour of light movement each day corresponds to a 14% drop in coronary heart risk.`,
+            text: `Heart disease is the `
+          },{
+            tag: `a`,
+            link: `https://www.cdc.gov/heartdisease/facts.htm`,
+            text: `leading cause of death`
+          },{
+            text: ` in the United States, for most ethnic groups. Your heart keeps you alive, quite literally. When you move, your heart is essentially speaking to your body. Oxygen goes to the brain. Your breathing is optimized. The nervous system sends the proper signals to the rest of your body. One extra hour of light movement each day corresponds to a 14% drop in coronary heart risk.`,
           }]
         }]
       },{
