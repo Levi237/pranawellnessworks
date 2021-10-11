@@ -297,7 +297,7 @@ export default class App extends Component {
         tag: `p`,
         content: [{
           tag: `b`,
-          text: `The Challenge:` 
+          text: `The Challenge: ` 
         },{
           text: `Take a walk today. 10 minutes or 1 hour. Make it happen. Your body will thank you.`
         }]
@@ -532,7 +532,7 @@ export default class App extends Component {
       tag: `p`,
       content: [{
         tag: `b`,
-        text: `The Challenge:` 
+        text: `The Challenge: ` 
       },{ 
         text: `  Read through these again. Reflect on each one, and journal about how you are currently feeling about each one. How can you do better?`
       }]
@@ -609,7 +609,7 @@ export default class App extends Component {
         tag: `p`,
         content: [{
           tag: `b`,
-          text: `The Challenge:` 
+          text: `The Challenge: ` 
         },{ 
           text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
         }]
@@ -690,7 +690,7 @@ export default class App extends Component {
         tag: `p`,
         content: [{
           tag: `b`,
-          text: `The Challenge:` 
+          text: `The Challenge: ` 
         },{ 
           text: ` Set an alarm on your phone each night, when it’s time to power down the screens, stop eating and drinking, and let all of your thoughts out on paper. Let the alarm serve as a reminder to STOP and power down.`
         }]
@@ -776,7 +776,7 @@ export default class App extends Component {
         tag: `p`,
         content: [{
           tag: `b`,
-          text: `The Challenge:` 
+          text: `The Challenge: ` 
         },{
           text: ` A few times a day, practice belly breathing. In and out through the nose. Place your palm on your belly. Breathe into the palm on the inhale and feel the palm move in and out with each breath. On the exhale, feel your naval move away from your hand, and towards the spine. This will help you begin to `
         },{
@@ -872,7 +872,7 @@ export default class App extends Component {
         tag: `p`,
         content: [{
           tag: `b`,
-          text: `The Challenge:`,
+          text: `The Challenge: `,
         },{
           text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you’re awake. Notice what happens…...`}]
       }]

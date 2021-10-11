@@ -8,7 +8,8 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
   return(
  <FourBlockColumns>
 
-{/* <div>
+{ (blogs.length / blogs.length !== 1) &&
+<div>
     <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
           <section className="img" style={{backgroundImage: `url(./blog/${blogs[2].heroImage})`}}>
           </section>
@@ -22,7 +23,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           </Link>
           <h4>by {author.firstName} {author.lastName}</h4>
         </section>
-</div> */}
+</div> }
 <div>
     <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
           <section className="img" style={{backgroundImage: `url(./blog/${blogs[3].heroImage})`}}>
@@ -68,6 +69,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <h4>by {author.firstName} {author.lastName}</h4>
         </section>
 </div>
+{ (blogs.length / blogs.length  === 1) &&
 <div>
     <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
       <section className="img" style={{backgroundImage: `url(./blog/${blogs[6].heroImage})`}}>
@@ -83,6 +85,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <h4>by {author.firstName} {author.lastName}</h4>
         </section>
 </div>
+}
 </FourBlockColumns>
 );
 };

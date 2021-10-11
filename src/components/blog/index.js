@@ -17,7 +17,6 @@ export default class BlogMainIndex extends Component {
                 <FeaturedBlogHeader scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
                 <br/><br/><br/>
                 <TwoBlogRows>
-
                     <div>
                         <Link to={`/blog/${blogs[1].id}/${blogs[1].endpoint}`}  onClick={(e) => selectBlog(e, blogs[1])}>
                             <section>
@@ -30,7 +29,8 @@ export default class BlogMainIndex extends Component {
                             </section>
                         </Link>
                     </div>
-                    {/* <div>
+                { (blogs.length / blogs.length === 1) &&
+                    <div>
                         <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
                             <section>
                             <small>{blogs[2].category}</small>
@@ -42,7 +42,8 @@ export default class BlogMainIndex extends Component {
                             </section>
                         </Link>
                     </div>
-                    <div>
+                }
+                    {/* <div>
                         <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
                             <section>
                             <small>{blogs[3].category}</small>
@@ -53,8 +54,8 @@ export default class BlogMainIndex extends Component {
                             <section style={{backgroundImage: `url(./blog/${blogs[3].heroImage})`}}>
                             </section>
                         </Link>
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                         <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
                             <section>
                             <small>{blogs[4].category}</small>
