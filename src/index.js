@@ -6,10 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import firebase from "firebase/app";
-import 'firebase/firestore';
+import firebase from "firebase/compat/app";
+import 'firebase/compat/firestore';
 
-import 'firebase/firebase-storage'
+// import 'firebase/firebase-storage'
 
 import dotenv from 'dotenv';
 dotenv.config()
@@ -24,8 +24,8 @@ dotenv.config()
     appId: `${process.env.REACT_APP_FIREBASE_APP_ID}`,
     measurementId: `${process.env.REACT_APP_FIREBASE_MEASUREMENT_ID}`
   });
-  const storage = firebase.storage();
-  export { storage, firebase as default }
+  // const storage = firebase.storage();
+  // export { storage, firebase as default }
 
 
   ReactDOM.render(
