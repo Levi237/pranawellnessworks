@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 import FeaturedBlogHeader from './FeatureBlogHeader';
 import TwoRows from './TwoRows';
-import CategoryPreview from './CategoryPreview';
+// import CategoryPreview from './CategoryPreview';
 import FourBlogBlocks from './FourBlogBlocks';
 
 export default class BlogMainIndex extends Component {
