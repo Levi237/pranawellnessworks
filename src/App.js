@@ -729,7 +729,7 @@ export default class App extends Component {
       id: `01-09082021`,
       endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
-      category: `Meditation & Mindfulness`,
+      category: `Mindfulness & Meditation`,
       publishDate: `Monday, August 9th 2021`,
       heroImage: `09082021_1.jpg`,
       subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
@@ -820,7 +820,7 @@ export default class App extends Component {
     },{
       id: `00-26072021`,
       endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
-      category: `Meditation & Mindfulness`,
+      category: `Mindfulness & Meditation`,
       keyWords: [`meditation`, `health`],
       title: `5 Ways to Create a Powerful Morning`,
       subtext: `Achieve your goals, increase focus and productivity. Every day!`,

@@ -1,10 +1,10 @@
-import React, { useState, useEffect }        from 'react';
+import React    from 'react';
 import styled       from 'styled-components';
 
 import { Link }     from 'react-router-dom';
 import * as routes  from '../../constants/routes';
 
-const FeatureBlogHeader = ({blogs, blog, author, scrollToTop, selectBlog, match }) => {
+const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog }) => {
 
   return(
       <FeatureBlogContainer>

@@ -11,7 +11,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
 { (blogs.length / blogs.length !== 1) &&
 <div>
     <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
-          <section className="img" style={{backgroundImage: `url(./blog/${blogs[2].heroImage})`}}>
+          <section className="img" style={{backgroundImage: `url(/blog/${blogs[2].heroImage})`}}>
           </section>
     </Link>
         <section className="txt">
@@ -26,7 +26,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
 </div> }
 <div>
     <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
-          <section className="img" style={{backgroundImage: `url(./blog/${blogs[3].heroImage})`}}>
+          <section className="img" style={{backgroundImage: `url(/blog/${blogs[3].heroImage})`}}>
           </section>
     </Link>
         <section className="txt">
@@ -41,7 +41,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
 </div>
 <div>
     <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
-          <section className="img" style={{backgroundImage: `url(./blog/${blogs[4].heroImage})`}}>
+          <section className="img" style={{backgroundImage: `url(/blog/${blogs[4].heroImage})`}}>
           </section>
     </Link>
         <section className="txt">
@@ -72,7 +72,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
 { (blogs.length / blogs.length  === 1) &&
 <div>
     <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
-      <section className="img" style={{backgroundImage: `url(./blog/${blogs[6].heroImage})`}}>
+      <section className="img" style={{backgroundImage: `url(/blog/${blogs[6].heroImage})`}}>
       </section>
       </Link>
         <section className="txt">
