@@ -220,6 +220,308 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `07-01112021`,
+      endpoint: `4_Foods_to_Improve_Gut_Health`,
+      title: `4 Foods to Improve Gut Health`,
+      category: `Nutrition`,
+      publishDate: `Monday, November 1st 2021`,
+      heroImage: `01112021_1.jpg`,
+      subtext: `Food is nourishing to your mind and body. When your gut speaks to you, listen.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Do you experience bloating, upset stomach, indigestion, constipation, bad breath, or food allergies? If so, your gut is trying to tell you something is not right! You are what you eat.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Ginger`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Ginger has great anti-inflammatory and antioxidant properties. It can ease digestive issues, and soothe nausea. Try boiling some fresh ginger root for your tea each morning, to flush out toxins. 
+            Ginger also helps to lower blood insulin levels, associated with obesity. You can ingest ginger in powder form, through the fresh root, in pill form, or as an oil. Add some ginger powder to your next smoothie!`
+           }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Turmeric`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Many people, including myself, take daily turmeric supplements to ease inflammatory conditions, in the gut especially. Turmeric pills are most effective, and go straight into your bloodstream. It also comes in powder form or as a spice. Turmeric is best activated with black pepper.  Golden Milk, made with turmeric and black pepper, (insert recipe) is not only good for your gut, but it will make you sleep like a baby! Try it out! `
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `01112021_2.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Kiwis`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Kiwis help support healthy “movements!” They can relieve constipation and aid in digestion. Kiwis aid in breaking down protein. You can slice them up and put them in yogurt, or make a fruit salad with them. They are great for on the go snacks, when you may get a bit backed up!`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Yogurt`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Probiotics for the win! They are friendly live bacteria and yeast that help promote a healthy gut. Probiotics aid in digestion, and can ease diarrhea. They help create a balanced, healthy flora in your gut biome. The lactobacillus, specifically, in yogurt provides you with the probiotic benefits. Aim for yogurt with very low or no sugars added. Add your favorite fruit and granola on top for a boost of fiber!`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Try a new recipe today with one of these gut healthy foods!`
+        }]
+      }]
+    },{
+    //   id: `06-18102021`,
+    //   endpoint: `How_Movement_Can_Increase_Longevity`,
+    //   title: `How Movement Can Increase Longevity`,
+    //   category: `Functional Fitness`,
+    //   publishDate: `Monday, October 18th 2021`,
+    //   heroImage: `18102021_1.jpg`,
+    //   subtext: `Movement is medicine, and prevention is always better than the cure.?`,
+    //   copy: [{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `We live such a sedentary lifestyle. Especially these days, with work from home life. It’s so important to keep your muscles stretched and your joints lubricated, through movement. Take time each day to move your body in some way. Get up from your seat often, throughout the work day to promote more circulation in the body and a healthy prana.`
+    //     }]
+    //   },{
+    //     tag: `section`,
+    //     list: [{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Stretch every day. `,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Your body does a lot of work for you every day. It keeps the blood pumping through your veins and sustains all of the stress you impose on it. Show your body a little love. As soon as you get out of bed,`
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
+    //         text: ` stretch!`
+    //       },{
+    //         text: ` Before you go to bed, `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
+    //         text: ` stretch!`
+    //       },{
+    //         text: ` Simple movements and elongation of the muscles will do wonders for your body to relieve stress and tension. Knots in your body, chronic pain, and mental fatigue can all be relieved by consistent stretching. Try a simple inhale and lift your arms up, exhale forward fold, hands toward the floor. `,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Body fuzz.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `This is why stretching is so important. `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.youtube.com/watch?v=_FtSP-tkSug`,
+    //         text: `BODY FUZZ.`
+    //       },{
+    //         text: ` Have you ever watched a cat or dog wake up from a nap? The first thing they do is lengthen their body and stretch out. We should take notes! When we sleep at night our muscles accumulate a “fuzz” between them. It binds them together and results in the feeling of stiffness or tension in the muscles. By moving the body, we are melting away this accumulated fuzz in the body, and allowing our muscle fascia to breathe and renew each day. `,
+    //       }]
+    //     },{
+    //       tag: `img`,
+    //       content: [{
+    //         class: `wide`,
+    //         src: `18102021_2.jpg`,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Move through injury. Slowly.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
+    //         text: `Yoga Therapy`
+    //       },{
+    //         text: ` clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Heart health.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Heart disease is the `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.cdc.gov/heartdisease/facts.htm`,
+    //         text: `leading cause of death`
+    //       },{
+    //         text: ` in the United States, for most ethnic groups. Your heart keeps you alive, quite literally. When you move, your heart is essentially speaking to your body. Oxygen goes to the brain. Your breathing is optimized. The nervous system sends the proper signals to the rest of your body. One extra hour of light movement each day corresponds to a 14% drop in coronary heart risk.`,
+    //       }]
+    //     }]
+    //   },{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `
+    //       No matter your weight, fitness ability, or age...movement will always be medicine. 
+    //       It can prevent disease brought about by stagnation in the body. 
+    //       Movement can increase your lifespan by keeping your body working for you.`
+    //     }]
+    //   },{
+    //     tag: `p`,
+    //     content: [{
+    //       tag: `b`,
+    //       text: `The Challenge: ` 
+    //     },{
+    //       text: `Take a walk today. 10 minutes or 1 hour. Make it happen. Your body will thank you.`
+    //     }]
+    //   }]
+    // },{
+    //   id: `06-18102021`,
+    //   endpoint: `How_Movement_Can_Increase_Longevity`,
+    //   title: `How Movement Can Increase Longevity`,
+    //   category: `Functional Fitness `,
+    //   publishDate: `Monday, October 18th 2021`,
+    //   heroImage: `18102021_1.jpg`,
+    //   subtext: `Movement is medicine, and prevention is always better than the cure.?`,
+    //   copy: [{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `We live such a sedentary lifestyle. Especially these days, with work from home life. It’s so important to keep your muscles stretched and your joints lubricated, through movement. Take time each day to move your body in some way. Get up from your seat often, throughout the work day to promote more circulation in the body and a healthy prana.`
+    //     }]
+    //   },{
+    //     tag: `section`,
+    //     list: [{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Stretch every day. `,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Your body does a lot of work for you every day. It keeps the blood pumping through your veins and sustains all of the stress you impose on it. Show your body a little love. As soon as you get out of bed,`
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
+    //         text: ` stretch!`
+    //       },{
+    //         text: ` Before you go to bed, `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
+    //         text: ` stretch!`
+    //       },{
+    //         text: ` Simple movements and elongation of the muscles will do wonders for your body to relieve stress and tension. Knots in your body, chronic pain, and mental fatigue can all be relieved by consistent stretching. Try a simple inhale and lift your arms up, exhale forward fold, hands toward the floor. `,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Body fuzz.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `This is why stretching is so important. `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.youtube.com/watch?v=_FtSP-tkSug`,
+    //         text: `BODY FUZZ.`
+    //       },{
+    //         text: ` Have you ever watched a cat or dog wake up from a nap? The first thing they do is lengthen their body and stretch out. We should take notes! When we sleep at night our muscles accumulate a “fuzz” between them. It binds them together and results in the feeling of stiffness or tension in the muscles. By moving the body, we are melting away this accumulated fuzz in the body, and allowing our muscle fascia to breathe and renew each day. `,
+    //       }]
+    //     },{
+    //       tag: `img`,
+    //       content: [{
+    //         class: `wide`,
+    //         src: `18102021_2.jpg`,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Move through injury. Slowly.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
+    //         text: `Yoga Therapy`
+    //       },{
+    //         text: ` clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,
+    //       }]
+    //     },{
+    //       tag: `h2`,
+    //       content: [{
+    //         tag: `i`,
+    //         text: `Heart health.`,
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         text: `Heart disease is the `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://www.cdc.gov/heartdisease/facts.htm`,
+    //         text: `leading cause of death`
+    //       },{
+    //         text: ` in the United States, for most ethnic groups. Your heart keeps you alive, quite literally. When you move, your heart is essentially speaking to your body. Oxygen goes to the brain. Your breathing is optimized. The nervous system sends the proper signals to the rest of your body. One extra hour of light movement each day corresponds to a 14% drop in coronary heart risk.`,
+    //       }]
+    //     }]
+    //   },{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `
+    //       No matter your weight, fitness ability, or age...movement will always be medicine. 
+    //       It can prevent disease brought about by stagnation in the body. 
+    //       Movement can increase your lifespan by keeping your body working for you.`
+    //     }]
+    //   },{
+    //     tag: `p`,
+    //     content: [{
+    //       tag: `b`,
+    //       text: `The Challenge: ` 
+    //     },{
+    //       text: `Take a walk today. 10 minutes or 1 hour. Make it happen. Your body will thank you.`
+    //     }]
+    //   }]
+    // },{
       id: `06-18102021`,
       endpoint: `How_Movement_Can_Increase_Longevity`,
       title: `How Movement Can Increase Longevity`,
