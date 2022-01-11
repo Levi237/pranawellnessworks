@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import FeaturedBlogHeader from './FeatureBlogHeader';
 import TwoRows from './TwoRows';
-// import CategoryPreview from './CategoryPreview';
+import CategoryPreview from './CategoryPreview';
 import FourBlogBlocks from './FourBlogBlocks';
 
 export default class BlogMainIndex extends Component {
@@ -19,7 +19,7 @@ export default class BlogMainIndex extends Component {
                 <br/><br/><br/>
                 <TwoRows selectBlog={selectBlog}  blogs={blogs} author={author}/>
                 <FourBlogBlocks  blogs={blogs} selectBlog={selectBlog} author={author}/>
-                {/* <CategoryPreview blogs={blogs} selectBlog={selectBlog} author={author}/> */}
+                <CategoryPreview blogs={blogs} selectBlog={selectBlog} author={author}/>
                 <br/><br/><br/><br/>
             </BlogIndexWrapper>
         );

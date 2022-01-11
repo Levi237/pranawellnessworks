@@ -150,7 +150,7 @@ export default class App extends Component {
         title: "NURTURE YOUR",
         subtitle: "Inner Yogi",
         image: "events-header.jpg",
-        header: "Monthly Schedule",
+        header: "Class Schedule",
         message: false,
         value: "contactRequest",
         backgroundColor: "white",
@@ -220,6 +220,483 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `10012022`,
+      endpoint: `5_Yoga_Poses_for_Covid_Recovery`,
+      title: `5 Yoga Poses for Covid Recovery`,
+      category: `Functional Fitness`,
+      publishDate: `Monday, January 10th 2022`,
+      heroImage: `10012022_1.jpg`,
+      subtext: `Recovering from Covid can be tough, and is a different journey for everyone.Natural supplements are always a win!`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Tis the season….so many people are battling Covid right now, or have just come out on the other side. Immunity and prevention are key, but if you do happen to get the virus, it’s important to begin recovery work right away. Here are 5 key poses to help release congestion, expand your lungs,open your chest, and boost immunity. Do each of these poses 3-5 minutes. Breathe in and out through your nose.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Seated Spinal Twist.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Twists are cleansing to the body, and help to release toxins. Inhale and exhale deeply in this twist in order to increase lung capacity. Gaze over your shoulder. `,
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `small`,
+            src: `10012022_2.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Cobra Pose.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Opens your airways in the chest.Feet should be about hips width distance and “shoe laces” facing down. Keep your chin parallel to the floor. Head, neck, and shoulders in line. Inhale lift and open the chest. Exhale, come back down. `
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `small`,
+            src: `10012022_3.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Butterfly.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Lengthen your spine, bring your heels in close and flutter your knees slowly up and down. Activate your lymphatic circulation through movement and breath (in and out through your nose).`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `small`,
+            src: `10012022_4.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Cat/Cow.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Begin in tabletop position, on all fours. Inhale lift your chin and chest, exhale round the spine and tuck your tailbone, push the mat away. This posture gently massages your spine and organs and allows the chest to open.`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `small`,
+            src: `10012022_5.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Mountain pose (arm variations)`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Stand up straight. Inhale your arms lift overhead, exhale arms lower by your sides. Option to come to your tippy toes on the inhale up. This pose helps to elongate and stretch the muscles, and also activates circulation and flow of breath. `
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `small`,
+            src: `10012022_6.jpg`,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          content: [{
+            text: `Recommendations: `
+          }]
+        },{
+          text: `It’s suggested that you do not lie on your back when you have Covid or are recovering from it. The congestion in your chest puts pressure on your lungs, and this will slow the recovery process and not allow the congestion/mucus to release properly. I suggest doing only poses that are upright, or lying on your stomach, rather than on your back. `
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Take 15 min of your day to try these 5 poses! Whether you had Covid or not, these are great for immunity.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `i`,
+          text: `Disclaimer: The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment.`
+        }]
+      }]
+    },{
+      id: `27122021`,
+      endpoint: ` 4_Natural_Supplements_to_Boost_Immunity`,
+      title: `4 Natural Supplements to Boost Immunity`,
+      category: `Nutrition`,
+      publishDate: `Monday, December 27th 2021`,
+      heroImage: `27122021_1.jpg`,
+      subtext: `Natural supplements are always a win!`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `For years, nutritionists, doctors, and society have been telling us to pump ourselves full of vitamin C, drink your orange juice, and take your daily OTC multi-vitamin. While these methods are still effective (I take them myself), there are a few other less common supplements that I believe deserve some shine. In my opinion, natural herbs and supplements are the way to go when it comes to maintaining health and preventing long term illness. Prevention is always better than the cure. These days, we can all use a boost of immunity, so here are some of my favorite supplements:`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Elderberry:`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Elderberry has become more popular in the last couple years, but has been around forever. The berry contains powerful antioxidants and vitamins, and can also help prevent and ease cold and flu. They clear the body of free radicals. You can find elderberries in the form of a syrup, gummies, tea, or lozenges.`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Oregano Oil Extract:`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Acts as a natural antibiotic and can kill bacteria in the body. It is a powerful aid in healing respiratory issues. It can be found in oil or pill form. The taste is rather strong, and can give a warm sensation in the throat. You can mask this taste by mixing it with tea or water. Oregano oil is known to reduce the severity and duration of respiratory illness. `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Chlorophyll:`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: ` The stuff that makes plants green, also promotes production of red blood cells! It acts as a natural detoxifying agent, and eliminates fungus. As an added bonus, it’s a natural deodorizer as well (for your poop and your pits!) It absorbs toxins and stimulates immunity. Try Chlorophyll in tablet or liquid form. `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Cayenne Pepper:`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `High in vitamins C and A, cayenne pepper is a great additive for your smoothies, or even hot teas! It’s an immunity booster and has anti-inflammatory properties. It’s properties may help protect against cellular damage. When feeling under the weather, I’ve added cayenne to whatever I’m eating or drinking. Plus that cayenne pepper is great for heart health too!`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `27122021_2.jpg`,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `If you feel yourself coming down with something, already have it, or just want extra immune support, try these natural supplements!`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: ` Add some Chlorophyll droplets to your water today! It’s super refreshing and energizing, and will give you fresh breath!`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `i`,
+          text: `Disclaimer: The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment.`
+        }]
+      }]
+    },{
+      id: `13122021`,
+      endpoint: `How_to_Increase_Joy`,
+      title: `How to Increase Joy`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, December 13th 2021`,
+      heroImage: `13122021_1.jpg`,
+      subtext: `We are all co-creators of our own destiny.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Every human wants to be happy. You are in charge of cultivating more joy in your life, by spending more time on things you love. Recall the moments where you felt immense peace and happiness, and go there. Here are 4 ways to `
+        },{
+          type: `a`,
+          link: `https://www.instagram.com/reel/CXUKfKUFp_3/`,
+          text: `increase joy.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `More Being, Less Doing. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `We spend so much of our lives trying to do stuff. Trying to get to the next level, make more money, buy more clothes. We assume when we do these things, the joy will come. The constant motion never subsides. We will always be searching for the next best thing to happen in our lives, so we can feel better. What if you can be more joyful by simply being in the moment? Instead of trying to do the next thing, find the lessons in the now. Find the beauty in this moment. Be here, be now.`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Give good feelings your full attention.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `We’ve all heard the saying “nothing lasts forever.” It’s true. Everything is fleeting. Anxiety, pain, worry- all temporary. So are the warm and fuzzy feelings. Happiness, confidence, joy. So when those nice feelings come up, hold on to them. Give them focus and attention, and energy so they will grow. `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `What are you doing when you feel the most joy?`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: ` Do more of it! Life is too short to not do the things you love. Fill your life with as many joyful moments as possible. Take inventory of the things that bring you joy and make your heart smile, and how you can spend more time on those things. Imagine your life if you were able to only do things that brought you joy.`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Live in your “zone of genius” `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `(and say no to more things that are not in it) Your zone of genius is where you absolutely thrive. It is a natural place of growth and creativity. When you stay within this zone, possibilities are limitless because YOU are in control. It’s ok to say no to things that do not reside in this zone. You’re then allowing more space for joy to flourish inside of you.`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `13122021_2.jpg`,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Say a firm, confident NO to the next thing that is not in your zone of genius.`
+        }]
+      }]
+    },{
+      id: `09-29112021`,
+      endpoint: `How_to_Practice_Gratitude`,
+      title: `How to Practice Gratitude`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, November 29th 2021`,
+      heroImage: `29112021_1.jpg`,
+      subtext: `The key to less stress is an attitude of gratitude.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `As we close out this month of THANKS, it’s important to highlight the benefits of practicing gratitude as a way to `
+        },{
+          type: `a`,
+          link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
+          text: `reduce stress.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `My mentor and Director of the Yoga Therapy Program, Dr. Larry Payne, always says there is nothing like a daily dose of Vitamin G! He’s so right. When you `
+        },{
+          type: `a`,
+          link: `https://www.instagram.com/p/CWq1OyhluiR/`,
+          text: `practice gratitude daily`
+        },{
+          text: `, it becomes harder to focus on stress and negativity. You learn to always find the positive, and focus less on perceived negativity. There is good in every circumstance.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Gratitude journal. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Each day, start your day or end it, take some time to write a list of 3-10 (or more!) things you’re grateful for. They can be as small as your glass of clean water, or big like closing a huge contract. Small wins are big wins :-) By putting pen to paper and visualizing the things you have to be grateful for, however simple, it helps you to gain perspective. Do this daily for best results and overall `
+          },{
+            tag: `a`,
+            link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
+            text: `mindset improvement! `
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `29112021_2.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Karma Yoga. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Practice acts of service to yourself and others! Karma yoga is the yoga of action. It implies that our actions create outcomes for the greater good. It is a selfless action. The reason why it is important to practice karma yoga with yourself first, is so you can have a clear picture of what YOU need, and build self awareness in order to be capable of giving to others. Share your talents, share your time, do random acts of kindness to strangers, as a show of gratitude to the universe.`          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `i`,
+            text: `Salute the Sun! `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Did you know that the movement in yoga of “sun salutations” is literally an act of gratitude?? It’s typically practiced in the morning time, towards the sun, giving thanks for its light and presence. Loving on nature is a really great way to feel grounded and practice gratitude. Sit in the grass, go outside barefoot, touch the trees, smell the flowers, let the sun shine directly on you. When you connect with nature, it releases endorphins in the body, and helps you to feel connected and gracious.`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Gratitude is the attitude! I live by this value, so eloquently stated by my favorite artist, `
+        },{
+          type: `a`,
+          link: `https://open.spotify.com/track/6VWCeBktNMGdTTy5LxHj69?si=3ef0c84971f84d10`,
+          text: `Londrelle`
+        },{
+          text: `. “With a heart full of gratitude, and a mind full of peace. That’s how you should live, that’s how you should be….that’s how you should love, that’s how you stay free.” `
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Start that list now! Write down 10 things you’re grateful for today.`
+        }]
+      }]
+    },{
+      id: `08-15112021`,
+      endpoint: `What_is_Yoga`,
+      title: ` What is Yoga?`,
+      category: `Yoga`,
+      publishDate: `Monday, November 15th 2021`,
+      heroImage: `15112021_1.jpg`,
+      subtext: `Yoga, by definition, is the union of mind and body. It is harmony. It is balance.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Yoga is a lifestyle both on and off the mat. The TOOLS of yoga are `
+        },{
+          tag: `i`,
+          text: `Pranayama`
+        },{
+          text: ` (breathwork), `
+        },{
+          tag: `i`,
+          text: `Dhyana`
+        },{
+          text: ` (meditation), and Asana (the physical practice).`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `The term “Yoga” is derived from the Sanskrit root word “yuj,” meaning to yoke, to join or unite. Yoga is all about uniting the mind and body, in every way. Through the foods we eat, through our actions, the ways in which we nourish our bodies, through movement, meditation, and breath. Yoga is the act of working towards a harmonious lifestyle of balance.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `15112021_2.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `a`,
+            link: `https://mailchi.mp/f44d1c9f43d6/yogflowthursdays`,
+            text: `Asana.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `The physical practice of yoga, on the mat. Linking breath to movement, mind and body. Asana allows your body to express its energy. It releases endorphins and creates ease, and breaks up stagnation in your aura. Understanding movement requires you to get quiet and go inwards, to a deeper state of self-discovery and exploration. To know your body is to create harmony. Get comfortable within yourself.`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/01-09082021/Breathing_for_Your_Body`,
+            text: `Pranayama.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `When we breathe, we allow our nervous system to reset, and send the proper signals to the body. Our breath sustains us and allows us to move more freely, without tension. When you are not breathing (properly), your sympathetic nervous system is active. This is your fight or flight response. Disconnected. When you use your breath, you incite the parasympathetic nervous system, which promotes calm and restoration.`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `a`,
+            link: `https://mailchi.mp/f81250e2080a/clubmeditate`,
+            text: `Meditation.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `The practice of meditation unpacks the past trauma or stress from the body and mind. This can be past stress from 5 minutes ago, or 15 years ago. When you meditate, you are reconnecting and rebuilding parts of the brain that have been damaged by stress or trauma. Meditation frees up space for deeper breaths, for more knowing of self.`,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `These three practices are the main tools of yoga, used for linking the mind and body. It is a spiritual discipline. Yoga is self-awareness. When you sit, when you move, when you breath…you are practicing yoga.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: ` Decide on one way, TODAY, to `
+        },{
+          tag: `a`,
+          link: `https://mailchi.mp/f44d1c9f43d6/yogflowthursdays`,
+          text: `practice yoga`
+        },{
+          text: `. Journal about what comes up when you go inward.`
+        }]
+      }]
+    },{
       id: `07-01112021`,
       endpoint: `4_Foods_to_Improve_Gut_Health`,
       title: `4 Foods to Improve Gut Health`,
@@ -255,7 +732,13 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `Many people, including myself, take daily turmeric supplements to ease inflammatory conditions, in the gut especially. Turmeric pills are most effective, and go straight into your bloodstream. It also comes in powder form or as a spice. Turmeric is best activated with black pepper.  Golden Milk, made with turmeric and black pepper, (insert recipe) is not only good for your gut, but it will make you sleep like a baby! Try it out! `
+            text: `Many people, including myself, take daily turmeric supplements to ease inflammatory conditions, in the gut especially. Turmeric pills are most effective, and go straight into your bloodstream. It also comes in powder form or as a spice. Turmeric is best activated with black pepper.  `
+                    },{
+            tag: `a`,
+            link: `https://www.wellplated.com/bedtime-golden-milk/`,
+            text: `Golden Milk`
+          },{
+            text: `, made with turmeric and black pepper, is not only good for your gut, but it will make you sleep like a baby! Try it out!`,
           }]
         },{
           tag: `img`,
@@ -296,232 +779,6 @@ export default class App extends Component {
         }]
       }]
     },{
-    //   id: `06-18102021`,
-    //   endpoint: `How_Movement_Can_Increase_Longevity`,
-    //   title: `How Movement Can Increase Longevity`,
-    //   category: `Functional Fitness`,
-    //   publishDate: `Monday, October 18th 2021`,
-    //   heroImage: `18102021_1.jpg`,
-    //   subtext: `Movement is medicine, and prevention is always better than the cure.?`,
-    //   copy: [{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `We live such a sedentary lifestyle. Especially these days, with work from home life. It’s so important to keep your muscles stretched and your joints lubricated, through movement. Take time each day to move your body in some way. Get up from your seat often, throughout the work day to promote more circulation in the body and a healthy prana.`
-    //     }]
-    //   },{
-    //     tag: `section`,
-    //     list: [{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Stretch every day. `,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Your body does a lot of work for you every day. It keeps the blood pumping through your veins and sustains all of the stress you impose on it. Show your body a little love. As soon as you get out of bed,`
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
-    //         text: ` stretch!`
-    //       },{
-    //         text: ` Before you go to bed, `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
-    //         text: ` stretch!`
-    //       },{
-    //         text: ` Simple movements and elongation of the muscles will do wonders for your body to relieve stress and tension. Knots in your body, chronic pain, and mental fatigue can all be relieved by consistent stretching. Try a simple inhale and lift your arms up, exhale forward fold, hands toward the floor. `,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Body fuzz.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `This is why stretching is so important. `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.youtube.com/watch?v=_FtSP-tkSug`,
-    //         text: `BODY FUZZ.`
-    //       },{
-    //         text: ` Have you ever watched a cat or dog wake up from a nap? The first thing they do is lengthen their body and stretch out. We should take notes! When we sleep at night our muscles accumulate a “fuzz” between them. It binds them together and results in the feeling of stiffness or tension in the muscles. By moving the body, we are melting away this accumulated fuzz in the body, and allowing our muscle fascia to breathe and renew each day. `,
-    //       }]
-    //     },{
-    //       tag: `img`,
-    //       content: [{
-    //         class: `wide`,
-    //         src: `18102021_2.jpg`,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Move through injury. Slowly.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
-    //         text: `Yoga Therapy`
-    //       },{
-    //         text: ` clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Heart health.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Heart disease is the `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.cdc.gov/heartdisease/facts.htm`,
-    //         text: `leading cause of death`
-    //       },{
-    //         text: ` in the United States, for most ethnic groups. Your heart keeps you alive, quite literally. When you move, your heart is essentially speaking to your body. Oxygen goes to the brain. Your breathing is optimized. The nervous system sends the proper signals to the rest of your body. One extra hour of light movement each day corresponds to a 14% drop in coronary heart risk.`,
-    //       }]
-    //     }]
-    //   },{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `
-    //       No matter your weight, fitness ability, or age...movement will always be medicine. 
-    //       It can prevent disease brought about by stagnation in the body. 
-    //       Movement can increase your lifespan by keeping your body working for you.`
-    //     }]
-    //   },{
-    //     tag: `p`,
-    //     content: [{
-    //       tag: `b`,
-    //       text: `The Challenge: ` 
-    //     },{
-    //       text: `Take a walk today. 10 minutes or 1 hour. Make it happen. Your body will thank you.`
-    //     }]
-    //   }]
-    // },{
-    //   id: `06-18102021`,
-    //   endpoint: `How_Movement_Can_Increase_Longevity`,
-    //   title: `How Movement Can Increase Longevity`,
-    //   category: `Functional Fitness `,
-    //   publishDate: `Monday, October 18th 2021`,
-    //   heroImage: `18102021_1.jpg`,
-    //   subtext: `Movement is medicine, and prevention is always better than the cure.?`,
-    //   copy: [{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `We live such a sedentary lifestyle. Especially these days, with work from home life. It’s so important to keep your muscles stretched and your joints lubricated, through movement. Take time each day to move your body in some way. Get up from your seat often, throughout the work day to promote more circulation in the body and a healthy prana.`
-    //     }]
-    //   },{
-    //     tag: `section`,
-    //     list: [{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Stretch every day. `,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Your body does a lot of work for you every day. It keeps the blood pumping through your veins and sustains all of the stress you impose on it. Show your body a little love. As soon as you get out of bed,`
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
-    //         text: ` stretch!`
-    //       },{
-    //         text: ` Before you go to bed, `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.instagram.com/p/CSMy0X-lprj/`,
-    //         text: ` stretch!`
-    //       },{
-    //         text: ` Simple movements and elongation of the muscles will do wonders for your body to relieve stress and tension. Knots in your body, chronic pain, and mental fatigue can all be relieved by consistent stretching. Try a simple inhale and lift your arms up, exhale forward fold, hands toward the floor. `,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Body fuzz.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `This is why stretching is so important. `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.youtube.com/watch?v=_FtSP-tkSug`,
-    //         text: `BODY FUZZ.`
-    //       },{
-    //         text: ` Have you ever watched a cat or dog wake up from a nap? The first thing they do is lengthen their body and stretch out. We should take notes! When we sleep at night our muscles accumulate a “fuzz” between them. It binds them together and results in the feeling of stiffness or tension in the muscles. By moving the body, we are melting away this accumulated fuzz in the body, and allowing our muscle fascia to breathe and renew each day. `,
-    //       }]
-    //     },{
-    //       tag: `img`,
-    //       content: [{
-    //         class: `wide`,
-    //         src: `18102021_2.jpg`,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Move through injury. Slowly.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
-    //         text: `Yoga Therapy`
-    //       },{
-    //         text: ` clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,
-    //       }]
-    //     },{
-    //       tag: `h2`,
-    //       content: [{
-    //         tag: `i`,
-    //         text: `Heart health.`,
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         text: `Heart disease is the `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://www.cdc.gov/heartdisease/facts.htm`,
-    //         text: `leading cause of death`
-    //       },{
-    //         text: ` in the United States, for most ethnic groups. Your heart keeps you alive, quite literally. When you move, your heart is essentially speaking to your body. Oxygen goes to the brain. Your breathing is optimized. The nervous system sends the proper signals to the rest of your body. One extra hour of light movement each day corresponds to a 14% drop in coronary heart risk.`,
-    //       }]
-    //     }]
-    //   },{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `
-    //       No matter your weight, fitness ability, or age...movement will always be medicine. 
-    //       It can prevent disease brought about by stagnation in the body. 
-    //       Movement can increase your lifespan by keeping your body working for you.`
-    //     }]
-    //   },{
-    //     tag: `p`,
-    //     content: [{
-    //       tag: `b`,
-    //       text: `The Challenge: ` 
-    //     },{
-    //       text: `Take a walk today. 10 minutes or 1 hour. Make it happen. Your body will thank you.`
-    //     }]
-    //   }]
-    // },{
       id: `06-18102021`,
       endpoint: `How_Movement_Can_Increase_Longevity`,
       title: `How Movement Can Increase Longevity`,

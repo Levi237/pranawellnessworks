@@ -3,7 +3,7 @@ import styled       from 'styled-components';
 import { Link }     from 'react-router-dom';
 // import * as routes  from '../../constants/routes';
 
-const FourBlogBlocks = ({blogs,author, selectBlog}) => {
+const FourBlogBlocks = ({blogs, author, selectBlog}) => {
 
   return(
  <FourBlockColumns>
@@ -21,7 +21,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
               <h1>{blogs[2].title}</h1>
           </Link>
-          <h4>by {author.firstName} {author.lastName}</h4>
+          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
         </section>
 </div> }
 <div>
@@ -36,7 +36,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
               <h1>{blogs[3].title}</h1>
           </Link>
-          <h4>by {author.firstName} {author.lastName}</h4>
+          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
         </section>
 </div>
 <div>
@@ -51,7 +51,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
               <h1>{blogs[4].title}</h1>
           </Link>
-          <h4>by {author.firstName} {author.lastName}</h4>
+          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
         </section>
 </div>
 <div>
@@ -66,7 +66,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <Link to={`/blog/${blogs[5].id}/${blogs[5].endpoint}`}  onClick={(e) => selectBlog(e, blogs[5])}>
               <h1>{blogs[5].title}</h1>
           </Link>
-          <h4>by {author.firstName} {author.lastName}</h4>
+          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
         </section>
 </div>
 { (blogs.length / blogs.length  === 1) &&
@@ -82,7 +82,7 @@ const FourBlogBlocks = ({blogs,author, selectBlog}) => {
           <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
               <h1>{blogs[6].title}</h1>
           </Link>
-          <h4>by {author.firstName} {author.lastName}</h4>
+          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
         </section>
 </div>
 }
