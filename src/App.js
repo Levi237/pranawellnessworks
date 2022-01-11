@@ -230,7 +230,13 @@ export default class App extends Component {
       copy: [{
         tag: `p`,
         content: [{
-          text: `Tis the season….so many people are battling Covid right now, or have just come out on the other side. Immunity and prevention are key, but if you do happen to get the virus, it’s important to begin recovery work right away. Here are 5 key poses to help release congestion, expand your lungs,open your chest, and boost immunity. Do each of these poses 3-5 minutes. Breathe in and out through your nose.`
+          text: `Tis the season….so many people are battling Covid right now, or have just come out on the other side. Immunity and prevention are key, but if you do happen to get the virus, it’s important to begin recovery work right away. Here are `,
+        },{
+          tag: `a`,
+          link: `https://www.instagram.com/p/CYkeyhfB0A1/`,
+          text:`5 key poses`
+        },{
+          text: ` to help release congestion, expand your lungs,open your chest, and boost immunity. Do each of these poses 3-5 minutes. Breathe in and out through your nose.`
         }]
       },{
         tag: `section`,
@@ -238,19 +244,28 @@ export default class App extends Component {
           tag: `h2`,
           content: [{
             tag: `b`,
-            text: `Seated Spinal Twist.`,
+            text: `Seated Spinal Twist.`
           }]
         },{
           tag: `p`,
           content: [{
-            text: `Twists are cleansing to the body, and help to release toxins. Inhale and exhale deeply in this twist in order to increase lung capacity. Gaze over your shoulder. `,
+            text: `Twists are cleansing to the body, and help to release toxins. Inhale and exhale deeply in this twist in order to `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/p/CYkeyhfB0A1/`,
+            text:`increase lung capacity`
+          },{
+            text: `. Gaze over your shoulder.`
           }]
         },{
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_2.jpg`,
+            src: `10012022_2.png`,
           }]
+        },{
+          tag: `hr`,
+          content: [{}]
         },{
           tag: `h2`,
           content: [{
@@ -266,8 +281,11 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_3.jpg`,
+            src: `10012022_3.png`,
           }]
+        },{
+          tag: `hr`,
+          content: [{}]
         },{
           tag: `h2`,
           content: [{
@@ -277,14 +295,23 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `Lengthen your spine, bring your heels in close and flutter your knees slowly up and down. Activate your lymphatic circulation through movement and breath (in and out through your nose).`
+            text: `Lengthen your spine, bring your heels in close and flutter your knees slowly up and down. Activate your lymphatic circulation through `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/p/CYkeyhfB0A1/`,
+            text: `movement and breath`
+          },{
+            text: ` (in and out through your nose).`
           }]
         },{
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_4.jpg`,
+            src: `10012022_4.png`,
           }]
+        },{
+          tag: `hr`,
+          content: [{}]
         },{
           tag: `h2`,
           content: [{
@@ -300,8 +327,11 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_5.jpg`,
+            src: `10012022_5.png`,
           }]
+        },{
+          tag: `hr`,
+          content: [{}]
         },{
           tag: `h2`,
           content: [{
@@ -317,8 +347,14 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_6.jpg`,
+            src: `10012022_6.png`,
           }]
+        },{
+          tag: `hr`,
+          content: [{}]
+        },{
+          tag: `br`,
+          content: [{}]
         }]
       },{
         tag: `p`,
@@ -336,13 +372,13 @@ export default class App extends Component {
           tag: `b`,
           text: `The Challenge: ` 
         },{
-          text: `Take 15 min of your day to try these 5 poses! Whether you had Covid or not, these are great for immunity.`
-        }]
-      },{
-        tag: `p`,
-        content: [{
-          tag: `i`,
-          text: `Disclaimer: The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment.`
+          text: `Take 15 min of your day to try these `
+        },{
+          tag: `a`,
+          link: `https://www.instagram.com/p/CYkeyhfB0A1/`,
+          text: `5 poses`
+        },{
+          text: `! Whether you had Covid or not, these are great for immunity.`
         }]
       }]
     },{
@@ -1132,7 +1168,7 @@ export default class App extends Component {
       category: `Mindfulness & Meditation`,
       title: `4 Ways to Elevate Your Mindset`,
       publishDate: `Monday, September 6th, 2021`,
-      heroImage: `06092021_1.png`,
+      heroImage: `06092021_1.jpg`,
       subtext: `The law of attraction is real! Invite in what you want and need.`,
       copy: [{
         tag: `h2`,
@@ -1208,7 +1244,7 @@ export default class App extends Component {
       endpoint: `How_to_Sleep_Better`,
       title: `How to Sleep Better`,
       category: `Mindfulness & Meditation`,
-      heroImage: `23082021_1.png`,
+      heroImage: `23082021_1.jpg`,
       publishDate: `Monday, August 23rd 2021`,
       subtext: `Want better sleep? Mindful nights lead to productive mornings.`,
       copy: [{
