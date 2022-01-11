@@ -30,17 +30,17 @@ export default class CategoryPreview extends Component {
                         <ThreeRows>
                             <div>
                                 <Link to={`/blog/${oldToNewCategory[1].id}/${oldToNewCategory[1].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[1])}>
-                                    <section style={{backgroundImage: `url(/blog/${oldToNewCategory[1].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[1].heroImage})`}}>
                                     </section>
                                     <section>
                                         <h1>{oldToNewCategory[1].title}</h1>
-                                        <p>{oldToNewCategory[0].subtext}</p>
+                                        <p>{oldToNewCategory[1].subtext}</p>
                                     </section>
                                 </Link>
                             </div>
                             <div>
                                 <Link to={`/blog/${oldToNewCategory[2].id}/${oldToNewCategory[2].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[2])}>
-                                    <section style={{backgroundImage: `url(/blog/${oldToNewCategory[2].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[2].heroImage})`}}>
                                     </section>
                                     <section>
                                         <h1>{oldToNewCategory[2].title}</h1>
@@ -50,7 +50,7 @@ export default class CategoryPreview extends Component {
                             </div>
                             <div>
                                 <Link to={`/blog/${oldToNewCategory[3].id}/${oldToNewCategory[3].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[3])}>
-                                    <section style={{backgroundImage: `url(/blog/${oldToNewCategory[3].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[3].heroImage})`}}>
                                     </section>
                                     <section>
                                         <h1>{oldToNewCategory[3].title}</h1>
@@ -58,7 +58,28 @@ export default class CategoryPreview extends Component {
                                     </section>
                                 </Link>
                             </div>
+                            <div>
+                                <Link to={`/blog/${oldToNewCategory[4].id}/${oldToNewCategory[4].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[4])}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[4].heroImage})`}}>
+                                    </section>
+                                    <section>
+                                        <h1>{oldToNewCategory[4].title}</h1>
+                                        <p>{oldToNewCategory[4].subtext}</p>
+                                    </section>
+                                </Link>
+                            </div>
+                            {/* <div>
+                                <Link to={`/blog/${oldToNewCategory[5].id}/${oldToNewCategory[5].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[5])}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[5].heroImage})`}}>
+                                    </section>
+                                    <section>
+                                        <h1>{oldToNewCategory[5].title}</h1>
+                                        <p>{oldToNewCategory[5].subtext}</p>
+                                    </section>
+                                </Link>
+                            </div> */}
                         </ThreeRows>
+                        <br/><br/>
                     </div>
                 </CategoryPreviewWrapper>
         );
@@ -205,7 +226,7 @@ a {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 2vw;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 > div {
     width: 86vw;

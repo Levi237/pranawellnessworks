@@ -1,93 +1,83 @@
 import styled       from 'styled-components';
-
 import { Link }     from 'react-router-dom';
-// import * as routes  from '../../constants/routes';
 
-const FourBlogBlocks = ({blogs, author, selectBlog}) => {
+const FourBlogBlocks = ({blogs, selectBlog}) => {
 
   return(
- <FourBlockColumns>
+    <FourBlockColumns>
 
-{ (blogs.length / blogs.length !== 1) &&
-<div>
-    <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
-          <section className="img" style={{backgroundImage: `url(/blog/${blogs[2].heroImage})`}}>
-          </section>
-    </Link>
-        <section className="txt">
-          <p>
-            <small>{blogs[2].category}</small>
-          </p>
-          <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
-              <h1>{blogs[2].title}</h1>
-          </Link>
-          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
-        </section>
-</div> }
-<div>
-    <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
-          <section className="img" style={{backgroundImage: `url(/blog/${blogs[3].heroImage})`}}>
-          </section>
-    </Link>
+    { (blogs.length / blogs.length !== 1) &&
+      <div>
+        <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
+              <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[2].heroImage})`}}>
+              </section>
+        </Link>
+            <section className="txt">
+              <p>
+                <small>{blogs[2].category}</small>
+              </p>
+              <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
+                <h1>{blogs[2].title}</h1>
+              </Link>            
+            </section>
+      </div> 
+      }
+      <div>
+        <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
+            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[3].heroImage})`}}></section>
+        </Link>
         <section className="txt">
           <p>
             <small>{blogs[3].category}</small>
           </p>
           <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
-              <h1>{blogs[3].title}</h1>
-          </Link>
-          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
+            <h1>{blogs[3].title}</h1>
+          </Link>        
         </section>
-</div>
-<div>
-    <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
-          <section className="img" style={{backgroundImage: `url(/blog/${blogs[4].heroImage})`}}>
-          </section>
-    </Link>
+      </div>
+      <div>
+        <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
+          <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[4].heroImage})`}}></section>
+        </Link>
         <section className="txt">
           <p>
             <small>{blogs[4].category}</small>
           </p>
           <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
-              <h1>{blogs[4].title}</h1>
-          </Link>
-          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
+            <h1>{blogs[4].title}</h1>
+          </Link>        
         </section>
-</div>
-<div>
-    <Link to={`/blog/${blogs[5].id}/${blogs[5].endpoint}`}  onClick={(e) => selectBlog(e, blogs[5])}>
-          <section className="img" style={{backgroundImage: `url(/blog/${blogs[5].heroImage})`}}>
-          </section>
-    </Link>
+      </div>
+      <div>
+        <Link to={`/blog/${blogs[5].id}/${blogs[5].endpoint}`}  onClick={(e) => selectBlog(e, blogs[5])}>
+          <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[5].heroImage})`}}></section>
+        </Link>
         <section className="txt">
           <p>
             <small>{blogs[5].category}</small>
           </p>
           <Link to={`/blog/${blogs[5].id}/${blogs[5].endpoint}`}  onClick={(e) => selectBlog(e, blogs[5])}>
               <h1>{blogs[5].title}</h1>
-          </Link>
-          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
+          </Link>        
         </section>
-</div>
-{ (blogs.length / blogs.length  === 1) &&
-<div>
-    <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
-      <section className="img" style={{backgroundImage: `url(/blog/${blogs[6].heroImage})`}}>
-      </section>
-      </Link>
-        <section className="txt">
-          <p>
-          <small>{blogs[6].category}</small>
-        </p>
+      </div>
+      { (blogs.length / blogs.length  === 1) &&
+        <div>
           <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
-              <h1>{blogs[6].title}</h1>
+            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[6].heroImage})`}}></section>
           </Link>
-          {/* <h4>by {author.firstName} {author.lastName}</h4> */}
-        </section>
-</div>
-}
-</FourBlockColumns>
-);
+          <section className="txt">
+            <p>
+              <small>{blogs[6].category}</small>
+            </p>
+            <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
+              <h1>{blogs[6].title}</h1>
+            </Link>          
+          </section>
+        </div>
+      }
+    </FourBlockColumns>
+  );
 };
 
 const FourBlockColumns = styled.div`
@@ -157,28 +147,31 @@ const FourBlockColumns = styled.div`
     }
     @media screen and (max-width: 640px) {
         h1 {
-          font-size: 6.67vw;  
-          padding: 0 0 2.5vw;
+          font-size: 18px;  
+          padding: 0 0 20px;
         }
         h4{
           font-size: 4vw;
           padding: 0;
         }
         p {
-          padding: 5vw 0 2.5vw;
+          padding: 10px 0;
           small {
-            font-size: 3vw;
+            font-size: 10px;
           }
         }
         > div {
-          width: 90vw;
+          width: 42.5vw;
+          &:nth-of-type(odd) {
+            margin-right: 5vw;
+          }
           .img {
-            height: 44vw;
-            width: 90vw;
+            height: 45vw;
+            width: 100%;
           }
           .txt {
             height: auto;
-            padding-bottom: 15vw;
+            // padding-bottom: 15vw;
           }
         }
       }

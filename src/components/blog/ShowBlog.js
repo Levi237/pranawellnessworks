@@ -14,6 +14,22 @@ const ShowBlog = ({blogs, author}) => {
 
     const renderBlog = blog.copy.map((bc, key) => {
 
+        if (bc.tag === "img"){
+            return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}` }alt={bc.src}/>
+        }
+        if (bc.tag === "i"){
+            return <i>{bc.content[0].text}</i>
+        }
+        if (bc.tag === "b"){
+            return <b>{bc.content[0].text}</b>
+        }
+        if (bc.tag === "br"){
+            return <br/>
+        }
+        if (bc.tag === "hr"){
+            return <hr/>
+        }
+
         if (bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
             const textMap = bc.content.map(txt => {
                 if (txt.tag === "a"){
@@ -32,6 +48,8 @@ const ShowBlog = ({blogs, author}) => {
                     return <u>{txt.text}</u>
                 } else if ( txt.tag === "br" ) { 
                     return <br/>
+                } else if ( txt.tag === "hr" ) { 
+                    return <hr/>
                 } else {
                     return <span>{txt.text}</span>
                 }
@@ -40,48 +58,45 @@ const ShowBlog = ({blogs, author}) => {
             if (bc.tag === "h3"){ return <h3 key={key}>{textMap}</h3> }
             if (bc.tag === "h4"){ return <h4 key={key}>{textMap}</h4> }
             if (bc.tag === "p"){ return <p key={key}>{textMap}</p> }
-        }
-
-        if (bc.tag === "img"){
-            return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}` }alt={bc.src}/>
-        }
-        if (bc.tag === "i"){
-            return <i>{bc.content[0].text}</i>
-        }
-        if (bc.tag === "b"){
-            return <b>{bc.content[0].text}</b>
+            if (bc.tag === "br"){ return <br key={key}/> }
+            if (bc.tag === "hr"){ return <hr key={key}/> }
         }
 
         if (bc.tag === "section"){
             const listMap = bc.list.map((li, ki) => {
-                const textMap = li.content.map(txt => {
-                    if (txt.tag === "a"){
-                        return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
-                    } else if ( txt.tag === "sup" ) { 
-                        return <sup>{txt.text}</sup>    
-                    } else if ( txt.tag === "sub" ) { 
-                        return <sub>{txt.text}</sub>                   
-                    } else if ( txt.tag === "small" ) { 
-                        return <small>{txt.text}</small>
-                    } else if ( txt.tag === "u" ) { 
-                        return <u>{txt.text}</u>
-                    } else if ( txt.tag === "i" ) { 
-                        return <i>{txt.text}</i>
-                    } else if ( txt.tag === "b" ) { 
-                        return <b>{txt.text}</b>
-                    } else if ( txt.tag === "br" ) { 
-                        return <br/>
-                    } else if ( li.tag === "img" ) { 
-                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>
-                    } else {
-                        return <span>{txt.text}</span>
-                    }
-                })
-                if (li.tag === "h2"){ return <h2 key={ki}>{textMap}</h2> }
-                if (li.tag === "h3"){ return <h3 key={ki}>{textMap}</h3> }
-                if (li.tag === "h4"){ return <h4 key={ki}>{textMap}</h4> }
-                if (li.tag === "p"){ return <p key={ki}>{textMap}</p> }
-                if (li.tag === "img"){ return <span key={ki}>{textMap}</span> }
+                if (li.tag !== "hr" || li.tag !== "br" ) {
+                    const textMap = li.content.map(txt => {
+                        if (txt.tag === "a"){
+                            return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
+                        } else if ( txt.tag === "sup" ) { 
+                            return <sup>{txt.text}</sup>    
+                        } else if ( txt.tag === "sub" ) { 
+                            return <sub>{txt.text}</sub>                   
+                        } else if ( txt.tag === "small" ) { 
+                            return <small>{txt.text}</small>
+                        } else if ( txt.tag === "u" ) { 
+                            return <u>{txt.text}</u>
+                        } else if ( txt.tag === "i" ) { 
+                            return <i>{txt.text}</i>
+                        } else if ( txt.tag === "b" ) { 
+                            return <b>{txt.text}</b>
+                        } else if ( li.tag === "img" ) { 
+                            return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>
+                        } else {
+                            return <span>{txt.text}</span>
+                        }
+                    })
+                    if (li.tag === "h2"){ return <h2 key={ki}>{textMap}</h2> }
+                    if (li.tag === "h3"){ return <h3 key={ki}>{textMap}</h3> }
+                    if (li.tag === "h4"){ return <h4 key={ki}>{textMap}</h4> }
+                    if (li.tag === "p"){ return <p key={ki}>{textMap}</p> }
+                    if (li.tag === "img"){ return <span key={ki}>{textMap}</span> }
+                }
+
+                if (li.tag === "br"){ return <br key={ki}/> }
+                if (li.tag === "hr"){ return <hr key={ki}/> }
+
+                return <></>
             })
             return <section key={key}>{listMap}</section>
         }
@@ -107,6 +122,8 @@ const ShowBlog = ({blogs, author}) => {
                         return <u>{txt.text}</u>
                     } else if ( txt.tag === "br" ) { 
                         return <br/>
+                    } else if ( txt.tag === "hr" ) { 
+                        return <hr/>
                     } else if (txt.tag === "img"){
                         return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>  
                     } else {
@@ -118,6 +135,7 @@ const ShowBlog = ({blogs, author}) => {
             if (bc.tag === "ol" ){ return <ol key={key}>{listMap}</ol> } 
             if (bc.tag === "ul" ){ return <ul key={key}>{listMap}</ul> } 
         }
+        return <></>
     });
 
     return(
