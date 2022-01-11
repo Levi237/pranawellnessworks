@@ -90,14 +90,14 @@ const FourBlockColumns = styled.div`
   h1 {
       font-size: 1.75vw;  
       text-align: left;
-      padding: 1vw 2vw;
+      padding: 6px 2vw;
   }
   h4{
     font-size: 1vw;
     padding: 0 2vw;
   }
   p {
-    padding: 1vw 2vw 0;
+    padding: 10px 2vw 0;
     small {
       font-size: .9vw;
     }
