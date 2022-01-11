@@ -161,7 +161,6 @@ const BlogWrapper = styled.div`
     .blog-image.wide {
         width: 100%;
     }
-
     > article {
         line-height: 150%;
         width: 80vw;
@@ -241,6 +240,9 @@ const BlogWrapper = styled.div`
         padding: 10px 0;
     }
     @media screen and (max-width: 945px){
+        .blog-image.small {
+            width: 100%;
+        }
         > article {
             width: 100vw;
             text-align: center;

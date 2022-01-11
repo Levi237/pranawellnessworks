@@ -336,7 +336,10 @@ export default class App extends Component {
           tag: `h2`,
           content: [{
             tag: `b`,
-            text: `Mountain pose (arm variations)`,
+            text: `Mountain pose`
+          },{
+            tag: `small`,
+            text:` (arm variations)`,
           }]
         },{
           tag: `p`,

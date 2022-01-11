@@ -8,27 +8,44 @@ export default class CategoryPreview extends Component {
     }
     render(){
         const { selectBlog,  blogs, author } = this.props;
+        
         const blogCategory = blogs.filter(blog => blog.category === "Mindfulness & Meditation");
-        console.log(blogCategory, "category")
-        const oldToNewCategory = blogCategory.reverse();
+
+        
+        const mapCategory = blogCategory.map((topic, k) => {
+            return(
+                <div key={k}>
+                    <Link to={`/blog/${topic.id}/${topic.endpoint}`}  onClick={(e) => selectBlog(e, topic)}>
+                        <section style={{backgroundImage: `url(/blog/thumbnail/${topic.heroImage})`}}>
+                        </section>
+                        <section>
+                            <h1>{topic.title}</h1>
+                            <p>{topic.subtext}</p>
+                        </section>
+                    </Link>
+                </div>
+            );
+        });
+
         return(
                 <CategoryPreviewWrapper>
-                    <h2>{oldToNewCategory[0].category}</h2>
+                    <h2>{blogCategory[0].category}</h2>
                     <div>
                         <FeatureBox>
                             <div>
-                                <Link to={`/blog/${oldToNewCategory[0].id}/${oldToNewCategory[0].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[0])}>
-                                    <section style={{backgroundImage: `url(/blog/${oldToNewCategory[0].heroImage})`}}>
+                                <Link to={`/blog/${blogCategory[0].id}/${blogCategory[0].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[0])}>
+                                    <section style={{backgroundImage: `url(/blog/${blogCategory[0].heroImage})`}}>
                                     </section>
                                     <section>
-                                        <h1>{oldToNewCategory[0].title}</h1>
+                                        <h1>{blogCategory[0].title}</h1>
                                         <h4>by {author.firstName} {author.lastName}</h4>  
                                     </section>
                                 </Link>
                             </div>
                         </FeatureBox>
                         <ThreeRows>
-                            <div>
+                            {mapCategory}
+                            {/* <div>
                                 <Link to={`/blog/${oldToNewCategory[1].id}/${oldToNewCategory[1].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[1])}>
                                     <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[1].heroImage})`}}>
                                     </section>
@@ -67,7 +84,7 @@ export default class CategoryPreview extends Component {
                                         <p>{oldToNewCategory[4].subtext}</p>
                                     </section>
                                 </Link>
-                            </div>
+                            </div> */}
                             {/* <div>
                                 <Link to={`/blog/${oldToNewCategory[5].id}/${oldToNewCategory[5].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[5])}>
                                     <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[5].heroImage})`}}>
@@ -101,11 +118,15 @@ const FeatureBox = styled.section`
             line-height: 2vw;
             color: var(--grey);
         }
-
         > section {
-            height: calc(2px + 24vw);
             width: 100%;
             text-align: center!important;
+        }
+        > section:first-of-type {
+            height: calc(2px + 24vw);
+        }
+        > section + section {
+            height: auto;
         }
     }
     @media screen and (max-width: 640px) {
@@ -168,6 +189,9 @@ const ThreeRows = styled.section`
                 width: calc(26vw - 1px);
             }
         }
+    }
+    > div:first-of-type {
+        display: none!important;
     }
     @media screen and (max-width: 640px) {
         a {
@@ -234,7 +258,7 @@ a {
         > section {
             text-align: left;
             width: 42vw;
-            height: 24vw;
+            height: auto;
             display: inline-block;
             vertical-align: top; 
             &:last-of-type {

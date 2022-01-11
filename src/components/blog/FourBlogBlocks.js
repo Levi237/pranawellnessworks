@@ -2,80 +2,30 @@ import styled       from 'styled-components';
 import { Link }     from 'react-router-dom';
 
 const FourBlogBlocks = ({blogs, selectBlog}) => {
+  
+  const blogFilter = blogs.filter(blog => blog.category !== "Mindfulness & Meditation");
+  const blogFilterTwo = blogFilter.filter(blog => blog.category !== "test");
+  const mapBlogFilter = blogFilterTwo.map((bf, k) => {
+    return(
+      <div key={k}>
+        <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${bf.heroImage})`}}></section>
+        </Link>
+        <section className="txt">
+          <p>
+            <small>{bf.category}</small>
+          </p>
+          <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+            <h1>{bf.title}</h1>
+          </Link>        
+        </section>
+      </div>
+    );
+  });
 
   return(
     <FourBlockColumns>
-
-    { (blogs.length / blogs.length !== 1) &&
-      <div>
-        <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
-              <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[2].heroImage})`}}>
-              </section>
-        </Link>
-            <section className="txt">
-              <p>
-                <small>{blogs[2].category}</small>
-              </p>
-              <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
-                <h1>{blogs[2].title}</h1>
-              </Link>            
-            </section>
-      </div> 
-      }
-      <div>
-        <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
-            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[3].heroImage})`}}></section>
-        </Link>
-        <section className="txt">
-          <p>
-            <small>{blogs[3].category}</small>
-          </p>
-          <Link to={`/blog/${blogs[3].id}/${blogs[3].endpoint}`}  onClick={(e) => selectBlog(e, blogs[3])}>
-            <h1>{blogs[3].title}</h1>
-          </Link>        
-        </section>
-      </div>
-      <div>
-        <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
-          <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[4].heroImage})`}}></section>
-        </Link>
-        <section className="txt">
-          <p>
-            <small>{blogs[4].category}</small>
-          </p>
-          <Link to={`/blog/${blogs[4].id}/${blogs[4].endpoint}`}  onClick={(e) => selectBlog(e, blogs[4])}>
-            <h1>{blogs[4].title}</h1>
-          </Link>        
-        </section>
-      </div>
-      <div>
-        <Link to={`/blog/${blogs[5].id}/${blogs[5].endpoint}`}  onClick={(e) => selectBlog(e, blogs[5])}>
-          <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[5].heroImage})`}}></section>
-        </Link>
-        <section className="txt">
-          <p>
-            <small>{blogs[5].category}</small>
-          </p>
-          <Link to={`/blog/${blogs[5].id}/${blogs[5].endpoint}`}  onClick={(e) => selectBlog(e, blogs[5])}>
-              <h1>{blogs[5].title}</h1>
-          </Link>        
-        </section>
-      </div>
-      { (blogs.length / blogs.length  === 1) &&
-        <div>
-          <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
-            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${blogs[6].heroImage})`}}></section>
-          </Link>
-          <section className="txt">
-            <p>
-              <small>{blogs[6].category}</small>
-            </p>
-            <Link to={`/blog/${blogs[6].id}/${blogs[6].endpoint}`}  onClick={(e) => selectBlog(e, blogs[6])}>
-              <h1>{blogs[6].title}</h1>
-            </Link>          
-          </section>
-        </div>
-      }
+      {mapBlogFilter}
     </FourBlockColumns>
   );
 };
