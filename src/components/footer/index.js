@@ -63,15 +63,18 @@ export default class Footer extends Component {
                             }>
                             SEND US A MESSAGE
                         </button>
+                        <br/>
+                        <button 
+                            className="purple"            
+                            name="contactForm" 
+                            value="freebie" 
+                            onClick={(e) => {toggleEmailSignup(e)}
+                            }>
+                            SIGNUP FOR EMAILS
+                        </button>
                     </div>
                     <div>
                         <LeviEikoBrand/>
-                    </div>
-                    <div>
-                        <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer">
-                            <img src="/travel_slay_white.png" alt="Travel Slay"/>
-                        </a>
-                        <section>explore fitness and travel</section>
                     </div>
                 </ContactSection>
             </FooterWrapper>
@@ -90,23 +93,6 @@ const ContactSection = styled.section`
             position absolute;
             bottom: 5vw;
             left: 5vw;
-        }
-        &:last-of-type {
-            position: absolute;
-            bottom: 2.5vw;
-            right: 2.5vw;
-            width: 15vw;
-            text-align: center;
-            > section {
-                color: #fff;
-                font-size: 1vw;
-            }
-            > a {
-                > img {
-                    width: 100%;
-                    margin-bottom: -2vw;
-                }
-            }
         }
 
         > h3 {
@@ -128,23 +114,6 @@ const ContactSection = styled.section`
             }
             &:nth-of-type(2) {
                 visibility: visible;
-            }
-            &:last-of-type {
-                position: absolute;
-                bottom: 5vw;
-                right: 5vw;
-                width: 35vw;
-                text-align: center;
-                > section {
-                    color: #fff;
-                    font-size: 2.5vw;
-                }
-                > a {
-                    > img {
-                        width: 100%;
-                        margin-bottom: -2vw;
-                    }
-                }
             }
     
             > h3 {

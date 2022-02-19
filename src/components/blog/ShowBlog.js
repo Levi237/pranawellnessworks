@@ -7,7 +7,7 @@ const ShowBlog = ({blogs, author}) => {
     const { id } = useParams();
     let blog = ''
     blogs.filter(bl => {
-        if(bl.id == id) {
+        if(bl.id === id) {
             blog = bl
         }
     })
@@ -15,75 +15,84 @@ const ShowBlog = ({blogs, author}) => {
     const renderBlog = blog.copy.map((bc, key) => {
 
         if (bc.tag === "img"){
-            return <img className={`blog-image ${bc.class}`} src={`/blog/${bc.src}` }alt={bc.src}/>
+            return <img key={key} className={`blog-image ${bc.class}`} src={`/blog/${bc.src}` }alt={bc.src}/>
         }
         if (bc.tag === "i"){
-            return <i>{bc.content[0].text}</i>
+            return <i key={key} >{bc.content[0].text}</i>
         }
         if (bc.tag === "b"){
-            return <b>{bc.content[0].text}</b>
+            return <b key={key} >{bc.content[0].text}</b>
         }
         if (bc.tag === "br"){
-            return <br/>
+            return <br key={key} />
         }
         if (bc.tag === "hr"){
-            return <hr/>
+            return <hr key={key} />
         }
 
         if (bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
-            const textMap = bc.content.map(txt => {
+            const textMap = bc.content.map((txt, k) => {
                 if (txt.tag === "a"){
-                    return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
+                    return <a  key={k} href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
                 } else if ( txt.tag === "sup" ) { 
-                    return <sup>{txt.text}</sup>    
+                    return <sup key={k}>{txt.text}</sup>    
                 } else if ( txt.tag === "sub" ) { 
-                    return <sub>{txt.text}</sub>                   
+                    return <sub key={k}>{txt.text}</sub>                   
                 } else if ( txt.tag === "small" ) { 
-                    return <small>{txt.text}</small>
+                    return <small key={k}>{txt.text}</small>
                 } else if ( txt.tag === "i" ) { 
-                    return <i>{txt.text}</i>
+                    return <i key={k}>{txt.text}</i>
                 } else if ( txt.tag === "b" ) { 
-                    return <b>{txt.text}</b>
+                    return <b key={k}>{txt.text}</b>
                 } else if ( txt.tag === "u" ) { 
-                    return <u>{txt.text}</u>
+                    return <u key={k}>{txt.text}</u>
                 } else if ( txt.tag === "br" ) { 
-                    return <br/>
+                    return <br key={k}/>
                 } else if ( txt.tag === "hr" ) { 
-                    return <hr/>
+                    return <hr key={k}/>
                 } else {
-                    return <span>{txt.text}</span>
+                    return <span key={k}>{txt.text}</span>
                 }
             })
+
             if (bc.tag === "h2"){ return <h2 key={key}>{textMap}</h2> }
             if (bc.tag === "h3"){ return <h3 key={key}>{textMap}</h3> }
             if (bc.tag === "h4"){ return <h4 key={key}>{textMap}</h4> }
             if (bc.tag === "p"){ return <p key={key}>{textMap}</p> }
             if (bc.tag === "br"){ return <br key={key}/> }
             if (bc.tag === "hr"){ return <hr key={key}/> }
+
+            return <></>
         }
 
         if (bc.tag === "section"){
             const listMap = bc.list.map((li, ki) => {
                 if (li.tag !== "hr" || li.tag !== "br" ) {
-                    const textMap = li.content.map(txt => {
+                    const textMap = li.content.map((txt, k) => {
                         if (txt.tag === "a"){
-                            return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
+                            return <a key={k} href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
                         } else if ( txt.tag === "sup" ) { 
-                            return <sup>{txt.text}</sup>    
+                            return <sup key={k}>{txt.text}</sup>    
                         } else if ( txt.tag === "sub" ) { 
-                            return <sub>{txt.text}</sub>                   
+                            return <sub key={k}>{txt.text}</sub>                   
                         } else if ( txt.tag === "small" ) { 
-                            return <small>{txt.text}</small>
+                            return <small key={k}>{txt.text}</small>
                         } else if ( txt.tag === "u" ) { 
-                            return <u>{txt.text}</u>
+                            return <u key={k}>{txt.text}</u>
                         } else if ( txt.tag === "i" ) { 
-                            return <i>{txt.text}</i>
+                            return <i key={k}>{txt.text}</i>
                         } else if ( txt.tag === "b" ) { 
-                            return <b>{txt.text}</b>
+                            return <b key={k}>{txt.text}</b>
+                        } else if ( txt.tag === "u" ) { 
+                            return <u key={k}>{txt.text}</u>
+                        } else if ( txt.tag === "br" ) { 
+                            return <br key={k}/>
+                        } else if ( txt.tag === "hr" ) { 
+                            return <hr key={k}/>
                         } else if ( li.tag === "img" ) { 
-                            return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>
+                            return <img key={k} className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>
                         } else {
-                            return <span>{txt.text}</span>
+                            return <span  key={k} >{txt.text}</span>
                         }
                     })
                     if (li.tag === "h2"){ return <h2 key={ki}>{textMap}</h2> }
@@ -103,31 +112,31 @@ const ShowBlog = ({blogs, author}) => {
         
         if (bc.tag === "ol" || bc.tag === "ul"){
             const listMap = bc.list.map((li, ki) => {
-                const listItem = li.item.map(txt => {
+                const listItem = li.item.map((txt, k) => {
                     if (txt.tag === "a"){
-                        return <a href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
+                        return <a key={k} href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
                     } else if ( txt.tag === "h2" ) { 
-                        return <h2>{txt.text}</h2>   
+                        return <h2 key={k}>{txt.text}</h2>   
                     } else if ( txt.tag === "sup" ) { 
-                        return <sup>{txt.text}</sup>    
+                        return <sup key={k}>{txt.text}</sup>    
                     } else if ( txt.tag === "sub" ) { 
-                        return <sub>{txt.text}</sub>                   
+                        return <sub key={k}>{txt.text}</sub>                   
                     } else if ( txt.tag === "small" ) { 
-                        return <small>{txt.text}</small>
+                        return <small key={k}>{txt.text}</small>
                     } else if (txt.tag === "i"){
-                        return <i>{txt.text}</i>
+                        return <i key={k}>{txt.text}</i>
                     } else if (txt.tag === "b"){
-                        return <b>{txt.text}</b>
+                        return <b key={k}>{txt.text}</b>
                     } else if (txt.tag === "u"){
-                        return <u>{txt.text}</u>
+                        return <u key={k}>{txt.text}</u>
                     } else if ( txt.tag === "br" ) { 
-                        return <br/>
+                        return <br key={k}/>
                     } else if ( txt.tag === "hr" ) { 
-                        return <hr/>
+                        return <hr key={k}/>
                     } else if (txt.tag === "img"){
-                        return <img className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>  
+                        return <img key={k} className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>  
                     } else {
-                        return <span>{txt.text}</span>
+                        return <span key={k}>{txt.text}</span>
                     }
                 })
                 return <li key={ki}>{listItem}</li>
@@ -208,7 +217,7 @@ const BlogWrapper = styled.div`
         color: var(--purple);
     }
     h4 {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 100;
         color: var(--lightgrey);
     }

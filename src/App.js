@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Redirect, Route }    from 'react-router-dom';
+import { Switch, Route }    from 'react-router-dom';
 import styled               from 'styled-components';
 
 import * as routes          from './constants/routes';
@@ -220,6 +220,268 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `21022022`,
+      endpoint: `What_are_Doshas? `,
+      title: `Get to know Your Body. What are Doshas? `,
+      category: `Nutrition`,
+      publishDate: `Monday, February 21st 2022`,
+      heroImage: `21022022_1.png`,
+      subtext: `Knowing your body better can help you live a more healthy and balanced life.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Doshas are three energies present in every body. They manifest differently in each person, and depending on their constitution, affect various aspects of your lifestyle and health. `,
+        },{
+          tag: `br`
+        },{
+          tag: `br`
+        },{
+          text: `Each body is made up of Kapha (water and earth), Pitta (fire), and Vatta (air and space). In the Eastern science of Ayurveda, there are 5 elements are found in every living being: ether, air, fire, water, earth.`
+        },{
+          tag: `br`
+        },{
+          tag: `br`
+        },{
+          text:`The way each dosha presents in your body can give insight into what YOUR body may need specifically, and how you can make healthy lifestyle choices to live in optimal health. When in balance, each dosha has beautiful strengths. When there is imbalance in your doshas, pain, disease, and mental and physical ailments can manifest.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Pitta:`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `The fire within. Pitta energy controls your metabolism, energy, and digestion. Pitta dominant doshas are often type-A personalities. They are passionate and outgoing. They tend to have a strong appetite, and welcome competition.`
+          },{
+            tag: `br`
+          },{
+            tag: `br`
+          },{
+            text: `When out of balance, someone who is pitta dominant may have indigestion or acid in the belly, and may experience inflammatory conditions. When in balance, they feel as though they can eat anything, and digest well. Imbalance in Pitta can also mean they are quick to anger or short tempered. Pitta’s tend to run hot in body temperature. Other characteristics of Pitta are hot, light, sharp, pungent, and acidic. `,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Vata: `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Water. body composition may be more naturally lean. Vata balances the nervous system and elimination in the body.  Vata’s may tend to have dryer skin or thinner hair. Vata’s are easily cold. Other characteristics of vata are dry, quick, moving, or rough. Vatas in balance tend to be energetic and move around a lot. They are creative spirits and enthusiastic. Vatas love conversation. When out of balance, Vatas will experience stress from all their activity, and perhaps insomnia. Their minds may race. Vata benefits from routine.  `
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `21022022_2.jpg`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Kapha:`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Earth. Kapha dictates structure of the body and how the cells are formed. Kapha protects the body. Kapha types bone structure tends to be larger or more dense. Characteristics are slow and steady, solid, oily, and cold. Kaphas sleep well and have normal digestion. They may cary excess weight. When Kapha every is balanced, they are supportive and loyal. When out of balance, they may become stubborn or resistant to change. Kaphas need stimulation and warmth. `
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `There are numerous nuances to doshas and how they affect your body and personality. So there will be a part 2 of this article! `
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Find you what your dosha is! `
+        },{
+          tag: `a`,
+          link: `https://www.banyanbotanicals.com/info/dosha-quiz/`,
+          text: `Take this quiz`
+        },{
+          text: ` to learn more.` 
+        }]
+      }]
+    },{
+      id: `07022022`,
+      endpoint: `How_to_Get_Grounded`,
+      title: `How to Get Grounded`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, February 7th 2022`,
+      heroImage: `07022022_1.png`,
+      subtext: `Getting grounded can be tough, when the world around you seems to be constantly spinning.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Here are some practices you can use to `
+        },{
+          tag: `a`,
+          link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
+          text: `feel more grounded`
+        },{
+          text:`, when things are chaotic, and when they’re not.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Get in touch with nature.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Literally. Go outside barefoot and have ten toes on the ground. Or place your hands on some dirt or grass. Touch the trunk of a tree. Nature has a powerful ability to help us feel instantly grounded and in the moment.`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Count your breaths. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Count from 1-10, and from 10 back down to 1, while you inhale and exhale. Count every breath. In and out through your nose, per usual. Counting brings you right into the moment. It allows your mind to be in the present right now, versus dwelling on the past or worrying about the future. Take your time. `
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `07022022_2.png`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Repeat this mantra.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `i`,
+            text: `“Where am I? I am here.” “What time is it? The time is now.”`
+          },{
+            tag: `br`
+          },{
+            text: `This mantra activates our consciousness and brings you into the present moment. It’s a reminder that all we have is now, and we should live in the moment. You can practice this mantra seated with your eyes closed, spine straight.`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Mountain pose.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Stand with all ten toes firmly on the ground. Feel your ankles, heels, the balls of your feet all touching the ground. Hands down at your waist, palms facing forward. Take a few deep breaths in through your nose, and out your mouth for cleansing. Get focused, and set an intention for your day. Go forth and be great!`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Take a moment to reflect on your `
+        },{
+          tag: `a`,
+          link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
+          text: `intention`
+        },{
+          text: ` for today, and how it can make you more grounded? Write it down!` 
+        }]
+      }]
+    },{
+      id: `24012022`,
+      endpoint: `Breathing_Exercises_for_Covid_Recovery`,
+      title: `Breathing Exercises for Covid Recovery`,
+      category: `Functional Fitness`,
+      publishDate: `Monday, January 24th 2022`,
+      heroImage: `24012022_1.jpg`,
+      subtext: `Your lungs need lots of love during Covid recovery, and you may not even know it.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `The Covid virus attacks your respiratory system, and especially your lungs. It’s important to keep your lungs active and expanding throughout recovery. Lung capacity is key. Here are three breathing exercises you can practice during and post-Covid to aid in respiratory recovery. 
+          `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Alternate Nostril Breathing.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `This breath is restorative and helps to rebalance the nervous system. It brings calm to your body. Fold in your other fingers, and have only your pinky and thumb out. Cover one nostril at a time. Inhale left, exhale right. Inhale right, exhale left. Repeat up to 9 times for 3 rounds. Remember to always have one nostril covered with your pinky or thumb as you take each breath. `,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Ujjayi Breath.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Ujjayi is a victorious breath! It’s meant to empower the mind and body. It’s great for recovery from any workout, and also calms feelings of anger and frustration. Ujjayi is the ultimate respiratory support, and helps to strengthen your lungs and clear bacteria. Breathe in through your nose, and then exhale through the back of your throat. Think Darth Vader sounds, or ocean sounds. Your mouth remains closed. `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Extended exhale.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `A long exhale really builds your lung capacity. The counting helps with focus and muscle memory. Inhale through your nose for one count. They gradually increase each exhale (through the nose). For example, Inhale for 1, exhale 2. Inhale 1, exhale 3, Inhale 1, exhale 4. And so on, up to 8. Repeat 3 times. `
+          }]
+        },{
+          
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `24012022_2.jpg`,
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `These breathwork practices can be used daily, whether you’re recovering from Covid or not. They help to bring ease and rest to the body, immune system, and nervous system.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Try one of these right now! Challenge your breath, and build your lung capacity back up!`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `i`,
+          text: `Disclaimer: The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment.`
+        }]
+      }]
+    },{
       id: `10012022`,
       endpoint: `5_Yoga_Poses_for_Covid_Recovery`,
       title: `5 Yoga Poses for Covid Recovery`,
