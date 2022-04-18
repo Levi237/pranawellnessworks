@@ -4,6 +4,26 @@ import styled from 'styled-components';
 export default class TeamMembers extends Component {
     state = {
         team: [{
+            name: "Anita B",
+            skills: [
+                "200 HOUR RYT YOGA INSTRUCTORr",
+                "CERTIFIED AYURVEDA COUNSELOR",
+                "INDIVIDUAL AND GROUP FITNESS INSTRUCTOR"
+                ],
+            description: 
+                "Anita is a yoga instructor of 5 years in both Hatha, Vinyasa, and Restorative styles and has been a student of yoga for 10 years. Yoga and meditation were always a part of her life growing up, as she was deeply influenced by her mother who learned from a guru in India. Anita teaches in both one-on-one and group settings and is able to adapt her style to beginner, intermediate, and advanced techniques so that every person is able to feel comfortable and relaxed. Anita is also an Ayurveda counselor, offering knowledge and holistic health recommendations based on Ayurveda, the ancient sister science to yoga."
+            ,
+            image: "anita_b.jpg",
+        },{
+            name: "RC",
+            skills: [
+                "RYT 200"
+                ],
+            description: 
+                "I'm Rahmad Cunningham and most know me as RC. I’ve been practicing yoga for a little over a decade–– off and on at first, due to the demands of my career in Advertising and Marketing, and over time my commitment to the practice grew, as I found the balance and restorative elements of yoga increased my ability to cope, feel grounded, and connect to myself. The high-stress environments and lack of BIPOC safe spaces in the corporate world was enough of a push to lead me to get certified in yoga and bring the practice to my community."
+            ,
+            image: "RC.jpg",
+        },{
             name: "Jackson",
             skills: [
                 "Speaker | Author | Educator",
@@ -28,6 +48,16 @@ export default class TeamMembers extends Component {
             ,
             image: "alexeyeva.png",
         },{
+            name: "Nadirah",
+            skills: [
+                "200 hour RYT Yoga Instructor",
+                "50 hour RYT Continued Ed",
+                "Reiki Master"
+                ],
+            description: 
+                "Nadirah bases her yoga practice as the mind, body, and spirit connecting, through breath and movement. As an entertainer, she is well aware of the many benefits yoga and meditation has to offer in real life situations. The Chicago native wholeheartedly believes that yoga is a journey to everlasting inner peace and oneness with self. This in turn, teaches us to self-love through listening, learning, and laughing, in order to shine our light and inspire others to do the same.",
+            image: "nadirah.png",
+        },{
             name: "Melanie",
             skills: [
                 "200Hour RYT Yoga Instructor",
@@ -48,17 +78,6 @@ export default class TeamMembers extends Component {
             description: 
                 "Keren’s Yoga journey began after years of struggling with her body image. She found a way to connect and love herself through Yoga. After becoming a lawyer in Israel and completing an MBA, she followed her heart and dedicated herself to the practice and study of Yoga. Keren is passionate about passing on the gift of Yoga as a tool for self-transformation and is currently on the path to becoming a Yoga Therapist. Her classes are a balance between a strong and safe physical practice and a tranquil state of mind. In her classes, she weaves in elements of philosophy, pranayama, and meditation."            ,
             image: "keren.png",
-
-        },{
-            name: "Nadirah",
-            skills: [
-                "200 hour RYT Yoga Instructor",
-                "50 hour RYT Continued Ed",
-                "Reiki Master"
-                ],
-            description: 
-                "Nadirah bases her yoga practice as the mind, body, and spirit connecting, through breath and movement. As an entertainer, she is well aware of the many benefits yoga and meditation has to offer in real life situations. The Chicago native wholeheartedly believes that yoga is a journey to everlasting inner peace and oneness with self. This in turn, teaches us to self-love through listening, learning, and laughing, in order to shine our light and inspire others to do the same.",
-            image: "nadirah.png",
 
         }]
     };
@@ -99,6 +118,7 @@ export default class TeamMembers extends Component {
 };
 
 const TeamWrapper = styled.div`
+padding-top: 40px;
 .team-member-container {
     margin-top: 80px;
     position: relative;
