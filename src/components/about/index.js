@@ -9,14 +9,13 @@ export default class AboutMain extends Component {
     aboutStephanie: { 
         title: "Stephanie Singleton",
         subtitle: "Meet the Founder",
-        content: `After spending 7 years as a CNN producer and experiencing a scary panic attack, I decided to leave the fast pace of the newsroom for a life of wellness, and follow my passion for health and fitness. Prana Wellness was born in India, out of my own need for wellness in a challenging work environment. I am also passionate about food and health equity. \n I have been called upon to speak as a wellness expert for: Wonder Women Tech conference, GA Department of Public Health, Myridian Global, Youth Entrepreneurs, Mastermind Yoga Summit and more. I believe that a person’s physical and mental wellbeing can dictate their entire life, so I motivate people to prioritize all around wellness, by being their "Motivator in Chief."`,
-        // content: `After spending 7 years as a CNN producer and experiencing a scary panic attack, Stephanie decided to leave the fast pace of the newsroom for a life of wellness, and follow her passion for health and fitness. Prana Wellness was born in India, out of Stephanie’s own need for wellness in a challenging work environment. She is also passionate about food and health equity. Stephanie is a member of the Philanthropic Leadership Board for EatREAL, a non-profit working to increase kids’ access to real food and education, as well as the Board of Directors for WIFA (Women in Fitness Association). Stephanie has been called upon as a wellness expert to be a speaker for: Wonder Women Tech conference, GA Department of Public Health, Myridian Global, Youth Entrepreneurs, Mastermind Yoga Summit and more. Her features include Essence Magazine, Voyage LA, ShoutoutLA, and various podcasts. Stephanie believes that a person’s physical and mental wellbeing can dictate their entire life, so she motivates people to prioritize all around wellness, by being their "Motivator in Chief."`,
+        content: "After spending 7 years as a CNN producer, Stephanie decided to leave the newsroom chaos for a life of wellness. She traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. In India, Stephanie focused on the study of traditional root practices of yoga, and she now educates all of her clients from that unique perspective. Her business, Prana Wellness, was born in India. Stephanie is an RYT 500hr yoga instructor, Yoga Therapist Rx, and is certified in perinatal yoga and trauma conscious yoga. She studied Yoga Therapy at Loyola Marymount University, and is a member of the Philanthropic Leadership Board for EatREAL, a non-profit working to increase kids’ access to real food and education. As a speaker and wellness educator, Stephanie has been called upon as an expert to speak to organizations like Zip Recruiter, UCSD, USC, IDEA World, and Georgia Department of Public Health. She has been featured in Essence, and on BNC News!",
         image: "about-meet.png",
         skills: [
-            'Yoga Therapy RX',
-            'Bootcamp Instructor',
-            'RYT 300, Meditation + Breathwork',
-            'Prenatal & Postpartum Yoga Certified',
+            `RYT-500`,
+            `Yoga Therapist, YTRx `,
+            `Prenatal and Postpartum Yoga Certified`,
+            `Trauma Conscious Certified`
         ],
         services: ["none"],
         boxOne: "left",
