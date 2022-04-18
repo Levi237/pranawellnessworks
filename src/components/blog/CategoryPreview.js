@@ -7,29 +7,29 @@ export default class CategoryPreview extends Component {
 
     }
     render(){
-        const { selectBlog,  blogs, author } = this.props;
+        const { scrollToTop, selectBlog,  blogs, author } = this.props;
         
         const blogCategory = blogs.filter(blog => blog.category === "Mindfulness & Meditation");
 
         
-        const mapCategory = blogCategory.map((topic, k) => {
-            return(
-                <div key={k}>
-                    <Link to={`/blog/${topic.id}/${topic.endpoint}`}  onClick={(e) => selectBlog(e, topic)}>
-                        <section style={{backgroundImage: `url(/blog/thumbnail/${topic.heroImage})`}}>
-                        </section>
-                        <section>
-                            <h1>{topic.title}</h1>
-                            <p>{topic.subtext}</p>
-                        </section>
-                    </Link>
-                </div>
-            );
-        });
-
+        // const mapCategory = blogCategory.map((topic, k) => {
+        //     return(
+        //         <div key={k}>
+        //             <Link to={`/blog/${topic.id}/${topic.endpoint}`}  onClick={(e) => selectBlog(e, topic)}>
+        //                 <section style={{backgroundImage: `url(/blog/thumbnail/${topic.heroImage})`}}>
+        //                 </section>
+        //                 <section>
+        //                     <h1>{topic.title}</h1>
+        //                     <p>{topic.subtext}</p>
+        //                 </section>
+        //             </Link>
+        //         </div>
+        //     );
+        // });
+        const categoryLink = blogCategory[0].category.replaceAll(' ','_');
         return(
                 <CategoryPreviewWrapper>
-                    <h2>{blogCategory[0].category}</h2>
+                    <h2 onClick={scrollToTop}><Link to={`/blog/${categoryLink}`}>{blogCategory[0].category}</Link></h2>
                     <div>
                         <FeatureBox>
                             <div>
@@ -44,57 +44,47 @@ export default class CategoryPreview extends Component {
                             </div>
                         </FeatureBox>
                         <ThreeRows>
-                            {mapCategory}
-                            {/* <div>
-                                <Link to={`/blog/${oldToNewCategory[1].id}/${oldToNewCategory[1].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[1])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[1].heroImage})`}}>
+                            {/* {mapCategory} */}
+                            <div>
+                                <Link to={`/blog/${blogCategory[1].id}/${blogCategory[1].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[1])}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[1].heroImage})`}}>
                                     </section>
                                     <section>
-                                        <h1>{oldToNewCategory[1].title}</h1>
-                                        <p>{oldToNewCategory[1].subtext}</p>
+                                        <h1>{blogCategory[1].title}</h1>
+                                        <p>{blogCategory[1].subtext}</p>
                                     </section>
                                 </Link>
                             </div>
                             <div>
-                                <Link to={`/blog/${oldToNewCategory[2].id}/${oldToNewCategory[2].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[2])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[2].heroImage})`}}>
+                                <Link to={`/blog/${blogCategory[2].id}/${blogCategory[2].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[2])}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[2].heroImage})`}}>
                                     </section>
                                     <section>
-                                        <h1>{oldToNewCategory[2].title}</h1>
-                                        <p>{oldToNewCategory[2].subtext}</p>
+                                        <h1>{blogCategory[2].title}</h1>
+                                        <p>{blogCategory[2].subtext}</p>
                                     </section>
                                 </Link>
                             </div>
                             <div>
-                                <Link to={`/blog/${oldToNewCategory[3].id}/${oldToNewCategory[3].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[3])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[3].heroImage})`}}>
+                                <Link to={`/blog/${blogCategory[3].id}/${blogCategory[3].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[3])}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[3].heroImage})`}}>
                                     </section>
                                     <section>
-                                        <h1>{oldToNewCategory[3].title}</h1>
-                                        <p>{oldToNewCategory[3].subtext}</p>
+                                        <h1>{blogCategory[3].title}</h1>
+                                        <p>{blogCategory[3].subtext}</p>
                                     </section>
                                 </Link>
                             </div>
                             <div>
-                                <Link to={`/blog/${oldToNewCategory[4].id}/${oldToNewCategory[4].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[4])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[4].heroImage})`}}>
+                                <Link to={`/blog/${blogCategory[4].id}/${blogCategory[4].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[4])}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[4].heroImage})`}}>
                                     </section>
                                     <section>
-                                        <h1>{oldToNewCategory[4].title}</h1>
-                                        <p>{oldToNewCategory[4].subtext}</p>
+                                        <h1>{blogCategory[4].title}</h1>
+                                        <p>{blogCategory[4].subtext}</p>
                                     </section>
                                 </Link>
-                            </div> */}
-                            {/* <div>
-                                <Link to={`/blog/${oldToNewCategory[5].id}/${oldToNewCategory[5].endpoint}`}  onClick={(e) => selectBlog(e, oldToNewCategory[5])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${oldToNewCategory[5].heroImage})`}}>
-                                    </section>
-                                    <section>
-                                        <h1>{oldToNewCategory[5].title}</h1>
-                                        <p>{oldToNewCategory[5].subtext}</p>
-                                    </section>
-                                </Link>
-                            </div> */}
+                            </div>
                         </ThreeRows>
                         <br/><br/>
                     </div>
@@ -190,9 +180,9 @@ const ThreeRows = styled.section`
             }
         }
     }
-    > div:first-of-type {
-        display: none!important;
-    }
+    // > div:first-of-type {
+    //     display: none!important;
+    // }
     @media screen and (max-width: 640px) {
         a {
             width: 100%;
@@ -251,6 +241,13 @@ a {
     font-weight: 100;
     font-size: 2vw;
     border-bottom: 1px solid rgba(0,0,0,.1);
+    > a {
+        color: var(--green);
+        text-decoration: none;
+        &: hover {
+            color: var(--lightgreen);
+        }
+    }
 }
 > div {
     width: 86vw;

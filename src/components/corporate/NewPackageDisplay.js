@@ -11,7 +11,11 @@ const priceArrow = "rgba(150, 91, 165, 0.2)";
 
 const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
     const header = deals.map((deal, k) => {
-        return <DetailTD key={k}><span>{deal.name}</span><br/>${deal.price}</DetailTD>
+        return <DetailTD key={k}>
+            <span>{deal.name}</span>
+            {/* <br/> */}
+            {/* ${deal.price} */}
+        </DetailTD>
     });
     const detail = details.map((detail, k) => {
         return (
@@ -27,9 +31,9 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
     const durations = duration.map((duration,k) => {
         return <td key={k}>{duration}</td>
     });
-    const totalMonthlys = totalMonthly.map((totalMonthly,k) => {
-        return <td key={k}>${totalMonthly}</td>
-    });
+    // const totalMonthlys = totalMonthly.map((totalMonthly,k) => {
+    //     return <td key={k}>${totalMonthly}</td>
+    // });
     return(
         <Container>
             <div>
@@ -38,9 +42,10 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
                     <td></td><td></td><td></td><td></td><td></td>
                 </TitleTR>
                 <ColorBlockTR className="pricing-table">
-                    <td>PRICING TABLE
-                        <br/>
-                        <small>per session:</small>
+                    <td>SERVICES TABLE
+                        {/* PRICING TABLE */}
+                        {/* <br/> */}
+                        {/* <small>per session:</small> */}
                     </td>
                     {header}
                 </ColorBlockTR>
@@ -48,7 +53,7 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
                     <td></td><td></td><td></td><td></td><td></td>
                 </ArrowTR>
                 <tr>
-                    <td><span>&emsp;</span>Monthly Price</td>{totalMonthlys}
+                    {/* <td><span>&emsp;</span>Monthly Price</td>{totalMonthlys} */}
                 </tr>
                 <tr>
                     <td><span>&emsp;</span>Monthly Sessions</td>{durations}

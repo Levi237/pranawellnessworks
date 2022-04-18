@@ -20,6 +20,7 @@ import HeaderMessage        from './components/header/HeaderMessage'
 import HomeMain             from './components/home';
 import BlogMainIndex        from './components/blog';
 import ShowBlog             from './components/blog/ShowBlog';
+import BlogTopicIndex       from './components/blog/CategoryIndex';
 import FAQMain              from './components/faq';
 import AboutMain            from './components/about';
 import EventsMain           from './components/events';
@@ -177,26 +178,26 @@ export default class App extends Component {
       img: "/events/prenatal.png",
       link: "https://mailchi.mp/8c8ba20bd281/prenatal-mondays"
     },{
-      title: "Postpartum Yoga",
-      location: "virtual",
-      info: "Build confidence, strengthen, and renew the body. ",
-      price: "donation based",
-      day: "Tuesday",
-      when: "1st & 3rd ",
-      time: "5p PT",
-      img: "/events/postpartum.png",
-      link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
-    },{
-      title: "Yoga on the Harbor",
-      location: "in San Diego",
-      info: "Join us in person, for a fun community flow!",
-      price: "donation based",
-      day: "Wednesday",
-      when: "1st",
-      time: "6p PT",
-      img: "/events/harbor.png",
-      link: "https://yogaontheharbor.eventbrite.com"
-    },{
+    //   title: "Postpartum Yoga",
+    //   location: "virtual",
+    //   info: "Build confidence, strengthen, and renew the body. ",
+    //   price: "donation based",
+    //   day: "Tuesday",
+    //   when: "1st & 3rd ",
+    //   time: "5p PT",
+    //   img: "/events/postpartum.png",
+    //   link: "https://mailchi.mp/fcd82697d0c7/postpartumtuesdays"
+    // },{
+    //   title: "Yoga on the Harbor",
+    //   location: "in San Diego",
+    //   info: "Join us in person, for a fun community flow!",
+    //   price: "donation based",
+    //   day: "Wednesday",
+    //   when: "1st",
+    //   time: "6p PT",
+    //   img: "/events/harbor.png",
+    //   link: "https://yogaontheharbor.eventbrite.com"
+    // },{
       title: "Yoga Flow",
       location: "virtual",
       info: "Join us from anywhere! All levels yoga flow.",
@@ -220,12 +221,269 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `04042022`,
+      endpoint: `5_Unique_Ways_to_Practice_Self-Care`,
+      title: `5 Unique Ways to Practice Self-Care`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, April 4th, 2022`,
+      heroImage: `04042022_1.jpg`,
+      subtext: `Self-care is the best disease prevention.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Self-care has become a word used regularly when talking about health and wellness. It’s often overused, and much of the focus has been on surface level care, like bubble baths and face masks. These are great! But we have to do the deeper work too. If the past two years have taught us anything, it’s that we must take care of ourselves. Self-care is taking care of yourself- body, mind, and spirit, so that you can be well enough to show up for yourself and others.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `04042022_2.jpg`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `1. Honor Your Body`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `What does this mean exactly? It means to slow down and LISTEN actively to what your body is telling you. It’s always saying something. It will let you know what it needs. Honoring your body can mean taking naps when you feel tired, eating foods that make you feel good and increase your energy, or simply slowing down physically. When your body speaks, listen.`,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `2. Find Your Dosha`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/21022022/What_are_Doshas?`,
+            text: `Doshas` 
+          },{
+            text: ` are the energetic forces that flow through your body- kapha, pitta, and vata. Each of use are typically dominant in one dosha. Once you identify what yours is, and perhaps where there may be some imbalance, you can adjust your lifestyle and feel better. You can eat foods that nourish your particular body makeup, and create a lifestyle and habits that promote and sustain equilibrium and best health.`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `3. Take Mindful Walks`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Do this daily, and your physical body, mind, and nervous system will thank you. Leave your phone behind, or turn it to Do Not Disturb. Don’t count your steps or time yourself for fitness. Just walk. Observe. And breathe. Try to observe one new thing (about the same place) each time you walk. Be mindful of the sounds around you, the colors, the smells, the familiarity of certain places and the emotions they bring up. Take a 15 minute walk right in the middle of your day, daily! It will spark creativity, refresh your energy, and increase mobility and blood flow.`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `4. Stretch`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Our bodies crave movement. Stagnant energy can build up in the body, and cause pain. By incorporating a 5 minute `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/reel/CSMy0X-lprj/?utm_medium=copy_link`,
+            text: `stretch practice`
+          },{
+            text: ` throughout your day, you can increase blood flow and mental focus, allow your muscle fascia to loosen, and increase overall flexibility. Even with a regular workout routine or yoga practice, stretching is essential in order to nurture your body and maintain optimal functionality. Try 5 minutes in the morning, a few standing stretches during work hours away from your desk, and 5 minutes before bed. Feel the difference. `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `5. Learn something new`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Every day! One of the primary habits of highly successful people is their commitment to learning. Learning something new each day can increase your confidence and your awareness. It will allow your mind to wonder, be free, and decrease stress. Learning daily doesn’t have to be hard. You can listen to an hour of a podcast or an audiobook that is mentally enriching in some way. You can spend 30 min using a new language app. You can try a new recipe. You can attend a webinar or event. You can try an activity you’ve never done before. Get curious, and be willing to learn.`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Pick one activity that is completely new to you, and do it this month! ` 
+        }]
+      }]
+    },{
+      id: `21032022`,
+      endpoint: `How_to_Increase_Hip_Mobility`,
+      title: `How to Increase Hip Mobility`,
+      category: `Functional Fitness`,
+      publishDate: `Monday, March 21st, 2022`,
+      heroImage: `21032022_1.jpg`,
+      subtext: `So much stress is stored in our hips. It’s important to keep them lubricated and mobile to avoid future complications or hip replacement.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `In order to increase hip mobility, you must first understand the interconnectedness of the body. Your hips, knees, and low back are all connected, so they should be strengthened and treated simultaneously. `
+        },{
+          tag: `a`,
+          link: `https://pranawellnessworks.com/yoga_therapy`,
+          text: `Yoga Therapy`
+        },{
+          text: `clients who have come to me for knee problems, actually have a hip problem. Pain or injury in the hip joints can leave to overcompensation on one side and put pressure on the knees. Over time, this will diminish your cartilage tissue in the knee. Similarly, clients who experience low back pain, often develop hip issues. `
+        },{
+          tag: `br`
+        },{
+          text: `So what’s the solution to this compounding pain? Increase your hip mobility and strengthen your knees and low back.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Deep relaxation and long holds.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Deep relaxation and long holds. Here are a few poses that promote opening of the hips. Use props such as blankets, yoga blocks, or bolsters, to support your body. It’s important to relax into these poses and hold them for longer periods of time. 3-5 minutes each. With every exhale, allow your body to soften a little more, and become open. `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/p/CZNPN7kB7nT/`,
+            text: `By resting in these poses`
+          },{
+            text: `, your hips will alert you to where the tightness may be, and where you can potentially go deeper.`,
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `21032022_2.jpg`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Images courtesy of Tummee.com`
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Knees. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Strengthening the back of your knees is key to stabilizing the hip joints.  Lie on your back and grab the back of your hamstring for some leg extensions. Bending the knees in and out. This exercise can also be done in a chair. `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Lower Back. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Pain in your lower back can cause a gait discrepancy in the way you walk. Going on walks regularly, practicing glute bridges, and standing forward folds will all help to release low back tension. `
+          },{
+            tag: `br`
+          },{
+            tag: `br`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Hold each of the pictured poses for 3 minutes today, and observe how your hips feel before and after. ` 
+        }]
+      }]
+    },{
+      id: `07032022`,
+      endpoint: `3_Ways_to_Decrease_Anxiety`,
+      title: `3 Ways to Decrease Anxiety`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, March 7th, 2022`,
+      heroImage: `07032022_1.jpg`,
+      subtext: `Mental health struggles are at an all-time high, and anxiety is the number one culprit.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Anxiety can manifest in both the physical and mental body. It can lead to chronic pain and even disease if left unchecked. My work in `
+        },{
+          tag: `a`,
+          link: `https://pranawellnessworks.com/yoga_therapy`,
+          text: `Yoga Therapy`
+        },{
+          text: ` has focused on discovering the root cause of anxiety, rather than just treating the symptoms. In the last two years, anxiety is at an all-time high in the world. I have seen this first hand with my clients. `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Reframe. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `A great way to decrease anxiety is to acknowledge that it is something you’re experiencing in this moment, it does not belong to you. Anxiety, like other emotional occurrences, is not permanent. It is not a part of your identity. It does not define you. When you’re able to view anxiety as a temporary experience, you’re better able to see its end. Instead of “I have anxiety,” let’s reframe to say “I am experiencing anxiety right now, but it will pass.” `,
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Check your breath. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Your nose is for breathing and your mouth is for eating! Breathing in and out through your nose helps to calm your nervous system and replenish energy that has been depleted from the body. `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/reel/CZH6H6CBN_e/?utm_medium=copy_link`,
+            text: `Nostril breathing`
+          },{
+            text: ` promotes calm, decreases stress quickly, and allows for rest. Are you sitting at your desk breathing out of your mouth right now? Close it! `
+          }]
+        },{
+          tag: `h2`,
+          content: [{
+            tag: `b`,
+            text: `Don't write the story yet. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `By definition, anxiety is the fear of something that has yet to happen. That fear becomes debilitating, and interrupts the normal function of your nervous system. When your brain fixates on something that has not happened yet, the outcomes are endless, and typically not indicative of the truth. What you focus on manifests, inevitably. Instead of assigning an outcome, try staying in the present moment through your breath. You have the ability to be the co-creator in your life. Manifest,what you DO want to see happen.`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Take some time to sit and write down a page or more of what your perfect day would look like. Be very specific and detailed! Sky's the limit! ` 
+        }]
+      }]
+    },{
       id: `21022022`,
       endpoint: `What_are_Doshas? `,
       title: `Get to know Your Body. What are Doshas? `,
       category: `Nutrition`,
       publishDate: `Monday, February 21st 2022`,
-      heroImage: `21022022_1.png`,
+      heroImage: `21022022_1.jpg`,
       subtext: `Knowing your body better can help you live a more healthy and balanced life.`,
       copy: [{
         tag: `p`,
@@ -278,7 +536,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `21022022_2.jpg`,
+            src: `21022022_2.jpg`
           }]
         },{
           tag: `h2`,
@@ -318,7 +576,7 @@ export default class App extends Component {
       title: `How to Get Grounded`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, February 7th 2022`,
-      heroImage: `07022022_1.png`,
+      heroImage: `07022022_1.jpg`,
       subtext: `Getting grounded can be tough, when the world around you seems to be constantly spinning.`,
       copy: [{
         tag: `p`,
@@ -1300,200 +1558,123 @@ export default class App extends Component {
         // }]
       }]   
     }]    
-  },{
-      id: `04-20092021`,
-      endpoint: `10_Ways_to_Be_Mindful`,
-      category: `Mindfulness & Meditation`,
-      title: `10 Ways to Be Mindful`,
-      publishDate: `Monday, September 20th, 2021`,
-      heroImage: `20092021_1.jpg`,
-      subtext: `Maintaining peace in the midst of chaos is a skill we all need to develop.`,
-      copy: [{
-        tag: `ol`,
-        list: [{
-          item: [{
-            tag: `h2`,
-            text: `Always breathe.`,
-          },{
-            text: ` The best thing you can do for your mind and body is take a deep breath. Breathing in and out through your nose sends a signal of calm to your nervous system and activates its parasympathetic receptors. This allows the body to rest and replenish.`
-          }]
-        },{
-          item: [{
-            tag: `h2`,
-            text: `Check your energy.`
-          },{
-            text: ` How are you showing up to your next meeting, phone call, or outing with friends or family? Do you need a quick mental reset before interacting? If so, this starts within. Do a quick `
-          },{
-            tag: `a`,
-            link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
-            text: `self-study`
-          },{
-            text: ` or check-in to ask yourself how and what you’re feeling.`
-          }]
-        },{
-          item: [{
-            tag: `h2`,
-            text: `Food for thought.`
-          },{
-            text: ` Food fuels your mind and body. If you eat like crap, chances are you will feel like it too, and your brain will reflect that same garbage. Eat for YOU. Making smart food choices not only creates physical ease, but clears your mind of brain fog.`
-          }]
-        },{
-          item: [{
-            tag: `h2`,
-            text: `Are you socially aware?`
-          },{
-            text: ` How does social media make you feel? Do you feel jealous, triggered, or frustrated by some things on your feed? It’s time for a change! Mute or unfollow accounts that don’t make you feel good. Follow more `
-          },{
-            tag: `a`,
-            link: `https://www.instagram.com/pranawellnessworks/`,
-            text: `accounts`
-          },{
-            text: ` that give you the warm n fuzzies. Stop. Scrolling. All. Day! Social is great, but endless scrolling is not.`
-          }]
-        },{
-          item: [{
-            tag: `h2`,
-            text: `News Cycle.`
-          },{
-            text: ` As a former CNN producer, believe me, I know news. But the truth is, these days so much of what we consume is toxic to our mind. The television “tells-you-a-vision” which can stifle your own ability to co-create with the universe. Consuming the same cycles of news can have a daunting effect on your mental health. News, in moderation.`
-          }]
-        },{
-          item: [{
-            tag: `h2`,
-            text: `Habits are contagious.`
-          },{
-            text: ` It takes 21 days to form a habit, good or bad. The things we choose to do or not do on a daily basis affects our ability to stay healthy mentally and physically. When ditching a bad habit, make sure you replace it with something positive and helpful first.Create small, `
-          },{
-            tag: `a`,
-            link: `https://pranawellnessworks.com/blog/00-26072021/5_Ways_to_Create_a_Powerful_Morning`,
-            text: `healthy habits`
-          },{
-            text: ` that lead to beg change.`
-        }]
-      },{
-        item: [{
-          tag: `h2`,
-          text: `Be kind.`
-        },{
-          text: ` Treat others how you want to be treated. Simple. The world is a reflection of you. If you spread kindness, the Universe will reward you. Be the change you wish to see in the world.`
-        }]
-      },{
-        item: [{
-          tag: `h2`,
-          text: `Self-care is the best care.`
-        },{
-          text: ` Schedule it! Make it a priority. Do something different to allow yourself some luxury each month. In order to expand your mindfulness, you must come from a space of overflow in your own mind, body, and spirit.`
-        }]
-      },{
-        item: [{
-          tag: `h2`,
-          text: `Rest up!`
-        },{
-          text: ` Let’s let go of this mind set that you must fill every minute, of every day, with “productivity.” Let it go! This mindset in itself is not productive. Honor your body. Allow time for intentional rest so you can be renewed and prepared to face the day ahead and crush your goals. `
-        }]
-      },{
-        item: [{
-          tag: `h2`,
-          text: `Boundaries. Boundaries. Boundaries.`
-        },{
-          text: ` The word NO is a complete sentence. Remember that. You can learn to give either an enthusiastic yes, or an empowered no. There is no in between. Decide what you need from yourself and from others. Define your “hard stops.” Be clear and vocalize these boundaries.`
-        },{
-          tag: `br`,
-        },{
-          tag: `br`,
-        },{
-          tag: `img`,
-          src: `20092021_2.jpg`,
-          class: `wide`,
-        }]
-      }]
     },{
-      tag: `p`,
-      content: [{
-        text: `These `,
-      },{
-        tag: `a`,
-        link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
-        text: `mindfulness tips`,
-      },{
-        text: ` will substantially change your preparedness when you meet challenges. You will be ready! Remember, prevention is better than the cure.`
-      }]
-    },{
-      tag: `p`,
-      content: [{
-        tag: `b`,
-        text: `The Challenge: ` 
-      },{ 
-        text: `  Read through these again. Reflect on each one, and journal about how you are currently feeling about each one. How can you do better?`
-      }]
-    }]    
-  },{
-      id: `03-06092021`,
-      endpoint: `4_Ways_to_Elevate_Your_Mindset`,
-      category: `Mindfulness & Meditation`,
-      title: `4 Ways to Elevate Your Mindset`,
-      publishDate: `Monday, September 6th, 2021`,
-      heroImage: `06092021_1.jpg`,
-      subtext: `The law of attraction is real! Invite in what you want and need.`,
-      copy: [{
-        tag: `h2`,
-        content: [{
-          text: `What you resist persists.`
+        id: `04-20092021`,
+        endpoint: `10_Ways_to_Be_Mindful`,
+        category: `Mindfulness & Meditation`,
+        title: `10 Ways to Be Mindful`,
+        publishDate: `Monday, September 20th, 2021`,
+        heroImage: `20092021_1.jpg`,
+        subtext: `Maintaining peace in the midst of chaos is a skill we all need to develop.`,
+        copy: [{
+          tag: `ol`,
+          list: [{
+            item: [{
+              tag: `h2`,
+              text: `Always breathe.`,
+            },{
+              text: ` The best thing you can do for your mind and body is take a deep breath. Breathing in and out through your nose sends a signal of calm to your nervous system and activates its parasympathetic receptors. This allows the body to rest and replenish.`
+            }]
+          },{
+            item: [{
+              tag: `h2`,
+              text: `Check your energy.`
+            },{
+              text: ` How are you showing up to your next meeting, phone call, or outing with friends or family? Do you need a quick mental reset before interacting? If so, this starts within. Do a quick `
+            },{
+              tag: `a`,
+              link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+              text: `self-study`
+            },{
+              text: ` or check-in to ask yourself how and what you’re feeling.`
+            }]
+          },{
+            item: [{
+              tag: `h2`,
+              text: `Food for thought.`
+            },{
+              text: ` Food fuels your mind and body. If you eat like crap, chances are you will feel like it too, and your brain will reflect that same garbage. Eat for YOU. Making smart food choices not only creates physical ease, but clears your mind of brain fog.`
+            }]
+          },{
+            item: [{
+              tag: `h2`,
+              text: `Are you socially aware?`
+            },{
+              text: ` How does social media make you feel? Do you feel jealous, triggered, or frustrated by some things on your feed? It’s time for a change! Mute or unfollow accounts that don’t make you feel good. Follow more `
+            },{
+              tag: `a`,
+              link: `https://www.instagram.com/pranawellnessworks/`,
+              text: `accounts`
+            },{
+              text: ` that give you the warm n fuzzies. Stop. Scrolling. All. Day! Social is great, but endless scrolling is not.`
+            }]
+          },{
+            item: [{
+              tag: `h2`,
+              text: `News Cycle.`
+            },{
+              text: ` As a former CNN producer, believe me, I know news. But the truth is, these days so much of what we consume is toxic to our mind. The television “tells-you-a-vision” which can stifle your own ability to co-create with the universe. Consuming the same cycles of news can have a daunting effect on your mental health. News, in moderation.`
+            }]
+          },{
+            item: [{
+              tag: `h2`,
+              text: `Habits are contagious.`
+            },{
+              text: ` It takes 21 days to form a habit, good or bad. The things we choose to do or not do on a daily basis affects our ability to stay healthy mentally and physically. When ditching a bad habit, make sure you replace it with something positive and helpful first.Create small, `
+            },{
+              tag: `a`,
+              link: `https://pranawellnessworks.com/blog/00-26072021/5_Ways_to_Create_a_Powerful_Morning`,
+              text: `healthy habits`
+            },{
+              text: ` that lead to beg change.`
+          }]
         },{
-          tag: `br`,
+          item: [{
+            tag: `h2`,
+            text: `Be kind.`
+          },{
+            text: ` Treat others how you want to be treated. Simple. The world is a reflection of you. If you spread kindness, the Universe will reward you. Be the change you wish to see in the world.`
+          }]
         },{
-          tag: `small`,
-          text: `This is true, good or bad.`,
+          item: [{
+            tag: `h2`,
+            text: `Self-care is the best care.`
+          },{
+            text: ` Schedule it! Make it a priority. Do something different to allow yourself some luxury each month. In order to expand your mindfulness, you must come from a space of overflow in your own mind, body, and spirit.`
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Rest up!`
+          },{
+            text: ` Let’s let go of this mind set that you must fill every minute, of every day, with “productivity.” Let it go! This mindset in itself is not productive. Honor your body. Allow time for intentional rest so you can be renewed and prepared to face the day ahead and crush your goals. `
+          }]
+        },{
+          item: [{
+            tag: `h2`,
+            text: `Boundaries. Boundaries. Boundaries.`
+          },{
+            text: ` The word NO is a complete sentence. Remember that. You can learn to give either an enthusiastic yes, or an empowered no. There is no in between. Decide what you need from yourself and from others. Define your “hard stops.” Be clear and vocalize these boundaries.`
+          },{
+            tag: `br`,
+          },{
+            tag: `br`,
+          },{
+            tag: `img`,
+            src: `20092021_2.jpg`,
+            class: `wide`,
+          }]
         }]
       },{
         tag: `p`,
         content: [{
-          text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
-        }]
-      },{
-        tag: `section`,
-        list: [{
-          tag: `h2`,
-          content: [{
-            text: `Turn the negative into affirmative.`,
-          }]
+          text: `These `,
         },{
-          tag: `p`,
-          content: [{
-            text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
-          }]
+          tag: `a`,
+          link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+          text: `mindfulness tips`,
         },{
-          tag: `h2`,
-          content: [{
-            text: `Speak it into existence.`,
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
-          }]
-        },{
-          tag: `h2`,
-          content: [{
-            text: `Start from abundance, not lack.`,
-          }]
-        },{
-          tag: `p`,
-          content: [{
-            text: `This is a tough one. I had to learn this lesson myself. `
-          },{
-            tag: `a`,
-            link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
-            text: `Mindset`
-           },{
-             text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
-          }]
-        },{
-          tag: `img`,
-          content: [{
-            src: `06092021_2.png`,
-            class: `wide`,
-          }]
+          text: ` will substantially change your preparedness when you meet challenges. You will be ready! Remember, prevention is better than the cure.`
         }]
       },{
         tag: `p`,
@@ -1501,10 +1682,87 @@ export default class App extends Component {
           tag: `b`,
           text: `The Challenge: ` 
         },{ 
-          text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
+          text: `  Read through these again. Reflect on each one, and journal about how you are currently feeling about each one. How can you do better?`
         }]
-    }]    
-  },{
+      }]    
+    },{
+        id: `03-06092021`,
+        endpoint: `4_Ways_to_Elevate_Your_Mindset`,
+        category: `Mindfulness & Meditation`,
+        title: `4 Ways to Elevate Your Mindset`,
+        publishDate: `Monday, September 6th, 2021`,
+        heroImage: `06092021_1.jpg`,
+        subtext: `The law of attraction is real! Invite in what you want and need.`,
+        copy: [{
+          tag: `h2`,
+          content: [{
+            text: `What you resist persists.`
+          },{
+            tag: `br`,
+          },{
+            tag: `small`,
+            text: `This is true, good or bad.`,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
+          }]
+        },{
+          tag: `section`,
+          list: [{
+            tag: `h2`,
+            content: [{
+              text: `Turn the negative into affirmative.`,
+            }]
+          },{
+            tag: `p`,
+            content: [{
+              text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
+            }]
+          },{
+            tag: `h2`,
+            content: [{
+              text: `Speak it into existence.`,
+            }]
+          },{
+            tag: `p`,
+            content: [{
+              text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
+            }]
+          },{
+            tag: `h2`,
+            content: [{
+              text: `Start from abundance, not lack.`,
+            }]
+          },{
+            tag: `p`,
+            content: [{
+              text: `This is a tough one. I had to learn this lesson myself. `
+            },{
+              tag: `a`,
+              link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
+              text: `Mindset`
+            },{
+              text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
+            }]
+          },{
+            tag: `img`,
+            content: [{
+              src: `06092021_2.png`,
+              class: `wide`,
+            }]
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `The Challenge: ` 
+          },{ 
+            text: ` Make it real! Take some time to write down what a day in your ideal life would look like. Be detailed! What would your day look like, what are your routines, who do you see, and where do you go? Hour by hour.`
+          }]
+      }]    
+    },{
       id: `02-23082021`,
       endpoint: `How_to_Sleep_Better`,
       title: `How to Sleep Better`,
@@ -1846,9 +2104,13 @@ export default class App extends Component {
             <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <ShowBlog blogs={blogs} blog={showBlog} author={authors[0]}/> 
           </> }/>
+          <Route path={`/blog/:id`} exact render={() => <>
+            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <BlogTopicIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/>
+          </> }/>
           <Route path={routes.BLOG} render={() => <>
             <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-            <BlogMainIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
+            <BlogTopicIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
           </> }/> 
           <Route path={routes.FAQ} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
@@ -1943,4 +2205,4 @@ const ParentWrapper = styled.div`
   text-align: center;
   @media screen and (max-width: 945px) {
   }
-`;
+`

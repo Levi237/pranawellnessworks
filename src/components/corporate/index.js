@@ -7,20 +7,24 @@ import PranaDifference      from './PranaDifference';
 export default class CorporateMain extends Component {
   state = {
       deals: [{
-        name: "Namaste",
-        price: "300"
+        name: "Namaste"
+        ,
+        // price: "300"
       },{
-        name: "Karma",
-        price: "250"
+        name: "Karma"
+        ,
+        // price: "250"
       },{
-        name: "Guru",
-        price: "200"
+        name: "Guru"
+        ,
+        // price: "200"
       },{
-        name: "Samadhi",
-        price: "100"
+        name: "Samadhi"
+        ,
+        // price: "100"
       }],
       duration: ["1","4","8","20"],
-      totalMonthly: ["300", "1000", "1600", "2000"],
+      // totalMonthly: ["300", "1000", "1600", "2000"],
       details: [
         {
           product: "Mix and match classes",

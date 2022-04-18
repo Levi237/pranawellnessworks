@@ -1,29 +1,25 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React            from 'react';
+import styled           from 'styled-components';
 
-import FeaturedBlogHeader from './FeatureBlogHeader';
-import TwoRows from './TwoRows';
-import CategoryPreview from './CategoryPreview';
-import FourBlogBlocks from './FourBlogBlocks';
+import FeaturedBlog     from './FeatureBlogHeader';
+import TwoRows          from './TwoRows';
+import CategoryPreview  from './CategoryPreview';
+import BlogBlocks       from './BlogBlocks';
 
-export default class BlogMainIndex extends Component {
-    state = {
+const BlogMainIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
 
-    }
-    render(){
-        const { scrollToTop, selectBlog,  blogs, author } = this.props;
+    const blogBlogsList = blogs.filter(blog => blog.category !== "Mindfulness & Meditation")
 
-        return(
-            <BlogIndexWrapper>
-                <FeaturedBlogHeader scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
-                <br/><br/><br/>
-                <TwoRows selectBlog={selectBlog}  blogs={blogs} author={author}/>
-                <FourBlogBlocks  blogs={blogs} selectBlog={selectBlog} author={author}/>
-                <CategoryPreview blogs={blogs} selectBlog={selectBlog} author={author}/>
-                <br/><br/><br/><br/>
-            </BlogIndexWrapper>
-        );
-    };
+    return(
+        <BlogIndexWrapper>
+            <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
+            <br/><br/><br/>
+            <TwoRows selectBlog={selectBlog}  blogs={blogs} author={author}/>
+            <BlogBlocks  blogs={blogBlogsList} selectBlog={selectBlog} author={author}/>
+            <CategoryPreview scrollToTop={scrollToTop} blogs={blogs} selectBlog={selectBlog} author={author}/>
+            <br/><br/><br/><br/>
+        </BlogIndexWrapper>
+    );
 };
 
 const BlogIndexWrapper = styled.div`
@@ -49,3 +45,5 @@ const BlogIndexWrapper = styled.div`
 
     }
 `;
+
+export default BlogMainIndex
