@@ -699,7 +699,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `07022022_2.png`,
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -862,7 +862,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_2.png`,
+            num: 2
           }]
         },{
           tag: `hr`,
@@ -882,7 +882,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_3.png`,
+            num: 3
           }]
         },{
           tag: `hr`,
@@ -908,7 +908,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_4.png`,
+            num: 4
           }]
         },{
           tag: `hr`,
@@ -928,7 +928,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_5.png`,
+            num: 5
           }]
         },{
           tag: `hr`,
@@ -951,7 +951,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `small`,
-            src: `10012022_6.png`,
+            num: 6
           }]
         },{
           tag: `hr`,
@@ -1742,8 +1742,8 @@ export default class App extends Component {
             tag: `br`,
           },{
             tag: `img`,
-            src: `20092021_2.jpg`,
-            class: `wide`,
+            num: 2,
+            class: `wide`
           }]
         }]
       },{
@@ -1830,8 +1830,8 @@ export default class App extends Component {
           },{
             tag: `img`,
             content: [{
-              src: `06092021_2.png`,
               class: `wide`,
+              num: 2
             }]
           }]
         },{
@@ -1907,7 +1907,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `23082021_2.png`,
+            num: 2
           }]
         }]
       },{
@@ -2079,8 +2079,8 @@ export default class App extends Component {
              text: ` The “monkey mind” is always busy! We are human, so we cannot stop the mind from running, unfortunately. This is a myth. But we can prevent the mind from controlling us, and learn to make sense of it all. By writing out your thoughts, ideas, worries, lists, and goals on paper, you allow them to be released from your brain.`,
           },{
             tag: `img`,
-            src: `26072021_2.jpg`,
-            class: `wide`,
+            num: 2,
+            class: `wide`
            },{
              text: `Dedicate some time in the morning to incorporate some self-study, or svadhyaya. Observe your thoughts and feelings, and put them on paper. One simple journaling practice that involves very little direction is “brain dumping.” This means you simply write down any and everything that comes to mind. It can be lists, ideas, frustrations, diary entries, food journals, or simply an account of your feelings at the moment. Name them. Whatever is allowing your monkey mind to race, put it on the paper. No journal prompts, no deep questions, just you.`,
             }],
