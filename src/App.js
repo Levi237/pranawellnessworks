@@ -221,6 +221,88 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `02052022`,
+      endpoint: `Mental_Health_at_Work`,
+      title: `Mental Health at Work`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, May 2nd, 2022`,
+      heroImage: `02052022_1.jpg`,
+      subtext: `Employee health and wellbeing should be top priority.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Workplace stress is at an all-time high. Employers struggle to retain their employees, because the environment their working in is not conducive to decreasing stress. American employers spend over $3 billion each year on healthcare costs, due to stress related illnesses. Employees are sick mentally and physically.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            text: `Promoting health and `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/services_corporate`,
+            text: `wellness at work`
+          },{
+            text: ` can help increase productivity and decrease stress. It will uplevel employee engagement and morale, and promote healthy work-life balance. Employees are more creative when they’re rested and healthy. `,
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `You must be an advocate for yourself! Inquire more about your health benefits, wellness program and incentives, EAP, team building. If your company doesn’t have any of these things, ask, WHY NOT?! You can set the new standard and `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/services_corporate`,
+            text: `suggest them`
+          },{
+            text: ` to your team. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Don’t eat lunch at your desk, while working. Walk away, take a break. Consume your food with mindfulness and slowness in mind. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Promote open and clear communication, but also set healthy boundaries with yourself, your co-workers, and with your boss. Protect your energy at work by not letting others dictate how you show up. You can be mindful of your energy by `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/reel/CcOBHXBJjCA/?igshid=NDA1YzNhOGU=`,
+            text: `practicing breathwork`
+          },{
+            text: ` while working, and taking `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/tv/CbX87_JFQVo/?igshid=NDA1YzNhOGU=`,
+            text: `short meditation breaks`
+          },{
+            text: `. This will help to calm the nervous system, increase focus, and make you more present. `
+           }]
+        },{
+          tag: `p`,
+          content: [{
+            text: `Get up and move often! Sitting is the new cigarette and really increases the risk of long-term pain. Take short movement or stretch breaks every hour.`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            src: `02052022_2.jpg`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Next time you’re feeling stressed at work, take 5 minutes to walk about from your computer, take 3 deep breaths, and do a short stretch.  ` 
+        }]
+      }]
+    },{
       id: `04042022`,
       endpoint: `5_Unique_Ways_to_Practice_Self-Care`,
       title: `5 Unique Ways to Practice Self-Care`,
@@ -1003,7 +1085,7 @@ export default class App extends Component {
         content: [{
           text: `Every human wants to be happy. You are in charge of cultivating more joy in your life, by spending more time on things you love. Recall the moments where you felt immense peace and happiness, and go there. Here are 4 ways to `
         },{
-          type: `a`,
+          tag: `a`,
           link: `https://www.instagram.com/reel/CXUKfKUFp_3/`,
           text: `increase joy.`
         }]
@@ -1082,7 +1164,7 @@ export default class App extends Component {
         content: [{
           text: `As we close out this month of THANKS, it’s important to highlight the benefits of practicing gratitude as a way to `
         },{
-          type: `a`,
+          tag: `a`,
           link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
           text: `reduce stress.`
         }]
@@ -1091,7 +1173,7 @@ export default class App extends Component {
         content: [{
           text: `My mentor and Director of the Yoga Therapy Program, Dr. Larry Payne, always says there is nothing like a daily dose of Vitamin G! He’s so right. When you `
         },{
-          type: `a`,
+          tag: `a`,
           link: `https://www.instagram.com/p/CWq1OyhluiR/`,
           text: `practice gratitude daily`
         },{
@@ -1147,7 +1229,7 @@ export default class App extends Component {
         content: [{
           text: `Gratitude is the attitude! I live by this value, so eloquently stated by my favorite artist, `
         },{
-          type: `a`,
+          tag: `a`,
           link: `https://open.spotify.com/track/6VWCeBktNMGdTTy5LxHj69?si=3ef0c84971f84d10`,
           text: `Londrelle`
         },{
