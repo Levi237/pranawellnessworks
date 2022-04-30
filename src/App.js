@@ -221,7 +221,7 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
-      id: `02052022`,
+      id: `220502`,
       endpoint: `Mental_Health_at_Work`,
       title: `Mental Health at Work`,
       category: `Mindfulness & Meditation`,
@@ -288,7 +288,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `02052022_2.jpg`
+            num: 2
           }]
         }]
       },{
@@ -303,7 +303,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `04042022`,
+      id: `220404`,
       endpoint: `5_Unique_Ways_to_Practice_Self-Care`,
       title: `5 Unique Ways to Practice Self-Care`,
       category: `Mindfulness & Meditation`,
@@ -321,7 +321,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `04042022_2.jpg`
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -401,7 +401,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `21032022`,
+      id: `220321`,
       endpoint: `How_to_Increase_Hip_Mobility`,
       title: `How to Increase Hip Mobility`,
       category: `Functional Fitness`,
@@ -446,7 +446,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `21032022_2.jpg`
+            num: 2
           }]
         },{
           tag: `p`,
@@ -490,7 +490,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `07032022`,
+      id: `220307`,
       endpoint: `3_Ways_to_Decrease_Anxiety`,
       title: `3 Ways to Decrease Anxiety`,
       category: `Mindfulness & Meditation`,
@@ -560,7 +560,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `21022022`,
+      id: `220221`,
       endpoint: `What_are_Doshas? `,
       title: `Get to know Your Body. What are Doshas? `,
       category: `Nutrition`,
@@ -618,7 +618,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `21022022_2.jpg`
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -653,7 +653,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `07022022`,
+      id: `220207`,
       endpoint: `How_to_Get_Grounded`,
       title: `How to Get Grounded`,
       category: `Mindfulness & Meditation`,
@@ -745,7 +745,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `24012022`,
+      id: `220124`,
       endpoint: `Breathing_Exercises_for_Covid_Recovery`,
       title: `Breathing Exercises for Covid Recovery`,
       category: `Functional Fitness`,
@@ -794,11 +794,10 @@ export default class App extends Component {
             text: `A long exhale really builds your lung capacity. The counting helps with focus and muscle memory. Inhale through your nose for one count. They gradually increase each exhale (through the nose). For example, Inhale for 1, exhale 2. Inhale 1, exhale 3, Inhale 1, exhale 4. And so on, up to 8. Repeat 3 times. `
           }]
         },{
-          
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `24012022_2.jpg`,
+            num: 2
           }]
         }]
       },{
@@ -822,7 +821,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `10012022`,
+      id: `220110`,
       endpoint: `5_Yoga_Poses_for_Covid_Recovery`,
       title: `5 Yoga Poses for Covid Recovery`,
       category: `Functional Fitness`,
@@ -987,7 +986,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `27122021`,
+      id: `211227`,
       endpoint: ` 4_Natural_Supplements_to_Boost_Immunity`,
       title: `4 Natural Supplements to Boost Immunity`,
       category: `Nutrition`,
@@ -1049,7 +1048,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `27122021_2.jpg`,
+            num: 2
           }]
         }]
       },{
@@ -1073,7 +1072,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `13122021`,
+      id: `211213`,
       endpoint: `How_to_Increase_Joy`,
       title: `How to Increase Joy`,
       category: `Mindfulness & Meditation`,
@@ -1139,7 +1138,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `13122021_2.jpg`,
+            num: 2
           }]
         }]
       },{
@@ -1152,7 +1151,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `09-29112021`,
+      id: `211129`,
       endpoint: `How_to_Practice_Gratitude`,
       title: `How to Practice Gratitude`,
       category: `Mindfulness & Meditation`,
@@ -1200,7 +1199,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `29112021_2.jpg`,
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -1245,7 +1244,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `08-15112021`,
+      id: `211115`,
       endpoint: `What_is_Yoga`,
       title: ` What is Yoga?`,
       category: `Yoga`,
@@ -1278,7 +1277,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `15112021_2.jpg`,
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -1338,7 +1337,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `07-01112021`,
+      id: `211101`,
       endpoint: `4_Foods_to_Improve_Gut_Health`,
       title: `4 Foods to Improve Gut Health`,
       category: `Nutrition`,
@@ -1385,7 +1384,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `01112021_2.jpg`,
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -1420,7 +1419,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `06-18102021`,
+      id: `211018`,
       endpoint: `How_Movement_Can_Increase_Longevity`,
       title: `How Movement Can Increase Longevity`,
       category: `Functional Fitness `,
@@ -1478,7 +1477,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `18102021_2.jpg`,
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -1533,7 +1532,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `05-04102021`,
+      id: `211004`,
       endpoint: `Yoga_for_Better_Sex`,
       category: `Yoga`,
       title: `Yoga for Better Sex`,
@@ -1600,7 +1599,7 @@ export default class App extends Component {
             tag: `br`
           },{
             tag: `img`,
-            src: `04102021_2.jpg`,
+            num: 2,
             class: `wide`
           }]
         },{
@@ -1641,7 +1640,7 @@ export default class App extends Component {
       }]   
     }]    
     },{
-        id: `04-20092021`,
+        id: `210920`,
         endpoint: `10_Ways_to_Be_Mindful`,
         category: `Mindfulness & Meditation`,
         title: `10 Ways to Be Mindful`,
@@ -1768,7 +1767,7 @@ export default class App extends Component {
         }]
       }]    
     },{
-        id: `03-06092021`,
+        id: `210906`,
         endpoint: `4_Ways_to_Elevate_Your_Mindset`,
         category: `Mindfulness & Meditation`,
         title: `4 Ways to Elevate Your Mindset`,
@@ -1845,7 +1844,7 @@ export default class App extends Component {
           }]
       }]    
     },{
-      id: `02-23082021`,
+      id: `210823`,
       endpoint: `How_to_Sleep_Better`,
       title: `How to Sleep Better`,
       category: `Mindfulness & Meditation`,
@@ -1926,7 +1925,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `01-09082021`,
+      id: `210809`,
       endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
       category: `Mindfulness & Meditation`,
@@ -1977,7 +1976,7 @@ export default class App extends Component {
           tag: `img`,
           content: [{
             class: `wide`,
-            src: `09082021_2.jpg`,
+            num: 2
           }]
         },{
           tag: `h2`,
@@ -2018,7 +2017,7 @@ export default class App extends Component {
         }]
       }]
     },{
-      id: `00-26072021`,
+      id: `210726`,
       endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
       category: `Mindfulness & Meditation`,
       keyWords: [`meditation`, `health`],

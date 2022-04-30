@@ -15,7 +15,7 @@ const ShowBlog = ({blogs, author}) => {
     const renderBlog = blog.copy.map((bc, key) => {
 
         if (bc.tag === "img"){
-            return <img key={key} className={`blog-image ${bc.class}`} src={`/blog/${bc.src}` }alt={bc.src}/>
+            return <img key={key} className={`blog-image ${bc.class}`} src={`/blog/${id}_${bc.num}.jpg` } alt={`${id}_${bc.num}`}/>
         }
         if (bc.tag === "i"){
             return <i key={key} >{bc.content[0].text}</i>
@@ -90,7 +90,7 @@ const ShowBlog = ({blogs, author}) => {
                         } else if ( txt.tag === "hr" ) { 
                             return <hr key={k}/>
                         } else if ( li.tag === "img" ) { 
-                            return <img key={k} className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>
+                            return <img key={key} className={`blog-image ${txt.class}`} src={`/blog/${id}_${txt.num}.jpg` } alt={`${id}_${txt.num}`}/>
                         } else {
                             return <span  key={k} >{txt.text}</span>
                         }
@@ -134,7 +134,7 @@ const ShowBlog = ({blogs, author}) => {
                     } else if ( txt.tag === "hr" ) { 
                         return <hr key={k}/>
                     } else if (txt.tag === "img"){
-                        return <img key={k} className={`blog-image ${txt.class}`} src={`/blog/${txt.src}`} alt={txt.src}/>  
+                        return <img key={key} className={`blog-image ${txt.class}`} src={`/blog/${id}_${txt.num}.jpg` } alt={`${id}_${txt.num}`}/>  
                     } else {
                         return <span key={k}>{txt.text}</span>
                     }
