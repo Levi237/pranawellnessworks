@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
+
 
 const ShowBlog = ({blogs, author}) => {
-
+    
+    let history = useHistory();
+    
     const { id } = useParams();
     let blog = ''
     blogs.filter(bl => {
@@ -158,10 +161,17 @@ const ShowBlog = ({blogs, author}) => {
                 <img src={`/blog/${blog.heroImage}`} alt={blog.title}/>
                 <div>{renderBlog}</div>
             </article>
+            <BottomNav>
+                <button onClick={() => history.goBack()}>Back</button>
+            </BottomNav>
         </BlogWrapper>
     );
 };
 
+
+const BottomNav = styled.div`
+    padding-top: 80px;
+`;
 const BlogWrapper = styled.div`
     padding: 20px 0 120px;
     position: relative;
