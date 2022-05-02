@@ -8,20 +8,19 @@ import BlogBlocks       from './BlogBlocks';
 
 const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
 
-        const { id } = useParams();
+    const { id } = useParams();
 
-        const categoryBlogs = blogs.filter(blog => blog.category.replaceAll(' ','_') === id );
-        
-        return(
-            <BlogIndexWrapper>
-                <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={categoryBlogs[0]} author={author}/>
-                <br/><br/><br/>
-                <TwoRows selectBlog={selectBlog}  blogs={categoryBlogs} author={author}/>
-                <BlogBlocks selectBlog={selectBlog} blogs={categoryBlogs} author={author}/>
-            </BlogIndexWrapper>
-        );
-    };
-// };
+    const categoryBlogs = blogs.filter(blog => blog.category.replaceAll(' ','_') === id );
+    
+    return(
+        <BlogIndexWrapper>
+            <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={categoryBlogs[0]} author={author}/>
+            <br/><br/><br/>
+            <TwoRows selectBlog={selectBlog}  blogs={categoryBlogs} author={author}/>
+            <BlogBlocks selectBlog={selectBlog} blogs={categoryBlogs} author={author}/>
+        </BlogIndexWrapper>
+    );
+};
 
 const BlogIndexWrapper = styled.div`
     position: relative;
