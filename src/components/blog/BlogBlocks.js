@@ -23,7 +23,9 @@ const BlogBlocks = ({blogs, selectBlog}) => {
 
   return(
     <BlockColumns>
-      {mapBlogFilter}
+      <div>
+        {mapBlogFilter}
+      </div>
     </BlockColumns>
   );
 };
@@ -32,6 +34,7 @@ const BlockColumns = styled.div`
   padding-top: 40px;
   width: 100vw;
   text-align: center;
+
   a {
     text-decoration: none;
   }
@@ -50,12 +53,19 @@ const BlockColumns = styled.div`
       font-size: .9vw;
     }
   }
+  > div {
+    display: inline-block;
+    text-align: left;
+    width: 88vw;
+    margin: 0 auto;
+  }
 
-> div {
-  width: 22vw;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  > div > div {
+    width: 22vw;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+
     &:first-of-type {
       display: none;
     }
@@ -65,18 +75,17 @@ const BlockColumns = styled.div`
     &:nth-of-type(3) {
       display: none;
     }
-      .img {
-        height: 11vw;
-        margin: 0 auto;
-        width: 20vw;
-        background-size: cover;
-        background-position: center;
-      }
-      .txt {
-        height: 14vw;
-      }
-
-}
+    .img {
+      height: 11vw;
+      margin: 0 auto;
+      width: 20vw;
+      background-size: cover;
+      background-position: center;
+    }
+    .txt {
+      height: 14vw;
+    }
+  }
 
     @media screen and (max-width: 945px) {
       h1 {
@@ -91,13 +100,21 @@ const BlockColumns = styled.div`
         }
       }
       > div {
+        width: 100vw!important;
+      }
+      > div > div {
         width: 45vw;
         .img {
           height: 22vw;
           width: 41vw;
         }
         .txt {
-          height: 20vw;
+          height: 30vw;
+          width: 41vw;
+          margin: 0 auto;
+           p {
+             padding: 5px 0 0;
+           }
         }
       }
     }
@@ -127,7 +144,6 @@ const BlockColumns = styled.div`
           }
           .txt {
             height: auto;
-            // padding-bottom: 15vw;
           }
         }
       }
