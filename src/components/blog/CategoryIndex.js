@@ -1,13 +1,13 @@
 import React            from 'react';
 import styled           from 'styled-components';
-import { useParams }    from 'react-router-dom';
+import { useHistory, useParams }    from 'react-router-dom';
 
 import FeaturedBlog     from './FeatureBlogHeader';
 import TwoRows          from './TwoRows';
 import BlogBlocks       from './BlogBlocks';
 
 const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
-
+    let history = useHistory();
     const { id } = useParams();
 
     const categoryBlogs = blogs.filter(blog => blog.category.replaceAll(' ','_') === id );
@@ -18,10 +18,15 @@ const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
             <br/><br/><br/>
             <TwoRows selectBlog={selectBlog}  blogs={categoryBlogs} author={author}/>
             <BlogBlocks selectBlog={selectBlog} blogs={categoryBlogs} author={author}/>
+            <BottomNav>
+                <button onClick={() => history.goBack()}>Back</button>
+            </BottomNav>
         </BlogIndexWrapper>
     );
 };
-
+const BottomNav = styled.div`
+    padding-bottom: 80px;
+`;
 const BlogIndexWrapper = styled.div`
     position: relative;
     a:hover {
