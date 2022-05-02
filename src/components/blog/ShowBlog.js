@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useParams, useHistory } from 'react-router-dom';
+import React                        from 'react';
+import styled                       from 'styled-components';
+import { useHistory, useParams }    from 'react-router-dom';
 
 
 const ShowBlog = ({blogs, author}) => {
