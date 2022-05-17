@@ -1,19 +1,26 @@
 import styled       from 'styled-components';
-import { Link }     from 'react-router-dom';
+import { Link, useParams }     from 'react-router-dom';
 
 const BlogBlocks = ({blogs, selectBlog}) => {
-  
+  // const { id } = useParams();
   const mapBlogFilter = blogs.map((bf, k) => {
+    
+    const endpoint = bf.title
+      .replaceAll(' ','_')
+      .replaceAll('?','')
+      .replaceAll('.','')
+      .replaceAll('!','')
+      .toLowerCase() ;
     return(
       <div key={k}>
-        <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+        <Link to={`/blog/${bf.id}/${endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
             <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${bf.id}_1.jpg)`}}></section>
         </Link>
         <section className="txt">
           <p>
             <small>{bf.category}</small>
           </p>
-          <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+          <Link to={`/blog/${bf.id}/${endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
             <h1>{bf.title}</h1>
           </Link>        
         </section>

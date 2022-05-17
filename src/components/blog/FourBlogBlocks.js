@@ -6,16 +6,22 @@ const FourBlogBlocks = ({blogs, selectBlog}) => {
   const blogFilter = blogs.filter(blog => blog.category !== "Mindfulness & Meditation");
   const blogFilterTwo = blogFilter.filter(blog => blog.category !== "test");
   const mapBlogFilter = blogFilterTwo.map((bf, k) => {
+    const endpoint = bf.title
+    .replaceAll(' ','_')
+    .replaceAll('?','')
+    .replaceAll('.','')
+    .replaceAll('!','')
+    .toLowerCase() ;
     return(
       <div key={k}>
-        <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+        <Link to={`/blog/${bf.id}/${endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
             <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${bf.id}_1.jpg)`}}></section>
         </Link>
         <section className="txt">
           <p>
             <small>{bf.category}</small>
           </p>
-          <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+          <Link to={`/blog/${bf.id}/${endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
             <h1>{bf.title}</h1>
           </Link>        
         </section>

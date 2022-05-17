@@ -15,7 +15,36 @@ export default class CategoryPreview extends Component {
         
         const blogCategory = blogs.filter(blog => blog.category === "Mindfulness & Meditation");
 
-        
+        const endpoint0 = blogs[1].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
+        const endpoint1 = blogs[1].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
+        const endpoint2 = blogs[2].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
+        const endpoint3 = blogs[3].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
+        const endpoint4 = blogs[4].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
         // const mapCategory = blogCategory.map((topic, k) => {
         //     return(
         //         <div key={k}>
@@ -37,7 +66,7 @@ export default class CategoryPreview extends Component {
                     <div>
                         <FeatureBox>
                             <div>
-                                <Link to={`/blog/${blogCategory[0].id}/${blogCategory[0].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[0])}>
+                                <Link to={`/blog/${blogCategory[0].id}/${endpoint0}`}  onClick={(e) => selectBlog(e, blogCategory[0])}>
                                     <section style={{backgroundImage: `url(/blog/${blogCategory[0].id}_1.jpg)`}}>
                                     </section>
                                     <section>
@@ -50,7 +79,7 @@ export default class CategoryPreview extends Component {
                         <ThreeRows>
                             {/* {mapCategory} */}
                             <div>
-                                <Link to={`/blog/${blogCategory[1].id}/${blogCategory[1].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[1])}>
+                                <Link to={`/blog/${blogCategory[1].id}/${endpoint1}`}  onClick={(e) => selectBlog(e, blogCategory[1])}>
                                     <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[1].id}_1.jpg)`}}>
                                     </section>
                                     <section>
@@ -60,7 +89,7 @@ export default class CategoryPreview extends Component {
                                 </Link>
                             </div>
                             <div>
-                                <Link to={`/blog/${blogCategory[2].id}/${blogCategory[2].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[2])}>
+                                <Link to={`/blog/${blogCategory[2].id}/${endpoint2}`}  onClick={(e) => selectBlog(e, blogCategory[2])}>
                                     <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[2].id}_1.jpg)`}}>
                                     </section>
                                     <section>
@@ -70,7 +99,7 @@ export default class CategoryPreview extends Component {
                                 </Link>
                             </div>
                             <div>
-                                <Link to={`/blog/${blogCategory[3].id}/${blogCategory[3].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[3])}>
+                                <Link to={`/blog/${blogCategory[3].id}/${endpoint3}`}  onClick={(e) => selectBlog(e, blogCategory[3])}>
                                     <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[3].id}_1.jpg)`}}>
                                     </section>
                                     <section>
@@ -80,7 +109,7 @@ export default class CategoryPreview extends Component {
                                 </Link>
                             </div>
                             <div>
-                                <Link to={`/blog/${blogCategory[4].id}/${blogCategory[4].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[4])}>
+                                <Link to={`/blog/${blogCategory[4].id}/${endpoint4}`}  onClick={(e) => selectBlog(e, blogCategory[4])}>
                                     <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[4].id}_1.jpg)`}}>
                                     </section>
                                     <section>

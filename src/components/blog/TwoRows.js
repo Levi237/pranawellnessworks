@@ -3,15 +3,25 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export default class TwoRows extends Component {
-    state = {
-
-    }
+    state = {}
     render(){
         const { selectBlog,  blogs, author } = this.props;
+        const endpoint1 = blogs[1].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
+        const endpoint2 = blogs[2].title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
         return(
                 <TwoBlogRows>
                     <div>
-                        <Link to={`/blog/${blogs[1].id}/${blogs[1].endpoint}`}  onClick={(e) => selectBlog(e, blogs[1])}>
+                        <Link to={`/blog/${blogs[1].id}/${endpoint1}`}  onClick={(e) => selectBlog(e, blogs[1])}>
                             <section>
                             <small>{blogs[1].category}</small>
                                 <h1>{blogs[1].title}</h1>
@@ -23,7 +33,7 @@ export default class TwoRows extends Component {
                         </Link>
                     </div>
                     <div>
-                        <Link to={`/blog/${blogs[2].id}/${blogs[2].endpoint}`}  onClick={(e) => selectBlog(e, blogs[2])}>
+                        <Link to={`/blog/${blogs[2].id}/${endpoint2}`}  onClick={(e) => selectBlog(e, blogs[2])}>
                             <section>
                             <small>{blogs[2].category}</small>
                                 <h1>{blogs[2].title}</h1>
