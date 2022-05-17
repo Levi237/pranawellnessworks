@@ -59,7 +59,7 @@ export default class CategoryPreview extends Component {
         //         </div>
         //     );
         // });
-        const categoryLink = blogCategory[0].category.replaceAll(' ','_');
+        const categoryLink = blogCategory[0].category.replaceAll(' ','_').toLowerCase();
         return(
                 <CategoryPreviewWrapper>
                     <h2 onClick={scrollToTop}><Link to={`/blog/${categoryLink}`}>{blogCategory[0].category}</Link></h2>

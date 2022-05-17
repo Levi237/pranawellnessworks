@@ -10,14 +10,16 @@ const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
     let history = useHistory();
     const { id } = useParams();
 
-    const categoryBlogs = blogs.filter(blog => blog.category.replaceAll(' ','_') === id );
+    const categoryBlogs = blogs.filter(blog => blog.category.replaceAll(' ','_').toLowerCase() === id );
     
     return(
         <BlogIndexWrapper>
             <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={categoryBlogs[0]} author={author}/>
             <br/><br/><br/>
             <TwoRows selectBlog={selectBlog}  blogs={categoryBlogs} author={author}/>
+            { blogs.length > 3 &&
             <BlogBlocks selectBlog={selectBlog} blogs={categoryBlogs} author={author}/>
+        }
             <BottomNav>
                 <button onClick={() => history.goBack()}>Back</button>
             </BottomNav>
