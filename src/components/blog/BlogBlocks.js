@@ -108,6 +108,7 @@ const BlockColumns = styled.div`
     }
     > div {
       width: 100vw!important;
+      padding-left: 5vw;
       > div {
         width: 45vw;
         .img {
@@ -142,9 +143,11 @@ const BlockColumns = styled.div`
       }
       > div {
         width: 42.5vw;
-        &:nth-of-type(odd) {
-          margin-right: 5vw;
-        }
+        // margin-left: 5vw;
+        // padding-left: 5vw;
+        // &:nth-of-type(odd) {
+        //   margin-right: 5vw;
+        // }
         .img {
           height: 45vw;
           width: 100%;
