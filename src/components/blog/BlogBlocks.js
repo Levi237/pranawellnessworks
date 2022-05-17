@@ -7,7 +7,7 @@ const BlogBlocks = ({blogs, selectBlog}) => {
     return(
       <div key={k}>
         <Link to={`/blog/${bf.id}/${bf.endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
-            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${bf.heroImage})`}}></section>
+            <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${bf.id}_1.jpg)`}}></section>
         </Link>
         <section className="txt">
           <p>

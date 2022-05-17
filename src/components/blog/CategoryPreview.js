@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+// CategoryPreview
+// Displays most recent 5 blogs from blog category.
+// Most recent blog large on left, remaining 4 stacked on right.
+
 export default class CategoryPreview extends Component {
     state = {
 
@@ -16,7 +20,7 @@ export default class CategoryPreview extends Component {
         //     return(
         //         <div key={k}>
         //             <Link to={`/blog/${topic.id}/${topic.endpoint}`}  onClick={(e) => selectBlog(e, topic)}>
-        //                 <section style={{backgroundImage: `url(/blog/thumbnail/${topic.heroImage})`}}>
+        //                 <section style={{backgroundImage: `url(/blog/thumbnail/${topic.id}_1.jpg)`}}>
         //                 </section>
         //                 <section>
         //                     <h1>{topic.title}</h1>
@@ -34,7 +38,7 @@ export default class CategoryPreview extends Component {
                         <FeatureBox>
                             <div>
                                 <Link to={`/blog/${blogCategory[0].id}/${blogCategory[0].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[0])}>
-                                    <section style={{backgroundImage: `url(/blog/${blogCategory[0].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/${blogCategory[0].id}_1.jpg)`}}>
                                     </section>
                                     <section>
                                         <h1>{blogCategory[0].title}</h1>
@@ -47,7 +51,7 @@ export default class CategoryPreview extends Component {
                             {/* {mapCategory} */}
                             <div>
                                 <Link to={`/blog/${blogCategory[1].id}/${blogCategory[1].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[1])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[1].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[1].id}_1.jpg)`}}>
                                     </section>
                                     <section>
                                         <h1>{blogCategory[1].title}</h1>
@@ -57,7 +61,7 @@ export default class CategoryPreview extends Component {
                             </div>
                             <div>
                                 <Link to={`/blog/${blogCategory[2].id}/${blogCategory[2].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[2])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[2].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[2].id}_1.jpg)`}}>
                                     </section>
                                     <section>
                                         <h1>{blogCategory[2].title}</h1>
@@ -67,7 +71,7 @@ export default class CategoryPreview extends Component {
                             </div>
                             <div>
                                 <Link to={`/blog/${blogCategory[3].id}/${blogCategory[3].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[3])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[3].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[3].id}_1.jpg)`}}>
                                     </section>
                                     <section>
                                         <h1>{blogCategory[3].title}</h1>
@@ -77,7 +81,7 @@ export default class CategoryPreview extends Component {
                             </div>
                             <div>
                                 <Link to={`/blog/${blogCategory[4].id}/${blogCategory[4].endpoint}`}  onClick={(e) => selectBlog(e, blogCategory[4])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[4].heroImage})`}}>
+                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[4].id}_1.jpg)`}}>
                                     </section>
                                     <section>
                                         <h1>{blogCategory[4].title}</h1>

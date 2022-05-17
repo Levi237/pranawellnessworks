@@ -18,7 +18,7 @@ export default class TwoRows extends Component {
                                 <p>{blogs[1].subtext}</p>
                                 <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
                             </section>
-                            <section style={{backgroundImage: `url(/blog/${blogs[1].heroImage})`}}>
+                            <section style={{backgroundImage: `url(/blog/${blogs[1].id}_1.jpg)`}}>
                             </section>
                         </Link>
                     </div>
@@ -30,7 +30,7 @@ export default class TwoRows extends Component {
                                 <p>{blogs[2].subtext}</p>
                                 <h4>{blogs[2].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;</span><br className="mobile-inline"/>By {author.firstName} {author.lastName}</h4>
                             </section>
-                            <section style={{backgroundImage: `url(/blog/${blogs[2].heroImage})`}}>
+                            <section style={{backgroundImage: `url(/blog/${blogs[2].id}_1.jpg)`}}>
                             </section>
                         </Link>
                     </div>
