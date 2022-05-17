@@ -221,6 +221,69 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `220516`,
+      endpoint: `how_posture_affects_breath`,
+      title: `How posture affects breath`,
+      category: `Functional Fitness`,
+      publishDate: `Monday, May 16th, 2022`,
+      heroImage: `220516_1.jpg`,
+      subtext: `The way your spine is aligned directly affects the way you breathe.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Try to sit down and hunch over your knees, with your shoulders rolled inwards. Now try to take a deep breath. Notice the labor in the body. Now, sit up straight, lengthen the spine and the crown of the head towards the ceiling. Open the chest and roll the shoulders back and down the spine. Now take a deep breath in and out through the nose. Notice the difference. Notice the calm.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Your breathing habits can absolutely affect your posture and vice versa. An erect spine and open chest promotes a steady flow of breath through the body. People who have a chronic habit of holding their breath or breathing from a closed posture tend to develop tension and pain in their body. This pain often presents in the shoulders, upper back, neck and chest. Sometimes pain in the body can be relieved by proper breathing.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `A kyphotic spine (one that is hunched over) cannot allow for space to breathe. It is compressing the diaphragm and chest cavity, and shortening your intercostals. Breathing with a lengthened spine, in and out through your nose not only promotes calm, but allows your breath to flow more easily through your body. This also promotes healthy blood circulation.`
+        }]
+      },{
+        tag: `h2`,
+        content: [{
+          text: `Here are 3 ways to support better posture, through your breath:`
+        }]
+      },{
+        tag: `ol`,
+          list: [{
+            item: [{
+              text: `Inhale, raise your arms over head, exhale cactus them open. As you exhale, draw your elbows together and lift your chest.`          
+            }]
+          },{
+            item: [{
+              text: `Try seated cat/cow pose while working at your desk. Straighten your spine. Both feet flat on the ground. Palms facing down on your knees. Inhale, lift your chin and chest, exhale round your spine, tuck your chin. `
+            }]
+          },{
+            item: [{
+              text: `Arms out wide like a T. Inhale thumbs up, exhale thumbs all the way down. Repeat! `           
+            }]
+          }]
+      },{
+        tag: `img`,
+          class: `wide`,
+          num: 2
+      },{
+        tag: `p`,
+        content: [{
+          text: `Each of these simple exercises will help you to open your chest and shoulders and reverse the effects of poor posture, while also syncing your breath to movement. You’ll feel more calm and open. `
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `The Challenge: Try each of these today!` 
+        }]
+      }]
+    },{
       id: `220502`,
       endpoint: `Mental_Health_at_Work`,
       title: `Mental Health at Work`,
