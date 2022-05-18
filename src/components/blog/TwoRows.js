@@ -6,44 +6,33 @@ export default class TwoRows extends Component {
     state = {}
     render(){
         const { selectBlog,  blogs, author } = this.props;
-        const endpoint1 = blogs[1].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
-        const endpoint2 = blogs[2].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
+        const getBlogs = blogs.map((blog, k) => {
+            if ( k > 0 && k < 3) {
+             const endpoint = blog.title
+                .replaceAll(' ','_')
+                .replaceAll('?','')
+                .replaceAll('.','')
+                .replaceAll('!','')
+                .toLowerCase() ;
+                return (
+                    <div>
+                        <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+                            <section>
+                            <small>{blog.category}</small>
+                                <h1>{blog.title}</h1>
+                                <p>{blog.subtext}</p>
+                                <h4>{blog.publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
+                            </section>
+                            <section style={{backgroundImage: `url(/blog/${blog.id}_1.jpg)`}}>
+                            </section>
+                        </Link>
+                    </div>
+                )
+            }
+        })
         return(
                 <TwoBlogRows>
-                    <div>
-                        <Link to={`/blog/${blogs[1].id}/${endpoint1}`}  onClick={(e) => selectBlog(e, blogs[1])}>
-                            <section>
-                            <small>{blogs[1].category}</small>
-                                <h1>{blogs[1].title}</h1>
-                                <p>{blogs[1].subtext}</p>
-                                <h4>{blogs[1].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
-                            </section>
-                            <section style={{backgroundImage: `url(/blog/${blogs[1].id}_1.jpg)`}}>
-                            </section>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to={`/blog/${blogs[2].id}/${endpoint2}`}  onClick={(e) => selectBlog(e, blogs[2])}>
-                            <section>
-                            <small>{blogs[2].category}</small>
-                                <h1>{blogs[2].title}</h1>
-                                <p>{blogs[2].subtext}</p>
-                                <h4>{blogs[2].publishDate}<span className="desktop-inline">&nbsp;|&nbsp;</span><br className="mobile-inline"/>By {author.firstName} {author.lastName}</h4>
-                            </section>
-                            <section style={{backgroundImage: `url(/blog/${blogs[2].id}_1.jpg)`}}>
-                            </section>
-                        </Link>
-                    </div>
+                    {getBlogs}
                 </TwoBlogRows>
         );
     };
