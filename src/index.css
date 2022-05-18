@@ -136,3 +136,8 @@ button.purple:hover {
     display: block!important;
   }
 }
+
+a,
+a:hover * {
+  transition: all .3s ease;
+}
