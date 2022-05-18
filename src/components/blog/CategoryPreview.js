@@ -278,7 +278,7 @@ a {
         color: var(--green);
         text-decoration: none;
         &: hover {
-            color: var(--lightgreen);
+            color: var(--purple);
         }
     }
 }

@@ -4,7 +4,8 @@ import styled       from 'styled-components';
 import { Link }     from 'react-router-dom';
 import * as routes  from '../../constants/routes';
 
-const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog }) => {
+const FeatureBlogHeader = ({ blog, author, scrollToTop, selectBlog }) => {
+  const categoryLink = blog.category.replaceAll(' ','_').toLowerCase();
   const endpoint = blog.title
   .replaceAll(' ','_')
   .replaceAll('?','')
@@ -17,7 +18,7 @@ const FeatureBlogHeader = ({blog, author, scrollToTop, selectBlog }) => {
           <div style={{backgroundImage: `url(/blog/${blog.id}_1.jpg)`}}></div>
         </Link>
         <section>
-          <small>{blog.category}</small>
+          <small><Link to={`/blog/${categoryLink}`} >{blog.category}</Link></small>
           <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
             <h1>
               {blog.title}
@@ -42,6 +43,14 @@ const FeatureBlogContainer = styled.div`
   text-align: center;
   a {
     text-decoration: none;
+  }
+  small {
+    a {
+      color: inherit;
+      &:hover {
+        color: var(--purple);
+      }
+    }
   }
   > a > div {
     width: 86vw;

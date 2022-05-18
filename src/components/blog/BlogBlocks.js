@@ -4,7 +4,7 @@ import { Link, useParams }     from 'react-router-dom';
 const BlogBlocks = ({blogs, selectBlog}) => {
   // const { id } = useParams();
   const mapBlogFilter = blogs.map((bf, k) => {
-    
+    const categoryLink = bf.category.replaceAll(' ','_').toLowerCase();
     const endpoint = bf.title
       .replaceAll(' ','_')
       .replaceAll('?','')
@@ -13,14 +13,16 @@ const BlogBlocks = ({blogs, selectBlog}) => {
       .toLowerCase() ;
     return(
       <div key={k}>
-        <Link to={`/blog/${bf.id}/${endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+        <Link className="blog-link" to={`/blog/${bf.id}/${endpoint}`} onClick={(e) => selectBlog(e, bf)}>
             <section className="img" style={{backgroundImage: `url(/blog/thumbnail/${bf.id}_1.jpg)`}}></section>
         </Link>
         <section className="txt">
           <p>
-            <small>{bf.category}</small>
+            <small>
+              <Link to={`/blog/${categoryLink}`} >{bf.category}</Link>
+            </small>
           </p>
-          <Link to={`/blog/${bf.id}/${endpoint}`}  onClick={(e) => selectBlog(e, bf)}>
+          <Link to={`/blog/${bf.id}/${endpoint}`} onClick={(e) => selectBlog(e, bf)}>
             <h1>{bf.title}</h1>
           </Link>        
         </section>
@@ -42,8 +44,19 @@ const BlockColumns = styled.div`
   width: 100vw;
   text-align: center;
 
+  a > .img {
+    transition: background-size 3s ease!important;
+  }
   a {
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--lightpurple);
+      > .img {
+        background-size: 120%;
+        transition: background-size 3s ease!important;
+      }
+    }
   }
   h1 {
       font-size: 1.75vw;  
@@ -56,8 +69,15 @@ const BlockColumns = styled.div`
   }
   p {
     padding: 10px 2vw 0;
-    small {
+  }
+  small {
+    a {
       font-size: .9vw;
+      color: inherit;
+      &:hover {
+        color: var(--purple);
+        text-decoration: none;
+      }
     }
   }
   > div {
@@ -85,8 +105,9 @@ const BlockColumns = styled.div`
         height: 11vw;
         margin: 0 auto;
         width: 20vw;
-        background-size: cover;
+        background-size: 110%;
         background-position: center;
+        background-repeat: no-repeat;
       }
       .txt {
         height: 14vw;
