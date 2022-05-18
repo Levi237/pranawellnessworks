@@ -21,44 +21,30 @@ export default class CategoryPreview extends Component {
             .replaceAll('.','')
             .replaceAll('!','')
             .toLowerCase() ;
-        const endpoint1 = blogs[1].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
-        const endpoint2 = blogs[2].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
-        const endpoint3 = blogs[3].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
-        const endpoint4 = blogs[4].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
-        // const mapCategory = blogCategory.map((topic, k) => {
-        //     return(
-        //         <div key={k}>
-        //             <Link to={`/blog/${topic.id}/${topic.endpoint}`}  onClick={(e) => selectBlog(e, topic)}>
-        //                 <section style={{backgroundImage: `url(/blog/thumbnail/${topic.id}_1.jpg)`}}>
-        //                 </section>
-        //                 <section>
-        //                     <h1>{topic.title}</h1>
-        //                     <p>{topic.subtext}</p>
-        //                 </section>
-        //             </Link>
-        //         </div>
-        //     );
-        // });
+
+        const mapCategory = blogCategory.map((blog, k) => {
+            if ( k > 0 && k < 5) {
+                const endpoint = blog.title
+                .replaceAll(' ','_')
+                .replaceAll('?','')
+                .replaceAll('.','')
+                .replaceAll('!','')
+                .toLowerCase() ;
+
+                return(
+                    <div key={k}>
+                        <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+                            <section style={{backgroundImage: `url(/blog/thumbnail/${blog.id}_1.jpg)`}}>
+                            </section>
+                            <section>
+                                <h1>{blog.title}</h1>
+                                <p>{blog.subtext}</p>
+                            </section>
+                        </Link>
+                    </div>
+                );
+            }
+        });
         const categoryLink = blogCategory[0].category.replaceAll(' ','_').toLowerCase();
         return(
                 <CategoryPreviewWrapper>
@@ -77,47 +63,7 @@ export default class CategoryPreview extends Component {
                             </div>
                         </FeatureBox>
                         <ThreeRows>
-                            {/* {mapCategory} */}
-                            <div>
-                                <Link to={`/blog/${blogCategory[1].id}/${endpoint1}`}  onClick={(e) => selectBlog(e, blogCategory[1])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[1].id}_1.jpg)`}}>
-                                    </section>
-                                    <section>
-                                        <h1>{blogCategory[1].title}</h1>
-                                        <p>{blogCategory[1].subtext}</p>
-                                    </section>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to={`/blog/${blogCategory[2].id}/${endpoint2}`}  onClick={(e) => selectBlog(e, blogCategory[2])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[2].id}_1.jpg)`}}>
-                                    </section>
-                                    <section>
-                                        <h1>{blogCategory[2].title}</h1>
-                                        <p>{blogCategory[2].subtext}</p>
-                                    </section>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to={`/blog/${blogCategory[3].id}/${endpoint3}`}  onClick={(e) => selectBlog(e, blogCategory[3])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[3].id}_1.jpg)`}}>
-                                    </section>
-                                    <section>
-                                        <h1>{blogCategory[3].title}</h1>
-                                        <p>{blogCategory[3].subtext}</p>
-                                    </section>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to={`/blog/${blogCategory[4].id}/${endpoint4}`}  onClick={(e) => selectBlog(e, blogCategory[4])}>
-                                    <section style={{backgroundImage: `url(/blog/thumbnail/${blogCategory[4].id}_1.jpg)`}}>
-                                    </section>
-                                    <section>
-                                        <h1>{blogCategory[4].title}</h1>
-                                        <p>{blogCategory[4].subtext}</p>
-                                    </section>
-                                </Link>
-                            </div>
+                            {mapCategory}
                         </ThreeRows>
                         <br/><br/>
                     </div>

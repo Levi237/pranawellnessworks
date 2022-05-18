@@ -1,4 +1,4 @@
-import React    from 'react';
+import React        from 'react';
 import styled       from 'styled-components';
 
 import { Link }     from 'react-router-dom';
@@ -7,11 +7,12 @@ import * as routes  from '../../constants/routes';
 const FeatureBlogHeader = ({ blog, author, scrollToTop, selectBlog }) => {
   const categoryLink = blog.category.replaceAll(' ','_').toLowerCase();
   const endpoint = blog.title
-  .replaceAll(' ','_')
-  .replaceAll('?','')
-  .replaceAll('.','')
-  .replaceAll('!','')
-  .toLowerCase() ;
+    .replaceAll(' ','_')
+    .replaceAll('?','')
+    .replaceAll('.','')
+    .replaceAll('!','')
+    .toLowerCase() ;
+
   return(
       <FeatureBlogContainer>
         <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
@@ -43,6 +44,11 @@ const FeatureBlogContainer = styled.div`
   text-align: center;
   a {
     text-decoration: none;
+    &:hover {
+      h1 {
+        color: var(--lightpurple);
+      }
+    }
   }
   small {
     a {
