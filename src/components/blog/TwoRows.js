@@ -61,6 +61,11 @@ a {
         font-size: 1.125vw;
         line-height: 4vw;
     }
+    &:hover {
+        h1 {
+            text-decoration: underline;
+        }
+    }
 }
 > div {
     width: 86vw;
