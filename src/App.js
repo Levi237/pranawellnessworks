@@ -1485,7 +1485,7 @@ export default class App extends Component {
       id: `211018`,
       endpoint: `How_Movement_Can_Increase_Longevity`,
       title: `How Movement Can Increase Longevity`,
-      category: `Functional Fitness `,
+      category: `Functional Fitness`,
       publishDate: `Monday, October 18th 2021`,
       heroImage: `18102021_1.jpg`,
       subtext: `Movement is medicine, and prevention is always better than the cure.?`,
