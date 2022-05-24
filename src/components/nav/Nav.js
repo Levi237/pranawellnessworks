@@ -17,9 +17,14 @@ export default class Nav extends Component {
                         x
                     </CloseBtn>
                     <br /><br /><br />
-                    <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleHamburger()}}>HOME</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.HOME} onClick={() => {toggleHamburger()}}>HOME</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
+                    <section>
+                        <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.BLOGN} onClick={() => {toggleHamburger()}}>NUTRITION</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.BLOGY} onClick={() => {toggleHamburger()}}>YOGA</NavLink>
+                    </section>
                     <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
                     <section>
                         <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={() => {toggleHamburger()}}>EVENTS CALENDAR</NavLink>
@@ -29,6 +34,7 @@ export default class Nav extends Component {
                         <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.COACH} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
                     </section>
+                    <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
                 </div>
             </NavContainer>
@@ -65,7 +71,7 @@ const NavContainer = styled.div`
         text-decoration: none;
         display: block;
         height: 36px;
-        padding-top: 10px;
+        // padding-top: 10px;
         color: #FFF;
     }
     a:hover {
@@ -79,7 +85,6 @@ const NavContainer = styled.div`
         padding: 5px;
         color: #FFF;
         border: none;
-        font-size: 14px;
     }
     @media screen and (max-height: 500px) {
         font-size: 5vh;
@@ -91,17 +96,17 @@ const NavContainer = styled.div`
 `;
 const CloseBtn = styled.button`
     background-color: transparent;
-    border: 1px solid white!important;
+    // border: 1px solid white!important;
     border-radius: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 24px;
     max-height: 30px;
     max-width: 30px;
     min-height: 30px;
     min-width: 30px;
     &:hover {
-        border: 1px solid var(--lightgreen)!important;
+        // border: 1px solid var(--lightgreen)!important;
         color: var(--lightgreen);
     }
 `;
