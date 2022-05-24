@@ -119,17 +119,22 @@ const BlockColumns = styled.div`
     h1 {
       font-size: 2.5vw;  
     }
-    h4{
-      font-size: 1.75vw;
+    h4 {
+      font-size: 2vw;
     }
     p {
       small {
-        font-size: 1.5vw;
+        font-size: 2vw;
+      }
+    }
+    small {
+      a {
+        font-size: 2vw;
       }
     }
     > div {
-      width: 100vw!important;
-      padding-left: 5vw;
+      width: 90vw!important;
+      // padding-left: 5vw;
       > div {
         width: 45vw;
         .img {
