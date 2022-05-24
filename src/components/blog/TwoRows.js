@@ -7,7 +7,7 @@ export default class TwoRows extends Component {
     render(){
         const { selectBlog,  blogs, author } = this.props;
         const getBlogs = blogs.map((blog, k) => {
-            if ( k > 0 && k < 3) {
+            if ( k === 1 || k === 2 ) {
              const endpoint = blog.title
                 .replaceAll(' ','_')
                 .replaceAll('?','')

@@ -92,15 +92,15 @@ const BlockColumns = styled.div`
       vertical-align: top;
       text-align: left;
 
-      &:first-of-type {
-        display: none;
-      }
-      &:nth-of-type(2) {
-        display: none;
-      }
-      &:nth-of-type(3) {
-        display: none;
-      }
+      // &:first-of-type {
+      //   display: none;
+      // }
+      // &:nth-of-type(2) {
+      //   display: none;
+      // }
+      // &:nth-of-type(3) {
+      //   display: none;
+      // }
       .img {
         height: 11vw;
         margin: 0 auto;
