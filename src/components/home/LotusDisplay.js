@@ -174,7 +174,7 @@ button {
             margin: 2vw 10vw;
         }
         > section:last-of-type {
-            font-size: 1.4vw;
+            font-size: 2vw;
             margin: 6vw 12vw;
             width: 76vw;
         }
