@@ -180,6 +180,10 @@ const BlogWrapper = styled.div`
     .blog-image.wide {
         width: 100%;
     }
+    .blog-image.medium {
+        width: 80%;
+        margin-left: 10%;
+    }
     > article {
         line-height: 150%;
         width: 80vw;
