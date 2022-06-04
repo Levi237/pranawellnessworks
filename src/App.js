@@ -222,11 +222,9 @@ export default class App extends Component {
 
     blogs: [{
       id: `220530`,
-      // endpoint: `3_tips_for_summer_wellnessier`,
       title: `3 Tips for Summer Wellness`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, May 30th, 2022`,
-      // heroImage: `220530_1.jpg`,
       subtext: `As we enter into a new season, your body and mind may require a different kind of attention.`,
       copy: [{
         tag: `p`,
@@ -278,11 +276,9 @@ export default class App extends Component {
       }]
     },{
       id: `220516`,
-      // endpoint: `how_posture_affects_breath`,
       title: `How posture affects breath`,
       category: `Functional Fitness`,
       publishDate: `Monday, May 16th, 2022`,
-      // heroImage: `220516_1.jpg`,
       subtext: `The way your spine is aligned directly affects the way you breathe.`,
       copy: [{
         tag: `p`,
@@ -341,11 +337,9 @@ export default class App extends Component {
       }]
     },{
       id: `220502`,
-      // endpoint: `Mental_Health_at_Work`,
       title: `Mental Health at Work`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, May 2nd, 2022`,
-      // heroImage: `02052022_1.jpg`,
       subtext: `Employee health and wellbeing should be top priority.`,
       copy: [{
         tag: `p`,
@@ -423,11 +417,9 @@ export default class App extends Component {
       }]
     },{
       id: `220404`,
-      // endpoint: `5_Unique_Ways_to_Practice_Self-Care`,
       title: `5 Unique Ways to Practice Self-Care`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, April 4th, 2022`,
-      // heroImage: `04042022_1.jpg`,
       subtext: `Self-care is the best disease prevention.`,
       copy: [{
         tag: `p`,
@@ -521,11 +513,9 @@ export default class App extends Component {
       }]
     },{
       id: `220321`,
-      // endpoint: `How_to_Increase_Hip_Mobility`,
       title: `How to Increase Hip Mobility`,
       category: `Functional Fitness`,
       publishDate: `Monday, March 21st, 2022`,
-      // heroImage: `21032022_1.jpg`,
       subtext: `So much stress is stored in our hips. It’s important to keep them lubricated and mobile to avoid future complications or hip replacement.`,
       copy: [{
         tag: `p`,
@@ -610,11 +600,9 @@ export default class App extends Component {
       }]
     },{
       id: `220307`,
-      // endpoint: `3_Ways_to_Decrease_Anxiety`,
       title: `3 Ways to Decrease Anxiety`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, March 7th, 2022`,
-      // heroImage: `07032022_1.jpg`,
       subtext: `Mental health struggles are at an all-time high, and anxiety is the number one culprit.`,
       copy: [{
         tag: `p`,
@@ -680,11 +668,9 @@ export default class App extends Component {
       }]
     },{
       id: `220221`,
-      // endpoint: `What_are_Doshas? `,
       title: `Get to know Your Body. What are Doshas? `,
       category: `Nutrition`,
       publishDate: `Monday, February 21st 2022`,
-      // heroImage: `21022022_1.jpg`,
       subtext: `Knowing your body better can help you live a more healthy and balanced life.`,
       copy: [{
         tag: `p`,
@@ -773,11 +759,9 @@ export default class App extends Component {
       }]
     },{
       id: `220207`,
-      // endpoint: `How_to_Get_Grounded`,
       title: `How to Get Grounded`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, February 7th 2022`,
-      // heroImage: `07022022_1.jpg`,
       subtext: `Getting grounded can be tough, when the world around you seems to be constantly spinning.`,
       copy: [{
         tag: `p`,
@@ -865,11 +849,9 @@ export default class App extends Component {
       }]
     },{
       id: `220124`,
-      // endpoint: `Breathing_Exercises_for_Covid_Recovery`,
       title: `Breathing Exercises for Covid Recovery`,
       category: `Functional Fitness`,
       publishDate: `Monday, January 24th 2022`,
-      // heroImage: `24012022_1.jpg`,
       subtext: `Your lungs need lots of love during Covid recovery, and you may not even know it.`,
       copy: [{
         tag: `p`,
@@ -941,11 +923,9 @@ export default class App extends Component {
       }]
     },{
       id: `220110`,
-      // endpoint: `5_Yoga_Poses_for_Covid_Recovery`,
       title: `5 Yoga Poses for Covid Recovery`,
       category: `Functional Fitness`,
       publishDate: `Monday, January 10th 2022`,
-      // heroImage: `10012022_1.jpg`,
       subtext: `Recovering from Covid can be tough, and is a different journey for everyone.Natural supplements are always a win!`,
       copy: [{
         tag: `p`,
@@ -1106,11 +1086,9 @@ export default class App extends Component {
       }]
     },{
       id: `211227`,
-      // endpoint: ` 4_Natural_Supplements_to_Boost_Immunity`,
       title: `4 Natural Supplements to Boost Immunity`,
       category: `Nutrition`,
       publishDate: `Monday, December 27th 2021`,
-      // heroImage: `27122021_1.jpg`,
       subtext: `Natural supplements are always a win!`,
       copy: [{
         tag: `p`,
@@ -1192,11 +1170,9 @@ export default class App extends Component {
       }]
     },{
       id: `211213`,
-      // endpoint: `How_to_Increase_Joy`,
       title: `How to Increase Joy`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, December 13th 2021`,
-      // heroImage: `13122021_1.jpg`,
       subtext: `We are all co-creators of our own destiny.`,
       copy: [{
         tag: `p`,
@@ -1271,11 +1247,9 @@ export default class App extends Component {
       }]
     },{
       id: `211129`,
-      // endpoint: `How_to_Practice_Gratitude`,
       title: `How to Practice Gratitude`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, November 29th 2021`,
-      // heroImage: `29112021_1.jpg`,
       subtext: `The key to less stress is an attitude of gratitude.`,
       copy: [{
         tag: `p`,
@@ -1364,11 +1338,9 @@ export default class App extends Component {
       }]
     },{
       id: `211115`,
-      // endpoint: `What_is_Yoga`,
       title: ` What is Yoga?`,
       category: `Yoga`,
       publishDate: `Monday, November 15th 2021`,
-      // heroImage: `15112021_1.jpg`,
       subtext: `Yoga, by definition, is the union of mind and body. It is harmony. It is balance.`,
       copy: [{
         tag: `p`,
@@ -1457,11 +1429,9 @@ export default class App extends Component {
       }]
     },{
       id: `211101`,
-      // endpoint: `4_Foods_to_Improve_Gut_Health`,
       title: `4 Foods to Improve Gut Health`,
       category: `Nutrition`,
       publishDate: `Monday, November 1st 2021`,
-      // heroImage: `01112021_1.jpg`,
       subtext: `Food is nourishing to your mind and body. When your gut speaks to you, listen.`,
       copy: [{
         tag: `p`,
@@ -1539,11 +1509,9 @@ export default class App extends Component {
       }]
     },{
       id: `211018`,
-      // endpoint: `How_Movement_Can_Increase_Longevity`,
       title: `How Movement Can Increase Longevity`,
       category: `Functional Fitness`,
       publishDate: `Monday, October 18th 2021`,
-      // heroImage: `18102021_1.jpg`,
       subtext: `Movement is medicine, and prevention is always better than the cure.?`,
       copy: [{
         tag: `p`,
@@ -1652,11 +1620,9 @@ export default class App extends Component {
       }]
     },{
       id: `211004`,
-      // endpoint: `Yoga_for_Better_Sex`,
       category: `Yoga`,
       title: `Yoga for Better Sex`,
       publishDate: `Monday, October 4th, 2021`,
-      // heroImage: `04102021_1.jpg`,
       subtext: `Better sex is just one touch away! Let the tools of yoga elevate your sex life, through mindful breath and intimacy.`,
       copy: [{
         tag: `p`,
@@ -1760,11 +1726,9 @@ export default class App extends Component {
     }]    
     },{
         id: `210920`,
-        // endpoint: `10_Ways_to_Be_Mindful`,
         category: `Mindfulness & Meditation`,
         title: `10 Ways to Be Mindful`,
         publishDate: `Monday, September 20th, 2021`,
-        // heroImage: `20092021_1.jpg`,
         subtext: `Maintaining peace in the midst of chaos is a skill we all need to develop.`,
         copy: [{
           tag: `ol`,
@@ -1887,11 +1851,9 @@ export default class App extends Component {
       }]    
     },{
         id: `210906`,
-        // endpoint: `4_Ways_to_Elevate_Your_Mindset`,
         category: `Mindfulness & Meditation`,
         title: `4 Ways to Elevate Your Mindset`,
         publishDate: `Monday, September 6th, 2021`,
-        // heroImage: `06092021_1.jpg`,
         subtext: `The law of attraction is real! Invite in what you want and need.`,
         copy: [{
           tag: `h2`,
@@ -1964,10 +1926,8 @@ export default class App extends Component {
       }]    
     },{
       id: `210823`,
-      // endpoint: `How_to_Sleep_Better`,
       title: `How to Sleep Better`,
       category: `Mindfulness & Meditation`,
-      // heroImage: `23082021_1.jpg`,
       publishDate: `Monday, August 23rd 2021`,
       subtext: `Want better sleep? Mindful nights lead to productive mornings.`,
       copy: [{
@@ -2045,11 +2005,9 @@ export default class App extends Component {
       }]
     },{
       id: `210809`,
-      // endpoint: `Breathing_for_Your_Body`,
       title: `Breathing for Your Body`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, August 9th 2021`,
-      // heroImage: `09082021_1.jpg`,
       subtext: `Do you want to feel more calm on a regular basis? Do you want to boost your immunity?`,
       copy: [{
         tag: `p`,
@@ -2137,14 +2095,12 @@ export default class App extends Component {
       }]
     },{
       id: `210726`,
-      // endpoint: `5_Ways_to_Create_a_Powerful_Morning`,
       category: `Mindfulness & Meditation`,
       keyWords: [`meditation`, `health`],
       title: `5 Ways to Create a Powerful Morning`,
       subtext: `Achieve your goals, increase focus and productivity. Every day!`,
       authorId: `000`,
       publishDate: `Monday, July 26 2021`,
-      // heroImage: `26072021_1.jpg`,
       copy: [{
         tag: `p`,
         content: [{
