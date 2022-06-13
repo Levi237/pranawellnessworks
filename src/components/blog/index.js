@@ -1,10 +1,10 @@
 import React            from 'react';
 import styled           from 'styled-components';
 
-import FeaturedBlog     from './FeatureBlogHeader';
-import TwoRows          from './TwoRows';
-import CategoryPreview  from './CategoryPreview';
-import BlogBlocks       from './BlogBlocks';
+import FeaturedBlog     from './sections/FeatureBlogHeader';
+import TwoRows          from './sections/TwoRows';
+import CategoryPreview  from './sections/CategoryPreview';
+import BlogBlocks       from './sections/BlogBlocks';
 
 const BlogMainIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
 

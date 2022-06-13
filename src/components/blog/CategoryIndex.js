@@ -2,9 +2,9 @@ import React            from 'react';
 import styled           from 'styled-components';
 import { useHistory, useParams }    from 'react-router-dom';
 
-import FeaturedBlog     from './FeatureBlogHeader';
+import FeaturedBlog     from './sections/FeatureBlogHeader';
 // import TwoRows          from './TwoRows';
-import BlogBlocks       from './BlogBlocks';
+import BlogBlocks       from './sections/BlogBlocks';
 
 const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
     let history = useHistory();
