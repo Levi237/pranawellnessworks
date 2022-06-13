@@ -3,7 +3,7 @@ import styled           from 'styled-components';
 import { useHistory, useParams }    from 'react-router-dom';
 
 import FeaturedBlog     from './FeatureBlogHeader';
-import TwoRows          from './TwoRows';
+// import TwoRows          from './TwoRows';
 import BlogBlocks       from './BlogBlocks';
 
 const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
@@ -15,8 +15,8 @@ const CategoryIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
     return(
         <BlogIndexWrapper>
             <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={categoryBlogs[0]} author={author}/>
-            <br/><br/><br/>
-            <TwoRows selectBlog={selectBlog}  blogs={categoryBlogs} author={author}/>
+            <br/><br/>
+            {/* <TwoRows selectBlog={selectBlog}  blogs={categoryBlogs} author={author}/> */}
             <BlogBlocks selectBlog={selectBlog} blogs={categoryBlogs} author={author}/>
             <BottomNav>
                 <button onClick={() => history.goBack()}>Back</button>
