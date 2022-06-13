@@ -221,6 +221,97 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `220613`,
+      title: `How to Live Fearlessly`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, June 13th, 2022`,
+      subtext: `Fear can motivate or hold us back from many things.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Anxiety comes from fear of the unknown. We assign an outcome or storyline to something that has not yet happened, which causes stress in our body and mind. Living fearlessly doesn’t mean you’re never apprehensive or fearful of something, it means you simply show up with an open heart.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Practice non-attachment.`
+          },{
+            text: ` One of the `
+          },{
+            tag: `a`,
+            link: `https://chopra.com/articles/following-the-5-yamas-to-lead-a-fuller-life`,
+            text: `5 Yamas of Yoga`
+          },{
+            text: ` is `
+          },{
+            tag: `i`,
+            text: `“aparigraha,”`
+          },{
+            text: ` which is Sanskrit for non-greed or non-attachment. Aparigraha suggests that instead of becoming mentally married to an idea or outcome, we allow things to breathe and be. Attachment breeds anxiety because we expect one specific thing to happen, and when it doesn’t we feel out of control. Welcome the possibility of various outcomes, and you will begin to break down fear.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Create space.`
+          },{
+            text: ` When you create both mental and physical space in your life, there is more room for new things to come in, and less paralyzation in fear. `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/reel/CdEOkeTFVp8/?igshid=YmMyMTA2M2Y=`,
+            text: `Create space mentally`
+          },{
+            text: ` through daily meditation. Meditation opens new realms of creativity in brains, and allows for mental space to be freed. Cleaning and organizing your physical space has been proven to decrease mental clutter and reduce stress of the mind. You’ll be more capable of making decisions with clarity.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Visualization.`
+          },{
+            text: ` Seeing yourself in a certain way can have a big impact on releasing fear. `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/reel/CewCJLhFvfj/?igshid=YmMyMTA2M2Y=`,
+            text: `Visualizing letting go`
+          },{
+            text: ` of things that no longer serve you, creating images of yourself in the place you want to be, with the things you need, will go a long way in living fearlessly.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Operate in abundance.`
+          },{
+            text: ` There is always enough to go around. There is always a way forward. The difference between a growth mindset and a fixed mindset is that one has clear roadblocks that are immovable. A growth mindset leaves room for various paths and new opportunities. When you operate in abundance, you’re able to see a full picture of possibilities, vs living with lack in mind. `
+           }]
+          },{
+            tag: `img`,
+            content: [{
+              class: `wide`,
+              num: 2
+            }]
+          }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Fear is simply excitement without breath. So take a deep breath, and find excitement in the possibility of newness and growth. Live fearlessly! `
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Clean your physical space today! Observe how you feel mentally afterwards.` 
+        }]
+      }]
+    },{
       id: `220530`,
       title: `3 Tips for Summer Wellness`,
       category: `Mindfulness & Meditation`,
