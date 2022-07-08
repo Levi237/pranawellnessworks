@@ -221,6 +221,169 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `220711`,
+      title: `5 Ways to Beat the Monday Blues`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, July 11th, 2022`,
+      subtext: `Instead of viewing Monday as the end of your weekend, view it as the start of something new.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Mondays are often a dreaded day by many. It's the first day of the work week, and for lots of people, that means going back to a routine that they're not in love with. What happens when we create routines that make us feel good each day?`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Make your daily routine great.`
+          },{
+            text: ` It's so important to create habits and systems that nurture your spirit. Find what brings you joy, and do more of that. Having a healthy, sustainable routine will allow you to feel energized for each day, not just the weekend. `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/210726/5_ways_to_create_a_powerful_morning`,
+            text: `Enjoy your mornings`
+          },{
+            text: ` by practicing self-care and movement daily. Once you have a solid morning routine that promotes ease, the rest of your day will feel more inviting. Start with very small changes in your daily schedule, and watch those small adjustments become big changes.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Use Sunday to plan.`
+          },{
+            text: ` Make a nice cup of herbal tea, grab your journal and planner, and tap in on Sunday evenings. Think of this time as a gift you’re giving to yourself, so you can be less stressed during the week. Take some time to make a plan and set goals for the week. Write out your to-do lists and a detailed schedule. Once it’s all in front of you, you will feel less burdened by the tasks on Monday.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Count your wins.`
+          },{
+            text: ` During your morning  `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/220404/5_unique_ways_to_practice_self-care`,
+            text: `self-care routine`
+          },{
+            text: ` on Monday, take a moment to reflect on your wins from the prior week. Use those to motivate you, and hold you accountable for the goals that you’ve set for yourself in the new week. Make a list of all the things you did well in the week prior, however small, and give yourself your flowers for it!`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Get a good night's rest. `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/210823/how_to_sleep_better`,
+            text: `Sleeping well`
+          },{
+            text: ` can uplevel your morning on any day, but it’s especially important to get some good sleep on Sunday night, so that your week gets off to a good start. Limit your screen time before bed. Try to eat dinner a bit earlier. Journal at night to allow your mind to release everything it’s thinking onto paper. When you go to sleep with a clear mind, you wake up feeling more rested and energized. `
+           }]
+          },{
+            tag: `img`,
+            content: [{
+              class: `wide`,
+              num: 2
+            }]
+          }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `This Sunday evening is yours! Plan your week, and look forward to Monday!` 
+        }]
+      }]
+    },{
+      id: `220627`,
+      title: `How to Decrease Stress`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, June 27th, 2022`,
+      subtext: `Our world today is full of stressors that can trigger anxiety and illness.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Stress is at an all time high these days with work-life balance, a pandemic, inflation, politics. All of it is affecting our ability to be mindful and completely healthy. Stress is the root cause of so many illnesses and physical pain. It’s all `
+        },{
+          tag: `a`,
+          link: `https://pranawellnessworks.com/yoga_therapy`,          
+          text: `preventable`
+        },{
+          text: `. The World Health Organization estimates stress costs American employers $300 Billion dollars in healthcare costs, per year. BILLION!          `
+        }]
+      },{
+        tag: `h2`,
+        content: [{
+          text: `Here are a few things you can do to be more mindful of daily stressors, and how to eliminate them. `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Be mindful of what you ingest.`
+          },{
+            text: ` Between news and social media, our minds are being inundated with things that are not great for our mental health. Our brains are too used to trauma. Setting a boundary with yourself, and being conscious of what you allow into your space, and when, is so important. Instead of waking up to turn on the news or scroll social media, take control of your day by ingesting more mindful things. Read a book, journal, meditate, breathe.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Take mindful walks.`
+          },{
+            text: ` Walking daily can add years to your life. It helps to elevate your mental wellbeing, and also promotes physical and cardiac health. Try walking without a real goal. Just walk, observe, listen, and feel. Notice new things in your neighborhood each day. You’ll be surprised at how your mood changes after each walk.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Breathe in and out through your nose. `
+          },{
+            tag: `a`,
+            link: `https://www.instagram.com/reel/CZH6H6CBN_e/?igshid=YmMyMTA2M2Y=`,
+            text: `Nostril breathing`
+          },{
+            text: ` helps to reset your nervous system in moments of stress. It activates your parasympathetic nervous system, which is the “rest and digest” trigger. When you breathe in and out through the nose, it allows your body to feel calm more quickly, instead of exerting energy out of your mouth.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Set boundaries.`
+          },{
+            text: ` It is so important to have clear boundaries with yourself and others, and state them clearly. `
+          },{
+            tag: `a`,
+            link: `https://www.amazon.com/Boundaries-When-Take-Control-Your/dp/0310585902/ref=asc_df_0310585902/?tag=hyprod-20&linkCode=df0&hvadid=312045581420&hvpos=&hvnetw=g&hvrand=17569300814460995702&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010934&hvtargid=pla-568945958311&psc=1&tag=&ref=&adgrpid=62837065180&hvpone=&hvptwo=&hvadid=312045581420&hvpos=&hvnetw=g&hvrand=17569300814460995702&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010934&hvtargid=pla-568945958311`,
+            text: `Boundaries`
+          },{
+            text: ` may sound cliche, but when you don’t have them you risk inviting negative energy into your space. Boundaries for yourself can look like making sure you get adequate sleep each night. Boundaries with others is being able to say no to things you do not have the capacity for.`
+           }]
+          },{
+            tag: `img`,
+            content: [{
+              class: `wide`,
+              num: 2
+            }]
+          }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Write a list of your boundaries for yourself and others, today! ` 
+        }]
+      }]
+    },{
       id: `220613`,
       title: `How to Live Fearlessly`,
       category: `Mindfulness & Meditation`,
