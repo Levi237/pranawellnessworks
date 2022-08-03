@@ -11,6 +11,7 @@ import PurpleContent        from './components/banners/PurpleContent';
 
 import EmailSignup          from './components/contact/EmailSignup';
 import EmailConfirmation    from './components/contact/EmailConfirmation';
+import SubscribePage        from './components/contact/SubscribePage'
 
 import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/header/HeaderComponent';
@@ -221,6 +222,82 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `220725`,
+      title: `Yoga for Athletic Performance`,
+      category: `Yoga`,
+      publishDate: `Monday, July 25th, 2022`,
+      subtext: `An athletic body requires special attention and understanding.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `I recently gave a workshop at IDEA World Convention in Vegas, on "`
+        },{
+          type: `a`,
+          link: `https://www.instagram.com/reel/CgfZAPtFF_G/?igshid=YmMyMTA2M2Y=`,
+          text:`Yoga for Athletes`
+        },{
+          text:`." My goal was to share with athletes, those who train them, and those aspiring to be them that Yoga is so much more than the poses. Yoga can help enhance athletic performance, prevent injury, and increase mind body awareness. 
+          `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Biomechanics. `
+          },{
+            text: `Knowing and understanding how the body functions is essential for athletic performance. With an understanding of anatomy, you can ensure safety and help prevent injury. Alignment, stability, core strength, flexibility, mobility, etc are all ways in which the body communicates. Becoming adept in each of them will help an athletic body function optimally. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Key Action. `
+          },{
+            text: `What is they key action of the sport in which you’re training? Is it a squat, a pitch, a punch, a swing, or a kick? Keeping this in mind will help you to determine what yoga postures will make this key action easier on the body. For example, if you’re a `
+          },{
+            type: `a`,
+            link: `https://www.instagram.com/p/Cgm8YUcvAm8/?igshid=YmMyMTA2M2Y=`,
+            text: `boxer`
+          },{
+            text: `, punching is the primary action, which uses arms and shoulders. A yoga pose that would be helpful to a boxer’s body would be bridge pose, because it is shoulder opening.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Key Challenge. `
+          },{
+            text: `Where is the most risk for injury in this sport, or what is most challenging? Preventing injury can increase athletic performance and keep you playing longer. By identifying where the body is most challenged, you can find poses that will create stability in the joints and provide preventive intervention. For example, if you run track, and sprained ankles are very common, you can incorporate poses that promote balance in order to build more ankle stability. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Mind body union. `
+          },{
+            text: `By definition, Yoga is the union between mind and body. If you train your mind, the body will follow. Breathing and meditation are tools of yoga that help to bring about that union. Breathing helps to maintain your nervous system, create balance, and decrease stress. Meditation keeps your brain tissues healthy and allows you to be more productive and focused.`
+           }]
+          },{
+            tag: `img`,
+            content: [{
+              class: `wide`,
+              num: 2
+            }]
+          }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Think of 3 yoga poses that will help you do a particular movement better!` 
+        }]
+      }]
+    },{
       id: `220711`,
       title: `5 Ways to Beat the Monday Blues`,
       category: `Mindfulness & Meditation`,
@@ -2592,7 +2669,11 @@ export default class App extends Component {
               <EventsMain eventsList={eventsList}/>
             </HeaderMessage> 
           </> }/>   
-           
+          <Route path={routes.SUB} render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <br/><br/><br/><br/><br/>
+              <SubscribePage/>
+          </> }/>
           <Route path={routes.ROOT} render={() => <>
             <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
               <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>

@@ -19,7 +19,7 @@ const HomeHeader = ({toggleEmailSignup}) => {
           }}
         >
         <source
-            src="https://player.vimeo.com/external/432921265.hd.mp4?s=8aebeb5818eac88d46085763ac93b372951e79f4&profile_id=175"
+            src="https://player.vimeo.com/external/432921265.hd.mp4"
             type="video/mp4"
         />
         </VideoFrame>

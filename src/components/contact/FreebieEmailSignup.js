@@ -6,10 +6,11 @@ export default class FreebieEmailSignup extends Component {
       emailValue: '',
       fNameValue: '',
       lNameValue: '',
+      locationValue: '',
     };
     render(){
 
-const { emailValue, fNameValue, lNameValue } = this.state
+const { emailValue, fNameValue, lNameValue, locationValue } = this.state
     return (
         <Form 
             action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
@@ -45,6 +46,16 @@ const { emailValue, fNameValue, lNameValue } = this.state
                 placeholder="Last Name" 
                 onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
             />
+            <label htmlFor='LOCATION'>
+            <input 
+                type="text" 
+                name="LOCATION" 
+                id="LOCATION" 
+                value={locationValue}
+                placeholder="Location" 
+                onChange={(e)=>{this.setState({locationValue: e.target.value});}}
+            />
+            </label>
             <input 
                 type="email" 
                 name="EMAIL" 
@@ -82,7 +93,7 @@ p {
         display: block;
         width: 70%;
         max-width: 260px;
-        padding: 0 5%;
+        padding: 0 10px;
     }
 `;
 const AuthFilter = styled.div`

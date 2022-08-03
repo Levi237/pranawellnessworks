@@ -13,5 +13,6 @@ export const MAIL = '/thank_you_for_reaching_out';
 export const PREG = '/pre-post_natal';
 export const ROOT = '/';
 export const SERV = '/services';
+export const SUB = '/subscribe';
 export const WELL = '/personal_wellness_services';
 export const YOGA = '/yoga_therapy';
