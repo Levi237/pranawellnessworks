@@ -109,7 +109,7 @@ const Container = styled.div`
                 &:nth-of-type(3) {
                     font-weight: 300;
                     font-size: 1.1vw;
-                    line-height: 1.5vw;
+                    line-height: 1.4vw;
                     color: var(--purple);
                     margin: 1vw 0;
                     min-height: 19vw;
@@ -121,8 +121,8 @@ const Container = styled.div`
                 }
                 &:last-of-type {
                     font-weight: bold;
-                    font-size: 1.2vw;
-                    line-height: 1.8vw;
+                    font-size: 1vw;
+                    line-height: 1.4vw;
                     text-transform: uppercase;
                     position: absolute;
                     bottom: 4vw;
