@@ -1,16 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const HomeHeader = ({toggleEmailSignup}) => {
-  
-  return(
+
+    let docThis = document.getElementById('bgvid');
+    if(docThis){
+      docThis.playbackRate = .67;
+    }
+
+    return(
     <>
       <VideoContainer className="video-container">
+        {/* <img src="header/prana_hero.jpg" style={{objectFit: 'cover', width: '100%', height: '100%'}} alt="temporary hero"/> */}
         <VideoFrame
           playsInline
           autoPlay
           muted
           loop
+          // playbackRate= '0.8' 
           id="bgvid"
           ref={video => {
               if (!video) return;
@@ -19,7 +27,7 @@ const HomeHeader = ({toggleEmailSignup}) => {
           }}
         >
         <source
-            src="https://player.vimeo.com/external/432921265.hd.mp4"
+            src="https://firebasestorage.googleapis.com/v0/b/prana-wellness.appspot.com/o/PRANA%20With%20Out%20Speakers%20V1.mp4?alt=media&token=cb1ba005-b67f-41a5-85ed-0f8bbf9c93b0"
             type="video/mp4"
         />
         </VideoFrame>
@@ -43,7 +51,6 @@ const HomeHeader = ({toggleEmailSignup}) => {
           </a>
         </ButtonWrapper>
       </WelcomeContainer>
-      
     </>)
     ;
 };
@@ -184,4 +191,9 @@ const VideoFrame = styled.video`
   }
 `;
 
+
+
+
+
 export default HomeHeader;
+
