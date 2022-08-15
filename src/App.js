@@ -719,7 +719,7 @@ export default class App extends Component {
       }]
     },{
       id: `220516`,
-      title: `How posture affects breath`,
+      title: `How Posture Affects Breath`,
       category: `Functional Fitness`,
       publishDate: `Monday, May 16th, 2022`,
       subtext: `The way your spine is aligned directly affects the way you breathe.`,
