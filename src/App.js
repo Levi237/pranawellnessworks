@@ -222,6 +222,118 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `220815`,
+      title: `Cooling Foods to Beat Summer Heat`,
+      category: `Nutrition`,
+      publishDate: `Monday, August 15th, 2022`,
+      subtext: `Whether you’re trying to calm your pitta dosha, or simply trying to beat the summer heat, here are some foods that will help you stay cool this summer.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `In Ayurveda, foods are characterized by their various qualities. Foods that have cooling qualities are great to eat during the summer heat, or when your pitta dosha is imbalanced. Pitta is the fire energy in your body. It ignites passion, and love, and ambition, but when imbalanced it can cause "`
+        },{
+          type: `a`,
+          link: `https://www.instagram.com/p/ChDKNwtvwLE/?igshid=YmMyMTA2M2Y=`,
+          text:`inflammation in your gut`
+        },{
+          text:` acid, and excessive heat in the body.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `If you experience indigestion, gas, acid reflux, diarrhea, heavy sweating, or oily skin, chances are you are pitta dominant or have a pitta imbalance. You can use food as a way to calm your system, and invite in some cooling energy.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          type: `a`,
+          link: `https://pranawellnessworks.com/blog/220530/3_tips_for_summer_wellness`,
+          text:`Summertime`
+        },{
+          text:` can have us all feeling like we are going to overheat at times, so being mindful of the energy you’re creating through the food you consume is important. Cooling foods can help your body to feel more at ease during the summer months.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Eating foods that are cooling to the gut will allow the pitta dosha’s “fire” to be calmed. Foods that are water-based are a great place to start. `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Water-based foods: `
+          },{
+            text: `Cucumbers, watermelons, honeydew melons, cantaloupe, coconut`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Cooling fruits: `
+          },{
+            text: `Pears, apples, avocados, (red) grapes, pomegranates, strawberries, lime`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Cooling veggies: `
+          },{
+            text: `Broccoli, cabbage, celery, kale, peas, potatoes, cauliflower, zucchini, squash`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Cooling grains: `
+          },{
+            text: `Oats, quinoa, Basmati rice`
+           }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Legumes: `
+          },{
+            text: `Red lentils, black-eyed peas, garbanzo beans, pinto beans`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            num: 2
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          text: `As far as meat, turkey has cooling qualities, whereas beef and chicken are heating foods. ` 
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `When making your meal choices this summer, keep in mind the characteristics of your food, and how they might make your gut feel. Stay cool by allowing yourself more of what feels light and water-based, vs heavy, hot foods. Fresh is always the way to go!` 
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          tag: `a`,
+          link: `https://chopra.com/articles/a-pitta-balancing-diet-for-summer`,
+          text: `Create a new meal`
+        },{
+          text: ` this week using all cooling ingredients! ` 
+        }]
+      }]
+    },{
       id: `220725`,
       title: `Yoga for Athletic Performance`,
       category: `Yoga`,
