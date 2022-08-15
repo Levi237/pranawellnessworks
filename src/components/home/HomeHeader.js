@@ -4,11 +4,6 @@ import styled from 'styled-components';
 
 const HomeHeader = ({toggleEmailSignup}) => {
 
-    let docThis = document.getElementById('bgvid');
-    if(docThis){
-      docThis.playbackRate = .67;
-    }
-
     return(
     <>
       <VideoContainer className="video-container">
@@ -18,16 +13,16 @@ const HomeHeader = ({toggleEmailSignup}) => {
           autoPlay
           muted
           loop
-          // playbackRate= '0.8' 
           id="bgvid"
           ref={video => {
               if (!video) return;
               video.muted = true;
               video.play();
+              video.playbackRate = .75;
           }}
         >
         <source
-            src="https://firebasestorage.googleapis.com/v0/b/prana-wellness.appspot.com/o/PRANA%20With%20Out%20Speakers%20V1.mp4?alt=media&token=cb1ba005-b67f-41a5-85ed-0f8bbf9c93b0"
+            src="https://firebasestorage.googleapis.com/v0/b/prana-wellness.appspot.com/o/PRANA%20With%20Out%20Speakers%20No%20Watermark%20V1.mp4?alt=media&token=f1577c3e-870f-48e3-8c59-990e8419e04a"
             type="video/mp4"
         />
         </VideoFrame>
