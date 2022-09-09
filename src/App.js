@@ -222,6 +222,256 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+    //   id: `221003`,
+    //   title: ` How To Practice Mindful Eating`,
+    //   category: `Nutrition`,
+    //   publishDate: `Monday, October 3rd, 2022`,
+    //   subtext: `Being mindful about your meals keeps you healthy.`,
+    //   copy: [{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `Your digestion directly impacts your mental and physical body. When you practice mindful eating, you allow the food to do its job and feed you- mind, body, and spirit. `
+    //     }]
+    //   },{
+    //     tag: `section`,
+    //     list: [{
+    //       tag: `p`,
+    //       content: [{
+    //         tag: `b`,
+    //         text: `Give thanks. `
+    //       },{
+    //         text: `Gratitude is always the best attitude. Whether you pray before meals, meditate, breathe deeply, or simply say thank you, acknowledging the food in front of you and giving thanks for its process makes it feel better going down. All foods have a life cycle, so expressing gratitude is a kind way to be present in the process.`
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         tag: `b`,
+    //         text: `Free from distractions. `
+    //       },{
+    //         text: `Most of us are guilty of eating our meals in front of the TV, with phone in hand, or while working on the computer. There is something luxurious about sitting down to eat and being distraction free. Allowing your mind and body to process (literally) what you are eating, will aid in your digestive process. Eating without distractions is also a great way to expand your mental awareness.`
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         tag: `b`,
+    //         text: `Slowly. `
+    //       },{
+    //         text: `My grandpa used to tell us to chew each bite 65 times before swallowing! When you’re eating too fast, your digestive system has to play catch up and usually cannot keep up. Your body is not able to properly process food, thus gas, acid, and overall discomfort are the result. When you eat slowly, you allow your body to properly work for you, and turn your food into energy.`
+    //       }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         tag: `b`,
+    //         text: `Drink your water. `
+    //       },{
+    //         text: `Before each meal, you should fill your stomach with ¼ water. This helps to activate your digestion, but also prevents overeating. Rather than chugging water simultaneously with your food, allow it to flush out toxins afterwards.`
+    //        }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         tag: `b`,
+    //         text: `Eat foods that agree with you. `
+    //       },{
+    //         text: `Every BODY is different, so that means that the food we eat does not affect each person in the same way. Food is meant to nourish the body and provide energy, but the way it is received in each body may vary. It is so important to understand what your body needs to feel nourished and balanced, and what specific things might make you feel out of balance. Eat foods that make sense for your `
+    //       },{
+    //         tag: `a`,
+    //         link: `https://pranawellnessworks.com/blog/220221/get_to_know_your_body_what_are_doshas_`,
+    //         text: `dosha`
+    //       },{
+    //         text: `.`
+    //       }]
+    //     },{
+    //       tag: `img`,
+    //       content: [{
+    //         class: `wide`,
+    //         num: 2
+    //       }]
+    //     }]
+    //   },{
+    //     tag: `p`,
+    //     content: [{
+    //       tag: `br`,
+    //     },{
+    //       tag: `b`,
+    //       text: `The Challenge: ` 
+    //     },{
+    //       text: `Try a no distractions dinner tonight!  ` 
+    //     }]
+    //   }]
+    // },{
+    //   id: `220919`,
+    //   title: `5 Ways to Improve Mobility`,
+    //   category: `Functional Fitness`,
+    //   publishDate: `Monday,  September 19th, 2022`,
+    //   subtext: `Movement is medicine, and can add years to your life.`,
+    //   copy: [{
+    //     tag: `p`,
+    //     content: [{
+    //       text: `Mobility is defined as your muscle range of motion. Without mobility, stagnation appears in the body, and muscles can atrophy causing pain and disease. To be mobile is to be able to move your body in a way that increases circulation and optimizes function. `
+    //     },{
+    //       tag: `a`,
+    //       link: `https://www.instagram.com/reel/CgfZAPtFF_G/?igshid=NmNmNjAwNzg=`,
+    //       text:`Movement`
+    //     },{
+    //       text:` can help increase your lifespan, by giving your body the nourishment it needs and maintaining its natural functions.`
+    //     },{
+    //       tag: `br`
+    //     },{
+    //       tag: `br`
+    //     },{
+    //       tag: `b`,
+    //       text: `Here are 5 ways to improve your mobility:`
+    //     }]
+    //   },{
+    //     tag: `ol`,
+    //         list: [{
+    //           item: [{
+    //             tag: `b`,
+    //             text: `Stretch daily. `
+    //           },{
+    //             tag: `a`,
+    //             linke: ``,
+    //             text: `Stretching`
+    //           },{
+    //             text: ` is so important to our health and the functional movement of our bodies. When we stretch we are waking up the muscle fascia that has become tight and stagnant while we sleep. Check out this quirky explainer on `
+    //           },{
+    //             tag: `a`,
+    //             link: `https://www.youtube.com/watch?v=vmrA3mMATgw`,
+    //             text: `how muscle fascia works`
+    //           },{
+    //             text: ` and see why stretching is so important!`
+    //           }]
+    //         },{
+    //           item: [{
+    //             tag: `b`,
+    //             text: `Find your end range of motion. `
+    //           },{
+    //             text: `And then back off. The human body is capable of many things. Moving is an artform. If you are trying to increase mobility in a specific part of your body, it’s important to identify your limits and explore them. Once your muscle gets to its widest range of motion, create some resistance (gravitational force), and then relax the muscle back to its resting state. Doing this will train your muscles to become more open and mobile.`
+    //           }]
+    //         },{
+    //           item: [{
+    //             tag: `b`,
+    //             text: `Regression and progression. `
+    //           },{
+    //             text: `Think of an infant learning to sit up on their own for the first time. Then they begin to crawl, then stand, then walk, then run. Each movement builds upon the last. This is progression. Try taking a complex movement, or something your body is currently challenged by. This can be getting up from a chair or stepping on a curb. How can you break down the micro movements within that action? Focus on efficiency, and functional movement. Taking some steps backward, at first, can progress you forward.`
+    //           }]
+    //         },{
+    //           item: [{
+    //             tag: `b`,
+    //             text: `Go for a swim! `
+    //           },{
+    //             tag: `a`,
+    //             linke: `https://www.instagram.com/reel/ChskFd9lYUe/?igshid=NmNmNjAwNzg=`,
+    //             text: `Swimming`
+    //           },{
+    //             text: ` allows all of the muscles in the body to be engaged and increases blood flow and lung capacity. By engaging all of your muscles, you are building stamina within your body, and encouraging functionality.`
+    //           }]
+    //         },{
+    //           item: [{
+    //             tag: `b`,
+    //             text: `Get more massages! `
+    //           },{
+    //             text: `The way you care for yourself is important, and contributes to your overall health. When you invest into your body, it will pay you back tenfold. Massage is a great way to open up muscle fascia, prep your body for increased movement, or recover from stress. If booking a massage isn’t in the budget, grab one of those massage guns from online, or find a friend with great hands!`
+    //           },{
+    //             tag: `br`
+    //           },{
+    //             tag: `br`
+    //           },{
+    //             tag: `img`,
+    //             content: [{
+    //               class: `wide`,
+    //               num: 2
+    //             }]
+    //           }]
+    //         }]
+    //     },{
+    //       tag: `p`,
+    //       content: [{
+    //         tag: `br`,
+    //       },{
+    //         tag: `b`,
+    //         text: `The Challenge: ` 
+    //       },{
+    //         text: `Pretend like you’re a baby again and go through all the steps of growth, and pay special attention to what movements challenge your body the most!` 
+    //       }]
+    //     }]
+    //   },{
+      id: `220905`,
+      title: `How to Use Yoga to Decrease Chronic Pain`,
+      category: `Yoga`,
+      publishDate: `Monday, September 5th, 2022`,
+      subtext: `The tools of yoga can help you eliminate chronic pain.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Pain is your body’s reaction to something that it perceives as harmful. It is telling you that something is different. When we experience pain, it often triggers a stress response, causing more breakdown in the function of your nervous system that keeps you healthy.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Using the tools of yoga, you can `
+        },{
+          tag: `a`,
+          link: `https://www.instagram.com/reel/ChnMa4xl46l/?igshid=NmNmNjAwNzg%3D`,
+          text:`decrease the pain response`
+        },{
+          text:` by activating your parasympathetic nervous system, your rest and digest function.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Breathe. `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/210809/breathing_for_your_body`,
+            text: 'Breathing'
+          },{
+            text: ` is fundamental for your overall health and wellbeing. The mechanics of our breath is indicative of mental and physical health. Someone with shallow, labored breathing, shortness of breath, or tightness across the chest is likely experiencing some sort of pain. Breathing from your belly, using nostril breathing, extended exhales, and correct posture will all contribute to decreasing pain in your body.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Mind your thoughts. `
+          },{
+            text: `Visualization is a powerful tool in healing from chronic pain. What you focus on increases, so it’s important to focus on what you ideally want to see in your body. Many people who’ve experienced long term, chronic pain do not trust their bodies. It is important to rebuild that relationship, and begin to increase awareness. Visualizing your body free from pain is an important factor in reprogramming the mind, because your brain may no longer discern between movement that is actually happening and pain.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Move accordingly. `
+          },{
+            text: `Sometimes when the body experiences pain, movement can be intimidating. The mind may become stuck in the safety that is stillness. Movement helps to break up stagnation in the body, which causes pain. When you find movements that are accessible to your body, you can progress into `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/yoga_therapy`,
+            text: `pain free exploration`
+          },{
+            text: `. Asana, the physical practice of yoga, can naturally decrease pain and release tension.`
+           }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            num: 2
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: ` Sit up straight and take a big deep breath in through your nose. Exhale out through your nose and make it longer than the inhale. How do you feel?` 
+        }]
+      }]
+    },{
       id: `220815`,
       title: `Cooling Foods to Beat Summer Heat`,
       category: `Nutrition`,
@@ -232,7 +482,7 @@ export default class App extends Component {
         content: [{
           text: `In Ayurveda, foods are characterized by their various qualities. Foods that have cooling qualities are great to eat during the summer heat, or when your pitta dosha is imbalanced. Pitta is the fire energy in your body. It ignites passion, and love, and ambition, but when imbalanced it can cause "`
         },{
-          type: `a`,
+          tag: `a`,
           link: `https://www.instagram.com/p/ChDKNwtvwLE/?igshid=YmMyMTA2M2Y=`,
           text:`inflammation in your gut`
         },{
@@ -246,7 +496,7 @@ export default class App extends Component {
       },{
         tag: `p`,
         content: [{
-          type: `a`,
+          tag: `a`,
           link: `https://pranawellnessworks.com/blog/220530/3_tips_for_summer_wellness`,
           text:`Summertime`
         },{
@@ -344,7 +594,7 @@ export default class App extends Component {
         content: [{
           text: `I recently gave a workshop at IDEA World Convention in Vegas, on "`
         },{
-          type: `a`,
+          tag: `a`,
           link: `https://www.instagram.com/reel/CgfZAPtFF_G/?igshid=YmMyMTA2M2Y=`,
           text:`Yoga for Athletes`
         },{
@@ -369,7 +619,7 @@ export default class App extends Component {
           },{
             text: `What is they key action of the sport in which you’re training? Is it a squat, a pitch, a punch, a swing, or a kick? Keeping this in mind will help you to determine what yoga postures will make this key action easier on the body. For example, if you’re a `
           },{
-            type: `a`,
+            tag: `a`,
             link: `https://www.instagram.com/p/Cgm8YUcvAm8/?igshid=YmMyMTA2M2Y=`,
             text: `boxer`
           },{

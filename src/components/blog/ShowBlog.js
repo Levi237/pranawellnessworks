@@ -136,8 +136,8 @@ const ShowBlog = ({blogs, author}) => {
                         return <br key={k}/>
                     } else if ( txt.tag === "hr" ) { 
                         return <hr key={k}/>
-                    } else if (txt.tag === "img"){
-                        return <img key={key} className={`blog-image ${txt.class}`} src={`/blog/${id}_${txt.num}.jpg` } alt={`${id}_${txt.num}`}/>  
+                    } else if ( txt.tag === "img" ) { 
+                        return <img key={key} className={`blog-image ${txt.class}`} src={`/blog/${id}_${txt.content[0].num}.jpg` } alt={`${id}_${txt.num}`}/>
                     } else {
                         return <span key={k}>{txt.text}</span>
                     }
