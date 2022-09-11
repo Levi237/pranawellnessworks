@@ -6,7 +6,7 @@ import TwoRows          from './sections/TwoRows';
 import CategoryPreview  from './sections/CategoryPreview';
 import BlogBlocks       from './sections/BlogBlocks';
 
-const BlogMainIndex = ({ scrollToTop, selectBlog, blogs, author}) => {
+const BlogMainIndex = ({ scrollToTop, selectBlog, blogs, author }) => {
 
     const blogBlogsList = blogs.filter(blog => blog.category !== "Mindfulness & Meditation")
 
@@ -35,15 +35,10 @@ const BlogIndexWrapper = styled.div`
         color: var(--lightgrey);
         font-weight: 100;
     }
-    p {}
     small {
         text-transform: uppercase;
         color: var(--green);
     }
-
-    @media screen and (max-width: 945px){
-
-    }
 `;
 
-export default BlogMainIndex
+export default BlogMainIndex;
