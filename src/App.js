@@ -32,6 +32,7 @@ import YogaTherapyMain      from './components/yogatherapy';
 import PrenatalMain         from './components/prenatal';
 import Coaching             from './components/coaching/Coaching';
 import Speaking             from './components/coaching/Speaking';
+import GroupMain            from './components/group';
 
 import Footer               from './components/footer';
 
@@ -2935,7 +2936,6 @@ export default class App extends Component {
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
         <Switch><Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/></Switch>
-
         {/******* BODY SWITCHBOARD *******/}
         <Switch>
           <Route path={routes.MAIL} exact render={() => <></> }/>     
@@ -2945,6 +2945,10 @@ export default class App extends Component {
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
+          <Route path={routes.GROUP} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <GroupMain scrollToTop={this.scrollToTop} /> 
+          </> }/>  
           <Route path={routes.BLOG} exact render={() => <>
             <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <BlogMainIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 

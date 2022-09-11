@@ -8,6 +8,7 @@ export const COACH = '/speaking_coaching';
 export const CORP = '/services_corporate';
 export const EVENT = '/events_calendar';
 export const FAQ = '/FAQ';
+export const GROUP = '/group_programs';
 export const HOME = '/home';
 export const MAIL = '/thank_you_for_reaching_out';
 export const PREG = '/pre-post_natal';
