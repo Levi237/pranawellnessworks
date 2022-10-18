@@ -279,6 +279,16 @@ export default class App extends Component {
               text: `Always do your best. `
             },{
               text: `Show up with your A game, no matter the circumstance. You want to put your best effort forward, not only for others, but for yourself in order to grow and learn. Keep in mind, your best today may not be your best tomorrow. Think about the best way to show up for yourself today, and understand that the next day might provide challenges that beckon you to show up differently. The most important part of this agreement is to be non-judgemental of yourself. If you can look at yourself in the mirror and tell yourself you’ve done your best, that’s it. Do not criticize or compare. Instead, reflect on how you can learn and innovate and show up better next time.`
+            },{
+              tag: `br`
+            },{
+              tag: `br`
+            },{
+              tag: `img`,
+              content: [{
+                class: `wide`,
+                num: 2
+              }]
             }]
           }]
       },{

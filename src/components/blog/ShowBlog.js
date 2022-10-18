@@ -201,6 +201,7 @@ const BlogWrapper = styled.div`
 
         img {
             margin: 10px auto;
+            width: 100%;
         }
         > img:first-of-type {
             width: 100%;
