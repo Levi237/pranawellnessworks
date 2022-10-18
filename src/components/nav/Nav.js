@@ -5,7 +5,11 @@ import styled from 'styled-components';
 import * as routes from '../../constants/routes';
 
 export default class Nav extends Component {
-
+    toggleBlogCategories = () => {
+        const dropdown = document.getElementById('blog-categories');
+        dropdown.classList.toggle('show');
+        dropdown.classList.toggle('hide');
+      };
 
     render(){
         const { toggleHamburger } = this.props;
@@ -20,6 +24,7 @@ export default class Nav extends Component {
                     <NavLink activeClassName="nav-active" to={routes.HOME} onClick={() => {toggleHamburger()}}>HOME</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
                     <section>
+                        <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={() => {toggleHamburger()}}>GROUP PROGRAMS</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={() => {toggleHamburger()}}>EVENTS CALENDAR</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>PERSONAL WELLNESS</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
@@ -28,7 +33,8 @@ export default class Nav extends Component {
                         <NavLink activeClassName="nav-active" to={routes.COACH} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
                     </section>
                     <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
-                    <section>
+                    {/* <button onClick={() => {this.toggleBlogCategories()}}>+</button> */}
+                    <section id="blog-categories" className="hide">
                         <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
                         <NavLink activeClassName="nav-active" to={routes.BLOGN} onClick={() => {toggleHamburger()}}>NUTRITION</NavLink>
@@ -49,7 +55,7 @@ const NavContainer = styled.div`
 
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
     
     background-color: var(--darkpurple);
     color: #FFF;
@@ -57,6 +63,12 @@ const NavContainer = styled.div`
     font-size: 20px;
     text-align: center;
 
+    .show {
+
+    }
+    .hide {
+
+    }
     > div {
         text-align: left;
         display: inline-block;
