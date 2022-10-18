@@ -32,6 +32,7 @@ export default class Footer extends Component {
                         <section>
                             <NavLink activeClassName="nav-active" to={routes.SERV} onClick={scrollToTop}>WELLNESS SERVICES</NavLink>
                             <div>
+                                <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={scrollToTop}>GROUP PROGRAMS</NavLink>
                                 <NavLink activeClassName="nav-active" to={routes.WELL} onClick={scrollToTop}>PERSONAL WELLNESS</NavLink>
                                 <NavLink activeClassName="nav-active" to={routes.CORP} onClick={scrollToTop}>CORPORATE WELLNESS</NavLink>
                                 <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={scrollToTop}>YOGA THERAPY</NavLink>
