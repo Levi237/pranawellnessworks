@@ -87,6 +87,17 @@ export default class App extends Component {
         backgroundColor: "white",
         button: "Schedule A Session"
       }, 
+      groupPrograms: {
+        title: "THE JOY", 
+        subtitle: "Journey", 
+        image: "group_header.jpg",
+        header: "8-Week Group Program to Eliminate Anxiety and Reclaim Your Joy",
+        message: "now enrolling for October 2022 program",
+        value: "contactRequest",
+        backgroundColor: "purple",
+        button: "Join Now!",
+        link: "https://buy.stripe.com/fZecNvaET0G36uk6oo"
+      },
       wellnessServices: {
         title: "EXPLORE OUR WIDE-RANGING",
         subtitle: "Wellness Services",
@@ -223,180 +234,239 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
-    //   id: `221003`,
-    //   title: ` How To Practice Mindful Eating`,
-    //   category: `Nutrition`,
-    //   publishDate: `Monday, October 3rd, 2022`,
-    //   subtext: `Being mindful about your meals keeps you healthy.`,
-    //   copy: [{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `Your digestion directly impacts your mental and physical body. When you practice mindful eating, you allow the food to do its job and feed you- mind, body, and spirit. `
-    //     }]
-    //   },{
-    //     tag: `section`,
-    //     list: [{
-    //       tag: `p`,
-    //       content: [{
-    //         tag: `b`,
-    //         text: `Give thanks. `
-    //       },{
-    //         text: `Gratitude is always the best attitude. Whether you pray before meals, meditate, breathe deeply, or simply say thank you, acknowledging the food in front of you and giving thanks for its process makes it feel better going down. All foods have a life cycle, so expressing gratitude is a kind way to be present in the process.`
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         tag: `b`,
-    //         text: `Free from distractions. `
-    //       },{
-    //         text: `Most of us are guilty of eating our meals in front of the TV, with phone in hand, or while working on the computer. There is something luxurious about sitting down to eat and being distraction free. Allowing your mind and body to process (literally) what you are eating, will aid in your digestive process. Eating without distractions is also a great way to expand your mental awareness.`
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         tag: `b`,
-    //         text: `Slowly. `
-    //       },{
-    //         text: `My grandpa used to tell us to chew each bite 65 times before swallowing! When you’re eating too fast, your digestive system has to play catch up and usually cannot keep up. Your body is not able to properly process food, thus gas, acid, and overall discomfort are the result. When you eat slowly, you allow your body to properly work for you, and turn your food into energy.`
-    //       }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         tag: `b`,
-    //         text: `Drink your water. `
-    //       },{
-    //         text: `Before each meal, you should fill your stomach with ¼ water. This helps to activate your digestion, but also prevents overeating. Rather than chugging water simultaneously with your food, allow it to flush out toxins afterwards.`
-    //        }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         tag: `b`,
-    //         text: `Eat foods that agree with you. `
-    //       },{
-    //         text: `Every BODY is different, so that means that the food we eat does not affect each person in the same way. Food is meant to nourish the body and provide energy, but the way it is received in each body may vary. It is so important to understand what your body needs to feel nourished and balanced, and what specific things might make you feel out of balance. Eat foods that make sense for your `
-    //       },{
-    //         tag: `a`,
-    //         link: `https://pranawellnessworks.com/blog/220221/get_to_know_your_body_what_are_doshas_`,
-    //         text: `dosha`
-    //       },{
-    //         text: `.`
-    //       }]
-    //     },{
-    //       tag: `img`,
-    //       content: [{
-    //         class: `wide`,
-    //         num: 2
-    //       }]
-    //     }]
-    //   },{
-    //     tag: `p`,
-    //     content: [{
-    //       tag: `br`,
-    //     },{
-    //       tag: `b`,
-    //       text: `The Challenge: ` 
-    //     },{
-    //       text: `Try a no distractions dinner tonight!  ` 
-    //     }]
-    //   }]
-    // },{
-    //   id: `220919`,
-    //   title: `5 Ways to Improve Mobility`,
-    //   category: `Functional Fitness`,
-    //   publishDate: `Monday,  September 19th, 2022`,
-    //   subtext: `Movement is medicine, and can add years to your life.`,
-    //   copy: [{
-    //     tag: `p`,
-    //     content: [{
-    //       text: `Mobility is defined as your muscle range of motion. Without mobility, stagnation appears in the body, and muscles can atrophy causing pain and disease. To be mobile is to be able to move your body in a way that increases circulation and optimizes function. `
-    //     },{
-    //       tag: `a`,
-    //       link: `https://www.instagram.com/reel/CgfZAPtFF_G/?igshid=NmNmNjAwNzg=`,
-    //       text:`Movement`
-    //     },{
-    //       text:` can help increase your lifespan, by giving your body the nourishment it needs and maintaining its natural functions.`
-    //     },{
-    //       tag: `br`
-    //     },{
-    //       tag: `br`
-    //     },{
-    //       tag: `b`,
-    //       text: `Here are 5 ways to improve your mobility:`
-    //     }]
-    //   },{
-    //     tag: `ol`,
-    //         list: [{
-    //           item: [{
-    //             tag: `b`,
-    //             text: `Stretch daily. `
-    //           },{
-    //             tag: `a`,
-    //             linke: ``,
-    //             text: `Stretching`
-    //           },{
-    //             text: ` is so important to our health and the functional movement of our bodies. When we stretch we are waking up the muscle fascia that has become tight and stagnant while we sleep. Check out this quirky explainer on `
-    //           },{
-    //             tag: `a`,
-    //             link: `https://www.youtube.com/watch?v=vmrA3mMATgw`,
-    //             text: `how muscle fascia works`
-    //           },{
-    //             text: ` and see why stretching is so important!`
-    //           }]
-    //         },{
-    //           item: [{
-    //             tag: `b`,
-    //             text: `Find your end range of motion. `
-    //           },{
-    //             text: `And then back off. The human body is capable of many things. Moving is an artform. If you are trying to increase mobility in a specific part of your body, it’s important to identify your limits and explore them. Once your muscle gets to its widest range of motion, create some resistance (gravitational force), and then relax the muscle back to its resting state. Doing this will train your muscles to become more open and mobile.`
-    //           }]
-    //         },{
-    //           item: [{
-    //             tag: `b`,
-    //             text: `Regression and progression. `
-    //           },{
-    //             text: `Think of an infant learning to sit up on their own for the first time. Then they begin to crawl, then stand, then walk, then run. Each movement builds upon the last. This is progression. Try taking a complex movement, or something your body is currently challenged by. This can be getting up from a chair or stepping on a curb. How can you break down the micro movements within that action? Focus on efficiency, and functional movement. Taking some steps backward, at first, can progress you forward.`
-    //           }]
-    //         },{
-    //           item: [{
-    //             tag: `b`,
-    //             text: `Go for a swim! `
-    //           },{
-    //             tag: `a`,
-    //             linke: `https://www.instagram.com/reel/ChskFd9lYUe/?igshid=NmNmNjAwNzg=`,
-    //             text: `Swimming`
-    //           },{
-    //             text: ` allows all of the muscles in the body to be engaged and increases blood flow and lung capacity. By engaging all of your muscles, you are building stamina within your body, and encouraging functionality.`
-    //           }]
-    //         },{
-    //           item: [{
-    //             tag: `b`,
-    //             text: `Get more massages! `
-    //           },{
-    //             text: `The way you care for yourself is important, and contributes to your overall health. When you invest into your body, it will pay you back tenfold. Massage is a great way to open up muscle fascia, prep your body for increased movement, or recover from stress. If booking a massage isn’t in the budget, grab one of those massage guns from online, or find a friend with great hands!`
-    //           },{
-    //             tag: `br`
-    //           },{
-    //             tag: `br`
-    //           },{
-    //             tag: `img`,
-    //             content: [{
-    //               class: `wide`,
-    //               num: 2
-    //             }]
-    //           }]
-    //         }]
-    //     },{
-    //       tag: `p`,
-    //       content: [{
-    //         tag: `br`,
-    //       },{
-    //         tag: `b`,
-    //         text: `The Challenge: ` 
-    //       },{
-    //         text: `Pretend like you’re a baby again and go through all the steps of growth, and pay special attention to what movements challenge your body the most!` 
-    //       }]
-    //     }]
-    //   },{
+      id: `221017`,
+      title: `How To Use The Four Agreements to Improve Mental Health `,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, October 17th, 2022`,
+      subtext: `Learn to live by these four basic agreements and unlock your life of freedom. `,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `I first read `
+        },{
+          type: `a`,
+          linke: `https://www.amazon.com/Four-Agreements-Practical-Personal-Freedom/dp/1878424319`,
+          text: `The Four Agreements, by Don Miguel Ruiz`
+        },{
+          text: `, as an assignment in one of my Yoga Teacher trainings. I had heard of it many times, but once I began to read, I knew it wouldn’t just be once. When life gets challenging, or I’m feeling stressed about something, I turn to these agreements. The book provides simple guidelines for life, to increase happiness and your sense of freedom.`
+        }]
+      },{
+        tag: `ol`,
+          list: [{
+            item: [{
+              tag: `b`,
+              text: `Be impeccable with your word.  `
+            },{
+              text: `Speak truth to yourself and to others, and you will feel freedom. One of the five Yamas (restraints) of Yoga, Satya, suggests that one always act in truthfulness. This means being true to your own identity, being true to your word, and true to your values. Your word has the power to impact people in meaningful ways, through love, if used properly. Do not cause harm with your word. When you say what you mean, and mean what you say, you can avoid confusion and hurt.`          
+            }]
+          },{
+            item: [{
+              tag: `b`,
+              text: `Don’t take anything personally. `
+            },{
+              text: `This one is perhaps the most important agreement you can make with yourself in pursuing personal mental well-being. It is also the most challenging. When someone does or says something to you that offends, it’s hard to release attachment and not take it personally. Nine times out of ten, that person’s actions or words are a reflection of them, not of you. Take a deep breath, and do some reflection before you react. In Yoga, self-study is called “svadhyaya,” and allows us to see into ourselves and become more self-aware. Reactivity is limiting, so strive to not limit yourself by taking things personally.`
+            }]
+          },{
+            item: [{
+              tag: `b`,
+              text: `Don’t make assumptions. `
+            },{
+              text: `One definition of anxiety is assigning an outcome or story to something that has not yet occurred. Our imagination can get the best of us, and we allow the mind to spiral into scenarios that are typically not true, and never come to fruition. Instead of assuming, ask questions. Seek to understand, not to know. Save yourself some mental stress, and don’t assume.`           
+            }]
+          },{
+            item: [{
+              tag: `b`,
+              text: `Always do your best. `
+            },{
+              text: `Show up with your A game, no matter the circumstance. You want to put your best effort forward, not only for others, but for yourself in order to grow and learn. Keep in mind, your best today may not be your best tomorrow. Think about the best way to show up for yourself today, and understand that the next day might provide challenges that beckon you to show up differently. The most important part of this agreement is to be non-judgemental of yourself. If you can look at yourself in the mirror and tell yourself you’ve done your best, that’s it. Do not criticize or compare. Instead, reflect on how you can learn and innovate and show up better next time.`
+            }]
+          }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Reflect on a recent challenge you faced. How could you have practiced these four agreements in that situation, and how would it have changed the outcome?` 
+        }]
+      }]
+    },{
+      id: `221003`,
+      title: `How To Practice Mindful Eating`,
+      category: `Nutrition`,
+      publishDate: `Monday, October 3rd, 2022`,
+      subtext: `Being mindful about your meals keeps you healthy.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Your digestion directly impacts your mental and physical body. When you practice mindful eating, you allow the food to do its job and feed you- mind, body, and spirit. `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Give thanks. `
+          },{
+            text: `Gratitude is always the best attitude. Whether you pray before meals, meditate, breathe deeply, or simply say thank you, acknowledging the food in front of you and giving thanks for its process makes it feel better going down. All foods have a life cycle, so expressing gratitude is a kind way to be present in the process.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Free from distractions. `
+          },{
+            text: `Most of us are guilty of eating our meals in front of the TV, with phone in hand, or while working on the computer. There is something luxurious about sitting down to eat and being distraction free. Allowing your mind and body to process (literally) what you are eating, will aid in your digestive process. Eating without distractions is also a great way to expand your mental awareness.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Slowly. `
+          },{
+            text: `My grandpa used to tell us to chew each bite 65 times before swallowing! When you’re eating too fast, your digestive system has to play catch up and usually cannot keep up. Your body is not able to properly process food, thus gas, acid, and overall discomfort are the result. When you eat slowly, you allow your body to properly work for you, and turn your food into energy.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Drink your water. `
+          },{
+            text: `Before each meal, you should fill your stomach with ¼ water. This helps to activate your digestion, but also prevents overeating. Rather than chugging water simultaneously with your food, allow it to flush out toxins afterwards.`
+           }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Eat foods that agree with you. `
+          },{
+            text: `Every BODY is different, so that means that the food we eat does not affect each person in the same way. Food is meant to nourish the body and provide energy, but the way it is received in each body may vary. It is so important to understand what your body needs to feel nourished and balanced, and what specific things might make you feel out of balance. Eat foods that make sense for your `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/220221/get_to_know_your_body_what_are_doshas_`,
+            text: `dosha`
+          },{
+            text: `.`
+          }]
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            num: 2
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Try a no distractions dinner tonight!  ` 
+        }]
+      }]
+    },{
+      id: `220919`,
+      title: `5 Ways to Improve Mobility`,
+      category: `Functional Fitness`,
+      publishDate: `Monday,  September 19th, 2022`,
+      subtext: `Movement is medicine, and can add years to your life.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Mobility is defined as your muscle range of motion. Without mobility, stagnation appears in the body, and muscles can atrophy causing pain and disease. To be mobile is to be able to move your body in a way that increases circulation and optimizes function. `
+        },{
+          tag: `a`,
+          link: `https://www.instagram.com/reel/CgfZAPtFF_G/?igshid=NmNmNjAwNzg=`,
+          text:`Movement`
+        },{
+          text:` can help increase your lifespan, by giving your body the nourishment it needs and maintaining its natural functions.`
+        },{
+          tag: `br`
+        },{
+          tag: `br`
+        },{
+          tag: `b`,
+          text: `Here are 5 ways to improve your mobility:`
+        }]
+      },{
+        tag: `ol`,
+            list: [{
+              item: [{
+                tag: `b`,
+                text: `Stretch daily. `
+              },{
+                tag: `a`,
+                linke: ``,
+                text: `Stretching`
+              },{
+                text: ` is so important to our health and the functional movement of our bodies. When we stretch we are waking up the muscle fascia that has become tight and stagnant while we sleep. Check out this quirky explainer on `
+              },{
+                tag: `a`,
+                link: `https://www.youtube.com/watch?v=vmrA3mMATgw`,
+                text: `how muscle fascia works`
+              },{
+                text: ` and see why stretching is so important!`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Find your end range of motion. `
+              },{
+                text: `And then back off. The human body is capable of many things. Moving is an artform. If you are trying to increase mobility in a specific part of your body, it’s important to identify your limits and explore them. Once your muscle gets to its widest range of motion, create some resistance (gravitational force), and then relax the muscle back to its resting state. Doing this will train your muscles to become more open and mobile.`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Regression and progression. `
+              },{
+                text: `Think of an infant learning to sit up on their own for the first time. Then they begin to crawl, then stand, then walk, then run. Each movement builds upon the last. This is progression. Try taking a complex movement, or something your body is currently challenged by. This can be getting up from a chair or stepping on a curb. How can you break down the micro movements within that action? Focus on efficiency, and functional movement. Taking some steps backward, at first, can progress you forward.`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Go for a swim! `
+              },{
+                tag: `a`,
+                linke: `https://www.instagram.com/reel/ChskFd9lYUe/?igshid=NmNmNjAwNzg=`,
+                text: `Swimming`
+              },{
+                text: ` allows all of the muscles in the body to be engaged and increases blood flow and lung capacity. By engaging all of your muscles, you are building stamina within your body, and encouraging functionality.`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Get more massages! `
+              },{
+                text: `The way you care for yourself is important, and contributes to your overall health. When you invest into your body, it will pay you back tenfold. Massage is a great way to open up muscle fascia, prep your body for increased movement, or recover from stress. If booking a massage isn’t in the budget, grab one of those massage guns from online, or find a friend with great hands!`
+              },{
+                tag: `br`
+              },{
+                tag: `br`
+              },{
+                tag: `img`,
+                content: [{
+                  class: `wide`,
+                  num: 2
+                }]
+              }]
+            }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `br`,
+          },{
+            tag: `b`,
+            text: `The Challenge: ` 
+          },{
+            text: `Pretend like you’re a baby again and go through all the steps of growth, and pay special attention to what movements challenge your body the most!` 
+          }]
+        }]
+      },{
       id: `220905`,
       title: `How to Use Yoga to Decrease Chronic Pain`,
       category: `Yoga`,
@@ -943,10 +1013,10 @@ export default class App extends Component {
               text: `Find fun outside. After a crazy couple of year, we are finally back outside just in time for summer. Many of us have spent so much time within 4 walls lately, and that can really take a toll on your mental health, and create stagnation in the physical body. Explore new ways to be outside. Rollerblading, taking long walks in your neighborhood, biking, or going to restaurants with patios. `
             },{
               tag: `a`,
-              link: `link`,
-              text: `Taking outdoor`
+              link: `https://www.eventbrite.com/e/summer-time-chi-yoga-and-wellness-tickets-352847214517`,
+              text: `Taking outdoor classes`
             },{
-              text: ` classes is a great way to be outside and hit your fitness goals!  `
+              text: ` is a great way to be outside and hit your fitness goals!  `
             }]
           },{
             item: [{
@@ -2945,10 +3015,6 @@ export default class App extends Component {
             <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
-          <Route path={routes.GROUP} exact render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-            <GroupMain scrollToTop={this.scrollToTop} /> 
-          </> }/>  
           <Route path={routes.BLOG} exact render={() => <>
             <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
             <BlogMainIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
@@ -2984,6 +3050,12 @@ export default class App extends Component {
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> 
             <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/>
           </> }/>           
+          <Route path={routes.GROUP} exact render={() => <>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <HeaderComponent purpleBox={(true)} textCopy={textCopy.groupPrograms}/>
+            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.groupPrograms}></HeaderMessage>
+            <GroupMain scrollToTop={this.scrollToTop} /> 
+          </> }/>  
           <Route path={routes.WELL} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
