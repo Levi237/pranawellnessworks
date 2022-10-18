@@ -9,7 +9,10 @@ export default class Nav extends Component {
         const dropdown = document.getElementById('blog-categories');
         dropdown.classList.toggle('show');
         dropdown.classList.toggle('hide');
-      };
+        const rotateBtn = document.getElementById('blog-btn-line');
+        rotateBtn.classList.toggle('horz');
+        rotateBtn.classList.toggle('vert');
+    };
 
     render(){
         const { toggleHamburger } = this.props;
@@ -33,12 +36,14 @@ export default class Nav extends Component {
                         <NavLink activeClassName="nav-active" to={routes.COACH} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
                     </section>
                     <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
-                    {/* <button onClick={() => {this.toggleBlogCategories()}}>+</button> */}
-                    <section id="blog-categories" className="hide">
-                        <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
-                        <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
-                        <NavLink activeClassName="nav-active" to={routes.BLOGN} onClick={() => {toggleHamburger()}}>NUTRITION</NavLink>
-                        <NavLink activeClassName="nav-active" to={routes.BLOGY} onClick={() => {toggleHamburger()}}>YOGA</NavLink>
+                    <section className="toggle-blog-container">
+                        <BlogToggleBtn className="toggle-blog" onClick={() => {this.toggleBlogCategories()}}><section></section><section id="blog-btn-line" className="vert"></section></BlogToggleBtn>
+                        <section id="blog-categories" className="toggle hide">
+                            <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.BLOGN} onClick={() => {toggleHamburger()}}>NUTRITION</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.BLOGY} onClick={() => {toggleHamburger()}}>YOGA</NavLink>
+                        </section>
                     </section>
                     <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
@@ -47,6 +52,37 @@ export default class Nav extends Component {
         );
     };
 };
+
+const BlogToggleBtn = styled.button`
+    position: absolute;
+    top: -32px;
+    right: 0px;
+    padding: 0;
+    background: transparent;
+    color: white;
+    border: none;
+
+    .horz {
+        transform: rotate(0deg);
+    }
+    .vert {
+        transform: rotate(90deg);
+    }
+    
+    > section {
+        height: 2px;
+        width: 12px;
+        background: white;
+        &:first-of-type {
+            margin-top: 5px
+        }
+        &:last-of-type {
+            transition: transform .35s  ease-in-out;
+            margin-top: -2px
+        }
+    }
+`;
+
 
 const NavContainer = styled.div`
     position: fixed;
@@ -63,11 +99,22 @@ const NavContainer = styled.div`
     font-size: 20px;
     text-align: center;
 
-    .show {
+    .toggle-blog-container {
+        position: relative;
+    }
 
+    .toggle {
+        transition: max-height 1s ease;
+        height: auto;
+    }
+    .show {
+        max-height: 600px;
+        transition: max-height 1s ease;
+        overflow: hidden;
     }
     .hide {
-
+        max-height: 0px;
+        overflow: hidden;
     }
     > div {
         text-align: left;
@@ -83,14 +130,13 @@ const NavContainer = styled.div`
         text-decoration: none;
         display: block;
         height: 36px;
-        // padding-top: 10px;
         color: #FFF;
     }
     a:hover {
         color: var(--lightgreen);
     }
     
-    button {
+    button.close {
         position: absolute;
         top: 5px;
         right: 5px;
@@ -108,7 +154,6 @@ const NavContainer = styled.div`
 `;
 const CloseBtn = styled.button`
     background-color: transparent;
-    // border: 1px solid white!important;
     border-radius: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -118,7 +163,6 @@ const CloseBtn = styled.button`
     min-height: 30px;
     min-width: 30px;
     &:hover {
-        // border: 1px solid var(--lightgreen)!important;
         color: var(--lightgreen);
     }
 `;
