@@ -234,11 +234,81 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      id: `221031`,
+      title: `3 Ways to Ignite Your Digestive Fire`,
+      category: `Nutrition`,
+      publishDate: `Monday, October 31st, 2022`,
+      subtext: `A healthy digestive system is the key to good health.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `When your gut is healthy, you are healthy. When a person’s metabolic fire dies, they will soon die. You cannot continue to live a healthy life with an unhealthy gut, so being mindful of your digestion will help improve longevity.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Warm water with lemon. `
+          },{
+            text: `Daily. Before you go to bed each night, boil some water so that it will be settled and warmed for you in the morning. `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/210726/5_ways_to_create_a_powerful_morning`,
+            text: `As soon as you wake up`
+          },{
+            text: `, pour yourself a glass of the warm water, squeeze a lemon into it, and go start your day! This daily ritual will help to activate your digestive system and metabolism, encourage healthy elimination, and cleanse toxins. You will feel the difference!`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Eat for your dosha. `
+          },{
+            tag: `a`,
+            link: `https://pranawellnessworks.com/blog/220221/get_to_know_your_body_what_are_doshas_`,
+            text: `Are you eating for YOUR body`
+          },{
+            text: `, or are you just eating what you’ve been told is “healthy?” Ayurveda is an Eastern science of medicine that focuses on holistic, whole-body healing using your body’s natural systems. It suggests that each human body has a prominent dosha, for which it can be governed. When you begin to focus on eating for your specific body make up, your health and digestive process will be optimized.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Movement in the morning. `
+          },{
+            text: `Practice forward folds and twisting asanas (postures) as a way to promote healthy digestion and encourage elimination in the morning. A simple forward fold, connecting chest to thighs, with hands toward the floor will do wonders for your digestion, and also your lower back! A simple seated twist, like matsyendrasana, can aid in the digestive process as well as promote a healthy liver detox.`
+          }]
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          text: `Making small changes in your daily habits, leads to big changes in your overall health. Digestion plays a huge role in immunity and even mental health. Be mindful of what your gut is telling you, always. ` 
+        }]
+      },{
+        tag: `img`,
+        class: `medium`,
+        num: 2
+      },{
+        tag: `p`,
+        content: [{
+          tag: `br`,
+        },{
+          tag: `b`,
+          text: `The Challenge: ` 
+        },{
+          text: `Try these two simple poses in the morning!` 
+        }]
+      }]
+    },{
       id: `221017`,
-      title: `How To Use The Four Agreements to Improve Mental Health `,
+      title: `How To Use The Four Agreements to Improve Mental Health`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, October 17th, 2022`,
-      subtext: `Learn to live by these four basic agreements and unlock your life of freedom. `,
+      subtext: `Learn to live by these four basic agreements and unlock your life of freedom.`,
       copy: [{
         tag: `p`,
         content: [{
@@ -2870,10 +2940,8 @@ export default class App extends Component {
     },{
       id: `210726`,
       category: `Mindfulness & Meditation`,
-      keyWords: [`meditation`, `health`],
       title: `5 Ways to Create a Powerful Morning`,
       subtext: `Achieve your goals, increase focus and productivity. Every day!`,
-      authorId: `000`,
       publishDate: `Monday, July 26 2021`,
       copy: [{
         tag: `p`,
@@ -2928,8 +2996,10 @@ export default class App extends Component {
              text: ` The “monkey mind” is always busy! We are human, so we cannot stop the mind from running, unfortunately. This is a myth. But we can prevent the mind from controlling us, and learn to make sense of it all. By writing out your thoughts, ideas, worries, lists, and goals on paper, you allow them to be released from your brain.`,
           },{
             tag: `img`,
-            num: 2,
-            class: `wide`
+            content: [{
+              class: `wide`,
+              num: 2
+            }]
            },{
              text: `Dedicate some time in the morning to incorporate some self-study, or svadhyaya. Observe your thoughts and feelings, and put them on paper. One simple journaling practice that involves very little direction is “brain dumping.” This means you simply write down any and everything that comes to mind. It can be lists, ideas, frustrations, diary entries, food journals, or simply an account of your feelings at the moment. Name them. Whatever is allowing your monkey mind to race, put it on the paper. No journal prompts, no deep questions, just you.`,
             }],
