@@ -234,6 +234,309 @@ export default class App extends Component {
     //// BLOG HARDCOPY
 
     blogs: [{
+      // id: `221212`,
+      // title: `How to Budget Your Energy`,
+      // category: `Mindfulness & Meditation`,
+      // publishDate: `Monday, December 12th, 2022`,
+      // subtext: `Budgeting your energy is perhaps more important than budgeting your money. `,
+      // copy: [{
+      //   tag: `p`,
+      //   content: [{
+      //     text: `That is a big statement to make, but here is why. `
+      //   },{
+      //     tag: `a`,
+      //     link: `https://www.instagram.com/reel/Ck8-Iy0DkbX/?igshid=MDJmNzVkMjY%3D`,
+      //     text: `Budgeting your energy`
+      //   },{
+      //     text: ` helps to keep your body and mind in a natural, healthy rhythm. It helps to create sustainable daily habits (like the discipline for budgeting money), and keeps your nervous system in check. Your nervous system regulates your ability to rest and digest, and prevents illness. `
+      //   }]
+      // },{
+      //   tag: `p`,
+      //   content: [{
+      //     text: `When working with `
+      //   },{
+      //     tag: `a`,
+      //     link: `https://pranawellnessworks.com/yoga_therapy`,
+      //     text: `Yoga Therapy`
+      //   },{
+      //     text: ` clients, I always teach them how to do an energy budget. I created this process a few years ago, when I was feeling depleted and overwhelmed. Having a big picture view of where my energy is coming from and going was a huge help for my mental health. `
+      //   }]
+      // },{
+      //   tag: `p`,
+      //   content: [{
+      //     text: `You can create an energy budget in your journal, as a creative flow chart, or as a spreadsheet, whatever works for you! List each and every task you do (both work and personal), and its frequency. Ask yourself these questions to create a tight energy budget:`
+      //   }]
+      // },{
+      //   tag: `ul`,
+      //       list: [{
+      //         item: [{
+      //           text: `What is the monetary cost?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `What is the monetary gain?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `What is the mental cost?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `What is the mental gain?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `Time spent daily/weekly/monthly?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `Does it bring me joy?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `Can I delegate it or delete it?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `What would be the result of deleting this task?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: `How is my energy when doing this task?`,
+      //         },{
+      //           tag: `br`
+      //         },{
+      //           tag: `br`
+      //         },{
+      //           tag: `img`,
+      //           content: [{
+      //             class: `wide`,
+      //             num: 2
+      //           }]
+      //         }]
+      //       }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       text: `Take your time on these questions. Be detailed and specific. The more you can be honest with yourself, the better self-study. What is costing you more than it is worth? What do you need more of?` 
+      //     }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       tag: `br`,
+      //     },{
+      //       tag: `b`,
+      //       text: `The Challenge: ` 
+      //     },{
+      //       text: `Create your Energy Budget THIS WEEK! Send it to me so I can see.` 
+      //     }]
+      //   }]
+      // },{
+      // id: `221128`,
+      // title: `4 Ways to Shift Your Workplace Culture`,
+      // category: `Mindfulness & Meditation`,
+      // publishDate: `Monday, November 28th, 2022`,
+      // subtext: `Workplace wellbeing is not only important for individual mental health, but also for a company’s bottom line.`,
+      // copy: [{
+      //   tag: `p`,
+      //   content: [{
+      //     text: `Employees who are constantly stressed at work are a risk to the company as a whole. Stress costs American employers $300 billion dollars in healthcare costs per year. BILLION. Employees are constantly resigning due to lack of valuable workplace benefits and toxic workplace culture that negatively affects their mental health.`
+      //   }]
+      // },{
+      //   tag: `p`,
+      //   content: [{
+      //     text: `So what can you do about it? Here are 4 ways to `
+      //   },{
+      //     tag: `a`,
+      //     text: `shift the culture`,
+      //     link: `https://pranawellnessworks.com/services_corporate`
+      //   },{
+      //     text: ` so you can feel more at peace while working.`
+      //   }]
+      // },{
+      //   tag: `ol`,
+      //       list: [{
+      //         item: [{
+      //           tag: `b`,
+      //           text: `Ask questions. `
+      //         },{
+      //           text: `Being inquisitive about what is happening at work and why is so important. Ask questions about changes in policies, workplace behavior, perks, meetings, team interactions. Ask often. Ask for the things you want to see as well! Closed mouths don’t get fed! Whether you are an employee or employer, asking questions will go a long way to both give and receive feedback. Ask how your team is feeling. Ask how you can be a better team member or manager. Ask how you can help. Be genuine in your questions and your responses.`
+      //         }]
+      //       },{
+      //         item: [{
+      //           tag: `b`,
+      //           text: `Over communicate. `
+      //         },{
+      //           text: `When you think you’ve said it enough, say it one more time. The `
+      //         },{
+      //           tag: `a`,
+      //           link: `https://www.linkedin.com/posts/stephanieerazo_culture-wellbeing-workplace-activity-6992911507395117058-Tppg?utm_source=share&utm_medium=member_desktop`,
+      //           text: `art of communication`
+      //         },{
+      //           text: ` is essential to a well- functioning workplace. It feels good to let people know how you feel. Say what you mean and mean what you say. When people feel unheard, that leads to mental stress and can diminish their work.`
+      //         }]
+      //       },{
+      //         item: [{
+      //           tag: `b`,
+      //           text: `Be the change. `
+      //         },{
+      //           text: `If you’re not seeing what you want from your team or coworkers, take the leap and initiate it yourself! Shake things up, make suggestions, start taking `
+      //         },{
+      //           tag: `a`,
+      //           link: `https://pranawellnessworks.com/services_corporate`,
+      //           text: `meditation breaks`
+      //         },{
+      //           text: `, and encourage your team to join you. Someone has to be the first at everything. Why not you?`
+      //         }]
+      //       },{
+      //         item: [{
+      //           tag: `b`,
+      //           text: `Encourage yourself and others. `
+      //         },{
+      //           text: `This sounds cheesy, but encouragement goes a long way. If someone feels encouraged or supported to do something, they are more likely to do it. Employers with a team can lead in a way that makes their employees want to follow their lead. Team members can encourage each other to take rest, speak up, stay motivated, finish the task. There is power in numbers, and positive reinforcement is a game changer with teams. `
+      //         },{
+      //           tag: `br`
+      //         },{
+      //           tag: `br`
+      //         },{
+      //           tag: `img`,
+      //           content: [{
+      //             class: `wide`,
+      //             num: 2
+      //           }]
+      //         }]
+      //       }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       tag: `br`,
+      //     },{
+      //       tag: `b`,
+      //       text: `Bonus: ` 
+      //     },{
+      //       text: `Have you ever heard of bee glue? Well, it’s called `
+      //     },{
+      //       tag: `a`,
+      //       link: `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5549483/`,
+      //       text: `“propolis”`
+      //     },{
+      //       text: ` and it’s what produced the super dark, thick honey. When removed from the honeycomb, it almost looks black. (pictured above, from our home hive prior to straining) THIS is the most health beneficial honey out there! And it’s super hard to find in stores, so it will cost you when you do! ` 
+      //     }]
+      //   },{
+      //     tag: `small`,
+      //     content: [{
+      //       text: `Disclaimer: The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment.`
+      //     }]
+      //   }]
+      // },{
+      id: `221114`,
+      title: `5 Health Benefits from Honey`,
+      category: `Nutrition`,
+      publishDate: `Monday, November 14th, 2022`,
+      subtext: `Honey is a natural way to boost immunity.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Honey is nature’s gold. It has so many medicinal health benefits, when consumed in its raw, organic form. White sugar tops the list of processed foods that contribute to gut issues and disease, so swapping it out for honey as a more natural sweetener is ideal. With the bee population declining, and faux `
+        },{
+          tag: `a`,
+          link: `https://www.netflix.com/title/80146284`,
+          text: `honey production`
+        },{
+          text: ` (check out Season1, Episode1) on the black market increasing, there are plenty of reasons to support your local beekeepers and be mindful of the many health benefits of honey and bee pollen.`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `My husband and I decided to `
+        },{
+          tag: `a`,
+          link: `https://www.youtube.com/watch?app=desktop&v=IMiKHNqw8iw`,
+          text: `become beekeepers`
+        },{
+          text: `, and it’s been hugely beneficial to our health and wellbeing! And we’re saving bees!`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Raw honey is harvested straight from the honeycomb, and strained of debris, without adding any additives. When you see real raw honey start to harden, get cloudy, or crystallize, it’s ok! This honey is still great to use. In fact, crystallization is how you know it’s really raw! `
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `Here are 5 reasons to start consuming raw, natural honey:`
+        }]
+      },{
+        tag: `ol`,
+            list: [{
+              item: [{
+                tag: `b`,
+                text: `Naturally anti-microbial/anti-bacterial. `
+              },{
+                text: `Raw honey, of course. That’s why your grandma may have encouraged a spoonful of honey when you’re feeling sick. It’s a natural immune booster. Also great for wound care.`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Allergy reliever. `
+              },{
+                text: `Consuming local raw honey daily can significantly boost your natural immunity to seasonal environmental allergens. It’s a natural anti-inflammatory, and can help to soothe respiratory issues. It’s important to note that this is typically only helpful if you’re buying from a local source where the honey is produced within your zip code. Check out your local farmers’ market, and ask questions!`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `High in antioxidants. `
+              },{
+                text: `Raw honey is packed with antioxidants, which naturally eliminate free radicals from the body. Antioxidants are linked to reducing risk of chronic illness.`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Cough soother. `
+              },{
+                text: `Try a tablespoon of honey the next time you have a cough or sore throat. Its soothing effects work wonders and help to lubricate the glands that are affected and become dry with a cough or sore throat.`
+              }]
+            },{
+              item: [{
+                tag: `b`,
+                text: `Radiant skin. `
+              },{
+                text: `Honey is literally glowing, so it naturally will add a glow to your skin. It’s a great moisturizer and can help treat dry skin and eczema. Buying or making raw honey into soaps and lotions is a great way to make use of the honeycomb and beeswax.`
+              },{
+                tag: `br`
+              },{
+                tag: `br`
+              },{
+                tag: `img`,
+                content: [{
+                  class: `wide`,
+                  num: 2
+                }]
+              }]
+            }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `br`,
+          },{
+            tag: `b`,
+            text: `Bonus: ` 
+          },{
+            text: `Have you ever heard of bee glue? Well, it’s called `
+          },{
+            tag: `a`,
+            link: `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5549483/`,
+            text: `“propolis”`
+          },{
+            text: ` and it’s what produced the super dark, thick honey. When removed from the honeycomb, it almost looks black. (pictured above, from our home hive prior to straining) THIS is the most health beneficial honey out there! And it’s super hard to find in stores, so it will cost you when you do! ` 
+          }]
+        },{
+          tag: `small`,
+          content: [{
+            text: `Disclaimer: The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment.`
+          }]
+        }]
+      },{
       id: `221031`,
       title: `3 Ways to Ignite Your Digestive Fire`,
       category: `Nutrition`,
@@ -3085,10 +3388,15 @@ export default class App extends Component {
         {/******* POP UPS *******/}
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
-        <Switch><Route path={routes.MAIL} exact render={() => <EmailConfirmation/>}/></Switch>
+        <Switch>
+          <Route path={routes.MAIL} exact render={() => <>
+            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <EmailConfirmation/>
+          </>}/>
+        </Switch>
         {/******* BODY SWITCHBOARD *******/}
         <Switch>
-          <Route path={routes.MAIL} exact render={() => <></> }/>     
+          <Route path={routes.MAIL} exact render={() => <><HomeHeader toggleEmailSignup={this.toggleEmailSignup}/></> }/>     
           <Route path={routes.ROOT} exact render={() => <>
             <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
             <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
