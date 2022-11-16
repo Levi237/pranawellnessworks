@@ -42,7 +42,19 @@ export default class HomeMain extends Component {
             name: 'centric-logo.png',
             link: null
         },{    
-            name: 'cross-campus-high-res-logo-stacked.png',
+            name: 'AAP logo.png',
+            link: null
+        },{
+            name: 'CSUSM logo .png',
+            link: null
+        },{
+            name: 'Global communities logo.png',
+            link: null
+        },{
+            name: 'TigerConnect 2.png',
+            link: null
+        },{
+            name: 'Zip logo.png',
             link: null
         },{
             name: 'DocuSign_logo.png',
@@ -79,6 +91,9 @@ export default class HomeMain extends Component {
             link: null
         }],
         features: [{
+            name: 'As Seen- IDEA.png',
+            link: null
+        },{
             name: 'voyage_la.png',
             link: 'https://shoutoutla.com/stephanie-erazo-motivator-in-chief-prana-wellness-ryt/'
         },{
