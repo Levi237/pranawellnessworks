@@ -33,7 +33,7 @@ const ShowBlog = ({blogs, author}) => {
             return <hr key={key} />
         }
 
-        if (bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p"){
+        if (bc.tag === "h2" || bc.tag === "h3" || bc.tag === "h4" || bc.tag === "p" || bc.tag === "small"){
             const textMap = bc.content.map((txt, k) => {
                 if (txt.tag === "a"){
                     return <a  key={k} href={txt.link} target="_blank" rel="noreferrer">{txt.text}</a>
@@ -62,6 +62,7 @@ const ShowBlog = ({blogs, author}) => {
             if (bc.tag === "h3"){ return <h3 key={key}>{textMap}</h3> }
             if (bc.tag === "h4"){ return <h4 key={key}>{textMap}</h4> }
             if (bc.tag === "p"){ return <p key={key}>{textMap}</p> }
+            if (bc.tag === "small"){ return <small key={key}>{textMap}</small> }
             if (bc.tag === "br"){ return <br key={key}/> }
             if (bc.tag === "hr"){ return <hr key={key}/> }
 
