@@ -15,92 +15,94 @@ import Reviews              from '../banners/Reviews';
 export default class HomeMain extends Component {
     state = {
         points: [{ 
-            smallText: "Mindful",
-            largeText: "Breathing",
-            image: "mindful_breathing.png",
-            content: "Breathing practices that can have immediate impact on mind and body health.",
+            smallText: `Mindful`,
+            largeText: `Breathing`,
+            image: `mindful_breathing.png`,
+            content: `Breathing practices that can have immediate impact on mind and body health.`,
         },{
-            smallText: "Invigorating",
-            largeText: "Yoga",
-            image: "invigorating_yoga.png",
-            content: "All levels practice of yoga to energize the body, stretch, and focus on proper alignment and form.",
+            smallText: `Invigorating`,
+            largeText: `Yoga`,
+            image: `invigorating_yoga.png`,
+            content: `All levels practice of yoga to energize the body, stretch, and focus on proper alignment and form.`,
         },{
-            smallText: "relaxing",
-            largeText: "Meditation",
-            image: "meditate.png",
-            content: "Accessible guided meditations to calm, bring focus, and de-stress.",
+            smallText: `relaxing`,
+            largeText: `Meditation`,
+            image: `meditate.png`,
+            content: `Accessible guided meditations to calm, bring focus, and de-stress.`,
         },{
-            smallText: "Lunch +",
-            largeText: "Learn",
-            image: "lunch_and_learn.png",
-            content: "Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.",
+            smallText: `Lunch +`,
+            largeText: `Learn`,
+            image: `lunch_and_learn.png`,
+            content: `Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.`,
         }],
         clients: [{
-            name: 'bpr-logo-landscape-highres.png',
-            link: null
+            name: `bpr-logo-landscape-highres.png`,
+            link: null,
         },{
-            name: 'centric-logo.png',
-            link: null
+            name: `centric-logo.png`,
+            link: null,
         },{    
-            name: 'AAP logo.png',
-            link: null
+            name: `AAP logo.png`,
+            link: null,
         },{
-            name: 'CSUSM logo .png',
-            link: null
+            name: `CSUSM logo .png`,
+            link: null,
         },{
-            name: 'Global communities logo.png',
-            link: null
+            name: `Global communities logo.png`,
+            link: null,
         },{
-            name: 'TigerConnect 2.png',
-            link: null
+            name: `TigerConnect 2.png`,
+            link: null,
         },{
-            name: 'Zip logo.png',
-            link: null
+            name: `Zip logo.png`,
+            link: null,
         },{
-            name: 'DocuSign_logo.png',
-            link: null
+            name: `DocuSign_logo.png`,
+            link: null,
         },{
-            name: 'KAPOW.png',
-            link: null
+            name: `KAPOW.png`,
+            link: null,
         },{
-            name: 'LA-South-Chamber.png',
-            link: null
+            name: `LA-South-Chamber.png`,
+            link: null,
         },{
-            name: 'salisian-lee-logo.png',
-            link: null
+            name: `salisian-lee-logo.png`,
+            link: null,
         },{
-            name: 'bpr-logo-landscape-highres.png',
-            link: null
+            name: `bpr-logo-landscape-highres.png`,
+            link: null,
         },{
-            name: 'centric-logo.png',
-            link: null
+            name: `centric-logo.png`,
+            link: null,
         },{    
-            name: 'cross-campus-high-res-logo-stacked.png',
-            link: null
+            name: `cross-campus-high-res-logo-stacked.png`,
+            link: null,
         },{
-            name: 'DocuSign_logo.png',
-            link: null
+            name: `DocuSign_logo.png`,
+            link: null,
         },{
-            name: 'KAPOW.png',
-            link: null
+            name: `KAPOW.png`,
+            link: null,
         },{
-            name: 'LA-South-Chamber.png',
-            link: null
+            name: `LA-South-Chamber.png`,
+            link: null,
         },{
-            name: 'salisian-lee-logo.png',
-            link: null
+            name: `salisian-lee-logo.png`,
+            link: null,
         }],
         features: [{
-            name: 'As Seen- IDEA.png',
-            link: null
+            name: `As Seen- IDEA.png`,
+            link: null,
         },{
-            name: 'voyage_la.png',
-            link: 'https://shoutoutla.com/stephanie-erazo-motivator-in-chief-prana-wellness-ryt/'
+            name: `voyage_la.png`,
+            link: null,
+            // link: 'https://shoutoutla.com/stephanie-erazo-motivator-in-chief-prana-wellness-ryt/'
         },{
-            name: 'essence.png',
-            link: 'https://www.essence.com/lifestyle/travel/this-fitness-guru-takes-travelers-on-international-voyages-to-pull-them-out-of-their-comfort-zones/'
+            name: `essence.png`,
+            link: null,
+            // link: 'https://www.essence.com/lifestyle/travel/this-fitness-guru-takes-travelers-on-international-voyages-to-pull-them-out-of-their-comfort-zones/'
         // },{
-        //     name: 'airbnb.png',
+        //     name: `airbnb.png`,
         //     link: 'https://www.airbnb.com/experiences/799124'   
         }],
         floralbox: { 
