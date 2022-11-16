@@ -58,7 +58,7 @@ export default class ContactRequest extends Component {
                     id="mc-embedded-subscribe-form" 
                     name="mc-embedded-subscribe-form" 
                     className="validate" 
-                    target="_blank" 
+                    // target="_blank" 
                     rel="noopener noreferrer"
                     novalidate 
                 >
