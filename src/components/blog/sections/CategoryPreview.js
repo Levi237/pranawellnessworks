@@ -147,6 +147,7 @@ const ThreeRows = styled.section`
         }
 
         > section {
+            overflow: hidden;
             &:first-of-type {
                 height: 8vw;
                 width: 14vw;
@@ -159,9 +160,6 @@ const ThreeRows = styled.section`
             }
         }
     }
-    // > div:first-of-type {
-    //     display: none!important;
-    // }
     @media screen and (max-width: 640px) {
         a {
             width: 100%;
@@ -256,30 +254,6 @@ a {
         > h2 {
             font-size: 4vw;
         }
-        // a {
-        //     h1 { 
-        //         font-size: 4.25vw;
-        //         text-align: left;
-        //         line-height: 120%;
-        //         padding: 0;
-        //         margin-top: 2vw;
-        //     }
-        //     h4 {
-        //         font-size: 3vw;
-        //         line-height: 2vw;
-        //         margin-top: 1vw;
-        //         line-height: 120%;
-        //     }
-        //     p {
-        //         margin-top: 2vw;
-        //         font-size: 3.6vw;
-        //         line-height: 120%;
-        //     }
-        //     small { 
-        //         font-size: 2.5vw;
-        //         line-height: 120%;
-        //     }
-        // }
         > div {
             width: 100vw;
             margin: 0 auto 5vw;
