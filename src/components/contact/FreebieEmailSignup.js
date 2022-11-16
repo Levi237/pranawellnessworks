@@ -13,7 +13,7 @@ export default class FreebieEmailSignup extends Component {
 const { emailValue, fNameValue, lNameValue, locationValue } = this.state
     return (
         <Form 
-            action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
+            action={`https://${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
             method="POST" 
             id="mc-embedded-subscribe-form" 
             name="mc-embedded-subscribe-form" 
@@ -28,7 +28,7 @@ const { emailValue, fNameValue, lNameValue, locationValue } = this.state
                 including yoga, meditation, and breathwork.
                 <br/><br/>
                 Sign up now for a free guided meditation.
-            </p>
+            </p>–
             <input 
                 type="text" 
                 name="FNAME" 
