@@ -84,9 +84,9 @@ export default class HomeMain extends Component {
         },{
             name: 'essence.png',
             link: 'https://www.essence.com/lifestyle/travel/this-fitness-guru-takes-travelers-on-international-voyages-to-pull-them-out-of-their-comfort-zones/'
-        },{
-            name: 'airbnb.png',
-            link: 'https://www.airbnb.com/experiences/799124'   
+        // },{
+        //     name: 'airbnb.png',
+        //     link: 'https://www.airbnb.com/experiences/799124'   
         }],
         floralbox: { 
             title: "Meet Stephanie",
