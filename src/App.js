@@ -3331,18 +3331,18 @@ export default class App extends Component {
     showBlog: {},
     authors: [{
         id: `000`,
-        firstName: "Stephanie",
-        lastName: "Singleton",
-        jobTitle: "Founder, Prana Wellness",
-        headshotImage: "authors/stephanie-headshot.png",
-        description: "Determined to learn from the source, I traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. India challenged me both mentally and physically, and the knowledge that I gained was far beyond yoga poses. It gave me a new perspective on wellness.",
+        firstName: `Stephanie`,
+        lastName: `Singleton`,
+        jobTitle: `Founder, Prana Wellness`,
+        headshotImage: `authors/stephanie-headshot.png`,
+        description: `Determined to learn from the source, I traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. India challenged me both mentally and physically, and the knowledge that I gained was far beyond yoga poses. It gave me a new perspective on wellness.`,
         socialMedia: {
-            facebook: "",
-            instagram: "pranawellnessworks",
-            linkedin: "",
-            tiktok: "",
-            twitter: "",
-            youtube: "",
+            facebook: ``,
+            instagram: `pranawellnessworks`,
+            linkedin: ``,
+            tiktok: ``,
+            twitter: ``,
+            youtube: ``,
         }
     }]
   };  
