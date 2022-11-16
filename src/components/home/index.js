@@ -51,7 +51,7 @@ export default class HomeMain extends Component {
             name: `Global communities logo.png`,
             link: null,
         },{
-            name: `TigerConnect 2.png`,
+            name: `tiger-connect-logo.png`,
             link: null,
         },{
             name: `Zip logo.png`,
@@ -91,7 +91,7 @@ export default class HomeMain extends Component {
             link: null,
         }],
         features: [{
-            name: `As Seen- IDEA.png`,
+            name: `idea-world-logo-long.png`,
             link: null,
         },{
             name: `voyage_la.png`,
