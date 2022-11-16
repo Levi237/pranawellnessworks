@@ -50,7 +50,7 @@ export default class GroupMain extends Component {
         <LocalWrapper>
           <Section>
             <BulletPoints info={info} id="1"/>
-            <a href="https://buy.stripe.com/7sI5l38wLagD05W7st">
+            <a href="https://buy.stripe.com/fZecNvaET0G36uk6oo">
               <button className="white">
                 Break Free From Anxiety
               </button>
@@ -59,7 +59,7 @@ export default class GroupMain extends Component {
 
           <Section className="purple-bg">
             <BulletPoints info={info} id="2" columns="two-columns" container="rounded"/>
-            <a href="https://buy.stripe.com/7sI5l38wLagD05W7st">
+            <a href="https://buy.stripe.com/fZecNvaET0G36uk6oo">
               <button className="white">
                 I Want to Feel Joy! 
               </button>
@@ -82,7 +82,7 @@ export default class GroupMain extends Component {
 
           <Section>
             <BulletPoints info={info} id="3"/>
-            <a href="https://buy.stripe.com/7sI5l38wLagD05W7st">
+            <a href="https://buy.stripe.com/fZecNvaET0G36uk6oo">
               <button className="white">
                 Join Now!
               </button>
