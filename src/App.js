@@ -3383,7 +3383,7 @@ export default class App extends Component {
     const blogPop = blogList.filter(blog => blog.id <= _id);
     console.log("blogPop => ", blogPop);
     this.setState({
-      dateId: _id
+      dateId: _id,
       blogs:[...blogPop],
       showBlog: blogPop[0]
     })
