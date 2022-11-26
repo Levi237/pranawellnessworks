@@ -15,7 +15,7 @@ export default class TwoRows extends Component {
                 .replaceAll('!','')
                 .toLowerCase() ;
                 return (
-                    <div>
+                    <div key={k}>
                         <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
                             <section>
                             <small>{blog.category}</small>
@@ -28,7 +28,7 @@ export default class TwoRows extends Component {
                         </Link>
                     </div>
                 )
-            }
+            } 
         })
         return(
                 <TwoBlogRows>
