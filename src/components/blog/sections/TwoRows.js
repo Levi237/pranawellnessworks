@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export default class TwoRows extends Component {
-    state = {}
-    render(){
-        const { selectBlog,  blogs, author } = this.props;
+const TwoRows = ({ selectBlog,  blogs, author }) => {
+
         const getBlogs = blogs.map((blog, k) => {
             if ( k === 1 || k === 2 ) {
              const endpoint = blog.title
@@ -29,14 +27,14 @@ export default class TwoRows extends Component {
                     </div>
                 )
             } 
-        })
+        });
         return(
                 <TwoBlogRows>
                     {getBlogs}
                 </TwoBlogRows>
         );
     };
-};
+
 const TwoBlogRows = styled.div`
 a {
     h1 { 
@@ -146,3 +144,5 @@ a {
         }
     }
 `;
+
+export default TwoRows;
