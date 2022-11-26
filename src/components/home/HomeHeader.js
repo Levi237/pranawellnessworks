@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-const HomeHeader = ({toggleEmailModal}) => {
+const HomeHeader = () => {
 
     return(
     <>
@@ -39,7 +38,6 @@ const HomeHeader = ({toggleEmailModal}) => {
             name="contactForm" 
             className="ctaBtn"
             value="contactRequest" 
-            // onClick={(e) => {toggleEmailModal(e)}}
           >
             Book a Call
           </ButtonCTA>
@@ -47,7 +45,6 @@ const HomeHeader = ({toggleEmailModal}) => {
         </ButtonWrapper>
       </WelcomeContainer>
     </>)
-    ;
 };
 
 
