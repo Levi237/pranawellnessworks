@@ -1,7 +1,8 @@
 import React       from 'react';
 import styled      from 'styled-components';
 import { Link }    from 'react-router-dom';
-import * as routes from '../../constants/routes'
+
+import * as routes from '../../constants/routes';
 
 const NavBar = ({ page, toggleHamburger }) => {
   
@@ -10,7 +11,7 @@ const NavBar = ({ page, toggleHamburger }) => {
       <div>
         { page !== "blog" &&
         <Link to={routes.ROOT}>
-            <Logo className="nav-logo" src={ (page === "white" || page === "home" || page === "blogs") ? "/icon_white.png" : "/icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
+            <img className="nav-logo" src={ (page === "white" || page === "home" || page === "blogs") ? "/icon_white.png" : "/icon_fullcolor_light.png" } alt="pranayama yoga breath work" />
             <section>
               { ( page !== "blogs" && page !== "blog" && page !== "home" ) && <>
                 <h1>Prana</h1>
@@ -182,13 +183,6 @@ const NavContainer = styled.div`
         margin-top: 20px;
       }
     }
-  }
-`;
-
-const Logo = styled.img`
-
-  @media screen and (max-width: 945px) {
-
   }
 `;
 
