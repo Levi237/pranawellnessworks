@@ -1,4 +1,4 @@
-#menu.active {
+/* #menu.active {
   max-width: 400px;
 }
 
@@ -42,8 +42,8 @@
 }
 #nav-menu.opacity {
   opacity: 0;
-  transition: opacity .2s ease;
-}
+  transition: opacity .3s ease .1s;
+} */
 
 .contact-container {
   position: fixed;
