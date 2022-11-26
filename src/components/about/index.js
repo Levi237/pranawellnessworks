@@ -1,8 +1,8 @@
-import React, { Component }            from 'react';
-import styled           from 'styled-components';
+import React, { Component } from 'react';
+import styled               from 'styled-components';
 
-import TeamMembers      from './TeamMembers';
-import FloralBox        from '../banners/FloralBoxComponent';
+import TeamMembers          from './TeamMembers';
+import FloralBox            from '../banners/FloralBoxComponent';
 
 export default class AboutMain extends Component {
   state = {
