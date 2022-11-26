@@ -23,35 +23,59 @@ export default class Nav extends Component {
                     <CloseBtn className="close xClose" onClick={() => {toggleHamburger()}}>
                         x
                     </CloseBtn>
-                    <br /><br /><br />
-                    <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleHamburger()}}>HOME</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
-                    <section>
-                        <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={() => {toggleHamburger()}}>GROUP PROGRAMS</NavLink>
-                        {/* <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={() => {toggleHamburger()}}>EVENTS CALENDAR</NavLink> */}
-                        <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>PERSONAL WELLNESS</NavLink>
-                        <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
-                        <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={() => {toggleHamburger()}}>YOGA THERAPY</NavLink>
-                        {/* <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink> */}
-                        <NavLink activeClassName="nav-active" to={routes.COACH} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
-                    </section>
-                    <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
-                    <section className="toggle-blog-container">
-                        <BlogToggleBtn className="toggle-blog" onClick={() => {this.toggleBlogCategories()}}><section></section><section id="blog-btn-line" className="vert"></section></BlogToggleBtn>
-                        <section id="blog-categories" className="toggle hide">
-                            <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.BLOGN} onClick={() => {toggleHamburger()}}>NUTRITION</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.BLOGY} onClick={() => {toggleHamburger()}}>YOGA</NavLink>
+                    {/* if screen width is greater than menu width, fix the sizes.  if it is less than, use calc with min-width 260px */}
+                    <NavMenu id="nav-menu" className="opacity" style={{}}>
+                        <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleHamburger()}}>HOME</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
+                        <section>
+                            <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={() => {toggleHamburger()}}>GROUP PROGRAMS</NavLink>
+                            {/* <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={() => {toggleHamburger()}}>EVENTS CALENDAR</NavLink> */}
+                            <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>PERSONAL WELLNESS</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={() => {toggleHamburger()}}>YOGA THERAPY</NavLink>
+                            {/* <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink> */}
+                            <NavLink activeClassName="nav-active" to={routes.COACH} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
                         </section>
-                    </section>
-                    <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
+                        <section className="toggle-blog-container">
+                            <BlogToggleBtn className="toggle-blog" onClick={() => {this.toggleBlogCategories()}}><section></section><section id="blog-btn-line" className="vert"></section></BlogToggleBtn>
+                            <section id="blog-categories" className="toggle hide">
+                                <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.BLOGN} onClick={() => {toggleHamburger()}}>NUTRITION</NavLink>
+                                <NavLink activeClassName="nav-active" to={routes.BLOGY} onClick={() => {toggleHamburger()}}>YOGA</NavLink>
+                            </section>
+                        </section>
+                        <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
+                    </NavMenu>
                 </div>
             </NavContainer>
         );
     };
 };
+
+// if screen width is greater than menu width, fix the sizes.  if it is less than, use calc with min-width 260px
+const NavMenu = styled.div`
+    padding-top: 80px; 
+    width: 260px;
+
+        text-align: left;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        > section {
+            font-size: 80%;
+            margin-left: 20px;
+        }
+
+    @media screen and (min-width: 400px) {
+        
+    }
+    @media screen and (max-width: 399px) {
+
+    }
+`;
 
 const BlogToggleBtn = styled.button`
     position: absolute;
@@ -116,16 +140,7 @@ const NavContainer = styled.div`
         max-height: 0px;
         overflow: hidden;
     }
-    > div {
-        text-align: left;
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        > section {
-            font-size: 80%;
-            margin-left: 20px;
-        }
-    }
+
     a {
         text-decoration: none;
         display: block;
