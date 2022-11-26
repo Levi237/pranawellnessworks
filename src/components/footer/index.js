@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -6,82 +6,78 @@ import * as routes from '../../constants/routes';
 
 import LeviEikoBrand from '../../levieiko';
 
-export default class Footer extends Component {
-
-    render(){
-        const { toggleEmailModal, scrollToTop } = this.props;
-        return (
-            <FooterWrapper className="grid-footer">
-                <QuickLinksSection>
-                    <h1>QUICK links</h1>
-                    <div>
-                        <section>
-                            <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={scrollToTop}>HOME</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={scrollToTop}>BLOG</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={scrollToTop}>SCHEDULE</NavLink>
-                            <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={scrollToTop}>ABOUT US</NavLink>
-                            <button className="link-btn"
-                                name="contactForm" 
-                                value="contactRequest" 
-                                onClick={(e) => {toggleEmailModal(e)}}
-                                >
-                                CONTACT US
-                            </button>
-                            <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={scrollToTop}>FAQ</NavLink>
-                        </section>
-                        <section>
-                            <NavLink activeClassName="nav-active" to={routes.SERV} onClick={scrollToTop}>WELLNESS SERVICES</NavLink>
-                            <div>
-                                <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={scrollToTop}>GROUP PROGRAMS</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.WELL} onClick={scrollToTop}>PERSONAL WELLNESS</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.CORP} onClick={scrollToTop}>CORPORATE WELLNESS</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={scrollToTop}>YOGA THERAPY</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.PREG} onClick={scrollToTop}>MATERNAL HEALTH</NavLink>
-                                <NavLink activeClassName="nav-active" to={routes.COACH} onClick={scrollToTop}>SPEAKING & COACHING</NavLink>
-                            </div>
-                        </section>
-                    </div>
-                    <div>
-                        <LeviEikoBrand/>
-                    </div>
-                </QuickLinksSection>
-                <LogoSection>
-                    <div>
-                        <img src="/icon_white.png" alt="pranayama yoga breath work" />
-                        <Prana className="pranaText">PRANA</Prana>
-                        <Wellness className="wellnessText">wellness</Wellness>
-                    </div>
-                </LogoSection>
-                <ContactSection>
-                    <h1>HAVE QUESTIONs?</h1>
-                    <div>
-                        <h3>Stephanie@pranawellnessworks.com</h3> 
-                        <button 
-                            className="purple"            
+const Footer = ({ toggleEmailModal, scrollToTop }) => {
+    return (
+        <FooterWrapper className="grid-footer">
+            <QuickLinksSection>
+                <h1>QUICK links</h1>
+                <div>
+                    <section>
+                        <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={scrollToTop}>HOME</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={scrollToTop}>BLOG</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.EVENT} onClick={scrollToTop}>SCHEDULE</NavLink>
+                        <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={scrollToTop}>ABOUT US</NavLink>
+                        <button className="link-btn"
                             name="contactForm" 
                             value="contactRequest" 
-                            onClick={(e) => {toggleEmailModal(e)}
-                            }>
-                            SEND US A MESSAGE
+                            onClick={(e) => {toggleEmailModal(e)}}
+                            >
+                            CONTACT US
                         </button>
-                        <br/>
-                        <button 
-                            className="purple"            
-                            name="contactForm" 
-                            value="freebie" 
-                            onClick={(e) => {toggleEmailModal(e)}
-                            }>
-                            SIGNUP FOR EMAILS
-                        </button>
-                    </div>
-                    <div>
-                        <LeviEikoBrand/>
-                    </div>
-                </ContactSection>
-            </FooterWrapper>
-        )
-    }
-}
+                        <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={scrollToTop}>FAQ</NavLink>
+                    </section>
+                    <section>
+                        <NavLink activeClassName="nav-active" to={routes.SERV} onClick={scrollToTop}>WELLNESS SERVICES</NavLink>
+                        <div>
+                            <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={scrollToTop}>GROUP PROGRAMS</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.WELL} onClick={scrollToTop}>PERSONAL WELLNESS</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.CORP} onClick={scrollToTop}>CORPORATE WELLNESS</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={scrollToTop}>YOGA THERAPY</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.PREG} onClick={scrollToTop}>MATERNAL HEALTH</NavLink>
+                            <NavLink activeClassName="nav-active" to={routes.COACH} onClick={scrollToTop}>SPEAKING & COACHING</NavLink>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <LeviEikoBrand/>
+                </div>
+            </QuickLinksSection>
+            <LogoSection>
+                <div>
+                    <img src="/icon_white.png" alt="pranayama yoga breath work" />
+                    <Prana className="pranaText">PRANA</Prana>
+                    <Wellness className="wellnessText">wellness</Wellness>
+                </div>
+            </LogoSection>
+            <ContactSection>
+                <h1>HAVE QUESTIONs?</h1>
+                <div>
+                    <h3>Stephanie@pranawellnessworks.com</h3> 
+                    <button 
+                        className="purple"            
+                        name="contactForm" 
+                        value="contactRequest" 
+                        onClick={(e) => {toggleEmailModal(e)}
+                        }>
+                        SEND US A MESSAGE
+                    </button>
+                    <br/>
+                    <button 
+                        className="purple"            
+                        name="contactForm" 
+                        value="freebie" 
+                        onClick={(e) => {toggleEmailModal(e)}
+                        }>
+                        SIGNUP FOR EMAILS
+                    </button>
+                </div>
+                <div>
+                    <LeviEikoBrand/>
+                </div>
+            </ContactSection>
+        </FooterWrapper>
+    )
+};
 
 
 const ContactSection = styled.section`
@@ -356,3 +352,5 @@ const FooterWrapper = styled.div`
         }
     }
 `;
+
+export default Footer;
