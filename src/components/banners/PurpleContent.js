@@ -5,28 +5,28 @@ const PurpleContent = ({ textCopy, toggleEmailModal }) => {
     return(<>
         <Title>{textCopy.header}</Title>
         <section>
-            { textCopy.button 
+        { textCopy.button 
+            ?
+            <>
+            <Content className="text-left">
+                {textCopy.message}  
+            </Content>
+            { textCopy.link
                 ?
-                <>
-                <Content className="text-left">
-                    {textCopy.message}  
-                </Content>
-                { textCopy.link
-                    ?
-                <ButtonContaner>
-                    <a href={textCopy.link} target="_blank" rel="noreferrer"><button className="purple mobile-fill" value={textCopy.value}>{textCopy.button}</button></a>
-                </ButtonContaner>
-                :
-                <ButtonContaner>
-                    <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailModal(e)}}>{textCopy.button}</button>
-                </ButtonContaner>
-                }
-                </>
-                :
-                <Content className="text-center">
-                    {textCopy.message}  
-                </Content>
+            <ButtonContaner>
+                <a href={textCopy.link} target="_blank" rel="noreferrer"><button className="purple mobile-fill" value={textCopy.value}>{textCopy.button}</button></a>
+            </ButtonContaner>
+            :
+            <ButtonContaner>
+                <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailModal(e)}}>{textCopy.button}</button>
+            </ButtonContaner>
             }
+            </>
+            :
+            <Content className="text-center">
+                {textCopy.message}  
+            </Content>
+        }
         </section>
     </>);
 };

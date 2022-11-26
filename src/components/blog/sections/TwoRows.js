@@ -4,36 +4,36 @@ import { Link } from 'react-router-dom';
 
 const TwoRows = ({ selectBlog,  blogs, author }) => {
 
-        const getBlogs = blogs.map((blog, k) => {
-            if ( k === 1 || k === 2 ) {
-             const endpoint = blog.title
-                .replaceAll(' ','_')
-                .replaceAll('?','')
-                .replaceAll('.','')
-                .replaceAll('!','')
-                .toLowerCase() ;
-                return (
-                    <div key={k}>
-                        <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
-                            <section>
-                            <small>{blog.category}</small>
-                                <h1>{blog.title}</h1>
-                                <p>{blog.subtext}</p>
-                                <h4>{blog.publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
-                            </section>
-                            <section style={{backgroundImage: `url(/blog/${blog.id}_1.jpg)`}}>
-                            </section>
-                        </Link>
-                    </div>
-                )
-            } 
-        });
-        return(
-                <TwoBlogRows>
-                    {getBlogs}
-                </TwoBlogRows>
-        );
-    };
+    const getBlogs = blogs.map((blog, k) => {
+        if ( k === 1 || k === 2 ) {
+            const endpoint = blog.title
+            .replaceAll(' ','_')
+            .replaceAll('?','')
+            .replaceAll('.','')
+            .replaceAll('!','')
+            .toLowerCase() ;
+            return (
+                <div key={k}>
+                    <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+                        <section>
+                        <small>{blog.category}</small>
+                            <h1>{blog.title}</h1>
+                            <p>{blog.subtext}</p>
+                            <h4>{blog.publishDate}<span className="desktop-inline">&nbsp;|&nbsp;<br className="mobile-inline"/>By {author.firstName} {author.lastName}</span></h4>
+                        </section>
+                        <section style={{backgroundImage: `url(/blog/${blog.id}_1.jpg)`}}>
+                        </section>
+                    </Link>
+                </div>
+            )
+        } 
+    });
+    return(
+            <TwoBlogRows>
+                {getBlogs}
+            </TwoBlogRows>
+    );
+};
 
 const TwoBlogRows = styled.div`
 a {
