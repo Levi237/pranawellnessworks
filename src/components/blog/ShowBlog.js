@@ -3,17 +3,13 @@ import styled                       from 'styled-components';
 import { useHistory, useParams }    from 'react-router-dom';
 
 
-const ShowBlog = ({blogs, author}) => {
+const ShowBlog = ({ blogs, author }) => {
     
     let history = useHistory();
-    
     const { id } = useParams();
-    let blog = ''
-    blogs.filter(bl => {
-        if(bl.id === id) {
-            blog = bl
-        }
-    })
+
+    let blog = blogs.filter(bl => bl.id === id );
+    blog = blog[0];
 
     const renderBlog = blog.copy.map((bc, key) => {
 
