@@ -1,7 +1,7 @@
 import styled       from 'styled-components';
 import { Link }     from 'react-router-dom';
 
-const FourBlogBlocks = ({blogs, selectBlog}) => {
+const FourBlogBlocks = ({ blogs, selectBlog }) => {
   
   const blogFilter = blogs.filter(blog => blog.category !== "Mindfulness & Meditation");
   const blogFilterTwo = blogFilter.filter(blog => blog.category !== "test");
