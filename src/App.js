@@ -3348,21 +3348,11 @@ export default class App extends Component {
   };  
 
   componentDidMount(){
-    this.setState({
-      showBlog: this.state.blogs[0]
-    })
     this.liveBlogs()
   }
 
-  selectBlog = (e, blog) => {
-     this.setState({
-      showBlog: blog
-    });
-    this.scrollToTop();
-  };
-
   liveBlogs = () => {
-    // create blog id date from current date
+    // create blog dateId from current date to filter viewable blogs
     const time = new Date();
     // stringify numbers: remove 20 from beginning of year &  add 0 when less than 2 digits in day and month
     const year = time.getFullYear().toString().slice(2);
@@ -3381,13 +3371,19 @@ export default class App extends Component {
 
     let blogList = this.state.blogs;
     const blogPop = blogList.filter(blog => blog.id <= _id);
-    console.log("blogPop => ", blogPop);
     this.setState({
       dateId: _id,
       blogs:[...blogPop],
-      showBlog: blogPop[0]
-    })
-  }
+    });
+  };
+
+  selectBlog = (e, blog) => {
+    this.setState({
+     showBlog: blog
+   });
+   this.scrollToTop();
+ };
+
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
     hamburgerMenu.classList.toggle('active');
@@ -3404,9 +3400,10 @@ export default class App extends Component {
   scrollToTop = () => {
     const top = document.getElementById('scroll-to-bar');
     top.scrollIntoView({behavior: 'smooth'});
-  }
+  };
+
   render(){
-    const { emailContact, eventsList, textCopy, blogs, authors, showBlog } = this.state
+    const { emailContact, eventsList, textCopy, blogs, authors, showBlog } = this.state;
     return(
 
       <ParentWrapper>
@@ -3550,4 +3547,4 @@ const ParentWrapper = styled.div`
   text-align: center;
   @media screen and (max-width: 945px) {
   }
-`
+`;
