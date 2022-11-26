@@ -3386,8 +3386,11 @@ export default class App extends Component {
 
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
+    const navMenu = document.getElementById('nav-menu');
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
+    navMenu.classList.toggle('opacity');
+    navMenu.classList.toggle('opaque');
   };
   toggleEmailModal = (e) => {
     const emailForm = document.getElementById('email');
