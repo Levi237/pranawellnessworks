@@ -2,7 +2,7 @@ import React from 'react';
 
 import './PackageDisplay.css';
 
-const PackageDisplay =({pricePack})=> {
+const PackageDisplay =({ pricePack })=> {
 
     const showPackage = pricePack.map((pack, key) => {
         const details = pack.details.map((detail, k) => {

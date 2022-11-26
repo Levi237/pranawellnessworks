@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ServiceDisplay = ({services}) => {
+const ServiceDisplay = ({ services }) => {
 
     const showServices = services.map((service, key) => {
         const backgroundImageStyle = {
