@@ -37,7 +37,7 @@ const CustomerDisplay = ({ logos, clients }) => {
 };
 
 const ScrollMenu = styled.div`
-    background-color: var(--lightestpurple);;
+    background-color: var(--lightestpurple);
     overflow: auto;
     white-space: nowrap;
     transition: all .3s ease-in-out;
