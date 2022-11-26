@@ -96,61 +96,12 @@ const NavContainer = styled.div`
     }
   }
 
-  &:is(.home) {
-    // margin-top: 0px;
-    // .nav-logo {
-    //   h1 {
-    //     color: #fff;
-    //   }
-    //   h2 {
-    //     color: #fff;
-    //   }
-    // }
-    // .hamburger > section {
-    //   background-color: #fff;
-    // }
-  }
-  &:is(.white) {
-    // margin-top: 0px;
-    // .nav-logo {
-    //   h1 {
-    //     color: #fff;
-    //   }
-    //   h2 {
-    //     color: #fff;
-    //   }
-    // }
-    // .hamburger > section {
-    //   background-color: #fff;
-    // }
-  }
   &:is(.blog) {
-    // margin-top: -40px;
-    // .nav-logo {
-    //   h1 {
-    //     color: var(--purple);
-    //   }
-    //   h2 {
-    //     color: var(--lightgreen);
-    //   }
-    // }
     .hamburger > section {
       background-color: var(--purple);
     }
   }
   &:is(.blogs) {
-    // .nav-logo {
-    //   h1 {
-    //     color: #fff;
-    //   }
-    //   h2 {
-    //     color: #fff;
-    //   }
-    // }
-    // margin-top: -40px;
-    // .hamburger > section {
-    //   background-color: #fff;
-    // }
   }
   > div {
     display: inline-block;
@@ -256,12 +207,5 @@ const Hamburger = styled.div`
 
   }
 `;
-const HomePatties = styled.section`
-  background-color: #fff;
-`;
-const GlobalPatties = styled.section`
-  background-color: var(--purple);
-`;
-
 
 export default NavBar;
