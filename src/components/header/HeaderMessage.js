@@ -5,12 +5,12 @@ import PurpleContent from '../banners/PurpleContent';
 
 export default class HeaderMessage extends Component {
   render(){
-    const {toggleEmailSignup, textCopy} = this.props
+    const {toggleEmailModal, textCopy} = this.props
     return(<>
 
       { (textCopy.backgroundColor === "purple")? <>
         <PurpleContainer className="wellness-main-content">
-            <PurpleContent textCopy={textCopy} toggleEmailSignup={toggleEmailSignup}/>
+            <PurpleContent textCopy={textCopy} toggleEmailModal={toggleEmailModal}/>
         </PurpleContainer>
         {this.props.children}
       </> : <>
@@ -27,7 +27,7 @@ export default class HeaderMessage extends Component {
           }
           {(textCopy.button &&textCopy.link) && <><a href={textCopy.link} target="_blank" rel="noreferrer"><button value={textCopy.value}>{textCopy.button}</button></a>
           <br/><br/><br/><br/></>}
-          {(textCopy.button &&!textCopy.link) && <><button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button> 
+          {(textCopy.button &&!textCopy.link) && <><button value={textCopy.value} onClick={(e) => {toggleEmailModal(e)}}>{textCopy.button}</button> 
           <br/><br/><br/><br/></>}
           {this.props.children}
         </Container>

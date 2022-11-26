@@ -9,7 +9,7 @@ import LeviEikoBrand from '../../levieiko';
 export default class Footer extends Component {
 
     render(){
-        const { toggleEmailSignup, scrollToTop } = this.props;
+        const { toggleEmailModal, scrollToTop } = this.props;
         return (
             <FooterWrapper className="grid-footer">
                 <QuickLinksSection>
@@ -23,7 +23,7 @@ export default class Footer extends Component {
                             <button className="link-btn"
                                 name="contactForm" 
                                 value="contactRequest" 
-                                onClick={(e) => {toggleEmailSignup(e)}}
+                                onClick={(e) => {toggleEmailModal(e)}}
                                 >
                                 CONTACT US
                             </button>
@@ -60,7 +60,7 @@ export default class Footer extends Component {
                             className="purple"            
                             name="contactForm" 
                             value="contactRequest" 
-                            onClick={(e) => {toggleEmailSignup(e)}
+                            onClick={(e) => {toggleEmailModal(e)}
                             }>
                             SEND US A MESSAGE
                         </button>
@@ -69,7 +69,7 @@ export default class Footer extends Component {
                             className="purple"            
                             name="contactForm" 
                             value="freebie" 
-                            onClick={(e) => {toggleEmailSignup(e)}
+                            onClick={(e) => {toggleEmailModal(e)}
                             }>
                             SIGNUP FOR EMAILS
                         </button>

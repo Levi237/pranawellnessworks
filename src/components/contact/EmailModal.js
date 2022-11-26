@@ -1,24 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled               from 'styled-components';
 
 import FreebieEmailSignup   from './FreebieEmailSignup';
 import ContactRequest       from './ContactRequest';
 import ReferralRequest      from './ReferralRequest';
 
-export default class EmailSignup extends Component { 
-    
-    render(){
+const EmailModal = ({ toggleEmailModal, contactType }) => { 
 
-        const { toggleEmailSignup, contactType } = this.props
         return(
             <Container id="email" className="inactive contact-container">
-                <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</CloseBtn>
+                <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailModal(e)}}>X</CloseBtn>
                 { (contactType === "freebie") && <FreebieEmailSignup/> }
                 { (contactType === "contactRequest") && <ContactRequest/> }
                 { (contactType === "referralRequest") && <ReferralRequest/> }
             </Container>
         );
-    };
 };
 
 const Container = styled.div`
@@ -102,3 +98,5 @@ const CloseBtn = styled.button`
     top: 10px;
     z-index: 99999;
 `;
+
+export default EmailModal;

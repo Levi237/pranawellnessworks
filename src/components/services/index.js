@@ -58,7 +58,7 @@ export default class ServicesMain extends Component {
       };
 
     render(){
-        const { eventsList, toggleEmailSignup, scrollToTop } = this.props;
+        const { eventsList, toggleEmailModal, scrollToTop } = this.props;
 
         return(<>
             <Container>
@@ -80,7 +80,7 @@ export default class ServicesMain extends Component {
             <Header className="services-main-header">OUR SERVICES</Header>
             <ServiceDisplay services={this.state.otherServices}/>
             <ButtonContainer>
-                <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Request Quote</button>
+                <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailModal(e)}}>Request Quote</button>
             </ButtonContainer>
         </>);
     };

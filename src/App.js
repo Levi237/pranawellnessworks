@@ -9,7 +9,7 @@ import NavBar               from './components/nav/NavBar';
 import AnnouncementBanner   from './components/banners/AnnouncementBanner'; 
 import PurpleContent        from './components/banners/PurpleContent';
 
-import EmailSignup          from './components/contact/EmailSignup';
+import EmailModal           from './components/contact/EmailModal';
 import EmailConfirmation    from './components/contact/EmailConfirmation';
 import SubscribePage        from './components/contact/SubscribePage'
 
@@ -3389,7 +3389,7 @@ export default class App extends Component {
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
-  toggleEmailSignup = (e) => {
+  toggleEmailModal = (e) => {
     const emailForm = document.getElementById('email');
     emailForm.classList.toggle('active');
     emailForm.classList.toggle('inactive');
@@ -3412,127 +3412,127 @@ export default class App extends Component {
 
         {/******* POP UPS *******/}
         <Nav toggleHamburger={this.toggleHamburger}/>
-        <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
+        <EmailModal contactType={emailContact} toggleEmailModal={this.toggleEmailModal}/>
         <Switch>
           <Route path={routes.MAIL} exact render={() => <>
-            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <EmailConfirmation/>
           </>}/>
         </Switch>
         {/******* BODY SWITCHBOARD *******/}
         <Switch>
-          <Route path={routes.MAIL} exact render={() => <><HomeHeader toggleEmailSignup={this.toggleEmailSignup}/></> }/>     
+          <Route path={routes.MAIL} exact render={() => <><HomeHeader toggleEmailModal={this.toggleEmailModal}/></> }/>     
           <Route path={routes.ROOT} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-            <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
+            <HomeHeader toggleEmailModal={this.toggleEmailModal}/>
             <HomeMain scrollToTop={this.scrollToTop} /> 
           </> }/>
           <Route path={routes.BLOG} exact render={() => <>
-            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <BlogMainIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
           </> }/>  
           <Route path={`/blog/:id/:endpoint`} exact render={() => <>
-            <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"blog"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <ShowBlog blogs={blogs} blog={showBlog} author={authors[0]}/> 
           </> }/>
           <Route path={`/blog/:id`} exact render={() => <>
-            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <BlogTopicIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/>
           </> }/>
           <Route path={routes.BLOG} render={() => <>
-            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"blogs"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <BlogTopicIndex scrollToTop={this.scrollToTop} selectBlog={this.selectBlog}  blogs={blogs} author={authors[0]}/> 
           </> }/> 
           <Route path={routes.FAQ} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <FAQMain/> 
           </> }/>  
           <Route path={routes.ABOUT} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.aboutPage}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.aboutPage}>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.aboutPage}>
               <AboutMain />
             </HeaderMessage>
           </> }/>      
           <Route path={routes.SERV} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> 
-            <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/>
+            <ServicesMain toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/>
           </> }/>           
           <Route path={routes.GROUP} exact render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.groupPrograms}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.groupPrograms}></HeaderMessage>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.groupPrograms}></HeaderMessage>
             <GroupMain scrollToTop={this.scrollToTop} /> 
           </> }/>  
           <Route path={routes.WELL} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.personalWellness}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.personalWellness}>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.personalWellness}>
               <PersonalMain/>
             </HeaderMessage> 
           </> }/>       
           <Route path={routes.CORP} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.corporateWellness}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.corporateWellness}>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.corporateWellness}>
               <CorporateMain>
-                <PurpleContent textCopy={textCopy.corporateBodyText} toggleEmailSignup={this.toggleEmailSignup}/>
+                <PurpleContent textCopy={textCopy.corporateBodyText} toggleEmailModal={this.toggleEmailModal}/>
               </CorporateMain>
             </HeaderMessage> 
           </> }/>  
           <Route path={routes.YOGA} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.yogaTherapy}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.yogaTherapy}>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.yogaTherapy}>
               <YogaTherapyMain/>
             </HeaderMessage>
           </> }/>
           <Route path={routes.PREG} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.maternalHealth}/> 
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.maternalHealth} >
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.maternalHealth} >
               <PrenatalMain/>
             </HeaderMessage> 
           </> }/>
           <Route path={routes.COACH} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.coachingSpeaking}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.coachingSpeaking}>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.coachingSpeaking}>
               <Speaking/>
               <Coaching/>
             </HeaderMessage> 
           </> }/>     
           <Route path={routes.EVENT} exact render={() => <>
-            <AnnouncementBanner toggleEmailSignup={this.toggleEmailSignup}/>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.eventsInformation}/>
-            <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={textCopy.eventsInformation}>
+            <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.eventsInformation}>
               <EventsMain eventsList={eventsList}/>
             </HeaderMessage> 
           </> }/>   
           <Route path={routes.SUB} render={() => <>
-            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <br/><br/><br/><br/><br/>
               <SubscribePage/>
           </> }/>
           <Route path={routes.ROOT} render={() => <>
-            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailSignup={this.toggleEmailSignup}/>
-              <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/>
+            <NavBar page={"home"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
+              <HomeHeader toggleEmailModal={this.toggleEmailModal}/>
             <HomeMain /> 
           </> }/>
         </Switch>          
 
-        <Footer toggleEmailSignup={this.toggleEmailSignup} scrollToTop={this.scrollToTop}/>
+        <Footer toggleEmailModal={this.toggleEmailModal} scrollToTop={this.scrollToTop}/>
         
       </ParentWrapper>
     );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default class PurpleContent extends Component {
     render(){
-        const { textCopy, toggleEmailSignup } = this.props
+        const { textCopy, toggleEmailModal } = this.props
         return(<>
             <Title>{textCopy.header}</Title>
             <section>
@@ -20,7 +20,7 @@ export default class PurpleContent extends Component {
                     </ButtonContaner>
                     :
                     <ButtonContaner>
-                        <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
+                        <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailModal(e)}}>{textCopy.button}</button>
                     </ButtonContaner>
                     }
                     </>
