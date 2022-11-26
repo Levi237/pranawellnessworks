@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled               from 'styled-components';
 
 import FreebieEmailSignup   from './FreebieEmailSignup';
 
-export default class SubscribePage extends Component { 
-    
-    render(){
-
-        return(
-            <Container id="subscribe" className="subscribe-container">
-                <div>
-                <p>
-                Receive a free meditation to your inbox now when you join the Prana Community!
-                </p>
-                <p>
-                Weekly wellness newsletter with tips, resources, exclusive updates and offers. 
-                </p>
-                <FreebieEmailSignup/>
-                </div>
-            </Container>
-        );
-    };
+const SubscribePage = () => { 
+    return(
+        <Container id="subscribe" className="subscribe-container">
+            <div>
+            <p>
+            Receive a free meditation to your inbox now when you join the Prana Community!
+            </p>
+            <p>
+            Weekly wellness newsletter with tips, resources, exclusive updates and offers. 
+            </p>
+            <FreebieEmailSignup/>
+            </div>
+        </Container>
+    );
 };
 
 const Container = styled.div`
@@ -89,3 +85,5 @@ const Container = styled.div`
         }
     }
 `;
+
+export default SubscribePage;

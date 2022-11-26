@@ -1,76 +1,71 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React    from 'react';
+import styled   from 'styled-components';
 import { Link } from 'react-router-dom';
 
 // CategoryPreview
 // Displays most recent 5 blogs from blog category.
 // Most recent blog large on left, remaining 4 stacked on right.
 
-export default class CategoryPreview extends Component {
-    state = {
-
-    }
-    render(){
-        const { scrollToTop, selectBlog,  blogs, author } = this.props;
+const CategoryPreview = ({ scrollToTop, selectBlog,  blogs, author }) => {
         
-        const blogCategory = blogs.filter(blog => blog.category === "Mindfulness & Meditation");
+const blogCategory = blogs.filter(blog => blog.category === "Mindfulness & Meditation");
 
-        const endpoint0 = blogs[1].title
-            .replaceAll(' ','_')
-            .replaceAll('?','')
-            .replaceAll('.','')
-            .replaceAll('!','')
-            .toLowerCase() ;
+const endpoint0 = blogs[1].title
+    .replaceAll(' ','_')
+    .replaceAll('?','')
+    .replaceAll('.','')
+    .replaceAll('!','')
+    .toLowerCase() ;
 
-        const mapCategory = blogCategory.map((blog, k) => {
-            if ( k > 0 && k < 5) {
-                const endpoint = blog.title
-                .replaceAll(' ','_')
-                .replaceAll('?','')
-                .replaceAll('.','')
-                .replaceAll('!','')
-                .toLowerCase() ;
+const mapCategory = blogCategory.map((blog, k) => {
+    if ( k > 0 && k < 5) {
+        const endpoint = blog.title
+        .replaceAll(' ','_')
+        .replaceAll('?','')
+        .replaceAll('.','')
+        .replaceAll('!','')
+        .toLowerCase() ;
 
-                return(
-                    <div key={k}>
-                        <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
-                            <section style={{backgroundImage: `url(/blog/thumbnail/${blog.id}_1.jpg)`}}>
+        return(
+            <div key={k}>
+                <Link to={`/blog/${blog.id}/${endpoint}`}  onClick={(e) => selectBlog(e, blog)}>
+                    <section style={{backgroundImage: `url(/blog/thumbnail/${blog.id}_1.jpg)`}}>
+                    </section>
+                    <section>
+                        <h1>{blog.title}</h1>
+                        <p>{blog.subtext}</p>
+                    </section>
+                </Link>
+            </div>
+        );
+    }
+});
+const categoryLink = blogCategory[0].category.replaceAll(' ','_').toLowerCase();
+return(
+        <CategoryPreviewWrapper>
+            <h2 onClick={scrollToTop}><Link to={`/blog/${categoryLink}`}>{blogCategory[0].category}</Link></h2>
+            <div>
+                <FeatureBox>
+                    <div>
+                        <Link to={`/blog/${blogCategory[0].id}/${endpoint0}`}  onClick={(e) => selectBlog(e, blogCategory[0])}>
+                            <section style={{backgroundImage: `url(/blog/${blogCategory[0].id}_1.jpg)`}}>
                             </section>
                             <section>
-                                <h1>{blog.title}</h1>
-                                <p>{blog.subtext}</p>
+                                <h1>{blogCategory[0].title}</h1>
+                                <h4>by {author.firstName} {author.lastName}</h4>  
                             </section>
                         </Link>
                     </div>
-                );
-            }
-        });
-        const categoryLink = blogCategory[0].category.replaceAll(' ','_').toLowerCase();
-        return(
-                <CategoryPreviewWrapper>
-                    <h2 onClick={scrollToTop}><Link to={`/blog/${categoryLink}`}>{blogCategory[0].category}</Link></h2>
-                    <div>
-                        <FeatureBox>
-                            <div>
-                                <Link to={`/blog/${blogCategory[0].id}/${endpoint0}`}  onClick={(e) => selectBlog(e, blogCategory[0])}>
-                                    <section style={{backgroundImage: `url(/blog/${blogCategory[0].id}_1.jpg)`}}>
-                                    </section>
-                                    <section>
-                                        <h1>{blogCategory[0].title}</h1>
-                                        <h4>by {author.firstName} {author.lastName}</h4>  
-                                    </section>
-                                </Link>
-                            </div>
-                        </FeatureBox>
-                        <ThreeRows>
-                            {mapCategory}
-                        </ThreeRows>
-                        <br/><br/>
-                    </div>
-                </CategoryPreviewWrapper>
-        );
-    };
+                </FeatureBox>
+                <ThreeRows>
+                    {mapCategory}
+                </ThreeRows>
+                <br/><br/>
+            </div>
+        </CategoryPreviewWrapper>
+    );
 };
+
 const FeatureBox = styled.section`
     width: 100%;
     a {
@@ -283,3 +278,5 @@ a {
         }
     }
 `;
+
+export default CategoryPreview;
