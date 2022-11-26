@@ -50,13 +50,15 @@ const Container = styled.div`
         z-index: 12;
         width: 80vw;
         height: 100%;
-
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         > div {
             section {
                 &:first-of-type {
-                    padding-top: 8vw;
+                    // padding-top: 8vw;
 
                     font-size: 3.5vw;
                     font-weight: light;
@@ -85,6 +87,7 @@ const Container = styled.div`
         text-align: center;
 
         > div {
+            width: 100vw;
             > div {
                 width: 100vw;
 
