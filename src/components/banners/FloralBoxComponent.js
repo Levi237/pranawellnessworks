@@ -1,55 +1,52 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink }          from 'react-router-dom';
 import styled               from 'styled-components';
 
-export default class FloralBoxComponent extends Component {
+const FloralBoxComponent = ({ passedInfo }) => {
 
-    render(){
-        const { passedInfo } = this.props;
-
-            const skillsList = passedInfo.skills.map((skill, key) => {
-                if (passedInfo.skills[0] !== "none"){
-                    return <span key={key}>{skill}</span>
-                }
-            })
-            const servicesList =  passedInfo.services.map((service, key) => {
-                if (passedInfo.services[0] !== "none"){
-                return <li key={key}>{service}</li>
-                }
-            })
-            return(
-                <Container style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
-                    <div style={{ gridArea: `${passedInfo.boxOne}`, backgroundImage: "url('../../floral-background.png')" }}>
-                        <div id="floral-box" style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
-                            <section>{passedInfo.title}</section>
-                            <section style={{ color: `${passedInfo.subtitleColor}` }}>{passedInfo.subtitle}</section>
-                            <section>{passedInfo.content}</section>
-                            { passedInfo.route && 
-                                <section>
-                                    <NavLink className={passedInfo.route} to={passedInfo.route}>
-                                        <button className={passedInfo.ctaColor}>
-                                            {passedInfo.cta}
-                                        </button>
-                                    </NavLink> 
-                                </section>
-                            }
-                            { (passedInfo.services[0] !== "none") && 
-                                <>
-                                    <section className="test services">
-                                        {passedInfo.servicesTitle}
-                                        <ul>{ servicesList }</ul> 
-                                    </section>
-                                </>
-                            }
-                            { (passedInfo.skills[0] !== "none") && <section className="test skills">{skillsList}</section> }
-                        </div>
-                    </div>
-                    <div style={{ gridArea: `${passedInfo.boxTwo}` }}>
-                        <img src={`${passedInfo.image}`} alt={passedInfo.title}/>
-                    </div>
-                </Container>
-            );
-        };
+    const skillsList = passedInfo.skills.map((skill, key) => {
+        if (passedInfo.skills[0] !== "none"){
+            return <span key={key}>{skill}</span>
+        }
+    });
+    const servicesList =  passedInfo.services.map((service, key) => {
+        if (passedInfo.services[0] !== "none"){
+        return <li key={key}>{service}</li>
+        }
+    });
+    
+    return(
+        <Container style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
+            <div style={{ gridArea: `${passedInfo.boxOne}`, backgroundImage: "url('../../floral-background.png')" }}>
+                <div id="floral-box" style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
+                    <section>{passedInfo.title}</section>
+                    <section style={{ color: `${passedInfo.subtitleColor}` }}>{passedInfo.subtitle}</section>
+                    <section>{passedInfo.content}</section>
+                    { passedInfo.route && 
+                        <section>
+                            <NavLink className={passedInfo.route} to={passedInfo.route}>
+                                <button className={passedInfo.ctaColor}>
+                                    {passedInfo.cta}
+                                </button>
+                            </NavLink> 
+                        </section>
+                    }
+                    { (passedInfo.services[0] !== "none") && 
+                        <>
+                            <section className="test services">
+                                {passedInfo.servicesTitle}
+                                <ul>{ servicesList }</ul> 
+                            </section>
+                        </>
+                    }
+                    { (passedInfo.skills[0] !== "none") && <section className="test skills">{skillsList}</section> }
+                </div>
+            </div>
+            <div style={{ gridArea: `${passedInfo.boxTwo}` }}>
+                <img src={`${passedInfo.image}`} alt={passedInfo.title}/>
+            </div>
+        </Container>
+    );
 };
 
 const Container = styled.div`
@@ -208,3 +205,5 @@ const Container = styled.div`
         }
     }
 `;
+
+export default FloralBoxComponent;
