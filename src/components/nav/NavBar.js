@@ -194,7 +194,7 @@ const Hamburger = styled.div`
     transition: .3s ease;
   }
   &:hover > section {
-    background-color: #669F35;
+    background-color: #669F35!important;
     cursor: pointer;
   }
   @media screen and (max-width: 945px) {
