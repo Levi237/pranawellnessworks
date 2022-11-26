@@ -9,7 +9,7 @@
   max-height: 100vh;
   width: 100%;
   height: 100%;
-  transition: .8s ease-in-out;
+  transition: max-width .6s ease-in-out;
 }
 #menu.inactive {
   max-height: 100vh;
@@ -22,7 +22,7 @@
 .inactive {
   max-width: 0;
   transition: .8s ease-in-out;
-  transition-delay: .3s!important;
+  transition-delay: max-width .3s!important;
 }
 .nav-active {
   color:var(--lightpurple) !important;
@@ -34,6 +34,15 @@
   .active {
     max-width: 100vw;
   }
+}
+
+#nav-menu.opaque {
+  opacity: 1;
+  transition: opacity 1.2s ease .3s;
+}
+#nav-menu.opacity {
+  opacity: 0;
+  transition: opacity .2s ease;
 }
 
 .contact-container {
