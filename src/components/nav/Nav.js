@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import * as routes from '../../constants/routes';
 
+import './Nav.css';
+
 export default class Nav extends Component {
     toggleBlogCategories = () => {
         const dropdown = document.getElementById('blog-categories');
@@ -23,9 +25,10 @@ export default class Nav extends Component {
                     <CloseBtn className="close xClose" onClick={() => {toggleHamburger()}}>
                         x
                     </CloseBtn>
-                    {/* if screen width is greater than menu width, fix the sizes.  if it is less than, use calc with min-width 260px */}
                     <NavMenu id="nav-menu" className="opacity" style={{}}>
+                        <div>
                         <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleHamburger()}}>HOME</NavLink>
+                        </div>
                         <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
                         <section>
                             <NavLink activeClassName="nav-active" to={routes.GROUP} onClick={() => {toggleHamburger()}}>GROUP PROGRAMS</NavLink>
@@ -38,7 +41,10 @@ export default class Nav extends Component {
                         </section>
                         <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
                         <section className="toggle-blog-container">
-                            <BlogToggleBtn className="toggle-blog" onClick={() => {this.toggleBlogCategories()}}><section></section><section id="blog-btn-line" className="vert"></section></BlogToggleBtn>
+                            <BlogToggleBtn className="toggle-blog" onClick={() => {this.toggleBlogCategories()}}>
+                            <i id="blog-btn-line" className="arrow down vert"/>
+                                {/* <section></section><section id="blog-btn-line" className="vert"></section> */}
+                                </BlogToggleBtn>
                             <section id="blog-categories" className="toggle hide">
                                 <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
                                 <NavLink activeClassName="nav-active" to={routes.BLOGM} onClick={() => {toggleHamburger()}}>MINDFULNESS & MEDITATION</NavLink>
@@ -46,8 +52,12 @@ export default class Nav extends Component {
                                 <NavLink activeClassName="nav-active" to={routes.BLOGY} onClick={() => {toggleHamburger()}}>YOGA</NavLink>
                             </section>
                         </section>
-                        <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
-                        <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
+                        <div>
+                            <NavLink activeClassName="nav-active" to={routes.ABOUT} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
+                        </div>
+                        <div>
+                            <NavLink activeClassName="nav-active" to={routes.FAQ} onClick={() => {toggleHamburger()}}>FAQ</NavLink>
+                        </div>
                     </NavMenu>
                 </div>
             </NavContainer>
@@ -55,19 +65,32 @@ export default class Nav extends Component {
     };
 };
 
-// if screen width is greater than menu width, fix the sizes.  if it is less than, use calc with min-width 260px
 const NavMenu = styled.div`
-    padding-top: 80px; 
     width: 260px;
+    margin: 0 auto;
+    padding-top: 80px; 
+    display: inline-block;
 
-        text-align: left;
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        > section {
-            font-size: 80%;
-            margin-left: 20px;
-        }
+    text-align: left;
+    > div {
+        border-bottom: 1px solid white;
+    }
+    > section {
+        font-size: 80%;
+        padding-left: 20px;
+        margin-top: -1px;
+        border-bottom: 1px solid white;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        color: #FFF;
+        padding: 8px 0px;
+    }
+    a:hover {
+        color: var(--lightgreen);
+    }
 
     @media screen and (min-width: 400px) {
         
@@ -76,37 +99,6 @@ const NavMenu = styled.div`
 
     }
 `;
-
-const BlogToggleBtn = styled.button`
-    position: absolute;
-    top: -32px;
-    right: 0px;
-    padding: 0;
-    background: transparent;
-    color: white;
-    border: none;
-
-    .horz {
-        transform: rotate(0deg);
-    }
-    .vert {
-        transform: rotate(90deg);
-    }
-    
-    > section {
-        height: 2px;
-        width: 12px;
-        background: white;
-        &:first-of-type {
-            margin-top: 5px
-        }
-        &:last-of-type {
-            transition: transform .35s  ease-in-out;
-            margin-top: -2px
-        }
-    }
-`;
-
 
 const NavContainer = styled.div`
     position: fixed;
@@ -140,16 +132,6 @@ const NavContainer = styled.div`
         max-height: 0px;
         overflow: hidden;
     }
-
-    a {
-        text-decoration: none;
-        display: block;
-        height: 36px;
-        color: #FFF;
-    }
-    a:hover {
-        color: var(--lightgreen);
-    }
     
     button.close {
         position: absolute;
@@ -159,14 +141,46 @@ const NavContainer = styled.div`
         color: #FFF;
         border: none;
     }
-    @media screen and (max-height: 500px) {
-        font-size: 5vh;
-        a {
-            height: 9vh;
-            padding-top: 0;
+`;
+
+const BlogToggleBtn = styled.button`
+    position: absolute;
+    top: -26px;
+    right: 12px;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    border: none;
+
+    .horz {
+        transform: rotate(225deg);
+    }
+    .vert {
+        transform: rotate(45deg);
+    }
+    .arrow {
+        --gauge: 1px;
+        border: solid white;
+        border-width: 0 var(--gauge) var(--gauge) 0;
+        display: inline-block;
+        padding: 4px;
+        transition: .5s ease;
+    }
+
+    > section {
+        height: 2px;
+        width: 12px;
+        background: white;
+        &:first-of-type {
+            margin-top: 5px
+        }
+        &:last-of-type {
+            transition: transform .35s  ease-in-out;
+            margin-top: -2px
         }
     }
 `;
+
 const CloseBtn = styled.button`
     background-color: transparent;
     border-radius: 100%;
