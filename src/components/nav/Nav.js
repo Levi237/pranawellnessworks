@@ -12,8 +12,8 @@ export default class Nav extends Component {
         dropdown.classList.toggle('show');
         dropdown.classList.toggle('hide');
         const rotateBtn = document.getElementById('blog-btn-line');
-        rotateBtn.classList.toggle('horz');
-        rotateBtn.classList.toggle('vert');
+        rotateBtn.classList.toggle('up');
+        rotateBtn.classList.toggle('down');
     };
 
     render(){
@@ -23,7 +23,7 @@ export default class Nav extends Component {
             <NavContainer id="menu" className="inactive">
                 <div>
                     <CloseBtn className="close xClose" onClick={() => {toggleHamburger()}}>
-                        x
+                    ╳            
                     </CloseBtn>
                     <NavMenu id="nav-menu" className="opacity" style={{}}>
                         <div>
@@ -42,8 +42,7 @@ export default class Nav extends Component {
                         <NavLink activeClassName="nav-active" to={routes.BLOG} onClick={() => {toggleHamburger()}}>BLOG</NavLink>
                         <section className="toggle-blog-container">
                             <BlogToggleBtn className="toggle-blog" onClick={() => {this.toggleBlogCategories()}}>
-                            <i id="blog-btn-line" className="arrow down vert"/>
-                                {/* <section></section><section id="blog-btn-line" className="vert"></section> */}
+                            <i id="blog-btn-line" className="arrow down"/>
                                 </BlogToggleBtn>
                             <section id="blog-categories" className="toggle hide">
                                 <NavLink activeClassName="nav-active" to={routes.BLOGF} onClick={() => {toggleHamburger()}}>FUNCTIONAL FITNESS</NavLink>
@@ -72,14 +71,14 @@ const NavMenu = styled.div`
     display: inline-block;
 
     text-align: left;
+    > section, 
     > div {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--lightestpurple);
     }
     > section {
         font-size: 80%;
         padding-left: 20px;
         margin-top: -1px;
-        border-bottom: 1px solid white;
     }
 
     a {
@@ -135,11 +134,16 @@ const NavContainer = styled.div`
     
     button.close {
         position: absolute;
-        top: 5px;
-        right: 5px;
-        padding: 5px;
+        top: 16px;
+        right: 16px;
         color: #FFF;
         border: none;
+    }
+    button.close:hover {
+        color: var(--lightgreen);
+    }
+    button.close:active {
+        color: var(--darkgreen);
     }
 `;
 
@@ -152,10 +156,10 @@ const BlogToggleBtn = styled.button`
     color: #fff;
     border: none;
 
-    .horz {
+    .up {
         transform: rotate(225deg);
     }
-    .vert {
+    .down {
         transform: rotate(45deg);
     }
     .arrow {
