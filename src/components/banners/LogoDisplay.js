@@ -19,7 +19,7 @@ const CustomerDisplay = ({ logos, clients }) => {
     const logoList = logos.map((logo, key) => {
         return(
             <Logo key={key}>
-            {logo.link 
+            { logo.link 
             ?   <a href={logo.link} target="_blank" rel="noopener noreferrer">
                     <img className={(logos === clients) ? "" : "static-img"} src={`./customer-logo/${logo.name}`} alt="pranayama yoga breath work"/>
                 </a>
