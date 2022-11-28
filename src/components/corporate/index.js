@@ -34,22 +34,22 @@ export default class CorporateMain extends Component {
           included: ["/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
           product: "Monthly freebie", 
-          included: ["checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
+          included: ["/checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
           product: "Wellness events access", 
-          included: ["checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
+          included: ["/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
           product: "20% off Online Courses",
-          included: ["checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
+          included: ["/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
           product: "Monthly Lunch & Learn",
-          included: ["checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
+          included: ["/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
           product: "In-office Coaching",
-          included: ["checkmark/check-blank.png","checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-purple.png"],
+          included: ["/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-purple.png"],
         },{
           product: "Team building day",
-          included: ["checkmark/check-blank.png","checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-purple.png"],
+          included: ["/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-blank.png","/checkmark/check-purple.png"],
         } 
       ]
   };
