@@ -1,9 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const EventsCalendar = ({ eventsList }) => {
+const EventsCalendar = () => {
+  const [ eventList ] = useState([{
+    title: `Prenatal Yoga`,
+    location: `virtual`,
+    info: `Guided movement for support, empowerment, and education.`,
+    price: `donation based`,
+    day: `Monday`,
+    when: `Every`,
+    time: `5p PT`,
+    img: `/events/prenatal.png`,
+    link: `https://mailchi.mp/8c8ba20bd281/prenatal-mondays`,
+  },{
+  //   title: `Postpartum Yoga`,
+  //   location: `virtual`,
+  //   info: `Build confidence, strengthen, and renew the body. `,
+  //   price: `donation based`,
+  //   day: `Tuesday`,
+  //   when: `1st & 3rd `,
+  //   time: `5p PT`,
+  //   img: `/events/postpartum.png`,
+  //   link: `https://mailchi.mp/fcd82697d0c7/postpartumtuesdays`,
+  // },{
+  //   title: `Yoga on the Harbor`,
+  //   location: `in San Diego`,
+  //   info: `Join us in person, for a fun community flow!`,
+  //   price: `donation based`,
+  //   day: `Wednesday`,
+  //   when: `1st`,
+  //   time: `6p PT`,
+  //   img: `/events/harbor.png`,
+  //   link: `https://yogaontheharbor.eventbrite.com`,
+  // },{
+    title: `Yoga Flow`,
+    location: `virtual`,
+    info: `Join us from anywhere! All levels yoga flow.`,
+    price: `donation based`,
+    day: `Thursday`,
+    when: `Every`,
+    time: `5p PT`,
+    img: `/events/flow.png`,
+    link: `https://mailchi.mp/f44d1c9f43d6/yogflowthursdays`,
+  },{
+    title: `Wellness Workshop`,
+    location: `virtual`,
+    info: `45 minutes`,
+    price: `donation based`,
+    day: `Friday`,
+    when: `Last`,
+    time: `10:30a PT`,
+    img: `/events/meditation.png`,
+    link: `https://thenalaverse.com/stephanie-singleton`,
+  }]);
 
-        const showDates = eventsList.map((event, k) => {
+        const showDates = eventList.map((event, k) => {
           return(
             <a key={k} href={event.link} target="_blank" rel="noopener noreferrer">
               <h1>{event.day}</h1>
