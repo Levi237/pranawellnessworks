@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import EventCard from './EventCard';
+
 const EventsCalendar = () => {
-  const [ eventList ] = useState([{
+  const eventsArray = [{
     title: `Prenatal Yoga`,
     location: `virtual`,
     info: `Guided movement for support, empowerment, and education.`,
     price: `donation based`,
-    day: `Monday`,
     when: `Every`,
-    time: `5p PT`,
+    day: `monday`,
+    time: 1700,
     img: `/events/prenatal.png`,
     link: `https://mailchi.mp/8c8ba20bd281/prenatal-mondays`,
-  },{
+  // },{
   //   title: `Postpartum Yoga`,
   //   location: `virtual`,
   //   info: `Build confidence, strengthen, and renew the body. `,
   //   price: `donation based`,
-  //   day: `Tuesday`,
   //   when: `1st & 3rd `,
-  //   time: `5p PT`,
+  //   day: `tuesday`,
+  //   time: 1700,
   //   img: `/events/postpartum.png`,
   //   link: `https://mailchi.mp/fcd82697d0c7/postpartumtuesdays`,
   // },{
@@ -27,19 +29,19 @@ const EventsCalendar = () => {
   //   location: `in San Diego`,
   //   info: `Join us in person, for a fun community flow!`,
   //   price: `donation based`,
-  //   day: `Wednesday`,
   //   when: `1st`,
-  //   time: `6p PT`,
+  //   day: `wednesday`,
+  //   time: 1800,
   //   img: `/events/harbor.png`,
   //   link: `https://yogaontheharbor.eventbrite.com`,
-  // },{
+  },{
     title: `Yoga Flow`,
     location: `virtual`,
     info: `Join us from anywhere! All levels yoga flow.`,
     price: `donation based`,
-    day: `Thursday`,
     when: `Every`,
-    time: `5p PT`,
+    day: `thursday`,
+    time: 1700,
     img: `/events/flow.png`,
     link: `https://mailchi.mp/f44d1c9f43d6/yogflowthursdays`,
   },{
@@ -47,34 +49,57 @@ const EventsCalendar = () => {
     location: `virtual`,
     info: `45 minutes`,
     price: `donation based`,
-    day: `Friday`,
     when: `Last`,
-    time: `10:30a PT`,
+    day: `friday`,
+    time: 1030,
     img: `/events/meditation.png`,
     link: `https://thenalaverse.com/stephanie-singleton`,
-  }]);
+  }];
+// const daysOfTheWeek = [`monday`, `tuesday`, `wednesday`, `thursday`, `friday`];
+  const eventList = eventsArray.sort((a, b) => a.time - b.time);
+  
+  const mondayList = eventList.filter(item => item.day === 'monday');
+  const tuesdayList = eventList.filter(item => item.day === 'tuesday');
+  const wednesdayList = eventList.filter(item => item.day === 'wednesday');
+  const thursdayList = eventList.filter(item => item.day === 'thursday');
+  const fridayList = eventList.filter(item => item.day === 'friday');
 
-        const showDates = eventList.map((event, k) => {
-          return(
-            <a key={k} href={event.link} target="_blank" rel="noopener noreferrer">
-              <h1>{event.day}</h1>
-              <div className="hr"></div>
-              <h2>{event.title}</h2>
-              <h4>[ {event.location} ]</h4>
-              <h3>
-                {event.when} {event.day}
-                <br/><span>&nbsp;</span>
-                @ {event.time}
-              </h3>
-            </a>
-          );
-        });
-
-    
-        return(
-            <CalendarWrapper>{showDates}</CalendarWrapper>
-        );
-    };
+  const [ monday ] = useState(mondayList);
+  const [ tuesday ] = useState(tuesdayList);
+  const [ wednesday ] = useState(wednesdayList);
+  const [ thursday ] = useState(thursdayList);
+  const [ friday ] = useState(fridayList);
+  
+    return(
+        <CalendarWrapper>
+          <section>
+            <h1>monday</h1>
+            <div className="hr"></div>
+            <EventCard dayEvents={monday}/>
+          </section>
+          <section>
+            <h1>tuesday</h1>
+            <div className="hr"></div>
+            <EventCard dayEvents={tuesday} />
+          </section>
+          <section>
+            <h1>wednesday</h1>
+            <div className="hr"></div>
+            <EventCard dayEvents={wednesday} />
+          </section>
+          <section>
+            <h1>thursday</h1>
+            <div className="hr"></div>
+            <EventCard dayEvents={thursday}/>
+          </section>
+          <section>
+            <h1>friday</h1>
+            <div className="hr"></div>
+            <EventCard dayEvents={friday} />
+          </section>
+        </CalendarWrapper>
+    );
+};
 
 const CalendarWrapper = styled.div`
   margin-bottom: 20px;
@@ -82,9 +107,10 @@ const CalendarWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas: 'mon tue wed thur fri';
-
-  > a {
+  a {
     text-decoration: none;
+  }
+  >section {
     &:first-of-type {
       grid-area: mon;
     }
@@ -120,6 +146,7 @@ const CalendarWrapper = styled.div`
     font-size: 1.8vw;
     font-weight: 500;
     color: var(--grey)!important;
+    text-transform: capitalize;
     > span {
       display: none;
     }
