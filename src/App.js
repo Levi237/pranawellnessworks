@@ -137,7 +137,7 @@ export default class App extends Component {
         value: `contactRequest`,
         backgroundColor: `white`,
         button: `Schedule Free Consult`,
-        link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
+        link: `https://calendly.com/stephaniepranawellness/explore-prana-services?back=1&month=2022-11`,
       },
       maternalHealth: {
         title: `YOGA FOR`,
@@ -2725,7 +2725,7 @@ export default class App extends Component {
               text: `Unpopular opinion. When you strain a muscle or experience a joint injury, the common advice is to rest, and keep that part of your body immobile until it is healed. With the exception of broken bones, this is a false assumption. When your body is stagnant for long periods of time, it forgets how to function. Your muscles may atrophy, your mobility decreases, you may overcompensate on your opposing side, which can result in a new injury or pain. For my `
             },{
               tag: `a`,
-              link: `https://calendly.com/stephaniepranawellness/yogatherapyconsult?back=1&month=2021-09`,
+              link: `https://calendly.com/stephaniepranawellness/explore-prana-services?back=1&month=2022-11`,
               text: `Yoga Therapy`
             },{
               text: ` clients who are rehabbing an injury, I always find safe ways to increase their movement. Light movement and mobility work, in moderation, can help in bringing back normal functionality after injury. Always honor your body, and listen to her when she speaks. `,

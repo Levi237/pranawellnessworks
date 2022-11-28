@@ -33,7 +33,7 @@ const HomeHeader = () => {
         <section>wellness</section>
         <section>Wellness designed to work for you.</section>
         <ButtonWrapper>
-          <a href="https://calendly.com/stephaniepranawellness/30min?back=1&month=2021-09" target="_blank" rel="noreferrer">
+          <a href="https://calendly.com/stephaniepranawellness/explore-prana-services?back=1&month=2022-11" target="_blank" rel="noreferrer">
           <ButtonCTA 
             name="contactForm" 
             className="ctaBtn"
