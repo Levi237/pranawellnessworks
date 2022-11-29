@@ -3369,7 +3369,7 @@ export default class App extends Component {
     const _id = year + month + day;
     // change from string to number
 
-    let blogList = this.state.blogs;
+    const blogList = this.state.blogs;
     const blogPop = blogList.filter(blog => blog.id <= _id);
     this.setState({
       dateId: _id,
@@ -3415,10 +3415,10 @@ export default class App extends Component {
     return(
 
       <ParentWrapper>
-        {/******* scrollToTop id *******/}
+        {/******* scrollToTop() *******/}
         <ScrollToBar id="scroll-to-bar"></ScrollToBar>
 
-        {/******* POP UPS *******/}
+        {/******* POP-UPS *******/}
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailModal contactType={emailContact} toggleEmailModal={this.toggleEmailModal}/>
         <Switch>
