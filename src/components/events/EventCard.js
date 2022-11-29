@@ -2,11 +2,10 @@ import React from 'react';
 
 
 //==> CREATE A DAY CARD BY PASSGING INFO FROM DAY THEN MAPPING EVENTS OF THE DAY
-const EventCard = ({dayEvents}) => {
+const EventCard = ({ dayEvents }) => {
     console.log(dayEvents, "<=>");
     const mondayList = dayEvents.map((event, k) => {
-        console.log(dayEvents, "<=>", event);
-      // convert military time number to standard string
+
       let time = event.time.toString();
       const minute = time.slice(2);
       let afternoon = false;

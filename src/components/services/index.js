@@ -58,7 +58,7 @@ export default class ServicesMain extends Component {
       };
 
     render(){
-        const { eventsList, toggleEmailModal, scrollToTop } = this.props;
+        const { toggleEmailModal, scrollToTop } = this.props;
 
         return(<>
             <Container>
@@ -72,10 +72,10 @@ export default class ServicesMain extends Component {
             <br/><br/>
 
             <h1>MONTHLY SCHEDULE</h1>
-            <EventsCalendar eventsList={eventsList}/>
-            <br/><br/>
+            <EventsCalendar />
+            {/* <br/><br/>
             <NavLink to={routes.EVENT} onClick={scrollToTop}><button className="white">Take a Closer Look</button></NavLink>
-            <br/><br/><br/><br/>
+            <br/><br/><br/><br/> */}
             
             <Header className="services-main-header">OUR SERVICES</Header>
             <ServiceDisplay services={this.state.otherServices}/>

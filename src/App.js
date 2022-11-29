@@ -3348,7 +3348,7 @@ export default class App extends Component {
   };  
 
   componentDidMount(){
-    this.liveBlogs()
+    this.liveBlogs();
   }
 
   liveBlogs = () => {
@@ -3385,13 +3385,16 @@ export default class App extends Component {
  };
 
   toggleHamburger = () => {
+    //=> show/hide menu
     const hamburgerMenu = document.getElementById('menu');
-    const navMenu = document.getElementById('nav-menu');
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
+    //=> fade in-out text
+    const navMenu = document.getElementById('nav-menu');
     navMenu.classList.toggle('opacity');
     navMenu.classList.toggle('opaque');
   };
+
   toggleEmailModal = (e) => {
     const emailForm = document.getElementById('email');
     emailForm.classList.toggle('active');
@@ -3400,13 +3403,15 @@ export default class App extends Component {
       emailContact: e.currentTarget.value
     });
   };
+
   scrollToTop = () => {
+    //=> add to onClick / NavLink to scroll to top of window while changing components viewed
     const top = document.getElementById('scroll-to-bar');
     top.scrollIntoView({behavior: 'smooth'});
   };
 
   render(){
-    const { emailContact, eventsList, textCopy, blogs, authors, showBlog } = this.state;
+    const { emailContact, textCopy, blogs, authors, showBlog } = this.state;
     return(
 
       <ParentWrapper>
@@ -3464,7 +3469,7 @@ export default class App extends Component {
             <AnnouncementBanner toggleEmailModal={this.toggleEmailModal}/>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(true)} textCopy={textCopy.wellnessServices}/> 
-            <ServicesMain toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} eventsList={eventsList}/>
+            <ServicesMain toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.wellnessServices} scrollToTop={this.scrollToTop} />
           </> }/>           
           <Route path={routes.GROUP} exact render={() => <>
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
@@ -3520,7 +3525,7 @@ export default class App extends Component {
             <NavBar page={"global"} toggleHamburger={this.toggleHamburger} toggleEmailModal={this.toggleEmailModal}/>
             <HeaderComponent purpleBox={(false)} textCopy={textCopy.eventsInformation}/>
             <HeaderMessage toggleEmailModal={this.toggleEmailModal} textCopy={textCopy.eventsInformation}>
-              <EventsMain eventsList={eventsList}/>
+              <EventsMain />
             </HeaderMessage> 
           </> }/>   
           <Route path={routes.SUB} render={() => <>

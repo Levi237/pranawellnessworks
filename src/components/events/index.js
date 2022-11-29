@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // import EventsCalendar from './EventsCalendar';
 import EventsList from './EventsList';
 
-const EventsMain = ({ eventsList }) => {
+const EventsMain = () => {
   return(
     <ListWrapper>
       <div id="th-schedule"></div>
@@ -14,7 +14,7 @@ const EventsMain = ({ eventsList }) => {
         <iframe id="embedOnDemand" title="Recess Embed Iframe" width="100%" src="https://Prana-Wellnessworks.on.recess.tv/embed/checkout/explore?hideMenu=true&displayClass=list&displayClassVod=tag&displayClassIrl=list&class_type=VOD" allowfullscreen webkitallowfullscreen mozallowfullscreen style={{border: 'none'}} />
 
       <h1>FIND WHAT WORKS FOR YOU</h1>
-      <EventsList eventsList={eventsList}/>
+      <EventsList />
       </ListWrapper>
   );
 };
