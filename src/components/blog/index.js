@@ -14,12 +14,11 @@ const BlogMainIndex = ({ scrollToTop, selectBlog, blogs, author }) => {
     return(
         <BlogIndexWrapper>
             <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
-            <br/><br/><br/>
-            <ThreeColumns scrollToTop={scrollToTop} selectBlog={selectBlog}  blogs={blogs} author={author}/>
+            <br/>
             <TwoRows selectBlog={selectBlog}  blogs={blogs} author={author}/>
             <BlogBlocks  blogs={blogBlogsList} selectBlog={selectBlog} author={author}/>
             <CategoryPreview scrollToTop={scrollToTop} blogs={blogs} selectBlog={selectBlog} author={author}/>
-            <br/><br/><br/><br/>
+            <ThreeColumns scrollToTop={scrollToTop} selectBlog={selectBlog}  blogs={blogs} author={author}/>
         </BlogIndexWrapper>
     );
 };
