@@ -76,13 +76,13 @@
     overflow: hidden;
 }
 
-.three-columns .see-more {
+.three-columns .view-more {
     text-align: left;
     margin-top: 1vw;
     background: var(--purple);
     padding: .25vw .75vw;
 }
-.three-columns .see-more > a{
+.three-columns .view-more > a{
     text-transform: uppercase;
     color: #fff;
     font-size: 1.125vw;
@@ -129,10 +129,10 @@
     .three-columns section {
         height: 8vw;
     }
-    .three-columns .see-more {
+    .three-columns .view-more {
         margin-top: 5vw;
     }
-    .three-columns .see-more > a {
+    .three-columns .view-more > a {
         font-size: 2.125vw;
     }
 }
