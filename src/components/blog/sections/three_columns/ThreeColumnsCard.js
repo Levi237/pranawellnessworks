@@ -29,16 +29,16 @@ const getBlogs = blogs.map((blog, k) => {
     }
     if ( k === limit) {
         return (
-            <div key={k}>
+            <div className="see-more" key={k}>
                 <Link 
                     to={`/blog/${categoryEndpoint}`}  
                     onClick={scrollToTop}
                     >
-                        see more...
+                        view more →
                 </Link>
             </div>
         )
-    } 
+    }
 });
 return(
     <>
