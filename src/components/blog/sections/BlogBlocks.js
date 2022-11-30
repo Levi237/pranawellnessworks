@@ -142,7 +142,7 @@ const BlockColumns = styled.div`
           width: 41vw;
         }
         .txt {
-          height: 30vw;
+          height: 18vw;
           width: 41vw;
           margin: 0 auto;
           p {
