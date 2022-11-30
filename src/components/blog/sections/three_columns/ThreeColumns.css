@@ -1,5 +1,10 @@
 .three-columns {
-    --padding: 16px;
+    /* at max-width */
+    --padding: 16px; 
+    /* at mid-width */
+    --padding: 1.4vw; 
+    /* at min-width */
+    /* --padding: 6vw;  */
 }
 .three-columns.wrapper {
     width: 100vw;
@@ -7,13 +12,17 @@
 }
 .three-columns .container {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 78% 22%;
+    grid-template-areas: 'grid panel';
     max-width: 86vw;
     margin: 0 auto;
 }
-.side-panel {
-    background-image: url('./yoga-therapy.jpg');
+.three-columns .side-panel {
+    background-image: url('./bamboo.jpg');
     margin: var(--padding) 0;
+    grid-area: panel;
+    background-size: cover;
+    background-position-x: 50%;
 }
 .three-columns .grid {
     display: grid;
@@ -22,12 +31,11 @@
     padding: var(--padding);
     margin: 0 auto;
     width: calc(100% - var(--padding) * 2);
-    /* border-right: 1px solid grey; */
-    /* max-width: 800px; */
+    grid-area: grid;
 }
 .three-columns .header {
     margin-bottom: var(--padding);
-    border-bottom: 1px solid var(--green);
+    border-bottom: 4px solid var(--green);
 }
 
 .three-columns a {
@@ -35,9 +43,9 @@
 }
 
 .three-columns h1 {
-    padding: 0 0 var(--padding) 0;
     line-height: 100%;
-    font-size: 2vw;
+    padding: 0 0 1vw 0;
+    font-size: 2.1vw;
 }
 .three-columns h2 {
     /* font-family: var(--fancy-font); */
@@ -67,12 +75,23 @@
     height: 5vw;
     overflow: hidden;
 }
+
+.three-columns .see-more {
+    text-align: left;
+    margin-top: 1vw;
+    background: var(--purple);
+    padding: .25vw .75vw;
+}
+.three-columns .see-more > a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.125vw;
+}
 @media screen and (min-width: 1200px) {
     .three-columns.wrapper {
 
     }
     .three-columns .container {
-        /* gap: 5%; */
     }
     
 }
@@ -80,13 +99,40 @@
     .three-columns.wrapper {
     }
     .three-columns .container {
-        /* gap: 5%; */
     }    
 }
 @media screen and (max-width: 640px) {
     .three-columns.wrapper {
+        display: block;
     }
     .three-columns .container {
-        /* gap: 5%; */
-    }    
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 22vw auto;
+        grid-template-areas: 'panel' 'grid';
+        max-width: 100vw;
+        width: 100vw;
+    }
+    .three-columns .side-panel {
+        margin: var(--padding);
+        background-size: cover;
+        /* display: none; */
+    }
+    .three-columns h1 {
+        padding: var(--padding) 0;
+        font-size: 3.4vw;
+    }
+    .three-columns h2 {
+        font-size: 2.33vw;
+    }
+    .three-columns section {
+        height: 8vw;
+    }
+    .three-columns .see-more {
+        margin-top: 5vw;
+    }
+    .three-columns .see-more > a {
+        font-size: 2.125vw;
+    }
 }
