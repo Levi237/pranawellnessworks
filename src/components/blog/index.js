@@ -3,17 +3,19 @@ import styled           from 'styled-components';
 
 import FeaturedBlog     from './sections/FeatureBlogHeader';
 import TwoRows          from './sections/TwoRows';
+import ThreeColumns          from './sections/three_columns/ThreeColumns';
 import CategoryPreview  from './sections/CategoryPreview';
 import BlogBlocks       from './sections/BlogBlocks';
 
 const BlogMainIndex = ({ scrollToTop, selectBlog, blogs, author }) => {
 
-    const blogBlogsList = blogs.filter(blog => blog.category !== "Mindfulness & Meditation")
+    const blogBlogsList = blogs.slice(3,11)
 
     return(
         <BlogIndexWrapper>
             <FeaturedBlog scrollToTop={scrollToTop} selectBlog={selectBlog}  blog={blogs[0]} author={author}/>
             <br/><br/><br/>
+            <ThreeColumns scrollToTop={scrollToTop} selectBlog={selectBlog}  blogs={blogs} author={author}/>
             <TwoRows selectBlog={selectBlog}  blogs={blogs} author={author}/>
             <BlogBlocks  blogs={blogBlogsList} selectBlog={selectBlog} author={author}/>
             <CategoryPreview scrollToTop={scrollToTop} blogs={blogs} selectBlog={selectBlog} author={author}/>
