@@ -1,10 +1,5 @@
 .three-columns {
-    /* at max-width */
-    --padding: 16px; 
-    /* at mid-width */
     --padding: 1.4vw; 
-    /* at min-width */
-    /* --padding: 6vw;  */
 }
 .three-columns.wrapper {
     width: 100vw;
@@ -48,21 +43,13 @@
     font-size: 2.1vw;
 }
 .three-columns h2 {
-    /* font-family: var(--fancy-font); */
     padding: 6px 0 0;
     font-weight: 300;
     color: var(--purple);
-
-    font-size: 24px;
-    font-size: 2.8vw;
-    font-size: 18px;
     font-size: 1.33vw;
 }
 
 .three-columns small {
-    font-size: 18px;
-    font-size: 1.6vw;
-    font-size: 10px;
     font-size: .8vw;
 }
 
@@ -81,33 +68,26 @@
     margin-top: 1vw;
     background: var(--purple);
     padding: .25vw .75vw;
+    transition: 1s ease;
 }
 .three-columns .view-more > a{
     text-transform: uppercase;
     color: #fff;
     font-size: 1.125vw;
 }
-@media screen and (min-width: 1200px) {
-    .three-columns.wrapper {
+.three-columns .view-more:hover {
+    background: var(--lightpurple);
+}
 
-    }
-    .three-columns .container {
-    }
-    
-}
-@media screen and (max-width: 1199px) {
-    .three-columns.wrapper {
-    }
-    .three-columns .container {
-    }    
-}
+@media screen and (min-width: 1200px) {}
+@media screen and (max-width: 1199px) {}
+
 @media screen and (max-width: 640px) {
     .three-columns.wrapper {
         display: block;
     }
     .three-columns .container {
         padding-top: 40px;
-        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 22vw auto;
         grid-template-areas: 'panel' 'grid';
@@ -117,7 +97,6 @@
     .three-columns .side-panel {
         margin: var(--padding);
         background-size: cover;
-        /* display: none; */
     }
     .three-columns h1 {
         padding: var(--padding) 0;
