@@ -11,6 +11,7 @@ import LogoDisplay          from '../banners/LogoDisplay';
 import ServiceDisplay       from '../services/ServiceDisplay';
 
 import Reviews              from '../banners/Reviews';
+import GalleryCarousel from '../banners/GalleryCarousel/GalleryCarousel';
 
 export default class HomeMain extends Component {
     state = {
@@ -141,6 +142,7 @@ export default class HomeMain extends Component {
             
                 <h1>Our Clients</h1>
                 <LogoDisplay logos={clients} clients={clients}/>  
+                <GalleryCarousel />
                 <br/><br/>       
                 <LotusDisplay scrollToTop={scrollToTop}/>
                 <FloralBox passedInfo={floralbox} /> 
