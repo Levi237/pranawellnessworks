@@ -137,12 +137,13 @@ const BlockColumns = styled.div`
       // padding-left: 5vw;
       > div {
         width: 45vw;
+        overflow: hidden;
         .img {
           height: 22vw;
           width: 41vw;
         }
         .txt {
-          height: 18vw;
+          height: clamp(0px, 19vw, 106px);
           width: 41vw;
           margin: 0 auto;
           p {
@@ -154,7 +155,7 @@ const BlockColumns = styled.div`
   }
   @media screen and (max-width: 640px) {
       h1 {
-        font-size: 18px;  
+        font-size: clamp(12px, 4vw, 18px);  
         padding: 0 0 20px;
       }
       h4{
