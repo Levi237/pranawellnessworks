@@ -123,7 +123,7 @@ export default class App extends Component {
         subtitle: `Corporate Wellness`,
         image: `corporate-header.png`,
         header: `Want Prana in Your Workplace?`,
-        message: `If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!`,
+        message: `If you'd love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!`,
         value: `referralRequest`,
         backgroundColor: `white`,
         button: `Refer to Employer`,
@@ -234,7 +234,301 @@ export default class App extends Component {
     //// BLOG HARDCOPY
     dateId: null,
     blogs: [{
-       id: `221212`,
+      // id: ``,
+      // title: ``,
+      // category: `Mindfulness & Meditation`,
+      // publishDate: `Monday, `,
+      // subtext: ``,
+      // copy: [{
+      //   tag: `p`,
+      //   content: [{
+      //     text: ``
+      //   }]
+      //   },{
+      //     tag: `ul`,
+      //       list: [{
+      //         item: [{
+      //           text: ``
+      //         }]
+      //       },{
+      //         item: [{
+      //           text: ``
+      //         }]
+      //       }]
+      // },{
+      //   tag: `section`,
+      //   list: [{
+      //     tag: `p`,
+      //     content: [{
+      //       tag: `b`,
+      //       text: ``
+      //     },{
+      //       text: ``
+      //     }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       tag: `b`,
+      //       text: ``
+      //     },{
+      //       text: ``
+      //     },{
+      //       tag: `a`,
+      //       link: ``,
+      //       text: ``
+      //     },{
+      //       text: ``
+      //     }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       tag: `b`,
+      //       text: ``
+      //     },{
+      //       text: ``
+      //     }]
+      //   }]
+      // },{
+      //     tag: `br`
+      //   },{
+      //     tag: `img`,
+      //     content: [{
+      //       class: `wide`,
+      //       num: 2
+      //     }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       text: `` 
+      //     }]
+      //   },{
+      //     tag: `p`,
+      //     content: [{
+      //       tag: `br`,
+      //     },{
+      //       tag: `b`,
+      //       text: `The Challenge: ` 
+      //     },{
+      //       text: `` 
+      //     }]
+      //   }]
+      // },{
+      id: `230227`,
+      title: `Reframe Negative Self-Talk`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, February 27th, 2023`,
+      subtext: `Be kind to yourself, you deserve it.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `The way you treat yourself is the way you teach others to treat you. We've all experienced self-doubt, imposter syndrome, comparison, jealousy, and the tricks of the monkey mind. These things are common, but they don't have to be your norm. Learn to reframe the way you speak to yourself, self-correct negativity, and become more affirming.`
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Name the voice in your head. `
+          },{
+            text: `The bad one. Give that annoying voice in your head a name. The one that says you can't do something, the one telling you you're not good enough. Give them a name that speaks to their dark personality, and call them out! Every time they try to tell you something negative, call them by name and tell them to shut up. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Reframe the negative. `
+          },{
+            text: `Instead of saying “I'm bad at xyz,” reframe the phrase to say “I am working on being better at xyz.” The slight shift in verbiage will make all the difference. It will allow you to see yourself making progress and visualize where you want to be, and how you can grow. Speak in the positive, not in the negative when you choose your words. Instead of never, say “yet.” As the best is yet to come.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Write personal affirmations. `
+          },{
+            text: `Write down how you WANT to see yourself. Be descriptive and specific. Close your eyes and see the person you want to be and imagine how you would feel. Write down affirmations on sticky notes, and stick them in different areas around your house. Seeing these notes throughout the day, every day, will put you in a more positive mindset and remind you of your infinite power. Some examples of affirmations: “I am beautiful in every way.” “I am enough.” “I am confident and strong” `
+          }]
+        }]
+      },{
+          tag: `br`
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            num: 2
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `br`,
+          },{
+            tag: `b`,
+            text: `The Challenge: ` 
+          },{
+            text: `Get to work on those sticky notes! Do at least 10.` 
+          }]
+        }]
+      },{
+      id: `230213`,
+      title: `How to Relieve Low Back Pain`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, February 13th, 2023`,
+      subtext: `Did you know that healing low back pain requires more than just your back?`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `One of the top pain complaints I see from clients in `
+        },{
+          tag: `a`,
+          link: `https://pranawellnessworks.com/yoga_therapy`,
+          text: `Yoga Therapy`
+        },{
+          text: ` is lower back pain. Whether you're on your feet all day, or sitting all day, that nagging low back pain emerges more often than not. This pain often has to do with ergonomics and functional movement of the body. Meaning are the spaces you live and work in suitable for optimal lumbar health? Are you moving in the most efficient way possible in your daily movements?`
+        }]
+      },{
+        tag: `p`,
+        content: [{
+          text: `The posterior chain (the back of your body) is all connected! So when low back pain occurs, it's likely the pain will travel elsewhere. Think about the other parts of your body that support your lower back. Focus on strengthening these areas, in order to alleviate low back pain. `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Train your core. `
+          },{
+            text: `Core is everything. Ab workouts are not as important as core workouts, I promise you. Every movement you make, comes from your core. All of the muscles in your back are connected to your core in some way. Developing core strength and stability will greatly enhance the movements of your body. Bridge post is a great example of core stabilization. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Strengthen your hamstrings. `
+          },{
+            text: `An unsuspecting culprit in low back pain is weak hamstrings. Hamstrings are the largest muscle in your body, so they require maintenance and upkeep of their strength. By nurturing this large muscle, you give your back the extra support it needs. Legs curls work wonders for hammy strength.`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Increase hip mobility. `
+          },{
+            text: `Shakira says “hips don't lie,” and she's correct! They do not. Your hips carry the weight of your torso, so they must remain agile and mobily in order to function properly. Think about the action of sitting. It requires a fold of the hips. If your hips are dry and unlubricated due to lack of movement, it can lead to problems in the low back such as disc related injuries. Keep your hips moving and find ways to get up from your seat and be mobile! Try goddess pose or pigeon!`
+          }]
+        }]
+      },{
+          tag: `br`
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            num: 2
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `br`,
+          },{
+            tag: `b`,
+            text: `The Challenge: ` 
+          },{
+            text: `Try one of these new exercises for the next few days.` 
+          }]
+        }]
+      },{        
+      id: `230130`,
+      title: `Three Ayurvedic Morning Habits to Change Your Life`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday,  January 30th, 2023`,
+      subtext: `Consistency in your morning routine is something you never knew you needed.`,
+      copy: [{
+          tag: `p`,
+          content: [{
+            text: `Ayurveda is the Eastern “mother science” to yoga. It's a whole body healing system, which emphasizes lifestyle changes to promote longevity. `
+          },{
+            tag: `a`,
+            link: `https://www.banyanbotanicals.com/info/ayurvedic-living/learning-ayurveda/intro-to-ayurveda/`,
+            text: `Ayurveda`
+          },{
+            text: ` encourages knowing and understanding your own body and its needs in order to achieve optimal health, and eliminate imbalance. Disease is simply an imbalance in the body, so through lifestyle changes, we seek to find balance. Your morning sets the tone for your entire day, so it's important to develop healthy habits that will promote optimal wellbeing. `
+          }]
+        },{ 
+          tag: `p`,
+          content: [{
+            text: `Here are three ways you can change your life, by changing your morning.`
+          }]
+        },{
+          tag: `section`,
+          list: [{
+            tag: `p`,
+            content: [{
+              tag: `b`,
+              text: `Wake up early, daily. `
+            },{
+              text: `Ayurveda says rise to beat the sun. The time of the day characterized by movement and energy is between the hours of 2am-6am. In Ayurveda, it's called `
+            },{
+              tag: `a`,
+              link: `https://www.ayurvedacollege.com/blog/ayurveda-and-cycles-time-how-doshas-rule-day/#:~:text=The%20pitta%20time%20of%20day,governs%20the%20time%20of%20transition.`,
+              text: `Vata time`
+            },{
+              text: `. When you wake up between the hours of 6am-10am, and you can't escape that “I'm still tired” feeling, that's because it's kapha time, characterized by heaviness and sluggish energy. When you greet the morning sun, your body is naturally energized, and produces more serotonin, or the “happy hormone.” Once your body is used to rising at its natural rhythm, you will experience increased productivity, and feel more rested. But don't forget to sleep earlier too!`
+            }]
+
+          },{
+            tag: `p`,
+            content: [{
+              tag: `b`,
+              text: `Eliminate. `
+            },{
+              text: `Did you know that daily elimination is essential for healthy function of the body, immunity, and clearing out toxins? The body has a natural urge to eliminate first thing in the morning. However, what often happens is we ignore that urge due to sleep or lack of movement. `
+            },{
+              tag: `a`,
+              link: `https://pranawellnessworks.com/blog/221031/3_ways_to_ignite_your_digestive_fire`,
+              text: `Drink warm water with lemon`
+            },{
+              text: `, upon rising, daily. This helps to activate your body's natural digestive fire (agni) and encourages elimination. When you begin to eliminate more regularly, first thing in the early morning daily, you will notice a difference in your energy levels, and naturally decrease the toxins in your body.`
+            }]
+          },{
+            tag: `p`,
+            content: [{
+              tag: `b`,
+              text: `Oil your body. `
+            },{
+              text: `Ayurveda loves oils! In fact, the practice of oiling oneself is a natural practice of self-love. There are cooling oils, and heating oils depending on your `
+            },{
+              tag: `a`,
+              link: `https://pranawellnessworks.com/blog/220221/get_to_know_your_body_what_are_doshas_`,
+              text: `dosha`
+            },{
+              text: `, but what's most important is the cultivation of love. After you rise, gently oil your ears, your face, your scalp and give them a sweet, gentle massage. This practice will awaken you, increase circulation and lymphatic drainage.`
+            }]
+          }]
+        },{
+          tag: `br`
+        },{
+          tag: `img`,
+          class: `medium`,
+          num: 2
+        },{
+          tag: `p`,
+          content: [{
+            text: `It's the small daily habits that become routines that will change your life. Take the time to understand what your body needs, and then give it just that. Align with what nature calls you to do.` 
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `br`,
+          },{
+            tag: `b`,
+            text: `The Challenge: ` 
+          },{
+            text: `Go to sleep at least by 10pm, and set your alarm for 5am tomorrow!` 
+          }]
+        }]
+      },{
+      id: `221212`,
       title: `How to Budget Your Energy`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, December 12th, 2022`,
@@ -336,7 +630,7 @@ export default class App extends Component {
       title: `4 Ways to Shift Your Workplace Culture`,
       category: `Mindfulness & Meditation`,
       publishDate: `Monday, November 28th, 2022`,
-      subtext: `Workplace wellbeing is not only important for individual mental health, but also for a company’s bottom line.`,
+      subtext: `Workplace wellbeing is not only important for individual mental health, but also for a company's bottom line.`,
       copy: [{
         tag: `p`,
         content: [{
@@ -360,14 +654,14 @@ export default class App extends Component {
                 tag: `b`,
                 text: `Ask questions. `
               },{
-                text: `Being inquisitive about what is happening at work and why is so important. Ask questions about changes in policies, workplace behavior, perks, meetings, team interactions. Ask often. Ask for the things you want to see as well! Closed mouths don’t get fed! Whether you are an employee or employer, asking questions will go a long way to both give and receive feedback. Ask how your team is feeling. Ask how you can be a better team member or manager. Ask how you can help. Be genuine in your questions and your responses.`
+                text: `Being inquisitive about what is happening at work and why is so important. Ask questions about changes in policies, workplace behavior, perks, meetings, team interactions. Ask often. Ask for the things you want to see as well! Closed mouths don't get fed! Whether you are an employee or employer, asking questions will go a long way to both give and receive feedback. Ask how your team is feeling. Ask how you can be a better team member or manager. Ask how you can help. Be genuine in your questions and your responses.`
               }]
             },{
               item: [{
                 tag: `b`,
                 text: `Over communicate. `
               },{
-                text: `When you think you’ve said it enough, say it one more time. The `
+                text: `When you think you've said it enough, say it one more time. The `
               },{
                 tag: `a`,
                 link: `https://www.linkedin.com/posts/stephanieerazo_culture-wellbeing-workplace-activity-6992911507395117058-Tppg?utm_source=share&utm_medium=member_desktop`,
@@ -380,7 +674,7 @@ export default class App extends Component {
                 tag: `b`,
                 text: `Be the change. `
               },{
-                text: `If you’re not seeing what you want from your team or coworkers, take the leap and initiate it yourself! Shake things up, make suggestions, start taking `
+                text: `If you're not seeing what you want from your team or coworkers, take the leap and initiate it yourself! Shake things up, make suggestions, start taking `
               },{
                 tag: `a`,
                 link: `https://pranawellnessworks.com/services_corporate`,
@@ -414,13 +708,13 @@ export default class App extends Component {
             tag: `b`,
             text: `Bonus: ` 
           },{
-            text: `Have you ever heard of bee glue? Well, it’s called `
+            text: `Have you ever heard of bee glue? Well, it's called `
           },{
             tag: `a`,
             link: `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5549483/`,
             text: `“propolis”`
           },{
-            text: ` and it’s what produced the super dark, thick honey. When removed from the honeycomb, it almost looks black. (pictured above, from our home hive prior to straining) THIS is the most health beneficial honey out there! And it’s super hard to find in stores, so it will cost you when you do! ` 
+            text: ` and it's what produced the super dark, thick honey. When removed from the honeycomb, it almost looks black. (pictured above, from our home hive prior to straining) THIS is the most health beneficial honey out there! And it's super hard to find in stores, so it will cost you when you do! ` 
           }]
         },{
           tag: `small`,
@@ -437,7 +731,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Honey is nature’s gold. It has so many medicinal health benefits, when consumed in its raw, organic form. White sugar tops the list of processed foods that contribute to gut issues and disease, so swapping it out for honey as a more natural sweetener is ideal. With the bee population declining, and faux `
+            text: `Honey is nature's gold. It has so many medicinal health benefits, when consumed in its raw, organic form. White sugar tops the list of processed foods that contribute to gut issues and disease, so swapping it out for honey as a more natural sweetener is ideal. With the bee population declining, and faux `
           },{
             tag: `a`,
             link: `https://www.netflix.com/title/80146284`,
@@ -454,12 +748,12 @@ export default class App extends Component {
             link: `https://www.youtube.com/watch?app=desktop&v=IMiKHNqw8iw`,
             text: `become beekeepers`
           },{
-            text: `, and it’s been hugely beneficial to our health and wellbeing! And we’re saving bees!`
+            text: `, and it's been hugely beneficial to our health and wellbeing! And we're saving bees!`
           }]
         },{
           tag: `p`,
           content: [{
-            text: `Raw honey is harvested straight from the honeycomb, and strained of debris, without adding any additives. When you see real raw honey start to harden, get cloudy, or crystallize, it’s ok! This honey is still great to use. In fact, crystallization is how you know it’s really raw! `
+            text: `Raw honey is harvested straight from the honeycomb, and strained of debris, without adding any additives. When you see real raw honey start to harden, get cloudy, or crystallize, it's ok! This honey is still great to use. In fact, crystallization is how you know it's really raw! `
           }]
         },{
           tag: `p`,
@@ -473,14 +767,14 @@ export default class App extends Component {
                   tag: `b`,
                   text: `Naturally anti-microbial/anti-bacterial. `
                 },{
-                  text: `Raw honey, of course. That’s why your grandma may have encouraged a spoonful of honey when you’re feeling sick. It’s a natural immune booster. Also great for wound care.`
+                  text: `Raw honey, of course. That's why your grandma may have encouraged a spoonful of honey when you're feeling sick. It's a natural immune booster. Also great for wound care.`
                 }]
               },{
                 item: [{
                   tag: `b`,
                   text: `Allergy reliever. `
                 },{
-                  text: `Consuming local raw honey daily can significantly boost your natural immunity to seasonal environmental allergens. It’s a natural anti-inflammatory, and can help to soothe respiratory issues. It’s important to note that this is typically only helpful if you’re buying from a local source where the honey is produced within your zip code. Check out your local farmers’ market, and ask questions!`
+                  text: `Consuming local raw honey daily can significantly boost your natural immunity to seasonal environmental allergens. It's a natural anti-inflammatory, and can help to soothe respiratory issues. It's important to note that this is typically only helpful if you're buying from a local source where the honey is produced within your zip code. Check out your local farmers' market, and ask questions!`
                 }]
               },{
                 item: [{
@@ -501,7 +795,7 @@ export default class App extends Component {
                   tag: `b`,
                   text: `Radiant skin. `
                 },{
-                  text: `Honey is literally glowing, so it naturally will add a glow to your skin. It’s a great moisturizer and can help treat dry skin and eczema. Buying or making raw honey into soaps and lotions is a great way to make use of the honeycomb and beeswax.`
+                  text: `Honey is literally glowing, so it naturally will add a glow to your skin. It's a great moisturizer and can help treat dry skin and eczema. Buying or making raw honey into soaps and lotions is a great way to make use of the honeycomb and beeswax.`
                 },{
                   tag: `br`
                 },{
@@ -522,13 +816,13 @@ export default class App extends Component {
               tag: `b`,
               text: `Bonus: ` 
             },{
-              text: `Have you ever heard of bee glue? Well, it’s called `
+              text: `Have you ever heard of bee glue? Well, it's called `
             },{
               tag: `a`,
               link: `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5549483/`,
               text: `“propolis”`
             },{
-              text: ` and it’s what produced the super dark, thick honey. When removed from the honeycomb, it almost looks black. (pictured above, from our home hive prior to straining) THIS is the most health beneficial honey out there! And it’s super hard to find in stores, so it will cost you when you do! ` 
+              text: ` and it's what produced the super dark, thick honey. When removed from the honeycomb, it almost looks black. (pictured above, from our home hive prior to straining) THIS is the most health beneficial honey out there! And it's super hard to find in stores, so it will cost you when you do! ` 
             }]
           },{
             tag: `small`,
@@ -545,7 +839,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `When your gut is healthy, you are healthy. When a person’s metabolic fire dies, they will soon die. You cannot continue to live a healthy life with an unhealthy gut, so being mindful of your digestion will help improve longevity.`
+            text: `When your gut is healthy, you are healthy. When a person's metabolic fire dies, they will soon die. You cannot continue to live a healthy life with an unhealthy gut, so being mindful of your digestion will help improve longevity.`
           }]
         },{
           tag: `section`,
@@ -573,7 +867,7 @@ export default class App extends Component {
               link: `https://pranawellnessworks.com/blog/220221/get_to_know_your_body_what_are_doshas_`,
               text: `Are you eating for YOUR body`
             },{
-              text: `, or are you just eating what you’ve been told is “healthy?” Ayurveda is an Eastern science of medicine that focuses on holistic, whole-body healing using your body’s natural systems. It suggests that each human body has a prominent dosha, for which it can be governed. When you begin to focus on eating for your specific body make up, your health and digestive process will be optimized.`
+              text: `, or are you just eating what you've been told is “healthy?” Ayurveda is an Eastern science of medicine that focuses on holistic, whole-body healing using your body's natural systems. It suggests that each human body has a prominent dosha, for which it can be governed. When you begin to focus on eating for your specific body make up, your health and digestive process will be optimized.`
             }]
           },{
             tag: `p`,
@@ -621,7 +915,7 @@ export default class App extends Component {
             linke: `https://www.amazon.com/Four-Agreements-Practical-Personal-Freedom/dp/1878424319`,
             text: `The Four Agreements, by Don Miguel Ruiz`
           },{
-            text: `, as an assignment in one of my Yoga Teacher trainings. I had heard of it many times, but once I began to read, I knew it wouldn’t just be once. When life gets challenging, or I’m feeling stressed about something, I turn to these agreements. The book provides simple guidelines for life, to increase happiness and your sense of freedom.`
+            text: `, as an assignment in one of my Yoga Teacher trainings. I had heard of it many times, but once I began to read, I knew it wouldn't just be once. When life gets challenging, or I'm feeling stressed about something, I turn to these agreements. The book provides simple guidelines for life, to increase happiness and your sense of freedom.`
           }]
         },{
           tag: `ol`,
@@ -635,23 +929,23 @@ export default class App extends Component {
             },{
               item: [{
                 tag: `b`,
-                text: `Don’t take anything personally. `
+                text: `Don't take anything personally. `
               },{
-                text: `This one is perhaps the most important agreement you can make with yourself in pursuing personal mental well-being. It is also the most challenging. When someone does or says something to you that offends, it’s hard to release attachment and not take it personally. Nine times out of ten, that person’s actions or words are a reflection of them, not of you. Take a deep breath, and do some reflection before you react. In Yoga, self-study is called “svadhyaya,” and allows us to see into ourselves and become more self-aware. Reactivity is limiting, so strive to not limit yourself by taking things personally.`
+                text: `This one is perhaps the most important agreement you can make with yourself in pursuing personal mental well-being. It is also the most challenging. When someone does or says something to you that offends, it's hard to release attachment and not take it personally. Nine times out of ten, that person's actions or words are a reflection of them, not of you. Take a deep breath, and do some reflection before you react. In Yoga, self-study is called “svadhyaya,” and allows us to see into ourselves and become more self-aware. Reactivity is limiting, so strive to not limit yourself by taking things personally.`
               }]
             },{
               item: [{
                 tag: `b`,
-                text: `Don’t make assumptions. `
+                text: `Don't make assumptions. `
               },{
-                text: `One definition of anxiety is assigning an outcome or story to something that has not yet occurred. Our imagination can get the best of us, and we allow the mind to spiral into scenarios that are typically not true, and never come to fruition. Instead of assuming, ask questions. Seek to understand, not to know. Save yourself some mental stress, and don’t assume.`           
+                text: `One definition of anxiety is assigning an outcome or story to something that has not yet occurred. Our imagination can get the best of us, and we allow the mind to spiral into scenarios that are typically not true, and never come to fruition. Instead of assuming, ask questions. Seek to understand, not to know. Save yourself some mental stress, and don't assume.`           
               }]
             },{
               item: [{
                 tag: `b`,
                 text: `Always do your best. `
               },{
-                text: `Show up with your A game, no matter the circumstance. You want to put your best effort forward, not only for others, but for yourself in order to grow and learn. Keep in mind, your best today may not be your best tomorrow. Think about the best way to show up for yourself today, and understand that the next day might provide challenges that beckon you to show up differently. The most important part of this agreement is to be non-judgemental of yourself. If you can look at yourself in the mirror and tell yourself you’ve done your best, that’s it. Do not criticize or compare. Instead, reflect on how you can learn and innovate and show up better next time.`
+                text: `Show up with your A game, no matter the circumstance. You want to put your best effort forward, not only for others, but for yourself in order to grow and learn. Keep in mind, your best today may not be your best tomorrow. Think about the best way to show up for yourself today, and understand that the next day might provide challenges that beckon you to show up differently. The most important part of this agreement is to be non-judgemental of yourself. If you can look at yourself in the mirror and tell yourself you've done your best, that's it. Do not criticize or compare. Instead, reflect on how you can learn and innovate and show up better next time.`
               },{
                 tag: `br`
               },{
@@ -710,7 +1004,7 @@ export default class App extends Component {
               tag: `b`,
               text: `Slowly. `
             },{
-              text: `My grandpa used to tell us to chew each bite 65 times before swallowing! When you’re eating too fast, your digestive system has to play catch up and usually cannot keep up. Your body is not able to properly process food, thus gas, acid, and overall discomfort are the result. When you eat slowly, you allow your body to properly work for you, and turn your food into energy.`
+              text: `My grandpa used to tell us to chew each bite 65 times before swallowing! When you're eating too fast, your digestive system has to play catch up and usually cannot keep up. Your body is not able to properly process food, thus gas, acid, and overall discomfort are the result. When you eat slowly, you allow your body to properly work for you, and turn your food into energy.`
             }]
           },{
             tag: `p`,
@@ -800,7 +1094,7 @@ export default class App extends Component {
                   tag: `b`,
                   text: `Find your end range of motion. `
                 },{
-                  text: `And then back off. The human body is capable of many things. Moving is an artform. If you are trying to increase mobility in a specific part of your body, it’s important to identify your limits and explore them. Once your muscle gets to its widest range of motion, create some resistance (gravitational force), and then relax the muscle back to its resting state. Doing this will train your muscles to become more open and mobile.`
+                  text: `And then back off. The human body is capable of many things. Moving is an artform. If you are trying to increase mobility in a specific part of your body, it's important to identify your limits and explore them. Once your muscle gets to its widest range of motion, create some resistance (gravitational force), and then relax the muscle back to its resting state. Doing this will train your muscles to become more open and mobile.`
                 }]
               },{
                 item: [{
@@ -825,7 +1119,7 @@ export default class App extends Component {
                   tag: `b`,
                   text: `Get more massages! `
                 },{
-                  text: `The way you care for yourself is important, and contributes to your overall health. When you invest into your body, it will pay you back tenfold. Massage is a great way to open up muscle fascia, prep your body for increased movement, or recover from stress. If booking a massage isn’t in the budget, grab one of those massage guns from online, or find a friend with great hands!`
+                  text: `The way you care for yourself is important, and contributes to your overall health. When you invest into your body, it will pay you back tenfold. Massage is a great way to open up muscle fascia, prep your body for increased movement, or recover from stress. If booking a massage isn't in the budget, grab one of those massage guns from online, or find a friend with great hands!`
                 },{
                   tag: `br`
                 },{
@@ -846,7 +1140,7 @@ export default class App extends Component {
               tag: `b`,
               text: `The Challenge: ` 
             },{
-              text: `Pretend like you’re a baby again and go through all the steps of growth, and pay special attention to what movements challenge your body the most!` 
+              text: `Pretend like you're a baby again and go through all the steps of growth, and pay special attention to what movements challenge your body the most!` 
             }]
           }]
         },{
@@ -858,7 +1152,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Pain is your body’s reaction to something that it perceives as harmful. It is telling you that something is different. When we experience pain, it often triggers a stress response, causing more breakdown in the function of your nervous system that keeps you healthy.`
+            text: `Pain is your body's reaction to something that it perceives as harmful. It is telling you that something is different. When we experience pain, it often triggers a stress response, causing more breakdown in the function of your nervous system that keeps you healthy.`
           }]
         },{
           tag: `p`,
@@ -891,7 +1185,7 @@ export default class App extends Component {
               tag: `b`,
               text: `Mind your thoughts. `
             },{
-              text: `Visualization is a powerful tool in healing from chronic pain. What you focus on increases, so it’s important to focus on what you ideally want to see in your body. Many people who’ve experienced long term, chronic pain do not trust their bodies. It is important to rebuild that relationship, and begin to increase awareness. Visualizing your body free from pain is an important factor in reprogramming the mind, because your brain may no longer discern between movement that is actually happening and pain.`
+              text: `Visualization is a powerful tool in healing from chronic pain. What you focus on increases, so it's important to focus on what you ideally want to see in your body. Many people who've experienced long term, chronic pain do not trust their bodies. It is important to rebuild that relationship, and begin to increase awareness. Visualizing your body free from pain is an important factor in reprogramming the mind, because your brain may no longer discern between movement that is actually happening and pain.`
             }]
           },{
             tag: `p`,
@@ -930,7 +1224,7 @@ export default class App extends Component {
         title: `Cooling Foods to Beat Summer Heat`,
         category: `Nutrition`,
         publishDate: `Monday, August 15th, 2022`,
-        subtext: `Whether you’re trying to calm your pitta dosha, or simply trying to beat the summer heat, here are some foods that will help you stay cool this summer.`,
+        subtext: `Whether you're trying to calm your pitta dosha, or simply trying to beat the summer heat, here are some foods that will help you stay cool this summer.`,
         copy: [{
           tag: `p`,
           content: [{
@@ -954,12 +1248,12 @@ export default class App extends Component {
             link: `https://pranawellnessworks.com/blog/220530/3_tips_for_summer_wellness`,
             text:`Summertime`
           },{
-            text:` can have us all feeling like we are going to overheat at times, so being mindful of the energy you’re creating through the food you consume is important. Cooling foods can help your body to feel more at ease during the summer months.`
+            text:` can have us all feeling like we are going to overheat at times, so being mindful of the energy you're creating through the food you consume is important. Cooling foods can help your body to feel more at ease during the summer months.`
           }]
         },{
           tag: `p`,
           content: [{
-            text: `Eating foods that are cooling to the gut will allow the pitta dosha’s “fire” to be calmed. Foods that are water-based are a great place to start. `
+            text: `Eating foods that are cooling to the gut will allow the pitta dosha's “fire” to be calmed. Foods that are water-based are a great place to start. `
           }]
         },{
           tag: `section`,
@@ -1071,13 +1365,13 @@ export default class App extends Component {
               tag: `b`,
               text: `Key Action. `
             },{
-              text: `What is they key action of the sport in which you’re training? Is it a squat, a pitch, a punch, a swing, or a kick? Keeping this in mind will help you to determine what yoga postures will make this key action easier on the body. For example, if you’re a `
+              text: `What is they key action of the sport in which you're training? Is it a squat, a pitch, a punch, a swing, or a kick? Keeping this in mind will help you to determine what yoga postures will make this key action easier on the body. For example, if you're a `
             },{
               tag: `a`,
               link: `https://www.instagram.com/p/Cgm8YUcvAm8/?igshid=YmMyMTA2M2Y=`,
               text: `boxer`
             },{
-              text: `, punching is the primary action, which uses arms and shoulders. A yoga pose that would be helpful to a boxer’s body would be bridge pose, because it is shoulder opening.`
+              text: `, punching is the primary action, which uses arms and shoulders. A yoga pose that would be helpful to a boxer's body would be bridge pose, because it is shoulder opening.`
             }]
           },{
             tag: `p`,
@@ -1146,7 +1440,7 @@ export default class App extends Component {
               tag: `b`,
               text: `Use Sunday to plan.`
             },{
-              text: ` Make a nice cup of herbal tea, grab your journal and planner, and tap in on Sunday evenings. Think of this time as a gift you’re giving to yourself, so you can be less stressed during the week. Take some time to make a plan and set goals for the week. Write out your to-do lists and a detailed schedule. Once it’s all in front of you, you will feel less burdened by the tasks on Monday.`
+              text: ` Make a nice cup of herbal tea, grab your journal and planner, and tap in on Sunday evenings. Think of this time as a gift you're giving to yourself, so you can be less stressed during the week. Take some time to make a plan and set goals for the week. Write out your to-do lists and a detailed schedule. Once it's all in front of you, you will feel less burdened by the tasks on Monday.`
             }]
           },{
             tag: `p`,
@@ -1160,7 +1454,7 @@ export default class App extends Component {
               link: `https://pranawellnessworks.com/blog/220404/5_unique_ways_to_practice_self-care`,
               text: `self-care routine`
             },{
-              text: ` on Monday, take a moment to reflect on your wins from the prior week. Use those to motivate you, and hold you accountable for the goals that you’ve set for yourself in the new week. Make a list of all the things you did well in the week prior, however small, and give yourself your flowers for it!`
+              text: ` on Monday, take a moment to reflect on your wins from the prior week. Use those to motivate you, and hold you accountable for the goals that you've set for yourself in the new week. Make a list of all the things you did well in the week prior, however small, and give yourself your flowers for it!`
             }]
           },{
             tag: `p`,
@@ -1172,7 +1466,7 @@ export default class App extends Component {
               link: `https://pranawellnessworks.com/blog/210823/how_to_sleep_better`,
               text: `Sleeping well`
             },{
-              text: ` can uplevel your morning on any day, but it’s especially important to get some good sleep on Sunday night, so that your week gets off to a good start. Limit your screen time before bed. Try to eat dinner a bit earlier. Journal at night to allow your mind to release everything it’s thinking onto paper. When you go to sleep with a clear mind, you wake up feeling more rested and energized. `
+              text: ` can uplevel your morning on any day, but it's especially important to get some good sleep on Sunday night, so that your week gets off to a good start. Limit your screen time before bed. Try to eat dinner a bit earlier. Journal at night to allow your mind to release everything it's thinking onto paper. When you go to sleep with a clear mind, you wake up feeling more rested and energized. `
              }]
             },{
               tag: `img`,
@@ -1201,7 +1495,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Stress is at an all time high these days with work-life balance, a pandemic, inflation, politics. All of it is affecting our ability to be mindful and completely healthy. Stress is the root cause of so many illnesses and physical pain. It’s all `
+            text: `Stress is at an all time high these days with work-life balance, a pandemic, inflation, politics. All of it is affecting our ability to be mindful and completely healthy. Stress is the root cause of so many illnesses and physical pain. It's all `
           },{
             tag: `a`,
             link: `https://pranawellnessworks.com/yoga_therapy`,          
@@ -1230,7 +1524,7 @@ export default class App extends Component {
               tag: `b`,
               text: `Take mindful walks.`
             },{
-              text: ` Walking daily can add years to your life. It helps to elevate your mental wellbeing, and also promotes physical and cardiac health. Try walking without a real goal. Just walk, observe, listen, and feel. Notice new things in your neighborhood each day. You’ll be surprised at how your mood changes after each walk.`
+              text: ` Walking daily can add years to your life. It helps to elevate your mental wellbeing, and also promotes physical and cardiac health. Try walking without a real goal. Just walk, observe, listen, and feel. Notice new things in your neighborhood each day. You'll be surprised at how your mood changes after each walk.`
             }]
           },{
             tag: `p`,
@@ -1256,7 +1550,7 @@ export default class App extends Component {
               link: `https://www.amazon.com/Boundaries-When-Take-Control-Your/dp/0310585902/ref=asc_df_0310585902/?tag=hyprod-20&linkCode=df0&hvadid=312045581420&hvpos=&hvnetw=g&hvrand=17569300814460995702&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010934&hvtargid=pla-568945958311&psc=1&tag=&ref=&adgrpid=62837065180&hvpone=&hvptwo=&hvadid=312045581420&hvpos=&hvnetw=g&hvrand=17569300814460995702&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9010934&hvtargid=pla-568945958311`,
               text: `Boundaries`
             },{
-              text: ` may sound cliche, but when you don’t have them you risk inviting negative energy into your space. Boundaries for yourself can look like making sure you get adequate sleep each night. Boundaries with others is being able to say no to things you do not have the capacity for.`
+              text: ` may sound cliche, but when you don't have them you risk inviting negative energy into your space. Boundaries for yourself can look like making sure you get adequate sleep each night. Boundaries with others is being able to say no to things you do not have the capacity for.`
              }]
             },{
               tag: `img`,
@@ -1285,7 +1579,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Anxiety comes from fear of the unknown. We assign an outcome or storyline to something that has not yet happened, which causes stress in our body and mind. Living fearlessly doesn’t mean you’re never apprehensive or fearful of something, it means you simply show up with an open heart.`
+            text: `Anxiety comes from fear of the unknown. We assign an outcome or storyline to something that has not yet happened, which causes stress in our body and mind. Living fearlessly doesn't mean you're never apprehensive or fearful of something, it means you simply show up with an open heart.`
           }]
         },{
           tag: `section`,
@@ -1306,7 +1600,7 @@ export default class App extends Component {
               tag: `i`,
               text: `“aparigraha,”`
             },{
-              text: ` which is Sanskrit for non-greed or non-attachment. Aparigraha suggests that instead of becoming mentally married to an idea or outcome, we allow things to breathe and be. Attachment breeds anxiety because we expect one specific thing to happen, and when it doesn’t we feel out of control. Welcome the possibility of various outcomes, and you will begin to break down fear.`
+              text: ` which is Sanskrit for non-greed or non-attachment. Aparigraha suggests that instead of becoming mentally married to an idea or outcome, we allow things to breathe and be. Attachment breeds anxiety because we expect one specific thing to happen, and when it doesn't we feel out of control. Welcome the possibility of various outcomes, and you will begin to break down fear.`
             }]
           },{
             tag: `p`,
@@ -1320,7 +1614,7 @@ export default class App extends Component {
               link: `https://www.instagram.com/reel/CdEOkeTFVp8/?igshid=YmMyMTA2M2Y=`,
               text: `Create space mentally`
             },{
-              text: ` through daily meditation. Meditation opens new realms of creativity in brains, and allows for mental space to be freed. Cleaning and organizing your physical space has been proven to decrease mental clutter and reduce stress of the mind. You’ll be more capable of making decisions with clarity.`
+              text: ` through daily meditation. Meditation opens new realms of creativity in brains, and allows for mental space to be freed. Cleaning and organizing your physical space has been proven to decrease mental clutter and reduce stress of the mind. You'll be more capable of making decisions with clarity.`
             }]
           },{
             tag: `p`,
@@ -1342,7 +1636,7 @@ export default class App extends Component {
               tag: `b`,
               text: `Operate in abundance.`
             },{
-              text: ` There is always enough to go around. There is always a way forward. The difference between a growth mindset and a fixed mindset is that one has clear roadblocks that are immovable. A growth mindset leaves room for various paths and new opportunities. When you operate in abundance, you’re able to see a full picture of possibilities, vs living with lack in mind. `
+              text: ` There is always enough to go around. There is always a way forward. The difference between a growth mindset and a fixed mindset is that one has clear roadblocks that are immovable. A growth mindset leaves room for various paths and new opportunities. When you operate in abundance, you're able to see a full picture of possibilities, vs living with lack in mind. `
              }]
             },{
               tag: `img`,
@@ -1376,7 +1670,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Summer is upon us and it’s a time to welcome in a new energy, new light, and warmth. It’s also a great time for mental revival. Reflect on the things that you’d like to shed going into this new season, or perhaps things you want to put more energy into. Here are 3 ways to elevate your personal wellness this summer. `
+            text: `Summer is upon us and it's a time to welcome in a new energy, new light, and warmth. It's also a great time for mental revival. Reflect on the things that you'd like to shed going into this new season, or perhaps things you want to put more energy into. Here are 3 ways to elevate your personal wellness this summer. `
           }]
         },{
           tag: `ol`,
@@ -1403,7 +1697,7 @@ export default class App extends Component {
               }]
             },{
               item: [{
-                text: `Eat well. Summer is the time when lots of fruits come into season. Explore some that are local to your area, and buy organic. Berries, for example, are full of antioxidants, which help prevent tissue damage and are anti-inflammatory. Your circadian rhythm can change this time of year, so It’s important to be mindful of your energy levels and metabolism. Get a balanced and nutritious start to your day with an energizing breakfast, like a green smoothie. Pay attention to your body’s reaction to certain foods, and give it what it needs or cut out what doesn’t feel good. `           
+                text: `Eat well. Summer is the time when lots of fruits come into season. Explore some that are local to your area, and buy organic. Berries, for example, are full of antioxidants, which help prevent tissue damage and are anti-inflammatory. Your circadian rhythm can change this time of year, so It's important to be mindful of your energy levels and metabolism. Get a balanced and nutritious start to your day with an energizing breakfast, like a green smoothie. Pay attention to your body's reaction to certain foods, and give it what it needs or cut out what doesn't feel good. `           
               }]
             }]
         },{
@@ -1418,7 +1712,7 @@ export default class App extends Component {
             tag: `b`,
             text: `The Challenge: ` 
           },{
-            text: `Make a list of 5 new healthy options for breakfast you’d like to try in the next couple of weeks. Make sure they are fresh and nutrient rich! ` 
+            text: `Make a list of 5 new healthy options for breakfast you'd like to try in the next couple of weeks. Make sure they are fresh and nutrient rich! ` 
           }]
         }]
       },{
@@ -1469,7 +1763,7 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `Each of these simple exercises will help you to open your chest and shoulders and reverse the effects of poor posture, while also syncing your breath to movement. You’ll feel more calm and open. `
+            text: `Each of these simple exercises will help you to open your chest and shoulders and reverse the effects of poor posture, while also syncing your breath to movement. You'll feel more calm and open. `
           }]
         },{
           tag: `p`,
@@ -1504,12 +1798,12 @@ export default class App extends Component {
               link: `https://pranawellnessworks.com/services_corporate`,
               text: `wellness at work`
             },{
-              text: ` can help increase productivity and decrease stress. It will uplevel employee engagement and morale, and promote healthy work-life balance. Employees are more creative when they’re rested and healthy. `,
+              text: ` can help increase productivity and decrease stress. It will uplevel employee engagement and morale, and promote healthy work-life balance. Employees are more creative when they're rested and healthy. `,
             }]
           },{
             tag: `p`,
             content: [{
-              text: `You must be an advocate for yourself! Inquire more about your health benefits, wellness program and incentives, EAP, team building. If your company doesn’t have any of these things, ask, WHY NOT?! You can set the new standard and `
+              text: `You must be an advocate for yourself! Inquire more about your health benefits, wellness program and incentives, EAP, team building. If your company doesn't have any of these things, ask, WHY NOT?! You can set the new standard and `
             },{
               tag: `a`,
               link: `https://pranawellnessworks.com/services_corporate`,
@@ -1520,7 +1814,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Don’t eat lunch at your desk, while working. Walk away, take a break. Consume your food with mindfulness and slowness in mind. `
+              text: `Don't eat lunch at your desk, while working. Walk away, take a break. Consume your food with mindfulness and slowness in mind. `
             }]
           },{
             tag: `p`,
@@ -1559,7 +1853,7 @@ export default class App extends Component {
             tag: `b`,
             text: `The Challenge: ` 
           },{
-            text: `Next time you’re feeling stressed at work, take 5 minutes to walk about from your computer, take 3 deep breaths, and do a short stretch.  ` 
+            text: `Next time you're feeling stressed at work, take 5 minutes to walk about from your computer, take 3 deep breaths, and do a short stretch.  ` 
           }]
         }]
       },{
@@ -1571,7 +1865,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Self-care has become a word used regularly when talking about health and wellness. It’s often overused, and much of the focus has been on surface level care, like bubble baths and face masks. These are great! But we have to do the deeper work too. If the past two years have taught us anything, it’s that we must take care of ourselves. Self-care is taking care of yourself- body, mind, and spirit, so that you can be well enough to show up for yourself and others.`
+            text: `Self-care has become a word used regularly when talking about health and wellness. It's often overused, and much of the focus has been on surface level care, like bubble baths and face masks. These are great! But we have to do the deeper work too. If the past two years have taught us anything, it's that we must take care of ourselves. Self-care is taking care of yourself- body, mind, and spirit, so that you can be well enough to show up for yourself and others.`
           }]
         },{
           tag: `section`,
@@ -1590,7 +1884,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `What does this mean exactly? It means to slow down and LISTEN actively to what your body is telling you. It’s always saying something. It will let you know what it needs. Honoring your body can mean taking naps when you feel tired, eating foods that make you feel good and increase your energy, or simply slowing down physically. When your body speaks, listen.`,
+              text: `What does this mean exactly? It means to slow down and LISTEN actively to what your body is telling you. It's always saying something. It will let you know what it needs. Honoring your body can mean taking naps when you feel tired, eating foods that make you feel good and increase your energy, or simply slowing down physically. When your body speaks, listen.`,
             }]
           },{
             tag: `h2`,
@@ -1616,7 +1910,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Do this daily, and your physical body, mind, and nervous system will thank you. Leave your phone behind, or turn it to Do Not Disturb. Don’t count your steps or time yourself for fitness. Just walk. Observe. And breathe. Try to observe one new thing (about the same place) each time you walk. Be mindful of the sounds around you, the colors, the smells, the familiarity of certain places and the emotions they bring up. Take a 15 minute walk right in the middle of your day, daily! It will spark creativity, refresh your energy, and increase mobility and blood flow.`
+              text: `Do this daily, and your physical body, mind, and nervous system will thank you. Leave your phone behind, or turn it to Do Not Disturb. Don't count your steps or time yourself for fitness. Just walk. Observe. And breathe. Try to observe one new thing (about the same place) each time you walk. Be mindful of the sounds around you, the colors, the smells, the familiarity of certain places and the emotions they bring up. Take a 15 minute walk right in the middle of your day, daily! It will spark creativity, refresh your energy, and increase mobility and blood flow.`
             }]
           },{
             tag: `h2`,
@@ -1644,7 +1938,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Every day! One of the primary habits of highly successful people is their commitment to learning. Learning something new each day can increase your confidence and your awareness. It will allow your mind to wonder, be free, and decrease stress. Learning daily doesn’t have to be hard. You can listen to an hour of a podcast or an audiobook that is mentally enriching in some way. You can spend 30 min using a new language app. You can try a new recipe. You can attend a webinar or event. You can try an activity you’ve never done before. Get curious, and be willing to learn.`
+              text: `Every day! One of the primary habits of highly successful people is their commitment to learning. Learning something new each day can increase your confidence and your awareness. It will allow your mind to wonder, be free, and decrease stress. Learning daily doesn't have to be hard. You can listen to an hour of a podcast or an audiobook that is mentally enriching in some way. You can spend 30 min using a new language app. You can try a new recipe. You can attend a webinar or event. You can try an activity you've never done before. Get curious, and be willing to learn.`
             }]
           }]
         },{
@@ -1663,7 +1957,7 @@ export default class App extends Component {
         title: `How to Increase Hip Mobility`,
         category: `Functional Fitness`,
         publishDate: `Monday, March 21st, 2022`,
-        subtext: `So much stress is stored in our hips. It’s important to keep them lubricated and mobile to avoid future complications or hip replacement.`,
+        subtext: `So much stress is stored in our hips. It's important to keep them lubricated and mobile to avoid future complications or hip replacement.`,
         copy: [{
           tag: `p`,
           content: [{
@@ -1677,7 +1971,7 @@ export default class App extends Component {
           },{
             tag: `br`
           },{
-            text: `So what’s the solution to this compounding pain? Increase your hip mobility and strengthen your knees and low back.`
+            text: `So what's the solution to this compounding pain? Increase your hip mobility and strengthen your knees and low back.`
           }]
         },{
           tag: `section`,
@@ -1690,7 +1984,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Deep relaxation and long holds. Here are a few poses that promote opening of the hips. Use props such as blankets, yoga blocks, or bolsters, to support your body. It’s important to relax into these poses and hold them for longer periods of time. 3-5 minutes each. With every exhale, allow your body to soften a little more, and become open. `
+              text: `Deep relaxation and long holds. Here are a few poses that promote opening of the hips. Use props such as blankets, yoga blocks, or bolsters, to support your body. It's important to relax into these poses and hold them for longer periods of time. 3-5 minutes each. With every exhale, allow your body to soften a little more, and become open. `
             },{
               tag: `a`,
               link: `https://www.instagram.com/p/CZNPN7kB7nT/`,
@@ -1773,7 +2067,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `A great way to decrease anxiety is to acknowledge that it is something you’re experiencing in this moment, it does not belong to you. Anxiety, like other emotional occurrences, is not permanent. It is not a part of your identity. It does not define you. When you’re able to view anxiety as a temporary experience, you’re better able to see its end. Instead of “I have anxiety,” let’s reframe to say “I am experiencing anxiety right now, but it will pass.” `,
+              text: `A great way to decrease anxiety is to acknowledge that it is something you're experiencing in this moment, it does not belong to you. Anxiety, like other emotional occurrences, is not permanent. It is not a part of your identity. It does not define you. When you're able to view anxiety as a temporary experience, you're better able to see its end. Instead of “I have anxiety,” let's reframe to say “I am experiencing anxiety right now, but it will pass.” `,
             }]
           },{
             tag: `h2`,
@@ -1853,7 +2147,7 @@ export default class App extends Component {
             },{
               tag: `br`
             },{
-              text: `When out of balance, someone who is pitta dominant may have indigestion or acid in the belly, and may experience inflammatory conditions. When in balance, they feel as though they can eat anything, and digest well. Imbalance in Pitta can also mean they are quick to anger or short tempered. Pitta’s tend to run hot in body temperature. Other characteristics of Pitta are hot, light, sharp, pungent, and acidic. `,
+              text: `When out of balance, someone who is pitta dominant may have indigestion or acid in the belly, and may experience inflammatory conditions. When in balance, they feel as though they can eat anything, and digest well. Imbalance in Pitta can also mean they are quick to anger or short tempered. Pitta's tend to run hot in body temperature. Other characteristics of Pitta are hot, light, sharp, pungent, and acidic. `,
             }]
           },{
             tag: `h2`,
@@ -1864,7 +2158,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Water. body composition may be more naturally lean. Vata balances the nervous system and elimination in the body.  Vata’s may tend to have dryer skin or thinner hair. Vata’s are easily cold. Other characteristics of vata are dry, quick, moving, or rough. Vatas in balance tend to be energetic and move around a lot. They are creative spirits and enthusiastic. Vatas love conversation. When out of balance, Vatas will experience stress from all their activity, and perhaps insomnia. Their minds may race. Vata benefits from routine.  `
+              text: `Water. body composition may be more naturally lean. Vata balances the nervous system and elimination in the body.  Vata's may tend to have dryer skin or thinner hair. Vata's are easily cold. Other characteristics of vata are dry, quick, moving, or rough. Vatas in balance tend to be energetic and move around a lot. They are creative spirits and enthusiastic. Vatas love conversation. When out of balance, Vatas will experience stress from all their activity, and perhaps insomnia. Their minds may race. Vata benefits from routine.  `
             }]
           },{
             tag: `img`,
@@ -1919,7 +2213,7 @@ export default class App extends Component {
             link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
             text: `feel more grounded`
           },{
-            text:`, when things are chaotic, and when they’re not.`
+            text:`, when things are chaotic, and when they're not.`
           }]
         },{
           tag: `section`,
@@ -1965,7 +2259,7 @@ export default class App extends Component {
             },{
               tag: `br`
             },{
-              text: `This mantra activates our consciousness and brings you into the present moment. It’s a reminder that all we have is now, and we should live in the moment. You can practice this mantra seated with your eyes closed, spine straight.`
+              text: `This mantra activates our consciousness and brings you into the present moment. It's a reminder that all we have is now, and we should live in the moment. You can practice this mantra seated with your eyes closed, spine straight.`
             }]
           },{
             tag: `h2`,
@@ -2003,7 +2297,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `The Covid virus attacks your respiratory system, and especially your lungs. It’s important to keep your lungs active and expanding throughout recovery. Lung capacity is key. Here are three breathing exercises you can practice during and post-Covid to aid in respiratory recovery. 
+            text: `The Covid virus attacks your respiratory system, and especially your lungs. It's important to keep your lungs active and expanding throughout recovery. Lung capacity is key. Here are three breathing exercises you can practice during and post-Covid to aid in respiratory recovery. 
             `
           }]
         },{
@@ -2028,7 +2322,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Ujjayi is a victorious breath! It’s meant to empower the mind and body. It’s great for recovery from any workout, and also calms feelings of anger and frustration. Ujjayi is the ultimate respiratory support, and helps to strengthen your lungs and clear bacteria. Breathe in through your nose, and then exhale through the back of your throat. Think Darth Vader sounds, or ocean sounds. Your mouth remains closed. `
+              text: `Ujjayi is a victorious breath! It's meant to empower the mind and body. It's great for recovery from any workout, and also calms feelings of anger and frustration. Ujjayi is the ultimate respiratory support, and helps to strengthen your lungs and clear bacteria. Breathe in through your nose, and then exhale through the back of your throat. Think Darth Vader sounds, or ocean sounds. Your mouth remains closed. `
             }]
           },{
             tag: `h2`,
@@ -2051,7 +2345,7 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `These breathwork practices can be used daily, whether you’re recovering from Covid or not. They help to bring ease and rest to the body, immune system, and nervous system.`
+            text: `These breathwork practices can be used daily, whether you're recovering from Covid or not. They help to bring ease and rest to the body, immune system, and nervous system.`
           }]
         },{
           tag: `p`,
@@ -2077,7 +2371,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Tis the season….so many people are battling Covid right now, or have just come out on the other side. Immunity and prevention are key, but if you do happen to get the virus, it’s important to begin recovery work right away. Here are `,
+            text: `Tis the season….so many people are battling Covid right now, or have just come out on the other side. Immunity and prevention are key, but if you do happen to get the virus, it's important to begin recovery work right away. Here are `,
           },{
             tag: `a`,
             link: `https://www.instagram.com/p/CYkeyhfB0A1/`,
@@ -2214,7 +2508,7 @@ export default class App extends Component {
               text: `Recommendations: `
             }]
           },{
-            text: `It’s suggested that you do not lie on your back when you have Covid or are recovering from it. The congestion in your chest puts pressure on your lungs, and this will slow the recovery process and not allow the congestion/mucus to release properly. I suggest doing only poses that are upright, or lying on your stomach, rather than on your back. `
+            text: `It's suggested that you do not lie on your back when you have Covid or are recovering from it. The congestion in your chest puts pressure on your lungs, and this will slow the recovery process and not allow the congestion/mucus to release properly. I suggest doing only poses that are upright, or lying on your stomach, rather than on your back. `
           }]
         },{
           tag: `p`,
@@ -2275,7 +2569,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: ` The stuff that makes plants green, also promotes production of red blood cells! It acts as a natural detoxifying agent, and eliminates fungus. As an added bonus, it’s a natural deodorizer as well (for your poop and your pits!) It absorbs toxins and stimulates immunity. Try Chlorophyll in tablet or liquid form. `
+              text: ` The stuff that makes plants green, also promotes production of red blood cells! It acts as a natural detoxifying agent, and eliminates fungus. As an added bonus, it's a natural deodorizer as well (for your poop and your pits!) It absorbs toxins and stimulates immunity. Try Chlorophyll in tablet or liquid form. `
             }]
           },{
             tag: `h2`,
@@ -2286,7 +2580,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `High in vitamins C and A, cayenne pepper is a great additive for your smoothies, or even hot teas! It’s an immunity booster and has anti-inflammatory properties. It’s properties may help protect against cellular damage. When feeling under the weather, I’ve added cayenne to whatever I’m eating or drinking. Plus that cayenne pepper is great for heart health too!`
+              text: `High in vitamins C and A, cayenne pepper is a great additive for your smoothies, or even hot teas! It's an immunity booster and has anti-inflammatory properties. It's properties may help protect against cellular damage. When feeling under the weather, I've added cayenne to whatever I'm eating or drinking. Plus that cayenne pepper is great for heart health too!`
             }]
           },{
             tag: `img`,
@@ -2306,7 +2600,7 @@ export default class App extends Component {
             tag: `b`,
             text: `The Challenge: ` 
           },{
-            text: ` Add some Chlorophyll droplets to your water today! It’s super refreshing and energizing, and will give you fresh breath!`
+            text: ` Add some Chlorophyll droplets to your water today! It's super refreshing and energizing, and will give you fresh breath!`
           }]
         },{
           tag: `p`,
@@ -2352,7 +2646,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `We’ve all heard the saying “nothing lasts forever.” It’s true. Everything is fleeting. Anxiety, pain, worry- all temporary. So are the warm and fuzzy feelings. Happiness, confidence, joy. So when those nice feelings come up, hold on to them. Give them focus and attention, and energy so they will grow. `
+              text: `We've all heard the saying “nothing lasts forever.” It's true. Everything is fleeting. Anxiety, pain, worry- all temporary. So are the warm and fuzzy feelings. Happiness, confidence, joy. So when those nice feelings come up, hold on to them. Give them focus and attention, and energy so they will grow. `
             }]
           },{
             tag: `h2`,
@@ -2374,7 +2668,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `(and say no to more things that are not in it) Your zone of genius is where you absolutely thrive. It is a natural place of growth and creativity. When you stay within this zone, possibilities are limitless because YOU are in control. It’s ok to say no to things that do not reside in this zone. You’re then allowing more space for joy to flourish inside of you.`
+              text: `(and say no to more things that are not in it) Your zone of genius is where you absolutely thrive. It is a natural place of growth and creativity. When you stay within this zone, possibilities are limitless because YOU are in control. It's ok to say no to things that do not reside in this zone. You're then allowing more space for joy to flourish inside of you.`
             }]
           },{
             tag: `img`,
@@ -2401,7 +2695,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `As we close out this month of THANKS, it’s important to highlight the benefits of practicing gratitude as a way to `
+            text: `As we close out this month of THANKS, it's important to highlight the benefits of practicing gratitude as a way to `
           },{
             tag: `a`,
             link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
@@ -2410,7 +2704,7 @@ export default class App extends Component {
         },{
           tag: `p`,
           content: [{
-            text: `My mentor and Director of the Yoga Therapy Program, Dr. Larry Payne, always says there is nothing like a daily dose of Vitamin G! He’s so right. When you `
+            text: `My mentor and Director of the Yoga Therapy Program, Dr. Larry Payne, always says there is nothing like a daily dose of Vitamin G! He's so right. When you `
           },{
             tag: `a`,
             link: `https://www.instagram.com/p/CWq1OyhluiR/`,
@@ -2429,7 +2723,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Each day, start your day or end it, take some time to write a list of 3-10 (or more!) things you’re grateful for. They can be as small as your glass of clean water, or big like closing a huge contract. Small wins are big wins :-) By putting pen to paper and visualizing the things you have to be grateful for, however simple, it helps you to gain perspective. Do this daily for best results and overall `
+              text: `Each day, start your day or end it, take some time to write a list of 3-10 (or more!) things you're grateful for. They can be as small as your glass of clean water, or big like closing a huge contract. Small wins are big wins :-) By putting pen to paper and visualizing the things you have to be grateful for, however simple, it helps you to gain perspective. Do this daily for best results and overall `
             },{
               tag: `a`,
               link: `https://www.thetalenthack.com/packages/club-meditate-monthly-pass`,
@@ -2460,7 +2754,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Did you know that the movement in yoga of “sun salutations” is literally an act of gratitude?? It’s typically practiced in the morning time, towards the sun, giving thanks for its light and presence. Loving on nature is a really great way to feel grounded and practice gratitude. Sit in the grass, go outside barefoot, touch the trees, smell the flowers, let the sun shine directly on you. When you connect with nature, it releases endorphins in the body, and helps you to feel connected and gracious.`
+              text: `Did you know that the movement in yoga of “sun salutations” is literally an act of gratitude?? It's typically practiced in the morning time, towards the sun, giving thanks for its light and presence. Loving on nature is a really great way to feel grounded and practice gratitude. Sit in the grass, go outside barefoot, touch the trees, smell the flowers, let the sun shine directly on you. When you connect with nature, it releases endorphins in the body, and helps you to feel connected and gracious.`
             }]
           }]
         },{
@@ -2472,7 +2766,7 @@ export default class App extends Component {
             link: `https://open.spotify.com/track/6VWCeBktNMGdTTy5LxHj69?si=3ef0c84971f84d10`,
             text: `Londrelle`
           },{
-            text: `. “With a heart full of gratitude, and a mind full of peace. That’s how you should live, that’s how you should be….that’s how you should love, that’s how you stay free.” `
+            text: `. “With a heart full of gratitude, and a mind full of peace. That's how you should live, that's how you should be….that's how you should love, that's how you stay free.” `
           }]
         },{
           tag: `p`,
@@ -2480,7 +2774,7 @@ export default class App extends Component {
             tag: `b`,
             text: `The Challenge: ` 
           },{
-            text: `Start that list now! Write down 10 things you’re grateful for today.`
+            text: `Start that list now! Write down 10 things you're grateful for today.`
           }]
         }]
       },{
@@ -2663,7 +2957,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `We live such a sedentary lifestyle. Especially these days, with work from home life. It’s so important to keep your muscles stretched and your joints lubricated, through movement. Take time each day to move your body in some way. Get up from your seat often, throughout the work day to promote more circulation in the body and a healthy prana.`
+            text: `We live such a sedentary lifestyle. Especially these days, with work from home life. It's so important to keep your muscles stretched and your joints lubricated, through movement. Take time each day to move your body in some way. Get up from your seat often, throughout the work day to promote more circulation in the body and a healthy prana.`
           }]
         },{
           tag: `section`,
@@ -2774,7 +3068,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `Sex is not all about “the hot spots.” It’s about intimacy, trust, and communication. Whether practicing yoga solo to increase your sexual energy, or `,
+            text: `Sex is not all about “the hot spots.” It's about intimacy, trust, and communication. Whether practicing yoga solo to increase your sexual energy, or `,
           },{
             tag: `a`,
             link: `https://sensualbreath.eventbrite.com/`,
@@ -2845,7 +3139,7 @@ export default class App extends Component {
               link: `https://www.instagram.com/p/CSellJOoaBT/`,
               text: `Acro`
             },{
-              text: `. Trust yourself and your own body’s abilities first, and attune your root chakra. Then build trust `
+              text: `. Trust yourself and your own body's abilities first, and attune your root chakra. Then build trust `
             },{
               tag: `a`,
               link: `https://sensualbreath.eventbrite.com/`,
@@ -2858,7 +3152,7 @@ export default class App extends Component {
               tag: `h2`,
               text: `Breathwork.`
             },{
-              text: `Breathing is sexy! Use “breath of fire” (kapalabhati) to ignite your fire within. Build this energy within yourself first, then with a partner. Connecting with your partner’s breath is an intimate practice! You will quite literally feel each other’s energy, and as a result desire to be closer.`
+              text: `Breathing is sexy! Use “breath of fire” (kapalabhati) to ignite your fire within. Build this energy within yourself first, then with a partner. Connecting with your partner's breath is an intimate practice! You will quite literally feel each other's energy, and as a result desire to be closer.`
             }]
           }]
       },{
@@ -2897,7 +3191,7 @@ export default class App extends Component {
                 link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
                 text: `self-study`
               },{
-                text: ` or check-in to ask yourself how and what you’re feeling.`
+                text: ` or check-in to ask yourself how and what you're feeling.`
               }]
             },{
               item: [{
@@ -2911,7 +3205,7 @@ export default class App extends Component {
                 tag: `h2`,
                 text: `Are you socially aware?`
               },{
-                text: ` How does social media make you feel? Do you feel jealous, triggered, or frustrated by some things on your feed? It’s time for a change! Mute or unfollow accounts that don’t make you feel good. Follow more `
+                text: ` How does social media make you feel? Do you feel jealous, triggered, or frustrated by some things on your feed? It's time for a change! Mute or unfollow accounts that don't make you feel good. Follow more `
               },{
                 tag: `a`,
                 link: `https://www.instagram.com/pranawellnessworks/`,
@@ -2958,7 +3252,7 @@ export default class App extends Component {
               tag: `h2`,
               text: `Rest up!`
             },{
-              text: ` Let’s let go of this mind set that you must fill every minute, of every day, with “productivity.” Let it go! This mindset in itself is not productive. Honor your body. Allow time for intentional rest so you can be renewed and prepared to face the day ahead and crush your goals. `
+              text: ` Let's let go of this mind set that you must fill every minute, of every day, with “productivity.” Let it go! This mindset in itself is not productive. Honor your body. Allow time for intentional rest so you can be renewed and prepared to face the day ahead and crush your goals. `
             }]
           },{
             item: [{
@@ -3015,7 +3309,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It’s the “law of attraction.” You amplify more of what you don’t want, by focusing so much on it. That’s why people say “worrying about something is not going to solve your problem.” It won’t! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
+              text: `If you constantly think about something, you are subconsciously drawing it into your life experience. You are magnetizing it through your thinking. It's the “law of attraction.” You amplify more of what you don't want, by focusing so much on it. That's why people say “worrying about something is not going to solve your problem.” It won't! Writing your goals down is so important. Focusing on what you DO want, will do just that...help it come into focus. Find the good in every situation, and center your energy all around it.`,
             }]
           },{
             tag: `section`,
@@ -3027,7 +3321,7 @@ export default class App extends Component {
             },{
               tag: `p`,
               content: [{
-                text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they’re all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can’t be rich.” Try this instead. I acknowledge my money challenges and I’m ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn’t that a game changer!? `
+                text:`When you hear that annoying, self-doubting, negative voice in your head, tell them to shut up! Silence your negative thoughts immediately by turning them into positive ones. Write down a list of all of your “self-limiting beliefs.” We all have them. These are things that prevent us from hitting our goals, or doing what we want to do. Once they're all written down on paper, change them to the affirmative, so you start to see them in a different light. Here is an example of a (SLB) self-limiting belief. “I am not good at money management, so I can't be rich.” Try this instead. I acknowledge my money challenges and I'm ready to face them head on. I will be a steward of my money, so that I can create an abundant future.” Isn't that a game changer!? `
               }]
             },{
               tag: `h2`,
@@ -3037,7 +3331,7 @@ export default class App extends Component {
             },{
               tag: `p`,
               content: [{
-                text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won’t be when things actually start happening! `
+                text: `The power of manifesting is real! You can totally be a co-creator of the life you want, simply by speaking it up. Claim it. Write it down. Everywhere. Visualize it. Make it real and tangible. Grab some post it notes, and write down your next big goal (personal or business). Write the same thing down, and post it in multiple places that will be visible throughout your day. Car dash, laptop keyboard, mirrors, closet, bed side. Seeing what you want more often, helps to make it a part of your life. Say it out loud! Often. Speak about your goals and dreams like they already exist. You may think it sounds crazy now, but it won't be when things actually start happening! `
               }]
             },{
               tag: `h2`,
@@ -3053,7 +3347,7 @@ export default class App extends Component {
                 link: `https://www.udemy.com/course/normalizing-mindfulness/?referralCode=51F7D8BFA31B16E34EF6`,
                 text: `Mindset`
               },{
-                text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you’re already ahead of the game.`,
+                text: ` is about the way you perceive things. Is your glass half empty or half full? If you begin with the idea that you will always need more, or that you are lacking a specific skill, then you will never see your goals. Shift your mindset to think about what you DO have, what positive things have already happened, and how you can develop what you already have, however small. When you operate in a mind of abundance, rather than lack, you're already ahead of the game.`,
               }]
             },{
               tag: `img`,
@@ -3080,7 +3374,7 @@ export default class App extends Component {
         copy: [{
           tag: `p`,
           content: [{
-            text: `What if I told you what you do each night, can shape your day? Do you have a hard time getting to sleep at night, or staying asleep? Do you always wake up tired? Feel like your mind just won’t turn off once you get into bed? I feel you! Been there, done that. Your sleep can be great, your night routine can be healthy, and conducive to a productive day. Try these 4 things.`
+            text: `What if I told you what you do each night, can shape your day? Do you have a hard time getting to sleep at night, or staying asleep? Do you always wake up tired? Feel like your mind just won't turn off once you get into bed? I feel you! Been there, done that. Your sleep can be great, your night routine can be healthy, and conducive to a productive day. Try these 4 things.`
           }]
         },{
           tag: `section`,
@@ -3092,7 +3386,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Stop eating 2-3 hours before bedtime. After each meal, your digestive system is in ON mode. It has to break down and process your food. If you are eating, and then jumping into bed shortly after, you are keeping your body ON! It’s still trying to work, while you are trying to rest. Give it some time to fully digest your last meal, so you don’t go to sleep feeling heavy and bloated. Your body will thank you.`
+              text: `Stop eating 2-3 hours before bedtime. After each meal, your digestive system is in ON mode. It has to break down and process your food. If you are eating, and then jumping into bed shortly after, you are keeping your body ON! It's still trying to work, while you are trying to rest. Give it some time to fully digest your last meal, so you don't go to sleep feeling heavy and bloated. Your body will thank you.`
             }] 
           },{
             tag: `h2`,
@@ -3107,7 +3401,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Trust me, this one is super hard for me. I am a diehard red wine fan, and I’m sure I’m not alone in the idea that it just magically puts you to sleep. It doesn’t! Red wine, and other alcohol may seem like physical depressants at first swig, but they actually keep the body and mind active at night. It disrupts your REM sleep, which is the most important, productive, deep sleep of your night. So, by all means do happy hour at your will. Just not right before bed!`
+              text: `Trust me, this one is super hard for me. I am a diehard red wine fan, and I'm sure I'm not alone in the idea that it just magically puts you to sleep. It doesn't! Red wine, and other alcohol may seem like physical depressants at first swig, but they actually keep the body and mind active at night. It disrupts your REM sleep, which is the most important, productive, deep sleep of your night. So, by all means do happy hour at your will. Just not right before bed!`
             }]
           },{
             tag: `h2`,
@@ -3117,7 +3411,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{ 
-              text: `At least one hour prior to your bedtime, put your phone on Do Not Disturb, close the laptop, and grab a juicy book, instead of turning on the TV. Filling your brain with triggering news stories, or gossip from other people’s lives right before you close your eyes, is basically asking to be kept awake. The blue light in our screens sends signals to the eyes that say “stay awake, be energized, focus on me!” We don’t want that. Blue light can also suppress the secretion of melatonin in the body, and throw off your circadian rhythm. Melatonin is a hormone produced by the pineal gland, in response to darkness. It’s the sleepy button! Let it do its job.` 
+              text: `At least one hour prior to your bedtime, put your phone on Do Not Disturb, close the laptop, and grab a juicy book, instead of turning on the TV. Filling your brain with triggering news stories, or gossip from other people's lives right before you close your eyes, is basically asking to be kept awake. The blue light in our screens sends signals to the eyes that say “stay awake, be energized, focus on me!” We don't want that. Blue light can also suppress the secretion of melatonin in the body, and throw off your circadian rhythm. Melatonin is a hormone produced by the pineal gland, in response to darkness. It's the sleepy button! Let it do its job.` 
             }]
           },{
             tag: `h2`,
@@ -3127,7 +3421,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{ 
-              text: `We all feel like our minds run a mile a minute, right? Especially at night. After a long day, it can feel like you’re going to bed with all of your thoughts right there next to you. Decompress! Write a schedule for the next day, write down your goals, a gratitude list, a WINS  of the day list, a to do list, or even just a brain dump of all the things running through your head. Each of these writing exercises will allow you to clear all of the thoughts in your head, out! It’s like erasing your chalkboard full of notes, so that you can start each new day with a clean slate.`
+              text: `We all feel like our minds run a mile a minute, right? Especially at night. After a long day, it can feel like you're going to bed with all of your thoughts right there next to you. Decompress! Write a schedule for the next day, write down your goals, a gratitude list, a WINS  of the day list, a to do list, or even just a brain dump of all the things running through your head. Each of these writing exercises will allow you to clear all of the thoughts in your head, out! It's like erasing your chalkboard full of notes, so that you can start each new day with a clean slate.`
             }]
           },{
             tag: `img`,
@@ -3147,7 +3441,7 @@ export default class App extends Component {
             tag: `b`,
             text: `The Challenge: ` 
           },{ 
-            text: ` Set an alarm on your phone each night, when it’s time to power down the screens, stop eating and drinking, and let all of your thoughts out on paper. Let the alarm serve as a reminder to STOP and power down.`
+            text: ` Set an alarm on your phone each night, when it's time to power down the screens, stop eating and drinking, and let all of your thoughts out on paper. Let the alarm serve as a reminder to STOP and power down.`
           }]
         }]
       },{
@@ -3178,7 +3472,7 @@ export default class App extends Component {
           },{
             tag: `p`,
             content: [{
-              text: `Most people breathe with their mouth wide open. It’s instinctive. Breathing through your mouth excites the sympathetic nervous system, the fight or flight system. If your body is constantly in this state, it cannot rest and replenish. Immunity decreases, heart rate increases, and it becomes more difficult for your body to find balance. `,
+              text: `Most people breathe with their mouth wide open. It's instinctive. Breathing through your mouth excites the sympathetic nervous system, the fight or flight system. If your body is constantly in this state, it cannot rest and replenish. Immunity decreases, heart rate increases, and it becomes more difficult for your body to find balance. `,
             }]
           },{
             tag: `h2`,
@@ -3274,7 +3568,7 @@ export default class App extends Component {
               tag: `b`,
               text: `Breathe.`
             },{
-              text: ` Pranayama, or breathwork is essential for regulating the nervous system. When you start your morning with breath, you are creating a blank slate for your day. You are priming the body to operate out of a parasympathetic state, which is calm. Breathing in and out through your nose slows the heart rate and eases anxiety. A great energizing breath for your morning practice is “Kapalabhati.” Kapala means mind, and Bhati means glow. Who doesn’t want a mind glow up!? Start this breath by placing one hand on your belly. Inhale through the nose and expand the belly out. As you exhale, pretend like you are blowing out a candle with your nose. Naval contracts toward the spine. Blow out only through the nose. You can speed up this breath as it suits your body, to build energy and heat to start your day.`,
+              text: ` Pranayama, or breathwork is essential for regulating the nervous system. When you start your morning with breath, you are creating a blank slate for your day. You are priming the body to operate out of a parasympathetic state, which is calm. Breathing in and out through your nose slows the heart rate and eases anxiety. A great energizing breath for your morning practice is “Kapalabhati.” Kapala means mind, and Bhati means glow. Who doesn't want a mind glow up!? Start this breath by placing one hand on your belly. Inhale through the nose and expand the belly out. As you exhale, pretend like you are blowing out a candle with your nose. Naval contracts toward the spine. Blow out only through the nose. You can speed up this breath as it suits your body, to build energy and heat to start your day.`,
           }],
           },{
             item: [{
@@ -3325,7 +3619,7 @@ export default class App extends Component {
             tag: `b`,
             text: `The Challenge: `,
           },{
-            text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you’re awake. Notice what happens…...`}]
+            text: ` When you wake up tomorrow morning, Take 3 deep breaths. Finish a full glass of water. DO NOT look at your phone for (at least) the first hour you're awake. Notice what happens…...`}]
         }]
       }],
     showBlog: {},
