@@ -181,6 +181,10 @@ const BlogWrapper = styled.div`
         width: 80%;
         margin-left: 10%;
     }
+    .blog-image.small {
+        width: 50%;
+        margin-left: 25%;
+    }
     > article {
         line-height: 150%;
         width: 80vw;
