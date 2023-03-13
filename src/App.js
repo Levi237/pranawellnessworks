@@ -313,85 +313,64 @@ export default class App extends Component {
       //     }]
       //   }]
       // },{
-      //   id: ``,
-      // title: ``,
-      // category: `Mindfulness & Meditation`,
-      // publishDate: `Monday, `,
-      // subtext: ``,
-      // copy: [{
-      //   tag: `p`,
-      //   content: [{
-      //     text: ``
-      //   }]
-      //   },{
-      //     tag: `ul`,
-      //       list: [{
-      //         item: [{
-      //           text: ``
-      //         }]
-      //       },{
-      //         item: [{
-      //           text: ``
-      //         }]
-      //       }]
-      // },{
-      //   tag: `section`,
-      //   list: [{
-      //     tag: `p`,
-      //     content: [{
-      //       tag: `b`,
-      //       text: ``
-      //     },{
-      //       text: ``
-      //     }]
-      //   },{
-      //     tag: `p`,
-      //     content: [{
-      //       tag: `b`,
-      //       text: ``
-      //     },{
-      //       text: ``
-      //     },{
-      //       tag: `a`,
-      //       link: ``,
-      //       text: ``
-      //     },{
-      //       text: ``
-      //     }]
-      //   },{
-      //     tag: `p`,
-      //     content: [{
-      //       tag: `b`,
-      //       text: ``
-      //     },{
-      //       text: ``
-      //     }]
-      //   }]
-      // },{
-      //     tag: `br`
-      //   },{
-      //     tag: `img`,
-      //     content: [{
-      //       class: `wide`,
-      //       num: 2
-      //     }]
-      //   },{
-      //     tag: `p`,
-      //     content: [{
-      //       text: `` 
-      //     }]
-      //   },{
-      //     tag: `p`,
-      //     content: [{
-      //       tag: `br`,
-      //     },{
-      //       tag: `b`,
-      //       text: `The Challenge: ` 
-      //     },{
-      //       text: `` 
-      //     }]
-      //   }]
-      // },{
+      id: `230327`,
+      title: `3 Ways to Live in the Present Moment`,
+      category: `Mindfulness & Meditation`,
+      publishDate: `Monday, March 27th, 2023`,
+      subtext: `Living in the present moment can be hard when so many distractions are present.`,
+      copy: [{
+        tag: `p`,
+        content: [{
+          text: `Life moves fast! It’s so easy to get lost scrolling or absorbed in your thoughts. Practicing presence and increasing your awareness is a great way to self-regulate your nervous system, and decrease stress. Anxiety occurs when we worry about something in the future that has yet to happen. If you’re able to train your mind to not assign any outcome and be present with the current moment, you will notice a big change in your mindset. `
+        }]
+      },{
+        tag: `section`,
+        list: [{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Practice this mantra: `
+          },{
+            text: `“Where am I? I am here. What time is it? The time is now.” Recite this mantra out loud to yourself anytime, or silently if you wish. Inhale and exhale. Repeat. It works! This will help be a constant reminder for you to live in the NOW. `
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Write about the future: `
+          },{
+            text: `This may seem counterintuitive, but it works. Reflect in a journal about the things currently on your mind regarding the future. They can be good or bad, worries or aspirations. Write it all. This exercise will allow you to have a deeper understanding of what you desire, and also release some worry (on the paper). Once you’re finished, decide what you can do TODAY, right now, in order to either work towards your future aspirations, or calm your nerves regarding the future worry. But guess what? Worrying about something is not going to change the outcome or make it better :-) But you already know that!`
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `b`,
+            text: `Take a nature walk: `
+          },{
+            text: `No phone! Go outside, and take a walk for at least 20 minutes. This will clear your mind, increase endorphins, refresh creativity, and allow you to be present with yourself and your thoughts. Thoughts aren’t bad! We often think so, but the mind will always move, it’s just a matter of what we do with those thoughts that counts. Let them be. Nature will provide a wonderful muse and relaxing energy to boost your mood. See if you can notice 10 new things on this walk that you’ve never seen before.`
+          }]
+        }]
+      },{
+          tag: `br`
+        },{
+          tag: `img`,
+          content: [{
+            class: `wide`,
+            num: 2
+          }]
+        },{
+          tag: `p`,
+          content: [{
+            tag: `br`,
+          },{
+            tag: `b`,
+            text: `The Challenge: ` 
+          },{
+            text: ` Find 10 new things in a familiar place today. ` 
+          }]
+        }]
+      },{
+        
       id: `230313`,
       title: ` Yoga for Menstrual Cycle Ease`,
       category: `Yoga`,
@@ -445,14 +424,6 @@ export default class App extends Component {
               }]
             }]
           },{
-        tag: `br`
-          },{
-          tag: `img`,
-          content: [{
-            class: `wide`,
-            num: 3
-          }]
-        },{
           tag: `p`,
           content: [{
             text: `` 
