@@ -391,10 +391,18 @@ export default class App extends Component {
 
             tag: `section`,
             list: [{
+              tag: `p`,
+              content: [{
+                tag: `b`,
+                text: `Child's Pose, or “balasana”: `
+              },{
+                text: `This pose is often called an “active rest” or surrender. It allows the upper body to fully relax, while bringing the belly low between the thighs. Start with your feet together, knees apart, and stretch your arms long towards the top of the mat. As you inhale, feel your belly expand towards the floor, as you exhale, feel your hips soften towards your heels. This post releases tightness and stress in the hips, and can also ease low back pain.`
+              }]
+            },{
               tag: `img`,
               content: [{
-                class: `wide`,
-                num: 3
+                class: `small`,
+                num: 2
               }]
             },{
               tag: `p`,
@@ -412,6 +420,14 @@ export default class App extends Component {
               tag: `p`,
               content: [{
                 tag: `b`,
+                text: `Knees to chest, or apanasana: `
+              },{
+                text: `Do this pose to ease pain. Lie on your back and hug your knees into your chest. If it feels good, you can add a slight right back and forth to massage the spine. When you release your legs long in front of you, simply lie in savasana flat on your back and breathe. `
+              }]
+            },{
+              tag: `p`,
+              content: [{
+                tag: `b`,
                 text: `Goddess Pose: `
               },{
                 text: `This pose is wonderful for a boost of confidence as well! It will leave you feeling strong and powerful in all of your menstruating glory! It helps to open up the pelvic region, and invite in movement. Start standing, and open your legs wider than the mat, bend your knees and come into a squat with your toes pointed outwards. Heart to heart center or palms up. `
@@ -419,7 +435,7 @@ export default class App extends Component {
             },{
               tag: `img`,
               content: [{
-                class: `wide`,
+                class: `small`,
                 num: 3
               }]
             }]
